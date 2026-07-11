@@ -176,8 +176,24 @@ export function getPromptStatus(asset: MasterAsset): ManualPromptStatus {
 function buildReferenceFirstPrompt(asset: PromptableAsset, template: VariantTemplate) {
   const variantInstruction = buildShortVariantInstruction(asset, template);
   const background = simplifyBackground(template.backgroundRule);
-  const lock = buildShortReferenceLock(asset);
-  return `参考我上传的${asset.baseName}图片，生成“${asset.variant}”。画面内容：${variantInstruction}${lock}构图：${template.composition}${background}16:9，电影级真实质感。禁止改变主体设计、动漫、游戏CG、塑料感、文字、水印、logo、字幕。`;
+  return [
+    `固定身份锁定：${buildIdentityLock(asset)}以我上传的${asset.baseName}图片作为唯一Reference，${buildShortReferenceLock(asset)}`,
+    `画面内容：生成“${asset.variant}”。${variantInstruction}`,
+    `构图要求：${template.composition}`,
+    `摄影要求：16:9，真实电影摄影，主体清晰，镜头克制，低饱和。`,
+    `材质要求：${buildShortMaterialRule(asset.category)}`,
+    `背景要求：${background}`,
+    `Negative Prompt：动漫、二次元、游戏CG、塑料感、重新设计、结构漂移、文字、水印、logo、字幕。`
+  ].join("\n");
+}
+
+function buildShortMaterialRule(category: string) {
+  if (category === "人物") return "自然皮肤纹理，功能服装保留真实织物、接缝和轻度磨损。";
+  if (category === "机甲") return "重型湿金属、海盐腐蚀、工业磨损，机械连接可信。";
+  if (category === "怪兽") return "潮湿生物甲壳、半透明组织、盐水附着和真实冷光反射。";
+  if (category === "场景") return "湿金属、混凝土、玻璃、水汽、积水和雨痕符合真实尺度。";
+  if (category === "道具") return "功能材料、接缝、按钮、接口和使用磨损真实可读。";
+  return "自然、真实、符合工业海防世界。";
 }
 
 function buildShortVariantInstruction(asset: PromptableAsset, template: VariantTemplate) {

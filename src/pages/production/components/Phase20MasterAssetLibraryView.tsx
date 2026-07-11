@@ -9,6 +9,7 @@ import {
 } from "../../../mcp/masterAssetLibrary/MasterAssetLibraryData";
 import {
   buildAssetImagePrompt,
+  buildAssetPromptDetails,
   getAssetImageStatusFromVersions,
   getPromptStatus,
   normalizeChecklist,
@@ -330,6 +331,7 @@ function MasterAssetDetail({ asset, versions }: { asset: MasterAsset | null; ver
   if (!asset) return null;
 
   const prompt = buildAssetImagePrompt(asset);
+  const promptDetails = buildAssetPromptDetails(asset);
   const imageStatus = getAssetImageStatusFromVersions(versions);
   const master = versions.find((version) => version.status === "MASTER_REFERENCE" || String(version.status) === "MASTER") ?? versions[versions.length - 1];
   const activeVersion = master ?? versions[0];
@@ -434,7 +436,17 @@ function MasterAssetDetail({ asset, versions }: { asset: MasterAsset | null; ver
             <span className="rounded-full border border-jade/30 bg-jade/10 px-2 py-0.5 text-[11px] text-jade">READY</span>
           </div>
           <div className="mb-3 rounded border border-jade/20 bg-jade/5 px-3 py-2 text-xs leading-5 text-slate-400">
-            当前资产只保留一份完整Prompt。复制后连同对应Reference图片一起发送给GPT Image。
+            以下分项与复制内容完全一致。复制完整 Prompt 后，连同对应 Reference 图片一起发送给 GPT Image。
+          </div>
+          <div className="mb-3 grid gap-2 md:grid-cols-2">
+            <PromptInfo label="固定身份锁定" value={promptDetails.identityLock} />
+            <PromptInfo label="资产类型要求" value={promptDetails.assetRequirement} />
+            <PromptInfo label="构图要求" value={promptDetails.composition} />
+            <PromptInfo label="摄影要求" value={promptDetails.cameraRule} />
+            <PromptInfo label="材质要求" value={promptDetails.materialRule} />
+            <PromptInfo label="背景要求" value={promptDetails.backgroundRule} />
+            <PromptInfo label="Negative Prompt" value={promptDetails.negativePrompt} />
+            <PromptInfo label="用途说明" value={promptDetails.usage} />
           </div>
           <textarea className="min-h-56 w-full resize-y rounded border border-white/10 bg-black/25 p-4 text-sm leading-7 text-slate-200 outline-none" value={prompt} readOnly />
         </div>
@@ -647,6 +659,15 @@ function Info({ label, value }: { label: string; value: string | number }) {
     <div className="rounded border border-white/10 bg-black/20 p-2">
       <div className="text-[10px] uppercase tracking-wide text-slate-500">{label}</div>
       <div className="mt-1 line-clamp-2 text-xs text-slate-300">{value}</div>
+    </div>
+  );
+}
+
+function PromptInfo({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="rounded border border-white/10 bg-black/20 p-3">
+      <div className="text-[10px] uppercase tracking-[0.16em] text-slate-500">{label}</div>
+      <div className="mt-2 text-xs leading-5 text-slate-300">{value}</div>
     </div>
   );
 }
