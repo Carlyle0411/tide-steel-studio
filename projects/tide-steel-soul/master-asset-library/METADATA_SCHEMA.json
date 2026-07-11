@@ -1,0 +1,19 @@
+{
+  "assetId": "MASTER-XXX-000",
+  "name": "中文资产名",
+  "category": "人物/机甲/怪兽/场景/道具/动作/运镜/灯光/天气/特效/构图/色彩/材质/视频模板/Prompt模板",
+  "version": "V001",
+  "status": "草稿 / 生成中 / 待审核 / 已通过 / 废弃",
+  "prompt": "GPT Image2 Prompt",
+  "negativePrompt": "Negative Prompt",
+  "reference": "Reference资产路径",
+  "imagePath": "PNG本地路径",
+  "tags": [
+    "中文标签"
+  ],
+  "description": "中文描述",
+  "linkedKlingPrompt": "可灵Prompt模板ID",
+  "linkedVideoTemplate": "视频模板ID",
+  "createdAt": "2026-07-10T00:00:00.000+08:00",
+  "updatedAt": "2026-07-10T00:00:00.000+08:00"
+}

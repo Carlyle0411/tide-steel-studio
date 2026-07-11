@@ -1,0 +1,5 @@
+{
+  "episodeId": "EP01",
+  "status": "generated",
+  "summary": "Continuity checker is available in src/mcp/ep01Production/EP01ContinuityChecker.ts. Runtime report should be exported from the app before final approval."
+}

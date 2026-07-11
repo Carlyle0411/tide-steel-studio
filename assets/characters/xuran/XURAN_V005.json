@@ -1,0 +1,31 @@
+{
+  "assetId": "CHAR-XURAN-V005",
+  "character": "许燃",
+  "englishName": "Xu Ran",
+  "variant": "驾驶服",
+  "version": "V005",
+  "status": "待图片落盘",
+  "imagePath": "assets/characters/xuran/XURAN_V005.png",
+  "metadataPath": "assets/characters/xuran/XURAN_V005.json",
+  "promptPath": "assets/characters/xuran/XURAN_V005_PROMPT.md",
+  "referencePath": "assets/characters/xuran/XURAN_V005_REFERENCE.json",
+  "prompt": "Create a character master asset reference image for Tide Steel Soul.\nCharacter: 许燃 / Xu Ran.\nVariant: 驾驶服.\nCore identity: 24-year-old Chinese female ace pilot, calm and restrained, precise eyes, realistic eastern sci-fi film character, functional pilot suit, not fashion sci-fi.\nCharacter Bible: age 24, height 172cm, personality 冷静、克制、相信数据但开始接受不完整选择, costume 王牌驾驶员驾驶服，深蓝灰功能面料，干净但有使用痕迹, color 冷蓝、灰白、低饱和黑色, signature feature 东方科幻电影人物气质，眼神冷静，动作准确.\nThis is a reusable standard character model asset, not a story screenshot.\n16:9, Cinematic Sci-Fi, Hollywood realistic, high detail, natural skin when human, film lighting, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+  "negativePrompt": "placeholder, mock image, random face, different age, different costume, anime, cartoon, game render, beauty ad, superhero pose, text, logo, watermark",
+  "tags": [
+    "人物",
+    "英雄角色",
+    "许燃",
+    "驾驶服",
+    "母资产",
+    "Reference"
+  ],
+  "consistencyLock": {
+    "age": 24,
+    "height": "172cm",
+    "costume": "王牌驾驶员驾驶服，深蓝灰功能面料，干净但有使用痕迹",
+    "color": "冷蓝、灰白、低饱和黑色",
+    "feature": "东方科幻电影人物气质，眼神冷静，动作准确"
+  },
+  "createdAt": "2026-07-10T00:00:00.000+08:00",
+  "updatedAt": "2026-07-10T00:00:00.000+08:00"
+}

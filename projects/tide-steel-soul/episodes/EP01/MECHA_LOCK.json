@@ -1,0 +1,16 @@
+{
+  "CRT-001 Red Thunder": {
+    "Color": "deep crimson red",
+    "Core": "blue energy reactor",
+    "Weapon": "plasma chain blade",
+    "Structure": "heavy industrial humanoid mech",
+    "Scale": "20 meters",
+    "Forbidden": [
+      "randomly changing armor silhouette",
+      "hero pose",
+      "complete full-body reveal in EP01",
+      "game CG gloss",
+      "new weapon design not in lock"
+    ]
+  }
+}

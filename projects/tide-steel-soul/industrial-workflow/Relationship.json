@@ -1,0 +1,1110 @@
+{
+  "schema": "Tide Steel Soul Asset Relationship",
+  "generatedAt": "2026-07-10T00:00:00.000+08:00",
+  "relationships": [
+    {
+      "from": "CHAR-LINZHOU-001",
+      "fromName": "Lin Zhou Portrait",
+      "to": "EP01_KF05",
+      "toName": "Lin Zhou Recall Notice",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CHAR-LINZHOU-001",
+      "fromName": "Lin Zhou Portrait",
+      "to": "EP01_KF06",
+      "toName": "Lin Zhou Enters Deep Blue Base",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CHAR-LINZHOU-001",
+      "fromName": "Lin Zhou Portrait",
+      "to": "EP01_KF09",
+      "toName": "Lin Zhou Enters Cockpit",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CHAR-LINZHOU-002",
+      "fromName": "Lin Zhou Full Body",
+      "to": "EP01_KF05",
+      "toName": "Lin Zhou Recall Notice",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CHAR-LINZHOU-002",
+      "fromName": "Lin Zhou Full Body",
+      "to": "EP01_KF06",
+      "toName": "Lin Zhou Enters Deep Blue Base",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CHAR-LINZHOU-002",
+      "fromName": "Lin Zhou Full Body",
+      "to": "EP01_KF09",
+      "toName": "Lin Zhou Enters Cockpit",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CHAR-LINZHOU-003",
+      "fromName": "Lin Zhou Pilot Suit",
+      "to": "EP01_KF05",
+      "toName": "Lin Zhou Recall Notice",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CHAR-LINZHOU-003",
+      "fromName": "Lin Zhou Pilot Suit",
+      "to": "EP01_KF06",
+      "toName": "Lin Zhou Enters Deep Blue Base",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CHAR-LINZHOU-003",
+      "fromName": "Lin Zhou Pilot Suit",
+      "to": "EP01_KF09",
+      "toName": "Lin Zhou Enters Cockpit",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CHAR-LINZHOU-004",
+      "fromName": "Lin Zhou Emotion Sheet",
+      "to": "EP01_KF05",
+      "toName": "Lin Zhou Recall Notice",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CHAR-LINZHOU-004",
+      "fromName": "Lin Zhou Emotion Sheet",
+      "to": "EP01_KF06",
+      "toName": "Lin Zhou Enters Deep Blue Base",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CHAR-LINZHOU-004",
+      "fromName": "Lin Zhou Emotion Sheet",
+      "to": "EP01_KF09",
+      "toName": "Lin Zhou Enters Cockpit",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CREATURE-WHITETIDE-005",
+      "fromName": "White Tide Battle Pose",
+      "to": "EP01_KF02",
+      "toName": "White Tide First Appearance",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CREATURE-WHITETIDE-005",
+      "fromName": "White Tide Battle Pose",
+      "to": "EP01_KF11",
+      "toName": "White Tide Hits Defense Line",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CREATURE-WHITETIDE-005",
+      "fromName": "White Tide Battle Pose",
+      "to": "EP01_KF14",
+      "toName": "Chiting-01 First Combat",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CREATURE-WHITETIDE-005",
+      "fromName": "White Tide Battle Pose",
+      "to": "EP01_KF15",
+      "toName": "White Tide and Chiting Face Each Other",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CREATURE-WHITETIDE-005",
+      "fromName": "White Tide Battle Pose",
+      "to": "EP01_KF16",
+      "toName": "White Tide Releases Unknown Signal",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CREATURE-WHITETIDE-006",
+      "fromName": "White Tide Damage State",
+      "to": "EP01_KF02",
+      "toName": "White Tide First Appearance",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CREATURE-WHITETIDE-006",
+      "fromName": "White Tide Damage State",
+      "to": "EP01_KF11",
+      "toName": "White Tide Hits Defense Line",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CREATURE-WHITETIDE-006",
+      "fromName": "White Tide Damage State",
+      "to": "EP01_KF14",
+      "toName": "Chiting-01 First Combat",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CREATURE-WHITETIDE-006",
+      "fromName": "White Tide Damage State",
+      "to": "EP01_KF15",
+      "toName": "White Tide and Chiting Face Each Other",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CREATURE-WHITETIDE-006",
+      "fromName": "White Tide Damage State",
+      "to": "EP01_KF16",
+      "toName": "White Tide Releases Unknown Signal",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CREATURE-WHITETIDE-007",
+      "fromName": "White Tide Full Body",
+      "to": "EP01_KF02",
+      "toName": "White Tide First Appearance",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CREATURE-WHITETIDE-007",
+      "fromName": "White Tide Full Body",
+      "to": "EP01_KF11",
+      "toName": "White Tide Hits Defense Line",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CREATURE-WHITETIDE-007",
+      "fromName": "White Tide Full Body",
+      "to": "EP01_KF14",
+      "toName": "Chiting-01 First Combat",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CREATURE-WHITETIDE-007",
+      "fromName": "White Tide Full Body",
+      "to": "EP01_KF15",
+      "toName": "White Tide and Chiting Face Each Other",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CREATURE-WHITETIDE-007",
+      "fromName": "White Tide Full Body",
+      "to": "EP01_KF16",
+      "toName": "White Tide Releases Unknown Signal",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CREATURE-WHITETIDE-008",
+      "fromName": "White Tide Head Detail",
+      "to": "EP01_KF02",
+      "toName": "White Tide First Appearance",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CREATURE-WHITETIDE-008",
+      "fromName": "White Tide Head Detail",
+      "to": "EP01_KF11",
+      "toName": "White Tide Hits Defense Line",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CREATURE-WHITETIDE-008",
+      "fromName": "White Tide Head Detail",
+      "to": "EP01_KF14",
+      "toName": "Chiting-01 First Combat",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CREATURE-WHITETIDE-008",
+      "fromName": "White Tide Head Detail",
+      "to": "EP01_KF15",
+      "toName": "White Tide and Chiting Face Each Other",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "CREATURE-WHITETIDE-008",
+      "fromName": "White Tide Head Detail",
+      "to": "EP01_KF16",
+      "toName": "White Tide Releases Unknown Signal",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-009",
+      "fromName": "CRT-001 Back Design",
+      "to": "EP01_KF07",
+      "toName": "Chiting-01 First Reveal",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-009",
+      "fromName": "CRT-001 Back Design",
+      "to": "EP01_KF08",
+      "toName": "Cockpit Opens",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-009",
+      "fromName": "CRT-001 Back Design",
+      "to": "EP01_KF09",
+      "toName": "Lin Zhou Enters Cockpit",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-009",
+      "fromName": "CRT-001 Back Design",
+      "to": "EP01_KF10",
+      "toName": "Xu Ran Connection Failure",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-009",
+      "fromName": "CRT-001 Back Design",
+      "to": "EP01_KF12",
+      "toName": "Chiting-01 Starts",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-009",
+      "fromName": "CRT-001 Back Design",
+      "to": "EP01_KF13",
+      "toName": "Chiting-01 Moves Toward Sea",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-009",
+      "fromName": "CRT-001 Back Design",
+      "to": "EP01_KF14",
+      "toName": "Chiting-01 First Combat",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-009",
+      "fromName": "CRT-001 Back Design",
+      "to": "EP01_KF15",
+      "toName": "White Tide and Chiting Face Each Other",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-010",
+      "fromName": "CRT-001 Battle Damage",
+      "to": "EP01_KF07",
+      "toName": "Chiting-01 First Reveal",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-010",
+      "fromName": "CRT-001 Battle Damage",
+      "to": "EP01_KF08",
+      "toName": "Cockpit Opens",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-010",
+      "fromName": "CRT-001 Battle Damage",
+      "to": "EP01_KF09",
+      "toName": "Lin Zhou Enters Cockpit",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-010",
+      "fromName": "CRT-001 Battle Damage",
+      "to": "EP01_KF12",
+      "toName": "Chiting-01 Starts",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-010",
+      "fromName": "CRT-001 Battle Damage",
+      "to": "EP01_KF13",
+      "toName": "Chiting-01 Moves Toward Sea",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-010",
+      "fromName": "CRT-001 Battle Damage",
+      "to": "EP01_KF14",
+      "toName": "Chiting-01 First Combat",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-010",
+      "fromName": "CRT-001 Battle Damage",
+      "to": "EP01_KF15",
+      "toName": "White Tide and Chiting Face Each Other",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-011",
+      "fromName": "CRT-001 Cockpit Interior",
+      "to": "EP01_KF07",
+      "toName": "Chiting-01 First Reveal",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-011",
+      "fromName": "CRT-001 Cockpit Interior",
+      "to": "EP01_KF08",
+      "toName": "Cockpit Opens",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-011",
+      "fromName": "CRT-001 Cockpit Interior",
+      "to": "EP01_KF09",
+      "toName": "Lin Zhou Enters Cockpit",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-011",
+      "fromName": "CRT-001 Cockpit Interior",
+      "to": "EP01_KF10",
+      "toName": "Xu Ran Connection Failure",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-011",
+      "fromName": "CRT-001 Cockpit Interior",
+      "to": "EP01_KF12",
+      "toName": "Chiting-01 Starts",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-011",
+      "fromName": "CRT-001 Cockpit Interior",
+      "to": "EP01_KF13",
+      "toName": "Chiting-01 Moves Toward Sea",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-011",
+      "fromName": "CRT-001 Cockpit Interior",
+      "to": "EP01_KF14",
+      "toName": "Chiting-01 First Combat",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-011",
+      "fromName": "CRT-001 Cockpit Interior",
+      "to": "EP01_KF15",
+      "toName": "White Tide and Chiting Face Each Other",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-012",
+      "fromName": "CRT-001 Front Design",
+      "to": "EP01_KF07",
+      "toName": "Chiting-01 First Reveal",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-012",
+      "fromName": "CRT-001 Front Design",
+      "to": "EP01_KF08",
+      "toName": "Cockpit Opens",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-012",
+      "fromName": "CRT-001 Front Design",
+      "to": "EP01_KF09",
+      "toName": "Lin Zhou Enters Cockpit",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-012",
+      "fromName": "CRT-001 Front Design",
+      "to": "EP01_KF12",
+      "toName": "Chiting-01 Starts",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-012",
+      "fromName": "CRT-001 Front Design",
+      "to": "EP01_KF13",
+      "toName": "Chiting-01 Moves Toward Sea",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-012",
+      "fromName": "CRT-001 Front Design",
+      "to": "EP01_KF14",
+      "toName": "Chiting-01 First Combat",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-012",
+      "fromName": "CRT-001 Front Design",
+      "to": "EP01_KF15",
+      "toName": "White Tide and Chiting Face Each Other",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-013",
+      "fromName": "CRT-001 Side Design",
+      "to": "EP01_KF07",
+      "toName": "Chiting-01 First Reveal",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-013",
+      "fromName": "CRT-001 Side Design",
+      "to": "EP01_KF08",
+      "toName": "Cockpit Opens",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-013",
+      "fromName": "CRT-001 Side Design",
+      "to": "EP01_KF09",
+      "toName": "Lin Zhou Enters Cockpit",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-013",
+      "fromName": "CRT-001 Side Design",
+      "to": "EP01_KF12",
+      "toName": "Chiting-01 Starts",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-013",
+      "fromName": "CRT-001 Side Design",
+      "to": "EP01_KF13",
+      "toName": "Chiting-01 Moves Toward Sea",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-013",
+      "fromName": "CRT-001 Side Design",
+      "to": "EP01_KF14",
+      "toName": "Chiting-01 First Combat",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "MECHA-CHITING01-013",
+      "fromName": "CRT-001 Side Design",
+      "to": "EP01_KF15",
+      "toName": "White Tide and Chiting Face Each Other",
+      "relation": "被镜头引用",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF02",
+      "fromName": "White Tide First Appearance",
+      "to": "CREATURE-WHITETIDE-005",
+      "toName": "White Tide Battle Pose",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF02",
+      "fromName": "White Tide First Appearance",
+      "to": "CREATURE-WHITETIDE-006",
+      "toName": "White Tide Damage State",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF02",
+      "fromName": "White Tide First Appearance",
+      "to": "CREATURE-WHITETIDE-007",
+      "toName": "White Tide Full Body",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF02",
+      "fromName": "White Tide First Appearance",
+      "to": "CREATURE-WHITETIDE-008",
+      "toName": "White Tide Head Detail",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF05",
+      "fromName": "Lin Zhou Recall Notice",
+      "to": "CHAR-LINZHOU-001",
+      "toName": "Lin Zhou Portrait",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF05",
+      "fromName": "Lin Zhou Recall Notice",
+      "to": "CHAR-LINZHOU-002",
+      "toName": "Lin Zhou Full Body",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF05",
+      "fromName": "Lin Zhou Recall Notice",
+      "to": "CHAR-LINZHOU-003",
+      "toName": "Lin Zhou Pilot Suit",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF05",
+      "fromName": "Lin Zhou Recall Notice",
+      "to": "CHAR-LINZHOU-004",
+      "toName": "Lin Zhou Emotion Sheet",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF06",
+      "fromName": "Lin Zhou Enters Deep Blue Base",
+      "to": "CHAR-LINZHOU-001",
+      "toName": "Lin Zhou Portrait",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF06",
+      "fromName": "Lin Zhou Enters Deep Blue Base",
+      "to": "CHAR-LINZHOU-002",
+      "toName": "Lin Zhou Full Body",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF06",
+      "fromName": "Lin Zhou Enters Deep Blue Base",
+      "to": "CHAR-LINZHOU-003",
+      "toName": "Lin Zhou Pilot Suit",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF06",
+      "fromName": "Lin Zhou Enters Deep Blue Base",
+      "to": "CHAR-LINZHOU-004",
+      "toName": "Lin Zhou Emotion Sheet",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF07",
+      "fromName": "Chiting-01 First Reveal",
+      "to": "MECHA-CHITING01-009",
+      "toName": "CRT-001 Back Design",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF07",
+      "fromName": "Chiting-01 First Reveal",
+      "to": "MECHA-CHITING01-010",
+      "toName": "CRT-001 Battle Damage",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF07",
+      "fromName": "Chiting-01 First Reveal",
+      "to": "MECHA-CHITING01-011",
+      "toName": "CRT-001 Cockpit Interior",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF07",
+      "fromName": "Chiting-01 First Reveal",
+      "to": "MECHA-CHITING01-012",
+      "toName": "CRT-001 Front Design",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF07",
+      "fromName": "Chiting-01 First Reveal",
+      "to": "MECHA-CHITING01-013",
+      "toName": "CRT-001 Side Design",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF08",
+      "fromName": "Cockpit Opens",
+      "to": "MECHA-CHITING01-009",
+      "toName": "CRT-001 Back Design",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF08",
+      "fromName": "Cockpit Opens",
+      "to": "MECHA-CHITING01-010",
+      "toName": "CRT-001 Battle Damage",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF08",
+      "fromName": "Cockpit Opens",
+      "to": "MECHA-CHITING01-011",
+      "toName": "CRT-001 Cockpit Interior",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF08",
+      "fromName": "Cockpit Opens",
+      "to": "MECHA-CHITING01-012",
+      "toName": "CRT-001 Front Design",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF08",
+      "fromName": "Cockpit Opens",
+      "to": "MECHA-CHITING01-013",
+      "toName": "CRT-001 Side Design",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF09",
+      "fromName": "Lin Zhou Enters Cockpit",
+      "to": "CHAR-LINZHOU-001",
+      "toName": "Lin Zhou Portrait",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF09",
+      "fromName": "Lin Zhou Enters Cockpit",
+      "to": "CHAR-LINZHOU-002",
+      "toName": "Lin Zhou Full Body",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF09",
+      "fromName": "Lin Zhou Enters Cockpit",
+      "to": "CHAR-LINZHOU-003",
+      "toName": "Lin Zhou Pilot Suit",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF09",
+      "fromName": "Lin Zhou Enters Cockpit",
+      "to": "CHAR-LINZHOU-004",
+      "toName": "Lin Zhou Emotion Sheet",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF09",
+      "fromName": "Lin Zhou Enters Cockpit",
+      "to": "MECHA-CHITING01-009",
+      "toName": "CRT-001 Back Design",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF09",
+      "fromName": "Lin Zhou Enters Cockpit",
+      "to": "MECHA-CHITING01-010",
+      "toName": "CRT-001 Battle Damage",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF09",
+      "fromName": "Lin Zhou Enters Cockpit",
+      "to": "MECHA-CHITING01-011",
+      "toName": "CRT-001 Cockpit Interior",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF09",
+      "fromName": "Lin Zhou Enters Cockpit",
+      "to": "MECHA-CHITING01-012",
+      "toName": "CRT-001 Front Design",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF09",
+      "fromName": "Lin Zhou Enters Cockpit",
+      "to": "MECHA-CHITING01-013",
+      "toName": "CRT-001 Side Design",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF10",
+      "fromName": "Xu Ran Connection Failure",
+      "to": "MECHA-CHITING01-009",
+      "toName": "CRT-001 Back Design",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF10",
+      "fromName": "Xu Ran Connection Failure",
+      "to": "MECHA-CHITING01-011",
+      "toName": "CRT-001 Cockpit Interior",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF11",
+      "fromName": "White Tide Hits Defense Line",
+      "to": "CREATURE-WHITETIDE-005",
+      "toName": "White Tide Battle Pose",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF11",
+      "fromName": "White Tide Hits Defense Line",
+      "to": "CREATURE-WHITETIDE-006",
+      "toName": "White Tide Damage State",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF11",
+      "fromName": "White Tide Hits Defense Line",
+      "to": "CREATURE-WHITETIDE-007",
+      "toName": "White Tide Full Body",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF11",
+      "fromName": "White Tide Hits Defense Line",
+      "to": "CREATURE-WHITETIDE-008",
+      "toName": "White Tide Head Detail",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF12",
+      "fromName": "Chiting-01 Starts",
+      "to": "MECHA-CHITING01-009",
+      "toName": "CRT-001 Back Design",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF12",
+      "fromName": "Chiting-01 Starts",
+      "to": "MECHA-CHITING01-010",
+      "toName": "CRT-001 Battle Damage",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF12",
+      "fromName": "Chiting-01 Starts",
+      "to": "MECHA-CHITING01-011",
+      "toName": "CRT-001 Cockpit Interior",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF12",
+      "fromName": "Chiting-01 Starts",
+      "to": "MECHA-CHITING01-012",
+      "toName": "CRT-001 Front Design",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF12",
+      "fromName": "Chiting-01 Starts",
+      "to": "MECHA-CHITING01-013",
+      "toName": "CRT-001 Side Design",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF13",
+      "fromName": "Chiting-01 Moves Toward Sea",
+      "to": "MECHA-CHITING01-009",
+      "toName": "CRT-001 Back Design",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF13",
+      "fromName": "Chiting-01 Moves Toward Sea",
+      "to": "MECHA-CHITING01-010",
+      "toName": "CRT-001 Battle Damage",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF13",
+      "fromName": "Chiting-01 Moves Toward Sea",
+      "to": "MECHA-CHITING01-011",
+      "toName": "CRT-001 Cockpit Interior",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF13",
+      "fromName": "Chiting-01 Moves Toward Sea",
+      "to": "MECHA-CHITING01-012",
+      "toName": "CRT-001 Front Design",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF13",
+      "fromName": "Chiting-01 Moves Toward Sea",
+      "to": "MECHA-CHITING01-013",
+      "toName": "CRT-001 Side Design",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF14",
+      "fromName": "Chiting-01 First Combat",
+      "to": "CREATURE-WHITETIDE-005",
+      "toName": "White Tide Battle Pose",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF14",
+      "fromName": "Chiting-01 First Combat",
+      "to": "CREATURE-WHITETIDE-006",
+      "toName": "White Tide Damage State",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF14",
+      "fromName": "Chiting-01 First Combat",
+      "to": "CREATURE-WHITETIDE-007",
+      "toName": "White Tide Full Body",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF14",
+      "fromName": "Chiting-01 First Combat",
+      "to": "CREATURE-WHITETIDE-008",
+      "toName": "White Tide Head Detail",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF14",
+      "fromName": "Chiting-01 First Combat",
+      "to": "MECHA-CHITING01-009",
+      "toName": "CRT-001 Back Design",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF14",
+      "fromName": "Chiting-01 First Combat",
+      "to": "MECHA-CHITING01-010",
+      "toName": "CRT-001 Battle Damage",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF14",
+      "fromName": "Chiting-01 First Combat",
+      "to": "MECHA-CHITING01-011",
+      "toName": "CRT-001 Cockpit Interior",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF14",
+      "fromName": "Chiting-01 First Combat",
+      "to": "MECHA-CHITING01-012",
+      "toName": "CRT-001 Front Design",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF14",
+      "fromName": "Chiting-01 First Combat",
+      "to": "MECHA-CHITING01-013",
+      "toName": "CRT-001 Side Design",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF15",
+      "fromName": "White Tide and Chiting Face Each Other",
+      "to": "CREATURE-WHITETIDE-005",
+      "toName": "White Tide Battle Pose",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF15",
+      "fromName": "White Tide and Chiting Face Each Other",
+      "to": "CREATURE-WHITETIDE-006",
+      "toName": "White Tide Damage State",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF15",
+      "fromName": "White Tide and Chiting Face Each Other",
+      "to": "CREATURE-WHITETIDE-007",
+      "toName": "White Tide Full Body",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF15",
+      "fromName": "White Tide and Chiting Face Each Other",
+      "to": "CREATURE-WHITETIDE-008",
+      "toName": "White Tide Head Detail",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF15",
+      "fromName": "White Tide and Chiting Face Each Other",
+      "to": "MECHA-CHITING01-009",
+      "toName": "CRT-001 Back Design",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF15",
+      "fromName": "White Tide and Chiting Face Each Other",
+      "to": "MECHA-CHITING01-010",
+      "toName": "CRT-001 Battle Damage",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF15",
+      "fromName": "White Tide and Chiting Face Each Other",
+      "to": "MECHA-CHITING01-011",
+      "toName": "CRT-001 Cockpit Interior",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF15",
+      "fromName": "White Tide and Chiting Face Each Other",
+      "to": "MECHA-CHITING01-012",
+      "toName": "CRT-001 Front Design",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF15",
+      "fromName": "White Tide and Chiting Face Each Other",
+      "to": "MECHA-CHITING01-013",
+      "toName": "CRT-001 Side Design",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF16",
+      "fromName": "White Tide Releases Unknown Signal",
+      "to": "CREATURE-WHITETIDE-005",
+      "toName": "White Tide Battle Pose",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF16",
+      "fromName": "White Tide Releases Unknown Signal",
+      "to": "CREATURE-WHITETIDE-006",
+      "toName": "White Tide Damage State",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF16",
+      "fromName": "White Tide Releases Unknown Signal",
+      "to": "CREATURE-WHITETIDE-007",
+      "toName": "White Tide Full Body",
+      "relation": "使用素材",
+      "episode": "EP01"
+    },
+    {
+      "from": "EP01_KF16",
+      "fromName": "White Tide Releases Unknown Signal",
+      "to": "CREATURE-WHITETIDE-008",
+      "toName": "White Tide Head Detail",
+      "relation": "使用素材",
+      "episode": "EP01"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "assetId": "CHAR-CHENMU-V004",
+  "character": "陈牧",
+  "englishName": "Chen Mu",
+  "variant": "指挥中心",
+  "version": "V004",
+  "status": "待图片落盘",
+  "imagePath": "assets/characters/chenmu/CHENMU_V004.png",
+  "metadataPath": "assets/characters/chenmu/CHENMU_V004.json",
+  "promptPath": "assets/characters/chenmu/CHENMU_V004_PROMPT.md",
+  "referencePath": "assets/characters/chenmu/CHENMU_V004_REFERENCE.json",
+  "prompt": "Create a character master asset reference image for Tide Steel Soul.\nCharacter: 陈牧 / Chen Mu.\nVariant: 指挥中心.\nCore identity: 50-year-old Chinese male ocean defense commander, short gray-black hair, tired eyes, steady, not villain, not superhero, worn navy-gray command uniform.\nCharacter Bible: age 50, height 180cm, personality 沉稳、疲惫、经验强于系统判断, costume 2047海洋防御指挥制服，深蓝灰，盐雾和长期使用痕迹, color 深蓝灰、冷白、指挥中心低光, signature feature 短灰黑头发、疲惫眼神、不是将军式英雄.\nThis is a reusable standard character model asset, not a story screenshot.\n16:9, Cinematic Sci-Fi, Hollywood realistic, high detail, natural skin when human, film lighting, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+  "negativePrompt": "placeholder, mock image, random face, different age, different costume, anime, cartoon, game render, beauty ad, superhero pose, text, logo, watermark",
+  "tags": [
+    "人物",
+    "英雄角色",
+    "陈牧",
+    "指挥中心",
+    "母资产",
+    "Reference"
+  ],
+  "consistencyLock": {
+    "age": 50,
+    "height": "180cm",
+    "costume": "2047海洋防御指挥制服，深蓝灰，盐雾和长期使用痕迹",
+    "color": "深蓝灰、冷白、指挥中心低光",
+    "feature": "短灰黑头发、疲惫眼神、不是将军式英雄"
+  },
+  "createdAt": "2026-07-10T00:00:00.000+08:00",
+  "updatedAt": "2026-07-10T00:00:00.000+08:00"
+}

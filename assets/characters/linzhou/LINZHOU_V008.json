@@ -1,0 +1,31 @@
+{
+  "assetId": "CHAR-LINZHOU-V008",
+  "character": "林舟",
+  "englishName": "Lin Zhou",
+  "variant": "愤怒表情",
+  "version": "V008",
+  "status": "待图片落盘",
+  "imagePath": "assets/characters/linzhou/LINZHOU_V008.png",
+  "metadataPath": "assets/characters/linzhou/LINZHOU_V008.json",
+  "promptPath": "assets/characters/linzhou/LINZHOU_V008_PROMPT.md",
+  "referencePath": "assets/characters/linzhou/LINZHOU_V008_REFERENCE.json",
+  "prompt": "Create a character master asset reference image for Tide Steel Soul.\nCharacter: 林舟 / Lin Zhou.\nVariant: 愤怒表情.\nCore identity: 23-year-old Chinese male mech pilot, short black hair, young but shaped by war, determined eyes, subtle scar, restrained, not superhero glamour, realistic film character.\nCharacter Bible: age 23, height 178cm, personality 克制、执拗、带着恐惧的勇敢, costume 深蓝黑色驾驶服，轻微磨损，功能性同步节点, color 深蓝、冷灰、微弱蓝色同步光, signature feature 短黑发、轻微伤痕、年轻但经历战争的眼神.\nThis is a reusable standard character model asset, not a story screenshot.\n16:9, Cinematic Sci-Fi, Hollywood realistic, high detail, natural skin when human, film lighting, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+  "negativePrompt": "placeholder, mock image, random face, different age, different costume, anime, cartoon, game render, beauty ad, superhero pose, text, logo, watermark",
+  "tags": [
+    "人物",
+    "英雄角色",
+    "林舟",
+    "愤怒表情",
+    "母资产",
+    "Reference"
+  ],
+  "consistencyLock": {
+    "age": 23,
+    "height": "178cm",
+    "costume": "深蓝黑色驾驶服，轻微磨损，功能性同步节点",
+    "color": "深蓝、冷灰、微弱蓝色同步光",
+    "feature": "短黑发、轻微伤痕、年轻但经历战争的眼神"
+  },
+  "createdAt": "2026-07-10T00:00:00.000+08:00",
+  "updatedAt": "2026-07-10T00:00:00.000+08:00"
+}

@@ -1,0 +1,33 @@
+{
+  "assetId": "MECHA-XJ003-V008",
+  "domain": "机甲",
+  "name": "玄鲸03",
+  "variant": "夜景",
+  "version": "V008",
+  "status": "待图片落盘",
+  "imagePath": "assets/mecha/xuanjing03/XUANJING03_V008.png",
+  "metadataPath": "assets/mecha/xuanjing03/XUANJING03_V008.json",
+  "promptPath": "assets/mecha/xuanjing03/XUANJING03_V008_PROMPT.md",
+  "referencePath": "assets/mecha/xuanjing03/XUANJING03_V008_REFERENCE.json",
+  "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 玄鲸03. Variant: 夜景.\n黑蓝远程系统机甲，海上部署结构，重型传感与远程武器平台，和赤霆01形成明确功能差异。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+  "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+  "tags": [
+    "机甲",
+    "玄鲸03",
+    "夜景",
+    "母资产",
+    "Reference"
+  ],
+  "consistencyLock": {
+    "description": "黑蓝远程系统机甲，海上部署结构，重型传感与远程武器平台，和赤霆01形成明确功能差异。",
+    "cannotChange": [
+      "比例",
+      "装甲颜色",
+      "机械骨架",
+      "能源颜色",
+      "工业真实感"
+    ]
+  },
+  "createdAt": "2026-07-10T00:00:00.000+08:00",
+  "updatedAt": "2026-07-10T00:00:00.000+08:00"
+}

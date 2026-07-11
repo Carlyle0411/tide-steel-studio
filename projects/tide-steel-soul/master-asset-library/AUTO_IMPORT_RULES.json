@@ -1,0 +1,21 @@
+{
+  "workflow": [
+    "Codex生成图片",
+    "保存PNG",
+    "保存JSON",
+    "保存Prompt",
+    "保存Reference",
+    "加入母资产库",
+    "加入搜索",
+    "加入Tag",
+    "加入Version"
+  ],
+  "requiredFiles": [
+    "image.png",
+    "metadata.json",
+    "reference.json",
+    "prompt.md"
+  ],
+  "outputRoot": "projects/tide-steel-soul/master-asset-library/generated",
+  "rule": "没有进入母资产库的图片，不能作为12集共用Reference。EP01临时素材必须升级为母资产后才能长期复用。"
+}

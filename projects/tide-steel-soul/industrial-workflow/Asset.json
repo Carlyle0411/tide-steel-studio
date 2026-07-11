@@ -1,0 +1,1232 @@
+{
+  "schema": "Tide Steel Soul Industrial Asset",
+  "generatedAt": "2026-07-10T00:00:00.000+08:00",
+  "assets": [
+    {
+      "id": "CHAR-LINZHOU-001",
+      "originalId": "characters:Lin Zhou Portrait:characters/linzhou/001_portrait.png",
+      "name": "Lin Zhou Portrait",
+      "chineseName": "林舟",
+      "type": "角色",
+      "category": "characters",
+      "project": "潮汐钢魂",
+      "episode": "EP01",
+      "shot": "EP01_KF05",
+      "path": "projects/tide-steel-soul/assets/characters/linzhou/001_portrait.png",
+      "relativePath": "characters/linzhou/001_portrait.png",
+      "prompt": "Lin Zhou character portrait, young Chinese pilot, early twenties, tired determined eyes, restrained fear under courage, short practical hair, humid naval base light, natural skin texture, film still realism, not heroic glamour.",
+      "negativePrompt": "cartoon, anime, game render, plastic future, fake watermark, logo, subtitle",
+      "status": "审核 Review",
+      "tags": [
+        "角色",
+        "本地图片",
+        "林舟",
+        "情绪",
+        "驾驶服"
+      ],
+      "favorite": true,
+      "version": "001_PORTRAIT",
+      "versions": [
+        {
+          "id": "CHAR-LINZHOU-001-V001",
+          "label": "001_PORTRAIT",
+          "note": "由本地真实图片导入，保留原始 Prompt 与文件路径。",
+          "updatedAt": "2026-07-09T15:45:01.157Z",
+          "active": true
+        }
+      ],
+      "references": [
+        {
+          "type": "Shot",
+          "id": "EP01_KF05",
+          "name": "Lin Zhou Recall Notice",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF06",
+          "name": "Lin Zhou Enters Deep Blue Base",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF09",
+          "name": "Lin Zhou Enters Cockpit",
+          "episode": "EP01"
+        }
+      ],
+      "linkedCharacters": [
+        "林舟"
+      ],
+      "linkedScenes": [],
+      "linkedShots": [
+        "EP01_KF05",
+        "EP01_KF06",
+        "EP01_KF09"
+      ],
+      "usageCount": 3,
+      "createdAt": "2026-07-09T15:45:01.157Z",
+      "updatedAt": "2026-07-09T15:45:01.157Z",
+      "qualityScore": 0,
+      "fileSize": 1781077,
+      "actions": [
+        "打开详情",
+        "查看引用",
+        "复制Prompt",
+        "复制路径",
+        "生成新Version",
+        "加入收藏",
+        "添加到Storyboard",
+        "添加到Shot",
+        "导出",
+        "删除"
+      ]
+    },
+    {
+      "id": "CHAR-LINZHOU-002",
+      "originalId": "characters:Lin Zhou Full Body:characters/linzhou/002_fullbody.png",
+      "name": "Lin Zhou Full Body",
+      "chineseName": "林舟",
+      "type": "角色",
+      "category": "characters",
+      "project": "潮汐钢魂",
+      "episode": "EP01",
+      "shot": "EP01_KF05",
+      "path": "projects/tide-steel-soul/assets/characters/linzhou/002_fullbody.png",
+      "relativePath": "characters/linzhou/002_fullbody.png",
+      "prompt": "Lin Zhou full body design, young Chinese pilot, functional dark ocean-defense uniform, slim athletic build, worn boots, damp fabric, no fashion sci-fi, industrial military realism, neutral stance.",
+      "negativePrompt": "cartoon, anime, game render, plastic future, fake watermark, logo, subtitle",
+      "status": "审核 Review",
+      "tags": [
+        "角色",
+        "本地图片",
+        "林舟",
+        "全身",
+        "驾驶服"
+      ],
+      "favorite": false,
+      "version": "002_FULLBODY",
+      "versions": [
+        {
+          "id": "CHAR-LINZHOU-002-V001",
+          "label": "002_FULLBODY",
+          "note": "由本地真实图片导入，保留原始 Prompt 与文件路径。",
+          "updatedAt": "2026-07-09T15:46:08.852Z",
+          "active": true
+        }
+      ],
+      "references": [
+        {
+          "type": "Shot",
+          "id": "EP01_KF05",
+          "name": "Lin Zhou Recall Notice",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF06",
+          "name": "Lin Zhou Enters Deep Blue Base",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF09",
+          "name": "Lin Zhou Enters Cockpit",
+          "episode": "EP01"
+        }
+      ],
+      "linkedCharacters": [
+        "林舟"
+      ],
+      "linkedScenes": [],
+      "linkedShots": [
+        "EP01_KF05",
+        "EP01_KF06",
+        "EP01_KF09"
+      ],
+      "usageCount": 3,
+      "createdAt": "2026-07-09T15:46:08.852Z",
+      "updatedAt": "2026-07-09T15:46:08.852Z",
+      "qualityScore": 0,
+      "fileSize": 2088842,
+      "actions": [
+        "打开详情",
+        "查看引用",
+        "复制Prompt",
+        "复制路径",
+        "生成新Version",
+        "加入收藏",
+        "添加到Storyboard",
+        "添加到Shot",
+        "导出",
+        "删除"
+      ]
+    },
+    {
+      "id": "CHAR-LINZHOU-003",
+      "originalId": "characters:Lin Zhou Pilot Suit:characters/linzhou/003_pilot_suit.png",
+      "name": "Lin Zhou Pilot Suit",
+      "chineseName": "林舟",
+      "type": "角色",
+      "category": "characters",
+      "project": "潮汐钢魂",
+      "episode": "EP01",
+      "shot": "EP01_KF05",
+      "path": "projects/tide-steel-soul/assets/characters/linzhou/003_pilot_suit.png",
+      "relativePath": "characters/linzhou/003_pilot_suit.png",
+      "prompt": "Lin Zhou pilot suit design, pressure-rated mech synchronization suit, dark navy and black material, small blue sync nodes, practical straps and seals, worn by use, anxious readiness, film production asset.",
+      "negativePrompt": "cartoon, anime, game render, plastic future, fake watermark, logo, subtitle",
+      "status": "审核 Review",
+      "tags": [
+        "角色",
+        "本地图片",
+        "林舟",
+        "驾驶服"
+      ],
+      "favorite": false,
+      "version": "003_PILOT_SUIT",
+      "versions": [
+        {
+          "id": "CHAR-LINZHOU-003-V001",
+          "label": "003_PILOT_SUIT",
+          "note": "由本地真实图片导入，保留原始 Prompt 与文件路径。",
+          "updatedAt": "2026-07-09T15:47:14.213Z",
+          "active": true
+        }
+      ],
+      "references": [
+        {
+          "type": "Shot",
+          "id": "EP01_KF05",
+          "name": "Lin Zhou Recall Notice",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF06",
+          "name": "Lin Zhou Enters Deep Blue Base",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF09",
+          "name": "Lin Zhou Enters Cockpit",
+          "episode": "EP01"
+        }
+      ],
+      "linkedCharacters": [
+        "林舟"
+      ],
+      "linkedScenes": [],
+      "linkedShots": [
+        "EP01_KF05",
+        "EP01_KF06",
+        "EP01_KF09"
+      ],
+      "usageCount": 3,
+      "createdAt": "2026-07-09T15:47:14.213Z",
+      "updatedAt": "2026-07-09T15:47:14.213Z",
+      "qualityScore": 0,
+      "fileSize": 1973486,
+      "actions": [
+        "打开详情",
+        "查看引用",
+        "复制Prompt",
+        "复制路径",
+        "生成新Version",
+        "加入收藏",
+        "添加到Storyboard",
+        "添加到Shot",
+        "导出",
+        "删除"
+      ]
+    },
+    {
+      "id": "CHAR-LINZHOU-004",
+      "originalId": "characters:Lin Zhou Emotion Sheet:characters/linzhou/004_emotion_sheet.png",
+      "name": "Lin Zhou Emotion Sheet",
+      "chineseName": "林舟",
+      "type": "角色",
+      "category": "characters",
+      "project": "潮汐钢魂",
+      "episode": "EP01",
+      "shot": "EP01_KF05",
+      "path": "projects/tide-steel-soul/assets/characters/linzhou/004_emotion_sheet.png",
+      "relativePath": "characters/linzhou/004_emotion_sheet.png",
+      "prompt": "Lin Zhou emotional expression sheet, same young Chinese pilot face, fear, restraint, guilt, resolve, listening to unknown signal, realistic film lighting, no cartoon expression exaggeration.",
+      "negativePrompt": "cartoon, anime, game render, plastic future, fake watermark, logo, subtitle",
+      "status": "审核 Review",
+      "tags": [
+        "角色",
+        "本地图片",
+        "林舟",
+        "情绪",
+        "驾驶服"
+      ],
+      "favorite": false,
+      "version": "004_EMOTION_SHEET",
+      "versions": [
+        {
+          "id": "CHAR-LINZHOU-004-V001",
+          "label": "004_EMOTION_SHEET",
+          "note": "由本地真实图片导入，保留原始 Prompt 与文件路径。",
+          "updatedAt": "2026-07-09T15:48:20.489Z",
+          "active": true
+        }
+      ],
+      "references": [
+        {
+          "type": "Shot",
+          "id": "EP01_KF05",
+          "name": "Lin Zhou Recall Notice",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF06",
+          "name": "Lin Zhou Enters Deep Blue Base",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF09",
+          "name": "Lin Zhou Enters Cockpit",
+          "episode": "EP01"
+        }
+      ],
+      "linkedCharacters": [
+        "林舟"
+      ],
+      "linkedScenes": [],
+      "linkedShots": [
+        "EP01_KF05",
+        "EP01_KF06",
+        "EP01_KF09"
+      ],
+      "usageCount": 3,
+      "createdAt": "2026-07-09T15:48:20.489Z",
+      "updatedAt": "2026-07-09T15:48:20.489Z",
+      "qualityScore": 0,
+      "fileSize": 1837695,
+      "actions": [
+        "打开详情",
+        "查看引用",
+        "复制Prompt",
+        "复制路径",
+        "生成新Version",
+        "加入收藏",
+        "添加到Storyboard",
+        "添加到Shot",
+        "导出",
+        "删除"
+      ]
+    },
+    {
+      "id": "CREATURE-WHITETIDE-005",
+      "originalId": "creatures:White Tide Battle Pose:creatures/white_tide/battle_pose.png",
+      "name": "White Tide Battle Pose",
+      "chineseName": "白潮",
+      "type": "怪兽",
+      "category": "creatures",
+      "project": "潮汐钢魂",
+      "episode": "EP01",
+      "shot": "EP01_KF02",
+      "path": "projects/tide-steel-soul/assets/creatures/white_tide/battle_pose.png",
+      "relativePath": "creatures/white_tide/battle_pose.png",
+      "prompt": "White Tide defensive battle pose in storm water, huge white armored ocean creature, movement like pressure wave, not aggressive hunting, ancient life trying to survive, scale against ocean mist, grounded film realism.",
+      "negativePrompt": "cartoon, anime, game render, plastic future, fake watermark, logo, subtitle",
+      "status": "审核 Review",
+      "tags": [
+        "怪兽",
+        "本地图片",
+        "白潮",
+        "战斗"
+      ],
+      "favorite": false,
+      "version": "BATTLE_POSE",
+      "versions": [
+        {
+          "id": "CREATURE-WHITETIDE-005-V001",
+          "label": "BATTLE_POSE",
+          "note": "由本地真实图片导入，保留原始 Prompt 与文件路径。",
+          "updatedAt": "2026-07-09T15:52:02.065Z",
+          "active": true
+        }
+      ],
+      "references": [
+        {
+          "type": "Shot",
+          "id": "EP01_KF02",
+          "name": "White Tide First Appearance",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF11",
+          "name": "White Tide Hits Defense Line",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF14",
+          "name": "Chiting-01 First Combat",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF15",
+          "name": "White Tide and Chiting Face Each Other",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF16",
+          "name": "White Tide Releases Unknown Signal",
+          "episode": "EP01"
+        }
+      ],
+      "linkedCharacters": [],
+      "linkedScenes": [],
+      "linkedShots": [
+        "EP01_KF02",
+        "EP01_KF11",
+        "EP01_KF14",
+        "EP01_KF15",
+        "EP01_KF16"
+      ],
+      "usageCount": 5,
+      "createdAt": "2026-07-09T15:52:02.065Z",
+      "updatedAt": "2026-07-09T15:52:02.065Z",
+      "qualityScore": 0,
+      "fileSize": 2627319,
+      "actions": [
+        "打开详情",
+        "查看引用",
+        "复制Prompt",
+        "复制路径",
+        "生成新Version",
+        "加入收藏",
+        "添加到Storyboard",
+        "添加到Shot",
+        "导出",
+        "删除"
+      ]
+    },
+    {
+      "id": "CREATURE-WHITETIDE-006",
+      "originalId": "creatures:White Tide Damage State:creatures/white_tide/damage_state.png",
+      "name": "White Tide Damage State",
+      "chineseName": "白潮",
+      "type": "怪兽",
+      "category": "creatures",
+      "project": "潮汐钢魂",
+      "episode": "EP01",
+      "shot": "EP01_KF02",
+      "path": "projects/tide-steel-soul/assets/creatures/white_tide/damage_state.png",
+      "relativePath": "creatures/white_tide/damage_state.png",
+      "prompt": "White Tide damaged state, cracked white biological shell, exposed translucent blue tissue, wounded deep-sea life, fragile and enormous, no gore spectacle, sympathetic unknown creature design.",
+      "negativePrompt": "cartoon, anime, game render, plastic future, fake watermark, logo, subtitle",
+      "status": "审核 Review",
+      "tags": [
+        "怪兽",
+        "本地图片",
+        "白潮",
+        "战斗"
+      ],
+      "favorite": true,
+      "version": "DAMAGE_STATE",
+      "versions": [
+        {
+          "id": "CREATURE-WHITETIDE-006-V001",
+          "label": "DAMAGE_STATE",
+          "note": "由本地真实图片导入，保留原始 Prompt 与文件路径。",
+          "updatedAt": "2026-07-09T15:53:21.751Z",
+          "active": true
+        }
+      ],
+      "references": [
+        {
+          "type": "Shot",
+          "id": "EP01_KF02",
+          "name": "White Tide First Appearance",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF11",
+          "name": "White Tide Hits Defense Line",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF14",
+          "name": "Chiting-01 First Combat",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF15",
+          "name": "White Tide and Chiting Face Each Other",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF16",
+          "name": "White Tide Releases Unknown Signal",
+          "episode": "EP01"
+        }
+      ],
+      "linkedCharacters": [],
+      "linkedScenes": [],
+      "linkedShots": [
+        "EP01_KF02",
+        "EP01_KF11",
+        "EP01_KF14",
+        "EP01_KF15",
+        "EP01_KF16"
+      ],
+      "usageCount": 5,
+      "createdAt": "2026-07-09T15:53:21.751Z",
+      "updatedAt": "2026-07-09T15:53:21.751Z",
+      "qualityScore": 0,
+      "fileSize": 2768980,
+      "actions": [
+        "打开详情",
+        "查看引用",
+        "复制Prompt",
+        "复制路径",
+        "生成新Version",
+        "加入收藏",
+        "添加到Storyboard",
+        "添加到Shot",
+        "导出",
+        "删除"
+      ]
+    },
+    {
+      "id": "CREATURE-WHITETIDE-007",
+      "originalId": "creatures:White Tide Full Body:creatures/white_tide/full_body.png",
+      "name": "White Tide Full Body",
+      "chineseName": "白潮",
+      "type": "怪兽",
+      "category": "creatures",
+      "project": "潮汐钢魂",
+      "episode": "EP01",
+      "shot": "EP01_KF02",
+      "path": "projects/tide-steel-soul/assets/creatures/white_tide/full_body.png",
+      "relativePath": "creatures/white_tide/full_body.png",
+      "prompt": "White Tide full body creature, ancient deep ocean life, huge yet fragile, white biological armor shell, translucent blue tissue, cracked subtle bioluminescent patterns, pressure-adapted anatomy, not dinosaur, not demon, not boss monster.",
+      "negativePrompt": "cartoon, anime, game render, plastic future, fake watermark, logo, subtitle",
+      "status": "审核 Review",
+      "tags": [
+        "怪兽",
+        "本地图片",
+        "白潮",
+        "全身"
+      ],
+      "favorite": false,
+      "version": "FULL_BODY",
+      "versions": [
+        {
+          "id": "CREATURE-WHITETIDE-007-V001",
+          "label": "FULL_BODY",
+          "note": "由本地真实图片导入，保留原始 Prompt 与文件路径。",
+          "updatedAt": "2026-07-09T15:49:35.322Z",
+          "active": true
+        }
+      ],
+      "references": [
+        {
+          "type": "Shot",
+          "id": "EP01_KF02",
+          "name": "White Tide First Appearance",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF11",
+          "name": "White Tide Hits Defense Line",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF14",
+          "name": "Chiting-01 First Combat",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF15",
+          "name": "White Tide and Chiting Face Each Other",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF16",
+          "name": "White Tide Releases Unknown Signal",
+          "episode": "EP01"
+        }
+      ],
+      "linkedCharacters": [],
+      "linkedScenes": [],
+      "linkedShots": [
+        "EP01_KF02",
+        "EP01_KF11",
+        "EP01_KF14",
+        "EP01_KF15",
+        "EP01_KF16"
+      ],
+      "usageCount": 5,
+      "createdAt": "2026-07-09T15:49:35.322Z",
+      "updatedAt": "2026-07-09T15:49:35.322Z",
+      "qualityScore": 0,
+      "fileSize": 2177715,
+      "actions": [
+        "打开详情",
+        "查看引用",
+        "复制Prompt",
+        "复制路径",
+        "生成新Version",
+        "加入收藏",
+        "添加到Storyboard",
+        "添加到Shot",
+        "导出",
+        "删除"
+      ]
+    },
+    {
+      "id": "CREATURE-WHITETIDE-008",
+      "originalId": "creatures:White Tide Head Detail:creatures/white_tide/head_detail.png",
+      "name": "White Tide Head Detail",
+      "chineseName": "白潮",
+      "type": "怪兽",
+      "category": "creatures",
+      "project": "潮汐钢魂",
+      "episode": "EP01",
+      "shot": "EP01_KF02",
+      "path": "projects/tide-steel-soul/assets/creatures/white_tide/head_detail.png",
+      "relativePath": "creatures/white_tide/head_detail.png",
+      "prompt": "White Tide head detail, white shell plates, deep-sea sensory folds, translucent membrane, ancient fragile biology, low saturation ocean blue, no roaring monster mouth, unknown lifeform close study.",
+      "negativePrompt": "cartoon, anime, game render, plastic future, fake watermark, logo, subtitle",
+      "status": "审核 Review",
+      "tags": [
+        "怪兽",
+        "本地图片",
+        "白潮"
+      ],
+      "favorite": false,
+      "version": "HEAD_DETAIL",
+      "versions": [
+        {
+          "id": "CREATURE-WHITETIDE-008-V001",
+          "label": "HEAD_DETAIL",
+          "note": "由本地真实图片导入，保留原始 Prompt 与文件路径。",
+          "updatedAt": "2026-07-09T15:50:46.546Z",
+          "active": true
+        }
+      ],
+      "references": [
+        {
+          "type": "Shot",
+          "id": "EP01_KF02",
+          "name": "White Tide First Appearance",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF11",
+          "name": "White Tide Hits Defense Line",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF14",
+          "name": "Chiting-01 First Combat",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF15",
+          "name": "White Tide and Chiting Face Each Other",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF16",
+          "name": "White Tide Releases Unknown Signal",
+          "episode": "EP01"
+        }
+      ],
+      "linkedCharacters": [],
+      "linkedScenes": [],
+      "linkedShots": [
+        "EP01_KF02",
+        "EP01_KF11",
+        "EP01_KF14",
+        "EP01_KF15",
+        "EP01_KF16"
+      ],
+      "usageCount": 5,
+      "createdAt": "2026-07-09T15:50:46.546Z",
+      "updatedAt": "2026-07-09T15:50:46.546Z",
+      "qualityScore": 0,
+      "fileSize": 2383627,
+      "actions": [
+        "打开详情",
+        "查看引用",
+        "复制Prompt",
+        "复制路径",
+        "生成新Version",
+        "加入收藏",
+        "添加到Storyboard",
+        "添加到Shot",
+        "导出",
+        "删除"
+      ]
+    },
+    {
+      "id": "MECHA-CHITING01-009",
+      "originalId": "mechas:CRT-001 Back Design:mechas/chiting01/back.png",
+      "name": "CRT-001 Back Design",
+      "chineseName": "赤霆01",
+      "type": "机甲",
+      "category": "mechas",
+      "project": "潮汐钢魂",
+      "episode": "EP01",
+      "shot": "EP01_KF07",
+      "path": "projects/tide-steel-soul/assets/mechas/chiting01/back.png",
+      "relativePath": "mechas/chiting01/back.png",
+      "prompt": "CRT-001 Chiting-01 back design, hidden rear cockpit entrance, shoulder armor and back plating, deep crimson worn armor, black hydraulic frame, blue warning sync light, wet metal and maintenance scars, partial industrial realism.",
+      "negativePrompt": "cartoon, anime, game render, plastic future, fake watermark, logo, subtitle",
+      "status": "审核 Review",
+      "tags": [
+        "机甲",
+        "本地图片",
+        "赤霆01",
+        "驾驶舱"
+      ],
+      "favorite": false,
+      "version": "BACK",
+      "versions": [
+        {
+          "id": "MECHA-CHITING01-009-V001",
+          "label": "BACK",
+          "note": "由本地真实图片导入，保留原始 Prompt 与文件路径。",
+          "updatedAt": "2026-07-09T15:40:51.397Z",
+          "active": true
+        }
+      ],
+      "references": [
+        {
+          "type": "Shot",
+          "id": "EP01_KF07",
+          "name": "Chiting-01 First Reveal",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF08",
+          "name": "Cockpit Opens",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF09",
+          "name": "Lin Zhou Enters Cockpit",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF10",
+          "name": "Xu Ran Connection Failure",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF12",
+          "name": "Chiting-01 Starts",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF13",
+          "name": "Chiting-01 Moves Toward Sea",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF14",
+          "name": "Chiting-01 First Combat",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF15",
+          "name": "White Tide and Chiting Face Each Other",
+          "episode": "EP01"
+        }
+      ],
+      "linkedCharacters": [],
+      "linkedScenes": [
+        "驾驶舱"
+      ],
+      "linkedShots": [
+        "EP01_KF07",
+        "EP01_KF08",
+        "EP01_KF09",
+        "EP01_KF10",
+        "EP01_KF12",
+        "EP01_KF13",
+        "EP01_KF14",
+        "EP01_KF15"
+      ],
+      "usageCount": 8,
+      "createdAt": "2026-07-09T15:40:51.397Z",
+      "updatedAt": "2026-07-09T15:40:51.397Z",
+      "qualityScore": 0,
+      "fileSize": 2306773,
+      "actions": [
+        "打开详情",
+        "查看引用",
+        "复制Prompt",
+        "复制路径",
+        "生成新Version",
+        "加入收藏",
+        "添加到Storyboard",
+        "添加到Shot",
+        "导出",
+        "删除"
+      ]
+    },
+    {
+      "id": "MECHA-CHITING01-010",
+      "originalId": "mechas:CRT-001 Battle Damage:mechas/chiting01/battle_damage.png",
+      "name": "CRT-001 Battle Damage",
+      "chineseName": "赤霆01",
+      "type": "机甲",
+      "category": "mechas",
+      "project": "潮汐钢魂",
+      "episode": "EP01",
+      "shot": "EP01_KF07",
+      "path": "projects/tide-steel-soul/assets/mechas/chiting01/battle_damage.png",
+      "relativePath": "mechas/chiting01/battle_damage.png",
+      "prompt": "CRT-001 battle damage version, deep crimson armor cracked and salt-burned, black frame exposed, blue reactor still alive, heavy industrial mech after ocean impact, not destroyed, no superhero staging.",
+      "negativePrompt": "cartoon, anime, game render, plastic future, fake watermark, logo, subtitle",
+      "status": "审核 Review",
+      "tags": [
+        "机甲",
+        "本地图片",
+        "赤霆01",
+        "战斗"
+      ],
+      "favorite": false,
+      "version": "BATTLE_DAMAGE",
+      "versions": [
+        {
+          "id": "MECHA-CHITING01-010-V001",
+          "label": "BATTLE_DAMAGE",
+          "note": "由本地真实图片导入，保留原始 Prompt 与文件路径。",
+          "updatedAt": "2026-07-09T15:43:54.425Z",
+          "active": true
+        }
+      ],
+      "references": [
+        {
+          "type": "Shot",
+          "id": "EP01_KF07",
+          "name": "Chiting-01 First Reveal",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF08",
+          "name": "Cockpit Opens",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF09",
+          "name": "Lin Zhou Enters Cockpit",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF12",
+          "name": "Chiting-01 Starts",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF13",
+          "name": "Chiting-01 Moves Toward Sea",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF14",
+          "name": "Chiting-01 First Combat",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF15",
+          "name": "White Tide and Chiting Face Each Other",
+          "episode": "EP01"
+        }
+      ],
+      "linkedCharacters": [],
+      "linkedScenes": [],
+      "linkedShots": [
+        "EP01_KF07",
+        "EP01_KF08",
+        "EP01_KF09",
+        "EP01_KF12",
+        "EP01_KF13",
+        "EP01_KF14",
+        "EP01_KF15"
+      ],
+      "usageCount": 7,
+      "createdAt": "2026-07-09T15:43:54.425Z",
+      "updatedAt": "2026-07-09T15:43:54.425Z",
+      "qualityScore": 0,
+      "fileSize": 2347214,
+      "actions": [
+        "打开详情",
+        "查看引用",
+        "复制Prompt",
+        "复制路径",
+        "生成新Version",
+        "加入收藏",
+        "添加到Storyboard",
+        "添加到Shot",
+        "导出",
+        "删除"
+      ]
+    },
+    {
+      "id": "MECHA-CHITING01-011",
+      "originalId": "mechas:CRT-001 Cockpit Interior:mechas/chiting01/cockpit.png",
+      "name": "CRT-001 Cockpit Interior",
+      "chineseName": "赤霆01",
+      "type": "机甲",
+      "category": "mechas",
+      "project": "潮汐钢魂",
+      "episode": "EP01",
+      "shot": "EP01_KF07",
+      "path": "projects/tide-steel-soul/assets/mechas/chiting01/cockpit.png",
+      "relativePath": "mechas/chiting01/cockpit.png",
+      "prompt": "CRT-001 cockpit interior, compact industrial pilot chamber, dark red armored shell, black restraint frame, cold blue synchronization interface, damp metal, scratched glass, tactile controls, no holographic clutter, grounded film realism.",
+      "negativePrompt": "cartoon, anime, game render, plastic future, fake watermark, logo, subtitle",
+      "status": "审核 Review",
+      "tags": [
+        "机甲",
+        "本地图片",
+        "赤霆01",
+        "驾驶舱",
+        "驾驶服"
+      ],
+      "favorite": true,
+      "version": "COCKPIT",
+      "versions": [
+        {
+          "id": "MECHA-CHITING01-011-V001",
+          "label": "COCKPIT",
+          "note": "由本地真实图片导入，保留原始 Prompt 与文件路径。",
+          "updatedAt": "2026-07-09T15:42:30.625Z",
+          "active": true
+        }
+      ],
+      "references": [
+        {
+          "type": "Shot",
+          "id": "EP01_KF07",
+          "name": "Chiting-01 First Reveal",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF08",
+          "name": "Cockpit Opens",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF09",
+          "name": "Lin Zhou Enters Cockpit",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF10",
+          "name": "Xu Ran Connection Failure",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF12",
+          "name": "Chiting-01 Starts",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF13",
+          "name": "Chiting-01 Moves Toward Sea",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF14",
+          "name": "Chiting-01 First Combat",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF15",
+          "name": "White Tide and Chiting Face Each Other",
+          "episode": "EP01"
+        }
+      ],
+      "linkedCharacters": [],
+      "linkedScenes": [
+        "驾驶舱"
+      ],
+      "linkedShots": [
+        "EP01_KF07",
+        "EP01_KF08",
+        "EP01_KF09",
+        "EP01_KF10",
+        "EP01_KF12",
+        "EP01_KF13",
+        "EP01_KF14",
+        "EP01_KF15"
+      ],
+      "usageCount": 8,
+      "createdAt": "2026-07-09T15:42:30.625Z",
+      "updatedAt": "2026-07-09T15:42:30.625Z",
+      "qualityScore": 0,
+      "fileSize": 2273287,
+      "actions": [
+        "打开详情",
+        "查看引用",
+        "复制Prompt",
+        "复制路径",
+        "生成新Version",
+        "加入收藏",
+        "添加到Storyboard",
+        "添加到Shot",
+        "导出",
+        "删除"
+      ]
+    },
+    {
+      "id": "MECHA-CHITING01-012",
+      "originalId": "mechas:CRT-001 Front Design:mechas/chiting01/front.png",
+      "name": "CRT-001 Front Design",
+      "chineseName": "赤霆01",
+      "type": "机甲",
+      "category": "mechas",
+      "project": "潮汐钢魂",
+      "episode": "EP01",
+      "shot": "EP01_KF07",
+      "path": "projects/tide-steel-soul/assets/mechas/chiting01/front.png",
+      "relativePath": "mechas/chiting01/front.png",
+      "prompt": "CRT-001 Chiting-01 front design, heavy industrial humanoid mech, deep crimson armor, black mechanical skeleton, blue energy reactor, 20 meters scale, wet metal, salt corrosion, restrained film concept art, not anime, not game render.",
+      "negativePrompt": "cartoon, anime, game render, plastic future, fake watermark, logo, subtitle",
+      "status": "审核 Review",
+      "tags": [
+        "机甲",
+        "本地图片",
+        "赤霆01"
+      ],
+      "favorite": false,
+      "version": "FRONT",
+      "versions": [
+        {
+          "id": "MECHA-CHITING01-012-V001",
+          "label": "FRONT",
+          "note": "由本地真实图片导入，保留原始 Prompt 与文件路径。",
+          "updatedAt": "2026-07-09T15:36:44.668Z",
+          "active": true
+        }
+      ],
+      "references": [
+        {
+          "type": "Shot",
+          "id": "EP01_KF07",
+          "name": "Chiting-01 First Reveal",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF08",
+          "name": "Cockpit Opens",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF09",
+          "name": "Lin Zhou Enters Cockpit",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF12",
+          "name": "Chiting-01 Starts",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF13",
+          "name": "Chiting-01 Moves Toward Sea",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF14",
+          "name": "Chiting-01 First Combat",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF15",
+          "name": "White Tide and Chiting Face Each Other",
+          "episode": "EP01"
+        }
+      ],
+      "linkedCharacters": [],
+      "linkedScenes": [],
+      "linkedShots": [
+        "EP01_KF07",
+        "EP01_KF08",
+        "EP01_KF09",
+        "EP01_KF12",
+        "EP01_KF13",
+        "EP01_KF14",
+        "EP01_KF15"
+      ],
+      "usageCount": 7,
+      "createdAt": "2026-07-09T15:36:44.668Z",
+      "updatedAt": "2026-07-09T15:36:44.668Z",
+      "qualityScore": 0,
+      "fileSize": 2323902,
+      "actions": [
+        "打开详情",
+        "查看引用",
+        "复制Prompt",
+        "复制路径",
+        "生成新Version",
+        "加入收藏",
+        "添加到Storyboard",
+        "添加到Shot",
+        "导出",
+        "删除"
+      ]
+    },
+    {
+      "id": "MECHA-CHITING01-013",
+      "originalId": "mechas:CRT-001 Side Design:mechas/chiting01/side.png",
+      "name": "CRT-001 Side Design",
+      "chineseName": "赤霆01",
+      "type": "机甲",
+      "category": "mechas",
+      "project": "潮汐钢魂",
+      "episode": "EP01",
+      "shot": "EP01_KF07",
+      "path": "projects/tide-steel-soul/assets/mechas/chiting01/side.png",
+      "relativePath": "mechas/chiting01/side.png",
+      "prompt": "CRT-001 Chiting-01 side design, heavy industrial silhouette, deep crimson armor plates, black inner frame, blue synchronized energy lines, humid Hangzhou Bay hangar light, practical engineering mass, no hero pose.",
+      "negativePrompt": "cartoon, anime, game render, plastic future, fake watermark, logo, subtitle",
+      "status": "审核 Review",
+      "tags": [
+        "机甲",
+        "本地图片",
+        "赤霆01"
+      ],
+      "favorite": false,
+      "version": "SIDE",
+      "versions": [
+        {
+          "id": "MECHA-CHITING01-013-V001",
+          "label": "SIDE",
+          "note": "由本地真实图片导入，保留原始 Prompt 与文件路径。",
+          "updatedAt": "2026-07-09T15:39:46.576Z",
+          "active": true
+        }
+      ],
+      "references": [
+        {
+          "type": "Shot",
+          "id": "EP01_KF07",
+          "name": "Chiting-01 First Reveal",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF08",
+          "name": "Cockpit Opens",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF09",
+          "name": "Lin Zhou Enters Cockpit",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF12",
+          "name": "Chiting-01 Starts",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF13",
+          "name": "Chiting-01 Moves Toward Sea",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF14",
+          "name": "Chiting-01 First Combat",
+          "episode": "EP01"
+        },
+        {
+          "type": "Shot",
+          "id": "EP01_KF15",
+          "name": "White Tide and Chiting Face Each Other",
+          "episode": "EP01"
+        }
+      ],
+      "linkedCharacters": [],
+      "linkedScenes": [
+        "杭州湾"
+      ],
+      "linkedShots": [
+        "EP01_KF07",
+        "EP01_KF08",
+        "EP01_KF09",
+        "EP01_KF12",
+        "EP01_KF13",
+        "EP01_KF14",
+        "EP01_KF15"
+      ],
+      "usageCount": 7,
+      "createdAt": "2026-07-09T15:39:46.576Z",
+      "updatedAt": "2026-07-09T15:39:46.576Z",
+      "qualityScore": 0,
+      "fileSize": 2479549,
+      "actions": [
+        "打开详情",
+        "查看引用",
+        "复制Prompt",
+        "复制路径",
+        "生成新Version",
+        "加入收藏",
+        "添加到Storyboard",
+        "添加到Shot",
+        "导出",
+        "删除"
+      ]
+    }
+  ]
+}

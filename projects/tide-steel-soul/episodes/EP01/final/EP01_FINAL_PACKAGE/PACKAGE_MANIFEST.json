@@ -1,0 +1,12 @@
+{
+  "packageName": "EP01_FINAL_PACKAGE",
+  "episodeId": "EP01",
+  "media": {
+    "EP01_VIDEO.mp4": { "status": "pending", "reason": "No approved/generated final video file exists yet." },
+    "EP01_AUDIO.wav": { "status": "pending", "reason": "No rendered final audio mix exists yet." },
+    "EP01_SUBTITLE.srt": { "status": "draft" },
+    "EP01_TIMELINE.json": { "status": "draft" },
+    "EP01_CONTINUITY_REPORT.json": { "status": "generated" },
+    "EP01_FINAL_REVIEW.json": { "status": "generated" }
+  }
+}

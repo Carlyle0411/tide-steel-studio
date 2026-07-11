@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  background: #07090c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: auto;
+  background:
+    linear-gradient(120deg, rgba(126, 214, 189, .05), transparent 28%),
+    linear-gradient(260deg, rgba(214, 180, 106, .07), transparent 22%),
+    #07090c;
+  color: #eef3f8;
+}
+
+#root {
+  min-width: 1280px;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+textarea::-webkit-scrollbar,
+div::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+textarea::-webkit-scrollbar-thumb,
+div::-webkit-scrollbar-thumb {
+  background: #344151;
+  border-radius: 999px;
+}
+
+.field {
+  @apply w-full rounded-md border border-line bg-ink/40 px-3 py-2 text-sm text-mist outline-none transition focus:border-jade focus:ring-2 focus:ring-jade/20;
+}
+
+.label {
+  @apply mb-1.5 block text-xs font-medium uppercase tracking-wide text-slate-400;
+}
+
+.btn {
+  @apply inline-flex h-10 items-center justify-center gap-2 rounded-md border border-line px-3 text-sm font-medium text-mist transition hover:border-jade/70 hover:bg-jade/10 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.btn-primary {
+  @apply border-jade/70 bg-jade text-ink hover:bg-jade/90;
+}
+
+.btn-gold {
+  @apply border-gold/60 bg-gold/15 text-gold hover:bg-gold/25;
+}
+
+.chip {
+  @apply rounded-full border border-line bg-panel2 px-3 py-1 text-xs text-slate-300;
+}

@@ -1,0 +1,273 @@
+{
+  "episode": "EP01",
+  "title": "Sea Surface Low Frequency",
+  "format": "16:9 cinematic 4K concept keyframes",
+  "status": "task_manifest",
+  "keyframes": [
+    {
+      "id": "KF01",
+      "shot": "EP01_KF01",
+      "title": "2042 Hangzhou Bay Future Coastline",
+      "purpose": "Wide establishing image for the world before the anomaly.",
+      "required_assets": [
+        "hangzhou_bay"
+      ],
+      "status": "approved",
+      "approved_image": "assets/episodes/EP01/keyframes/approved/EP01_KF01_APPROVED_V01.png",
+      "project_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF01.png",
+      "review_gate": "approved_by_previous_visual_review",
+      "updatedAt": "2026-07-10T11:13:18.431Z"
+    },
+    {
+      "id": "KF02",
+      "shot": "EP01_KF02",
+      "title": "White Tide First Appearance",
+      "purpose": "A huge body breaks the storm sea without monster-show spectacle.",
+      "required_assets": [
+        "white_tide",
+        "hangzhou_bay"
+      ],
+      "status": "approved",
+      "approved_image": "assets/episodes/EP01/keyframes/approved/EP01_KF02_APPROVED_V01.png",
+      "project_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF02.png",
+      "review_gate": "approved_by_previous_visual_review",
+      "updatedAt": "2026-07-10T11:13:18.431Z"
+    },
+    {
+      "id": "KF03",
+      "shot": "EP01_KF03",
+      "title": "Deep Blue Base Alarm",
+      "purpose": "The base reacts before people understand the event.",
+      "required_assets": [
+        "deep_blue_base"
+      ],
+      "status": "review",
+      "approved_image": "",
+      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF03.png",
+      "review_gate": "awaiting_manual_review",
+      "updatedAt": "2026-07-10T11:13:18.431Z"
+    },
+    {
+      "id": "KF04",
+      "shot": "EP01_KF04",
+      "title": "Commander Chen Detects Signal",
+      "purpose": "Chen Mu trusts experience before the automated system does.",
+      "required_assets": [
+        "chenmu",
+        "deep_blue_base"
+      ],
+      "status": "approved",
+      "approved_image": "assets/episodes/EP01/keyframes/approved/EP01_KF04_APPROVED_V01.png",
+      "project_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF04.png",
+      "review_gate": "approved_by_previous_visual_review",
+      "updatedAt": "2026-07-10T11:13:18.431Z"
+    },
+    {
+      "id": "KF05",
+      "shot": "EP01_KF05",
+      "title": "Lin Zhou Recall Notice",
+      "purpose": "Lin Zhou is pulled back toward the machine and the old wound.",
+      "required_assets": [
+        "linzhou"
+      ],
+      "status": "review",
+      "approved_image": "",
+      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF05.png",
+      "review_gate": "awaiting_manual_review",
+      "updatedAt": "2026-07-10T11:13:18.431Z"
+    },
+    {
+      "id": "KF06",
+      "shot": "EP01_KF06",
+      "title": "Lin Zhou Enters Deep Blue Base",
+      "purpose": "The human story enters the industrial defense system.",
+      "required_assets": [
+        "linzhou",
+        "deep_blue_base"
+      ],
+      "status": "review",
+      "approved_image": "",
+      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF06.png",
+      "review_gate": "awaiting_manual_review",
+      "updatedAt": "2026-07-10T11:13:18.431Z"
+    },
+    {
+      "id": "KF07",
+      "shot": "EP01_KF07",
+      "title": "Chiting-01 First Reveal",
+      "purpose": "Reveal the machine as weight and danger, not salvation.",
+      "required_assets": [
+        "chiting01"
+      ],
+      "status": "review",
+      "approved_image": "",
+      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF07.png",
+      "review_gate": "awaiting_manual_review",
+      "updatedAt": "2026-07-10T11:13:18.431Z"
+    },
+    {
+      "id": "KF08",
+      "shot": "EP01_KF08",
+      "title": "Cockpit Opens",
+      "purpose": "The cockpit becomes a threshold rather than a vehicle entrance.",
+      "required_assets": [
+        "chiting01",
+        "cockpit"
+      ],
+      "status": "review",
+      "approved_image": "",
+      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF08.png",
+      "review_gate": "awaiting_manual_review",
+      "updatedAt": "2026-07-10T11:13:18.431Z"
+    },
+    {
+      "id": "KF09",
+      "shot": "EP01_KF09",
+      "title": "Lin Zhou Enters Cockpit",
+      "purpose": "Lin Zhou chooses the place that once represented failure.",
+      "required_assets": [
+        "linzhou",
+        "chiting01",
+        "cockpit"
+      ],
+      "status": "approved",
+      "approved_image": "assets/episodes/EP01/keyframes/approved/EP01_KF09_APPROVED_V01.png",
+      "project_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF09.png",
+      "review_gate": "approved_by_previous_visual_review",
+      "updatedAt": "2026-07-10T11:13:18.431Z"
+    },
+    {
+      "id": "KF10",
+      "shot": "EP01_KF10",
+      "title": "Xu Ran Connection Failure",
+      "purpose": "The first synchronization attempt fails without melodrama.",
+      "required_assets": [
+        "xuran",
+        "cockpit"
+      ],
+      "status": "review",
+      "approved_image": "",
+      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF10.png",
+      "review_gate": "awaiting_manual_review",
+      "updatedAt": "2026-07-10T11:13:18.431Z"
+    },
+    {
+      "id": "KF11",
+      "shot": "EP01_KF11",
+      "title": "White Tide Hits Defense Line",
+      "purpose": "The city defense is stressed by behavior it misreads as attack.",
+      "required_assets": [
+        "white_tide",
+        "hangzhou_bay"
+      ],
+      "status": "review",
+      "approved_image": "",
+      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF11.png",
+      "review_gate": "awaiting_manual_review",
+      "updatedAt": "2026-07-10T11:13:18.431Z"
+    },
+    {
+      "id": "KF12",
+      "shot": "EP01_KF12",
+      "title": "Chiting-01 Starts",
+      "purpose": "The machine wakes as a dangerous decision.",
+      "required_assets": [
+        "chiting01"
+      ],
+      "status": "review",
+      "approved_image": "",
+      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF12.png",
+      "review_gate": "awaiting_manual_review",
+      "updatedAt": "2026-07-10T11:13:18.431Z"
+    },
+    {
+      "id": "KF13",
+      "shot": "EP01_KF13",
+      "title": "Chiting-01 Moves Toward Sea",
+      "purpose": "Human engineering moves into a scale it cannot own.",
+      "required_assets": [
+        "chiting01",
+        "hangzhou_bay"
+      ],
+      "status": "review",
+      "approved_image": "",
+      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF13.png",
+      "review_gate": "awaiting_manual_review",
+      "updatedAt": "2026-07-10T11:13:18.431Z"
+    },
+    {
+      "id": "KF14",
+      "shot": "EP01_KF14",
+      "title": "Chiting-01 First Combat",
+      "purpose": "The first fight proves force is not understanding.",
+      "required_assets": [
+        "chiting01",
+        "white_tide"
+      ],
+      "status": "review",
+      "approved_image": "",
+      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF14.png",
+      "review_gate": "awaiting_manual_review",
+      "updatedAt": "2026-07-10T11:13:18.431Z"
+    },
+    {
+      "id": "KF15",
+      "shot": "EP01_KF15",
+      "title": "White Tide and Chiting Face Each Other",
+      "purpose": "The confrontation begins to resemble recognition.",
+      "required_assets": [
+        "chiting01",
+        "white_tide"
+      ],
+      "status": "review",
+      "approved_image": "",
+      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF15.png",
+      "review_gate": "awaiting_manual_review",
+      "updatedAt": "2026-07-10T11:13:18.431Z"
+    },
+    {
+      "id": "KF16",
+      "shot": "EP01_KF16",
+      "title": "White Tide Releases Unknown Signal",
+      "purpose": "The creature communicates in a form humans cannot classify.",
+      "required_assets": [
+        "white_tide"
+      ],
+      "status": "review",
+      "approved_image": "",
+      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF16.png",
+      "review_gate": "awaiting_manual_review",
+      "updatedAt": "2026-07-10T11:13:18.431Z"
+    },
+    {
+      "id": "KF17",
+      "shot": "EP01_KF17",
+      "title": "Tide Gate Rift Appears",
+      "purpose": "The real unknown enters the frame as ecology, not portal effect.",
+      "required_assets": [
+        "tide_gate",
+        "hangzhou_bay"
+      ],
+      "status": "review",
+      "approved_image": "",
+      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF17.png",
+      "review_gate": "awaiting_manual_review",
+      "updatedAt": "2026-07-10T11:13:18.431Z"
+    },
+    {
+      "id": "KF18",
+      "shot": "EP01_KF18",
+      "title": "Black Tide Mother Opens Eye",
+      "purpose": "End on a living system watching back.",
+      "required_assets": [
+        "black_tide_mother",
+        "tide_gate"
+      ],
+      "status": "review",
+      "approved_image": "",
+      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF18.png",
+      "review_gate": "awaiting_manual_review",
+      "updatedAt": "2026-07-10T11:13:18.431Z"
+    }
+  ]
+}

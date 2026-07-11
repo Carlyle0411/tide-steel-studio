@@ -1,0 +1,35 @@
+{
+  "name": "ai-video-storyboard-workbench",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "import:assets": "node scripts/import-tide-steel-assets.mjs",
+    "export:kling-prompts": "node scripts/export-ep01-kling-prompts.mjs",
+    "export:keyframe-tasks": "node scripts/export-ep01-keyframe-tasks.mjs",
+    "generate:asset-bible": "node scripts/generate-asset-bible.mjs",
+    "generate:industrial-workflow": "node scripts/generate-industrial-workflow.mjs",
+    "generate:master-asset-library": "node scripts/generate-master-asset-library.mjs",
+    "generate:hero-character-library": "node scripts/generate-hero-character-library.mjs",
+    "generate:hero-mecha-creature-library": "node scripts/generate-hero-mecha-creature-library.mjs",
+    "generate:world-asset-library": "node scripts/generate-world-asset-library.mjs",
+    "generate:kling-video-template-library": "node scripts/generate-kling-video-template-library.mjs",
+    "build:master-generation-queue": "node scripts/build-master-generation-queue.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.5",
+    "typescript": "^5.7.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "lucide-react": "^0.468.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17"
+  }
+}

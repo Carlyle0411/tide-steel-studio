@@ -1,0 +1,33 @@
+{
+  "assetId": "WORLD-PROPS-V001",
+  "category": "道具",
+  "slug": "props",
+  "variant": "头盔01",
+  "version": "V001",
+  "status": "待图片落盘",
+  "imagePath": "assets/world/props/PROPS_V001.png",
+  "metadataPath": "assets/world/props/PROPS_V001.json",
+  "promptPath": "assets/world/props/PROPS_V001_PROMPT.md",
+  "referencePath": "assets/world/props/PROPS_V001_REFERENCE.json",
+  "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 道具. Variant: 头盔01.\n潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+  "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+  "tags": [
+    "世界资产",
+    "道具",
+    "头盔01",
+    "母资产",
+    "Reference"
+  ],
+  "consistencyLock": {
+    "description": "潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。",
+    "cannotChange": [
+      "2042杭州湾世界观",
+      "工业真实感",
+      "低饱和电影摄影",
+      "海洋尺度",
+      "非赛博朋克"
+    ]
+  },
+  "createdAt": "2026-07-10T00:00:00.000+08:00",
+  "updatedAt": "2026-07-10T00:00:00.000+08:00"
+}

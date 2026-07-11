@@ -1,0 +1,33 @@
+{
+  "assetId": "MECHA-BY007-V004",
+  "domain": "机甲",
+  "name": "白鸢07",
+  "variant": "侧面",
+  "version": "V004",
+  "status": "待图片落盘",
+  "imagePath": "assets/mecha/baiyuan07/BAIYUAN07_V004.png",
+  "metadataPath": "assets/mecha/baiyuan07/BAIYUAN07_V004.json",
+  "promptPath": "assets/mecha/baiyuan07/BAIYUAN07_V004_PROMPT.md",
+  "referencePath": "assets/mecha/baiyuan07/BAIYUAN07_V004_REFERENCE.json",
+  "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 白鸢07. Variant: 侧面.\n白灰侦察型机甲，轻量、高机动、飞行侦察结构，非英雄化展示。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+  "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+  "tags": [
+    "机甲",
+    "白鸢07",
+    "侧面",
+    "母资产",
+    "Reference"
+  ],
+  "consistencyLock": {
+    "description": "白灰侦察型机甲，轻量、高机动、飞行侦察结构，非英雄化展示。",
+    "cannotChange": [
+      "比例",
+      "装甲颜色",
+      "机械骨架",
+      "能源颜色",
+      "工业真实感"
+    ]
+  },
+  "createdAt": "2026-07-10T00:00:00.000+08:00",
+  "updatedAt": "2026-07-10T00:00:00.000+08:00"
+}

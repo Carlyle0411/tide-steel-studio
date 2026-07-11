@@ -1,0 +1,12 @@
+{
+  "assetId": "MECHA-XJ003-V008",
+  "referenceStatus": "等待真实图片生成后锁定",
+  "cannotChange": [
+    "比例",
+    "装甲颜色",
+    "机械骨架",
+    "能源颜色",
+    "工业真实感"
+  ],
+  "reuseRule": "后续关键帧、Storyboard、GPT Image2图片、可灵视频、海报、宣传片必须引用此Reference。"
+}

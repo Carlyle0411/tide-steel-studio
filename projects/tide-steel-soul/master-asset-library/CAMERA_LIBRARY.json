@@ -1,0 +1,197 @@
+{
+  "generatedAt": "2026-07-10T00:00:00.000+08:00",
+  "templates": [
+    {
+      "id": "CAMERA-001",
+      "name": "推镜",
+      "category": "运镜",
+      "status": "母库模板",
+      "tags": [
+        "运镜",
+        "推镜",
+        "可复用"
+      ],
+      "description": "推镜的标准制作模板，供12集重复引用。",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00",
+      "diagramStatus": "待生成示意图",
+      "chineseExplanation": "推镜用于明确镜头意图，必须服务角色选择和空间关系。",
+      "klingPromptTemplate": "Camera Movement: 推镜; keep cinematic physical motion, no short-video shake."
+    },
+    {
+      "id": "CAMERA-002",
+      "name": "拉镜",
+      "category": "运镜",
+      "status": "母库模板",
+      "tags": [
+        "运镜",
+        "拉镜",
+        "可复用"
+      ],
+      "description": "拉镜的标准制作模板，供12集重复引用。",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00",
+      "diagramStatus": "待生成示意图",
+      "chineseExplanation": "拉镜用于明确镜头意图，必须服务角色选择和空间关系。",
+      "klingPromptTemplate": "Camera Movement: 拉镜; keep cinematic physical motion, no short-video shake."
+    },
+    {
+      "id": "CAMERA-003",
+      "name": "横移",
+      "category": "运镜",
+      "status": "母库模板",
+      "tags": [
+        "运镜",
+        "横移",
+        "可复用"
+      ],
+      "description": "横移的标准制作模板，供12集重复引用。",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00",
+      "diagramStatus": "待生成示意图",
+      "chineseExplanation": "横移用于明确镜头意图，必须服务角色选择和空间关系。",
+      "klingPromptTemplate": "Camera Movement: 横移; keep cinematic physical motion, no short-video shake."
+    },
+    {
+      "id": "CAMERA-004",
+      "name": "环绕",
+      "category": "运镜",
+      "status": "母库模板",
+      "tags": [
+        "运镜",
+        "环绕",
+        "可复用"
+      ],
+      "description": "环绕的标准制作模板，供12集重复引用。",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00",
+      "diagramStatus": "待生成示意图",
+      "chineseExplanation": "环绕用于明确镜头意图，必须服务角色选择和空间关系。",
+      "klingPromptTemplate": "Camera Movement: 环绕; keep cinematic physical motion, no short-video shake."
+    },
+    {
+      "id": "CAMERA-005",
+      "name": "升降",
+      "category": "运镜",
+      "status": "母库模板",
+      "tags": [
+        "运镜",
+        "升降",
+        "可复用"
+      ],
+      "description": "升降的标准制作模板，供12集重复引用。",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00",
+      "diagramStatus": "待生成示意图",
+      "chineseExplanation": "升降用于明确镜头意图，必须服务角色选择和空间关系。",
+      "klingPromptTemplate": "Camera Movement: 升降; keep cinematic physical motion, no short-video shake."
+    },
+    {
+      "id": "CAMERA-006",
+      "name": "无人机",
+      "category": "运镜",
+      "status": "母库模板",
+      "tags": [
+        "运镜",
+        "无人机",
+        "可复用"
+      ],
+      "description": "无人机的标准制作模板，供12集重复引用。",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00",
+      "diagramStatus": "待生成示意图",
+      "chineseExplanation": "无人机用于明确镜头意图，必须服务角色选择和空间关系。",
+      "klingPromptTemplate": "Camera Movement: 无人机; keep cinematic physical motion, no short-video shake."
+    },
+    {
+      "id": "CAMERA-007",
+      "name": "第一人称",
+      "category": "运镜",
+      "status": "母库模板",
+      "tags": [
+        "运镜",
+        "第一人称",
+        "可复用"
+      ],
+      "description": "第一人称的标准制作模板，供12集重复引用。",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00",
+      "diagramStatus": "待生成示意图",
+      "chineseExplanation": "第一人称用于明确镜头意图，必须服务角色选择和空间关系。",
+      "klingPromptTemplate": "Camera Movement: 第一人称; keep cinematic physical motion, no short-video shake."
+    },
+    {
+      "id": "CAMERA-008",
+      "name": "长焦",
+      "category": "运镜",
+      "status": "母库模板",
+      "tags": [
+        "运镜",
+        "长焦",
+        "可复用"
+      ],
+      "description": "长焦的标准制作模板，供12集重复引用。",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00",
+      "diagramStatus": "待生成示意图",
+      "chineseExplanation": "长焦用于明确镜头意图，必须服务角色选择和空间关系。",
+      "klingPromptTemplate": "Camera Movement: 长焦; keep cinematic physical motion, no short-video shake."
+    },
+    {
+      "id": "CAMERA-009",
+      "name": "广角",
+      "category": "运镜",
+      "status": "母库模板",
+      "tags": [
+        "运镜",
+        "广角",
+        "可复用"
+      ],
+      "description": "广角的标准制作模板，供12集重复引用。",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00",
+      "diagramStatus": "待生成示意图",
+      "chineseExplanation": "广角用于明确镜头意图，必须服务角色选择和空间关系。",
+      "klingPromptTemplate": "Camera Movement: 广角; keep cinematic physical motion, no short-video shake."
+    },
+    {
+      "id": "CAMERA-010",
+      "name": "手持",
+      "category": "运镜",
+      "status": "母库模板",
+      "tags": [
+        "运镜",
+        "手持",
+        "可复用"
+      ],
+      "description": "手持的标准制作模板，供12集重复引用。",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00",
+      "diagramStatus": "待生成示意图",
+      "chineseExplanation": "手持用于明确镜头意图，必须服务角色选择和空间关系。",
+      "klingPromptTemplate": "Camera Movement: 手持; keep cinematic physical motion, no short-video shake."
+    },
+    {
+      "id": "CAMERA-011",
+      "name": "跟拍",
+      "category": "运镜",
+      "status": "母库模板",
+      "tags": [
+        "运镜",
+        "跟拍",
+        "可复用"
+      ],
+      "description": "跟拍的标准制作模板，供12集重复引用。",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00",
+      "diagramStatus": "待生成示意图",
+      "chineseExplanation": "跟拍用于明确镜头意图，必须服务角色选择和空间关系。",
+      "klingPromptTemplate": "Camera Movement: 跟拍; keep cinematic physical motion, no short-video shake."
+    },
+    {
+      "id": "CAMERA-012",
+      "name": "肩扛",
+      "category": "运镜",
+      "status": "母库模板",
+      "tags": [
+        "运镜",
+        "肩扛",
+        "可复用"
+      ],
+      "description": "肩扛的标准制作模板，供12集重复引用。",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00",
+      "diagramStatus": "待生成示意图",
+      "chineseExplanation": "肩扛用于明确镜头意图，必须服务角色选择和空间关系。",
+      "klingPromptTemplate": "Camera Movement: 肩扛; keep cinematic physical motion, no short-video shake."
+    }
+  ]
+}

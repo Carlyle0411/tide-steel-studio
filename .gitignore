@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+.env.local
+.DS_Store
+Thumbs.db
+*.log
+TIDE_STEEL_STUDIO_DIST.zip
+

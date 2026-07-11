@@ -1,0 +1,10 @@
+{
+  "generatedAt": "2026-07-10T00:00:00.000+08:00",
+  "rules": [
+    "禁止使用placeholder或mock图片。",
+    "禁止把聊天中未落盘图片登记为已完成资产。",
+    "同一角色必须保持同一脸型、年龄、发型和服装逻辑。",
+    "每张图片必须有PNG、JSON metadata、Prompt、Reference记录。",
+    "未经过人工审核的图片不能作为12集长期Reference。"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "assetId": "CHAR-LAN-V006",
+  "character": "AI澜",
+  "englishName": "AI Lan",
+  "variant": "觉醒状态",
+  "version": "V006",
+  "status": "待图片落盘",
+  "imagePath": "assets/characters/lan/LAN_V006.png",
+  "metadataPath": "assets/characters/lan/LAN_V006.json",
+  "promptPath": "assets/characters/lan/LAN_V006_PROMPT.md",
+  "referencePath": "assets/characters/lan/LAN_V006_REFERENCE.json",
+  "prompt": "Create a character master asset reference image for Tide Steel Soul.\nCharacter: AI澜 / AI Lan.\nVariant: 觉醒状态.\nCore identity: AI Lan, non-human system intelligence, cold blue holographic interface, optional subtle young female hologram form, transparent data light, not cute assistant, cinematic sci-fi.\nCharacter Bible: age 非人类, height 界面可变, personality 冷静、排序式判断、从工具转向承担选择后果, costume 无固定服装；允许全息少女形态但必须保持系统感, color 冷蓝、透明白、数据流微光, signature feature 不应像普通助手；人性体现在选择顺序变化.\nThis is a reusable standard character model asset, not a story screenshot.\n16:9, Cinematic Sci-Fi, Hollywood realistic, high detail, natural skin when human, film lighting, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+  "negativePrompt": "placeholder, mock image, random face, different age, different costume, anime, cartoon, game render, beauty ad, superhero pose, text, logo, watermark",
+  "tags": [
+    "人物",
+    "英雄角色",
+    "AI澜",
+    "觉醒状态",
+    "母资产",
+    "Reference"
+  ],
+  "consistencyLock": {
+    "age": "非人类",
+    "height": "界面可变",
+    "costume": "无固定服装；允许全息少女形态但必须保持系统感",
+    "color": "冷蓝、透明白、数据流微光",
+    "feature": "不应像普通助手；人性体现在选择顺序变化"
+  },
+  "createdAt": "2026-07-10T00:00:00.000+08:00",
+  "updatedAt": "2026-07-10T00:00:00.000+08:00"
+}

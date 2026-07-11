@@ -1,0 +1,2488 @@
+{
+  "project": "潮汐钢魂",
+  "phase": "PHASE 21B Hero Mecha & Creature Asset Library",
+  "generatedAt": "2026-07-10T00:00:00.000+08:00",
+  "rule": "赤霆01、玄鲸03、白鸢07、白潮、刺潮、黑潮母体为世界观核心视觉。后续所有镜头、关键帧、视频和海报必须优先引用这里。",
+  "total": 75,
+  "landedImages": 1,
+  "generatedImages": 1,
+  "status": "部分图片已落盘，等待人工审核",
+  "assets": [
+    {
+      "assetId": "MECHA-CRT001-V001",
+      "domain": "机甲",
+      "name": "赤霆01",
+      "variant": "正面设计",
+      "version": "V001",
+      "status": "待人工审核",
+      "imagePath": "assets/mecha/chiting01/CHITING01_V001.png",
+      "metadataPath": "assets/mecha/chiting01/CHITING01_V001.json",
+      "promptPath": "assets/mecha/chiting01/CHITING01_V001_PROMPT.md",
+      "referencePath": "assets/mecha/chiting01/CHITING01_V001_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 赤霆01. Variant: 正面设计.\n20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "赤霆01",
+        "正面设计",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T09:27:03.496Z",
+      "referenceStatus": "已落盘，等待人工审核锁定"
+    },
+    {
+      "assetId": "MECHA-CRT001-V002",
+      "domain": "机甲",
+      "name": "赤霆01",
+      "variant": "背面设计",
+      "version": "V002",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/chiting01/CHITING01_V002.png",
+      "metadataPath": "assets/mecha/chiting01/CHITING01_V002.json",
+      "promptPath": "assets/mecha/chiting01/CHITING01_V002_PROMPT.md",
+      "referencePath": "assets/mecha/chiting01/CHITING01_V002_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 赤霆01. Variant: 背面设计.\n20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "赤霆01",
+        "背面设计",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-CRT001-V003",
+      "domain": "机甲",
+      "name": "赤霆01",
+      "variant": "侧面设计",
+      "version": "V003",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/chiting01/CHITING01_V003.png",
+      "metadataPath": "assets/mecha/chiting01/CHITING01_V003.json",
+      "promptPath": "assets/mecha/chiting01/CHITING01_V003_PROMPT.md",
+      "referencePath": "assets/mecha/chiting01/CHITING01_V003_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 赤霆01. Variant: 侧面设计.\n20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "赤霆01",
+        "侧面设计",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-CRT001-V004",
+      "domain": "机甲",
+      "name": "赤霆01",
+      "variant": "45度展示",
+      "version": "V004",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/chiting01/CHITING01_V004.png",
+      "metadataPath": "assets/mecha/chiting01/CHITING01_V004.json",
+      "promptPath": "assets/mecha/chiting01/CHITING01_V004_PROMPT.md",
+      "referencePath": "assets/mecha/chiting01/CHITING01_V004_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 赤霆01. Variant: 45度展示.\n20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "赤霆01",
+        "45度展示",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-CRT001-V005",
+      "domain": "机甲",
+      "name": "赤霆01",
+      "variant": "全身比例",
+      "version": "V005",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/chiting01/CHITING01_V005.png",
+      "metadataPath": "assets/mecha/chiting01/CHITING01_V005.json",
+      "promptPath": "assets/mecha/chiting01/CHITING01_V005_PROMPT.md",
+      "referencePath": "assets/mecha/chiting01/CHITING01_V005_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 赤霆01. Variant: 全身比例.\n20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "赤霆01",
+        "全身比例",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-CRT001-V006",
+      "domain": "机甲",
+      "name": "赤霆01",
+      "variant": "驾驶舱",
+      "version": "V006",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/chiting01/CHITING01_V006.png",
+      "metadataPath": "assets/mecha/chiting01/CHITING01_V006.json",
+      "promptPath": "assets/mecha/chiting01/CHITING01_V006_PROMPT.md",
+      "referencePath": "assets/mecha/chiting01/CHITING01_V006_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 赤霆01. Variant: 驾驶舱.\n20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "赤霆01",
+        "驾驶舱",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-CRT001-V007",
+      "domain": "机甲",
+      "name": "赤霆01",
+      "variant": "胸口反应炉",
+      "version": "V007",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/chiting01/CHITING01_V007.png",
+      "metadataPath": "assets/mecha/chiting01/CHITING01_V007.json",
+      "promptPath": "assets/mecha/chiting01/CHITING01_V007_PROMPT.md",
+      "referencePath": "assets/mecha/chiting01/CHITING01_V007_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 赤霆01. Variant: 胸口反应炉.\n20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "赤霆01",
+        "胸口反应炉",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-CRT001-V008",
+      "domain": "机甲",
+      "name": "赤霆01",
+      "variant": "右臂等离子链刃",
+      "version": "V008",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/chiting01/CHITING01_V008.png",
+      "metadataPath": "assets/mecha/chiting01/CHITING01_V008.json",
+      "promptPath": "assets/mecha/chiting01/CHITING01_V008_PROMPT.md",
+      "referencePath": "assets/mecha/chiting01/CHITING01_V008_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 赤霆01. Variant: 右臂等离子链刃.\n20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "赤霆01",
+        "右臂等离子链刃",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-CRT001-V009",
+      "domain": "机甲",
+      "name": "赤霆01",
+      "variant": "武器细节",
+      "version": "V009",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/chiting01/CHITING01_V009.png",
+      "metadataPath": "assets/mecha/chiting01/CHITING01_V009.json",
+      "promptPath": "assets/mecha/chiting01/CHITING01_V009_PROMPT.md",
+      "referencePath": "assets/mecha/chiting01/CHITING01_V009_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 赤霆01. Variant: 武器细节.\n20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "赤霆01",
+        "武器细节",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-CRT001-V010",
+      "domain": "机甲",
+      "name": "赤霆01",
+      "variant": "头部细节",
+      "version": "V010",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/chiting01/CHITING01_V010.png",
+      "metadataPath": "assets/mecha/chiting01/CHITING01_V010.json",
+      "promptPath": "assets/mecha/chiting01/CHITING01_V010_PROMPT.md",
+      "referencePath": "assets/mecha/chiting01/CHITING01_V010_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 赤霆01. Variant: 头部细节.\n20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "赤霆01",
+        "头部细节",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-CRT001-V011",
+      "domain": "机甲",
+      "name": "赤霆01",
+      "variant": "待机状态",
+      "version": "V011",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/chiting01/CHITING01_V011.png",
+      "metadataPath": "assets/mecha/chiting01/CHITING01_V011.json",
+      "promptPath": "assets/mecha/chiting01/CHITING01_V011_PROMPT.md",
+      "referencePath": "assets/mecha/chiting01/CHITING01_V011_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 赤霆01. Variant: 待机状态.\n20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "赤霆01",
+        "待机状态",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-CRT001-V012",
+      "domain": "机甲",
+      "name": "赤霆01",
+      "variant": "启动状态",
+      "version": "V012",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/chiting01/CHITING01_V012.png",
+      "metadataPath": "assets/mecha/chiting01/CHITING01_V012.json",
+      "promptPath": "assets/mecha/chiting01/CHITING01_V012_PROMPT.md",
+      "referencePath": "assets/mecha/chiting01/CHITING01_V012_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 赤霆01. Variant: 启动状态.\n20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "赤霆01",
+        "启动状态",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-CRT001-V013",
+      "domain": "机甲",
+      "name": "赤霆01",
+      "variant": "战斗姿态",
+      "version": "V013",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/chiting01/CHITING01_V013.png",
+      "metadataPath": "assets/mecha/chiting01/CHITING01_V013.json",
+      "promptPath": "assets/mecha/chiting01/CHITING01_V013_PROMPT.md",
+      "referencePath": "assets/mecha/chiting01/CHITING01_V013_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 赤霆01. Variant: 战斗姿态.\n20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "赤霆01",
+        "战斗姿态",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-CRT001-V014",
+      "domain": "机甲",
+      "name": "赤霆01",
+      "variant": "冲刺姿态",
+      "version": "V014",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/chiting01/CHITING01_V014.png",
+      "metadataPath": "assets/mecha/chiting01/CHITING01_V014.json",
+      "promptPath": "assets/mecha/chiting01/CHITING01_V014_PROMPT.md",
+      "referencePath": "assets/mecha/chiting01/CHITING01_V014_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 赤霆01. Variant: 冲刺姿态.\n20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "赤霆01",
+        "冲刺姿态",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-CRT001-V015",
+      "domain": "机甲",
+      "name": "赤霆01",
+      "variant": "海面站立",
+      "version": "V015",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/chiting01/CHITING01_V015.png",
+      "metadataPath": "assets/mecha/chiting01/CHITING01_V015.json",
+      "promptPath": "assets/mecha/chiting01/CHITING01_V015_PROMPT.md",
+      "referencePath": "assets/mecha/chiting01/CHITING01_V015_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 赤霆01. Variant: 海面站立.\n20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "赤霆01",
+        "海面站立",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-CRT001-V016",
+      "domain": "机甲",
+      "name": "赤霆01",
+      "variant": "暴雨环境",
+      "version": "V016",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/chiting01/CHITING01_V016.png",
+      "metadataPath": "assets/mecha/chiting01/CHITING01_V016.json",
+      "promptPath": "assets/mecha/chiting01/CHITING01_V016_PROMPT.md",
+      "referencePath": "assets/mecha/chiting01/CHITING01_V016_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 赤霆01. Variant: 暴雨环境.\n20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "赤霆01",
+        "暴雨环境",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-CRT001-V017",
+      "domain": "机甲",
+      "name": "赤霆01",
+      "variant": "夜景",
+      "version": "V017",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/chiting01/CHITING01_V017.png",
+      "metadataPath": "assets/mecha/chiting01/CHITING01_V017.json",
+      "promptPath": "assets/mecha/chiting01/CHITING01_V017_PROMPT.md",
+      "referencePath": "assets/mecha/chiting01/CHITING01_V017_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 赤霆01. Variant: 夜景.\n20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "赤霆01",
+        "夜景",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-CRT001-V018",
+      "domain": "机甲",
+      "name": "赤霆01",
+      "variant": "战损状态",
+      "version": "V018",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/chiting01/CHITING01_V018.png",
+      "metadataPath": "assets/mecha/chiting01/CHITING01_V018.json",
+      "promptPath": "assets/mecha/chiting01/CHITING01_V018_PROMPT.md",
+      "referencePath": "assets/mecha/chiting01/CHITING01_V018_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 赤霆01. Variant: 战损状态.\n20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "赤霆01",
+        "战损状态",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-CRT001-V019",
+      "domain": "机甲",
+      "name": "赤霆01",
+      "variant": "电影海报",
+      "version": "V019",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/chiting01/CHITING01_V019.png",
+      "metadataPath": "assets/mecha/chiting01/CHITING01_V019.json",
+      "promptPath": "assets/mecha/chiting01/CHITING01_V019_PROMPT.md",
+      "referencePath": "assets/mecha/chiting01/CHITING01_V019_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 赤霆01. Variant: 电影海报.\n20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "赤霆01",
+        "电影海报",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-CRT001-V020",
+      "domain": "机甲",
+      "name": "赤霆01",
+      "variant": "巨大城市尺度展示",
+      "version": "V020",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/chiting01/CHITING01_V020.png",
+      "metadataPath": "assets/mecha/chiting01/CHITING01_V020.json",
+      "promptPath": "assets/mecha/chiting01/CHITING01_V020_PROMPT.md",
+      "referencePath": "assets/mecha/chiting01/CHITING01_V020_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 赤霆01. Variant: 巨大城市尺度展示.\n20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "赤霆01",
+        "巨大城市尺度展示",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-XJ003-V001",
+      "domain": "机甲",
+      "name": "玄鲸03",
+      "variant": "整体",
+      "version": "V001",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/xuanjing03/XUANJING03_V001.png",
+      "metadataPath": "assets/mecha/xuanjing03/XUANJING03_V001.json",
+      "promptPath": "assets/mecha/xuanjing03/XUANJING03_V001_PROMPT.md",
+      "referencePath": "assets/mecha/xuanjing03/XUANJING03_V001_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 玄鲸03. Variant: 整体.\n黑蓝远程系统机甲，海上部署结构，重型传感与远程武器平台，和赤霆01形成明确功能差异。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "玄鲸03",
+        "整体",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "黑蓝远程系统机甲，海上部署结构，重型传感与远程武器平台，和赤霆01形成明确功能差异。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-XJ003-V002",
+      "domain": "机甲",
+      "name": "玄鲸03",
+      "variant": "正面",
+      "version": "V002",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/xuanjing03/XUANJING03_V002.png",
+      "metadataPath": "assets/mecha/xuanjing03/XUANJING03_V002.json",
+      "promptPath": "assets/mecha/xuanjing03/XUANJING03_V002_PROMPT.md",
+      "referencePath": "assets/mecha/xuanjing03/XUANJING03_V002_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 玄鲸03. Variant: 正面.\n黑蓝远程系统机甲，海上部署结构，重型传感与远程武器平台，和赤霆01形成明确功能差异。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "玄鲸03",
+        "正面",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "黑蓝远程系统机甲，海上部署结构，重型传感与远程武器平台，和赤霆01形成明确功能差异。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-XJ003-V003",
+      "domain": "机甲",
+      "name": "玄鲸03",
+      "variant": "侧面",
+      "version": "V003",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/xuanjing03/XUANJING03_V003.png",
+      "metadataPath": "assets/mecha/xuanjing03/XUANJING03_V003.json",
+      "promptPath": "assets/mecha/xuanjing03/XUANJING03_V003_PROMPT.md",
+      "referencePath": "assets/mecha/xuanjing03/XUANJING03_V003_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 玄鲸03. Variant: 侧面.\n黑蓝远程系统机甲，海上部署结构，重型传感与远程武器平台，和赤霆01形成明确功能差异。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "玄鲸03",
+        "侧面",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "黑蓝远程系统机甲，海上部署结构，重型传感与远程武器平台，和赤霆01形成明确功能差异。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-XJ003-V004",
+      "domain": "机甲",
+      "name": "玄鲸03",
+      "variant": "武器",
+      "version": "V004",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/xuanjing03/XUANJING03_V004.png",
+      "metadataPath": "assets/mecha/xuanjing03/XUANJING03_V004.json",
+      "promptPath": "assets/mecha/xuanjing03/XUANJING03_V004_PROMPT.md",
+      "referencePath": "assets/mecha/xuanjing03/XUANJING03_V004_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 玄鲸03. Variant: 武器.\n黑蓝远程系统机甲，海上部署结构，重型传感与远程武器平台，和赤霆01形成明确功能差异。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "玄鲸03",
+        "武器",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "黑蓝远程系统机甲，海上部署结构，重型传感与远程武器平台，和赤霆01形成明确功能差异。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-XJ003-V005",
+      "domain": "机甲",
+      "name": "玄鲸03",
+      "variant": "远程系统",
+      "version": "V005",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/xuanjing03/XUANJING03_V005.png",
+      "metadataPath": "assets/mecha/xuanjing03/XUANJING03_V005.json",
+      "promptPath": "assets/mecha/xuanjing03/XUANJING03_V005_PROMPT.md",
+      "referencePath": "assets/mecha/xuanjing03/XUANJING03_V005_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 玄鲸03. Variant: 远程系统.\n黑蓝远程系统机甲，海上部署结构，重型传感与远程武器平台，和赤霆01形成明确功能差异。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "玄鲸03",
+        "远程系统",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "黑蓝远程系统机甲，海上部署结构，重型传感与远程武器平台，和赤霆01形成明确功能差异。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-XJ003-V006",
+      "domain": "机甲",
+      "name": "玄鲸03",
+      "variant": "海上部署",
+      "version": "V006",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/xuanjing03/XUANJING03_V006.png",
+      "metadataPath": "assets/mecha/xuanjing03/XUANJING03_V006.json",
+      "promptPath": "assets/mecha/xuanjing03/XUANJING03_V006_PROMPT.md",
+      "referencePath": "assets/mecha/xuanjing03/XUANJING03_V006_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 玄鲸03. Variant: 海上部署.\n黑蓝远程系统机甲，海上部署结构，重型传感与远程武器平台，和赤霆01形成明确功能差异。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "玄鲸03",
+        "海上部署",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "黑蓝远程系统机甲，海上部署结构，重型传感与远程武器平台，和赤霆01形成明确功能差异。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-XJ003-V007",
+      "domain": "机甲",
+      "name": "玄鲸03",
+      "variant": "战斗",
+      "version": "V007",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/xuanjing03/XUANJING03_V007.png",
+      "metadataPath": "assets/mecha/xuanjing03/XUANJING03_V007.json",
+      "promptPath": "assets/mecha/xuanjing03/XUANJING03_V007_PROMPT.md",
+      "referencePath": "assets/mecha/xuanjing03/XUANJING03_V007_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 玄鲸03. Variant: 战斗.\n黑蓝远程系统机甲，海上部署结构，重型传感与远程武器平台，和赤霆01形成明确功能差异。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "玄鲸03",
+        "战斗",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "黑蓝远程系统机甲，海上部署结构，重型传感与远程武器平台，和赤霆01形成明确功能差异。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-XJ003-V008",
+      "domain": "机甲",
+      "name": "玄鲸03",
+      "variant": "夜景",
+      "version": "V008",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/xuanjing03/XUANJING03_V008.png",
+      "metadataPath": "assets/mecha/xuanjing03/XUANJING03_V008.json",
+      "promptPath": "assets/mecha/xuanjing03/XUANJING03_V008_PROMPT.md",
+      "referencePath": "assets/mecha/xuanjing03/XUANJING03_V008_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 玄鲸03. Variant: 夜景.\n黑蓝远程系统机甲，海上部署结构，重型传感与远程武器平台，和赤霆01形成明确功能差异。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "玄鲸03",
+        "夜景",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "黑蓝远程系统机甲，海上部署结构，重型传感与远程武器平台，和赤霆01形成明确功能差异。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-XJ003-V009",
+      "domain": "机甲",
+      "name": "玄鲸03",
+      "variant": "损伤",
+      "version": "V009",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/xuanjing03/XUANJING03_V009.png",
+      "metadataPath": "assets/mecha/xuanjing03/XUANJING03_V009.json",
+      "promptPath": "assets/mecha/xuanjing03/XUANJING03_V009_PROMPT.md",
+      "referencePath": "assets/mecha/xuanjing03/XUANJING03_V009_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 玄鲸03. Variant: 损伤.\n黑蓝远程系统机甲，海上部署结构，重型传感与远程武器平台，和赤霆01形成明确功能差异。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "玄鲸03",
+        "损伤",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "黑蓝远程系统机甲，海上部署结构，重型传感与远程武器平台，和赤霆01形成明确功能差异。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-XJ003-V010",
+      "domain": "机甲",
+      "name": "玄鲸03",
+      "variant": "海报",
+      "version": "V010",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/xuanjing03/XUANJING03_V010.png",
+      "metadataPath": "assets/mecha/xuanjing03/XUANJING03_V010.json",
+      "promptPath": "assets/mecha/xuanjing03/XUANJING03_V010_PROMPT.md",
+      "referencePath": "assets/mecha/xuanjing03/XUANJING03_V010_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 玄鲸03. Variant: 海报.\n黑蓝远程系统机甲，海上部署结构，重型传感与远程武器平台，和赤霆01形成明确功能差异。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "玄鲸03",
+        "海报",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "黑蓝远程系统机甲，海上部署结构，重型传感与远程武器平台，和赤霆01形成明确功能差异。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-BY007-V001",
+      "domain": "机甲",
+      "name": "白鸢07",
+      "variant": "侦察模式",
+      "version": "V001",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/baiyuan07/BAIYUAN07_V001.png",
+      "metadataPath": "assets/mecha/baiyuan07/BAIYUAN07_V001.json",
+      "promptPath": "assets/mecha/baiyuan07/BAIYUAN07_V001_PROMPT.md",
+      "referencePath": "assets/mecha/baiyuan07/BAIYUAN07_V001_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 白鸢07. Variant: 侦察模式.\n白灰侦察型机甲，轻量、高机动、飞行侦察结构，非英雄化展示。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "白鸢07",
+        "侦察模式",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "白灰侦察型机甲，轻量、高机动、飞行侦察结构，非英雄化展示。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-BY007-V002",
+      "domain": "机甲",
+      "name": "白鸢07",
+      "variant": "飞行模式",
+      "version": "V002",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/baiyuan07/BAIYUAN07_V002.png",
+      "metadataPath": "assets/mecha/baiyuan07/BAIYUAN07_V002.json",
+      "promptPath": "assets/mecha/baiyuan07/BAIYUAN07_V002_PROMPT.md",
+      "referencePath": "assets/mecha/baiyuan07/BAIYUAN07_V002_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 白鸢07. Variant: 飞行模式.\n白灰侦察型机甲，轻量、高机动、飞行侦察结构，非英雄化展示。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "白鸢07",
+        "飞行模式",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "白灰侦察型机甲，轻量、高机动、飞行侦察结构，非英雄化展示。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-BY007-V003",
+      "domain": "机甲",
+      "name": "白鸢07",
+      "variant": "正面",
+      "version": "V003",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/baiyuan07/BAIYUAN07_V003.png",
+      "metadataPath": "assets/mecha/baiyuan07/BAIYUAN07_V003.json",
+      "promptPath": "assets/mecha/baiyuan07/BAIYUAN07_V003_PROMPT.md",
+      "referencePath": "assets/mecha/baiyuan07/BAIYUAN07_V003_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 白鸢07. Variant: 正面.\n白灰侦察型机甲，轻量、高机动、飞行侦察结构，非英雄化展示。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "白鸢07",
+        "正面",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "白灰侦察型机甲，轻量、高机动、飞行侦察结构，非英雄化展示。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-BY007-V004",
+      "domain": "机甲",
+      "name": "白鸢07",
+      "variant": "侧面",
+      "version": "V004",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/baiyuan07/BAIYUAN07_V004.png",
+      "metadataPath": "assets/mecha/baiyuan07/BAIYUAN07_V004.json",
+      "promptPath": "assets/mecha/baiyuan07/BAIYUAN07_V004_PROMPT.md",
+      "referencePath": "assets/mecha/baiyuan07/BAIYUAN07_V004_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 白鸢07. Variant: 侧面.\n白灰侦察型机甲，轻量、高机动、飞行侦察结构，非英雄化展示。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "白鸢07",
+        "侧面",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "白灰侦察型机甲，轻量、高机动、飞行侦察结构，非英雄化展示。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-BY007-V005",
+      "domain": "机甲",
+      "name": "白鸢07",
+      "variant": "夜景",
+      "version": "V005",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/baiyuan07/BAIYUAN07_V005.png",
+      "metadataPath": "assets/mecha/baiyuan07/BAIYUAN07_V005.json",
+      "promptPath": "assets/mecha/baiyuan07/BAIYUAN07_V005_PROMPT.md",
+      "referencePath": "assets/mecha/baiyuan07/BAIYUAN07_V005_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 白鸢07. Variant: 夜景.\n白灰侦察型机甲，轻量、高机动、飞行侦察结构，非英雄化展示。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "白鸢07",
+        "夜景",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "白灰侦察型机甲，轻量、高机动、飞行侦察结构，非英雄化展示。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-BY007-V006",
+      "domain": "机甲",
+      "name": "白鸢07",
+      "variant": "城市",
+      "version": "V006",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/baiyuan07/BAIYUAN07_V006.png",
+      "metadataPath": "assets/mecha/baiyuan07/BAIYUAN07_V006.json",
+      "promptPath": "assets/mecha/baiyuan07/BAIYUAN07_V006_PROMPT.md",
+      "referencePath": "assets/mecha/baiyuan07/BAIYUAN07_V006_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 白鸢07. Variant: 城市.\n白灰侦察型机甲，轻量、高机动、飞行侦察结构，非英雄化展示。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "白鸢07",
+        "城市",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "白灰侦察型机甲，轻量、高机动、飞行侦察结构，非英雄化展示。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-BY007-V007",
+      "domain": "机甲",
+      "name": "白鸢07",
+      "variant": "海洋",
+      "version": "V007",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/baiyuan07/BAIYUAN07_V007.png",
+      "metadataPath": "assets/mecha/baiyuan07/BAIYUAN07_V007.json",
+      "promptPath": "assets/mecha/baiyuan07/BAIYUAN07_V007_PROMPT.md",
+      "referencePath": "assets/mecha/baiyuan07/BAIYUAN07_V007_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 白鸢07. Variant: 海洋.\n白灰侦察型机甲，轻量、高机动、飞行侦察结构，非英雄化展示。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "白鸢07",
+        "海洋",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "白灰侦察型机甲，轻量、高机动、飞行侦察结构，非英雄化展示。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-BY007-V008",
+      "domain": "机甲",
+      "name": "白鸢07",
+      "variant": "战斗",
+      "version": "V008",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/baiyuan07/BAIYUAN07_V008.png",
+      "metadataPath": "assets/mecha/baiyuan07/BAIYUAN07_V008.json",
+      "promptPath": "assets/mecha/baiyuan07/BAIYUAN07_V008_PROMPT.md",
+      "referencePath": "assets/mecha/baiyuan07/BAIYUAN07_V008_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 白鸢07. Variant: 战斗.\n白灰侦察型机甲，轻量、高机动、飞行侦察结构，非英雄化展示。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "白鸢07",
+        "战斗",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "白灰侦察型机甲，轻量、高机动、飞行侦察结构，非英雄化展示。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-BY007-V009",
+      "domain": "机甲",
+      "name": "白鸢07",
+      "variant": "损伤",
+      "version": "V009",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/baiyuan07/BAIYUAN07_V009.png",
+      "metadataPath": "assets/mecha/baiyuan07/BAIYUAN07_V009.json",
+      "promptPath": "assets/mecha/baiyuan07/BAIYUAN07_V009_PROMPT.md",
+      "referencePath": "assets/mecha/baiyuan07/BAIYUAN07_V009_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 白鸢07. Variant: 损伤.\n白灰侦察型机甲，轻量、高机动、飞行侦察结构，非英雄化展示。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "白鸢07",
+        "损伤",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "白灰侦察型机甲，轻量、高机动、飞行侦察结构，非英雄化展示。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "MECHA-BY007-V010",
+      "domain": "机甲",
+      "name": "白鸢07",
+      "variant": "海报",
+      "version": "V010",
+      "status": "待图片落盘",
+      "imagePath": "assets/mecha/baiyuan07/BAIYUAN07_V010.png",
+      "metadataPath": "assets/mecha/baiyuan07/BAIYUAN07_V010.json",
+      "promptPath": "assets/mecha/baiyuan07/BAIYUAN07_V010_PROMPT.md",
+      "referencePath": "assets/mecha/baiyuan07/BAIYUAN07_V010_REFERENCE.json",
+      "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 白鸢07. Variant: 海报.\n白灰侦察型机甲，轻量、高机动、飞行侦察结构，非英雄化展示。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "机甲",
+        "白鸢07",
+        "海报",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "白灰侦察型机甲，轻量、高机动、飞行侦察结构，非英雄化展示。",
+        "cannotChange": [
+          "比例",
+          "装甲颜色",
+          "机械骨架",
+          "能源颜色",
+          "工业真实感"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-WHITE_TIDE-V001",
+      "domain": "怪兽",
+      "name": "白潮",
+      "variant": "完整身体",
+      "version": "V001",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/white_tide/WHITE_TIDE_V001.png",
+      "metadataPath": "assets/creature/white_tide/WHITE_TIDE_V001.json",
+      "promptPath": "assets/creature/white_tide/WHITE_TIDE_V001_PROMPT.md",
+      "referencePath": "assets/creature/white_tide/WHITE_TIDE_V001_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 白潮. Variant: 完整身体.\n远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "白潮",
+        "完整身体",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-WHITE_TIDE-V002",
+      "domain": "怪兽",
+      "name": "白潮",
+      "variant": "头部",
+      "version": "V002",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/white_tide/WHITE_TIDE_V002.png",
+      "metadataPath": "assets/creature/white_tide/WHITE_TIDE_V002.json",
+      "promptPath": "assets/creature/white_tide/WHITE_TIDE_V002_PROMPT.md",
+      "referencePath": "assets/creature/white_tide/WHITE_TIDE_V002_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 白潮. Variant: 头部.\n远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "白潮",
+        "头部",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-WHITE_TIDE-V003",
+      "domain": "怪兽",
+      "name": "白潮",
+      "variant": "眼睛",
+      "version": "V003",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/white_tide/WHITE_TIDE_V003.png",
+      "metadataPath": "assets/creature/white_tide/WHITE_TIDE_V003.json",
+      "promptPath": "assets/creature/white_tide/WHITE_TIDE_V003_PROMPT.md",
+      "referencePath": "assets/creature/white_tide/WHITE_TIDE_V003_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 白潮. Variant: 眼睛.\n远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "白潮",
+        "眼睛",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-WHITE_TIDE-V004",
+      "domain": "怪兽",
+      "name": "白潮",
+      "variant": "甲壳",
+      "version": "V004",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/white_tide/WHITE_TIDE_V004.png",
+      "metadataPath": "assets/creature/white_tide/WHITE_TIDE_V004.json",
+      "promptPath": "assets/creature/white_tide/WHITE_TIDE_V004_PROMPT.md",
+      "referencePath": "assets/creature/white_tide/WHITE_TIDE_V004_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 白潮. Variant: 甲壳.\n远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "白潮",
+        "甲壳",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-WHITE_TIDE-V005",
+      "domain": "怪兽",
+      "name": "白潮",
+      "variant": "海面出现",
+      "version": "V005",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/white_tide/WHITE_TIDE_V005.png",
+      "metadataPath": "assets/creature/white_tide/WHITE_TIDE_V005.json",
+      "promptPath": "assets/creature/white_tide/WHITE_TIDE_V005_PROMPT.md",
+      "referencePath": "assets/creature/white_tide/WHITE_TIDE_V005_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 白潮. Variant: 海面出现.\n远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "白潮",
+        "海面出现",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-WHITE_TIDE-V006",
+      "domain": "怪兽",
+      "name": "白潮",
+      "variant": "游泳",
+      "version": "V006",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/white_tide/WHITE_TIDE_V006.png",
+      "metadataPath": "assets/creature/white_tide/WHITE_TIDE_V006.json",
+      "promptPath": "assets/creature/white_tide/WHITE_TIDE_V006_PROMPT.md",
+      "referencePath": "assets/creature/white_tide/WHITE_TIDE_V006_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 白潮. Variant: 游泳.\n远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "白潮",
+        "游泳",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-WHITE_TIDE-V007",
+      "domain": "怪兽",
+      "name": "白潮",
+      "variant": "攻击",
+      "version": "V007",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/white_tide/WHITE_TIDE_V007.png",
+      "metadataPath": "assets/creature/white_tide/WHITE_TIDE_V007.json",
+      "promptPath": "assets/creature/white_tide/WHITE_TIDE_V007_PROMPT.md",
+      "referencePath": "assets/creature/white_tide/WHITE_TIDE_V007_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 白潮. Variant: 攻击.\n远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "白潮",
+        "攻击",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-WHITE_TIDE-V008",
+      "domain": "怪兽",
+      "name": "白潮",
+      "variant": "受伤",
+      "version": "V008",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/white_tide/WHITE_TIDE_V008.png",
+      "metadataPath": "assets/creature/white_tide/WHITE_TIDE_V008.json",
+      "promptPath": "assets/creature/white_tide/WHITE_TIDE_V008_PROMPT.md",
+      "referencePath": "assets/creature/white_tide/WHITE_TIDE_V008_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 白潮. Variant: 受伤.\n远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "白潮",
+        "受伤",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-WHITE_TIDE-V009",
+      "domain": "怪兽",
+      "name": "白潮",
+      "variant": "暴雨",
+      "version": "V009",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/white_tide/WHITE_TIDE_V009.png",
+      "metadataPath": "assets/creature/white_tide/WHITE_TIDE_V009.json",
+      "promptPath": "assets/creature/white_tide/WHITE_TIDE_V009_PROMPT.md",
+      "referencePath": "assets/creature/white_tide/WHITE_TIDE_V009_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 白潮. Variant: 暴雨.\n远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "白潮",
+        "暴雨",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-WHITE_TIDE-V010",
+      "domain": "怪兽",
+      "name": "白潮",
+      "variant": "夜晚",
+      "version": "V010",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/white_tide/WHITE_TIDE_V010.png",
+      "metadataPath": "assets/creature/white_tide/WHITE_TIDE_V010.json",
+      "promptPath": "assets/creature/white_tide/WHITE_TIDE_V010_PROMPT.md",
+      "referencePath": "assets/creature/white_tide/WHITE_TIDE_V010_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 白潮. Variant: 夜晚.\n远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "白潮",
+        "夜晚",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-WHITE_TIDE-V011",
+      "domain": "怪兽",
+      "name": "白潮",
+      "variant": "巨大尺度",
+      "version": "V011",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/white_tide/WHITE_TIDE_V011.png",
+      "metadataPath": "assets/creature/white_tide/WHITE_TIDE_V011.json",
+      "promptPath": "assets/creature/white_tide/WHITE_TIDE_V011_PROMPT.md",
+      "referencePath": "assets/creature/white_tide/WHITE_TIDE_V011_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 白潮. Variant: 巨大尺度.\n远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "白潮",
+        "巨大尺度",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-WHITE_TIDE-V012",
+      "domain": "怪兽",
+      "name": "白潮",
+      "variant": "城市对比",
+      "version": "V012",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/white_tide/WHITE_TIDE_V012.png",
+      "metadataPath": "assets/creature/white_tide/WHITE_TIDE_V012.json",
+      "promptPath": "assets/creature/white_tide/WHITE_TIDE_V012_PROMPT.md",
+      "referencePath": "assets/creature/white_tide/WHITE_TIDE_V012_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 白潮. Variant: 城市对比.\n远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "白潮",
+        "城市对比",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-WHITE_TIDE-V013",
+      "domain": "怪兽",
+      "name": "白潮",
+      "variant": "电影海报",
+      "version": "V013",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/white_tide/WHITE_TIDE_V013.png",
+      "metadataPath": "assets/creature/white_tide/WHITE_TIDE_V013.json",
+      "promptPath": "assets/creature/white_tide/WHITE_TIDE_V013_PROMPT.md",
+      "referencePath": "assets/creature/white_tide/WHITE_TIDE_V013_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 白潮. Variant: 电影海报.\n远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "白潮",
+        "电影海报",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-WHITE_TIDE-V014",
+      "domain": "怪兽",
+      "name": "白潮",
+      "variant": "海底",
+      "version": "V014",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/white_tide/WHITE_TIDE_V014.png",
+      "metadataPath": "assets/creature/white_tide/WHITE_TIDE_V014.json",
+      "promptPath": "assets/creature/white_tide/WHITE_TIDE_V014_PROMPT.md",
+      "referencePath": "assets/creature/white_tide/WHITE_TIDE_V014_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 白潮. Variant: 海底.\n远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "白潮",
+        "海底",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-WHITE_TIDE-V015",
+      "domain": "怪兽",
+      "name": "白潮",
+      "variant": "低鸣",
+      "version": "V015",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/white_tide/WHITE_TIDE_V015.png",
+      "metadataPath": "assets/creature/white_tide/WHITE_TIDE_V015.json",
+      "promptPath": "assets/creature/white_tide/WHITE_TIDE_V015_PROMPT.md",
+      "referencePath": "assets/creature/white_tide/WHITE_TIDE_V015_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 白潮. Variant: 低鸣.\n远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "白潮",
+        "低鸣",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "远古深海生命，不是普通鲸鱼，白色生物甲壳，裂纹微光，巨大但脆弱，不是Boss怪兽。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-THORN_TIDE-V001",
+      "domain": "怪兽",
+      "name": "刺潮",
+      "variant": "完整身体",
+      "version": "V001",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/thorn_tide/THORN_TIDE_V001.png",
+      "metadataPath": "assets/creature/thorn_tide/THORN_TIDE_V001.json",
+      "promptPath": "assets/creature/thorn_tide/THORN_TIDE_V001_PROMPT.md",
+      "referencePath": "assets/creature/thorn_tide/THORN_TIDE_V001_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 刺潮. Variant: 完整身体.\n潮门生态中的高压深海生命，尖刺结构来自压力环境，不是恶魔，不是普通怪兽。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "刺潮",
+        "完整身体",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮门生态中的高压深海生命，尖刺结构来自压力环境，不是恶魔，不是普通怪兽。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-THORN_TIDE-V002",
+      "domain": "怪兽",
+      "name": "刺潮",
+      "variant": "头部",
+      "version": "V002",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/thorn_tide/THORN_TIDE_V002.png",
+      "metadataPath": "assets/creature/thorn_tide/THORN_TIDE_V002.json",
+      "promptPath": "assets/creature/thorn_tide/THORN_TIDE_V002_PROMPT.md",
+      "referencePath": "assets/creature/thorn_tide/THORN_TIDE_V002_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 刺潮. Variant: 头部.\n潮门生态中的高压深海生命，尖刺结构来自压力环境，不是恶魔，不是普通怪兽。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "刺潮",
+        "头部",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮门生态中的高压深海生命，尖刺结构来自压力环境，不是恶魔，不是普通怪兽。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-THORN_TIDE-V003",
+      "domain": "怪兽",
+      "name": "刺潮",
+      "variant": "刺状甲壳",
+      "version": "V003",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/thorn_tide/THORN_TIDE_V003.png",
+      "metadataPath": "assets/creature/thorn_tide/THORN_TIDE_V003.json",
+      "promptPath": "assets/creature/thorn_tide/THORN_TIDE_V003_PROMPT.md",
+      "referencePath": "assets/creature/thorn_tide/THORN_TIDE_V003_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 刺潮. Variant: 刺状甲壳.\n潮门生态中的高压深海生命，尖刺结构来自压力环境，不是恶魔，不是普通怪兽。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "刺潮",
+        "刺状甲壳",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮门生态中的高压深海生命，尖刺结构来自压力环境，不是恶魔，不是普通怪兽。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-THORN_TIDE-V004",
+      "domain": "怪兽",
+      "name": "刺潮",
+      "variant": "海中游动",
+      "version": "V004",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/thorn_tide/THORN_TIDE_V004.png",
+      "metadataPath": "assets/creature/thorn_tide/THORN_TIDE_V004.json",
+      "promptPath": "assets/creature/thorn_tide/THORN_TIDE_V004_PROMPT.md",
+      "referencePath": "assets/creature/thorn_tide/THORN_TIDE_V004_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 刺潮. Variant: 海中游动.\n潮门生态中的高压深海生命，尖刺结构来自压力环境，不是恶魔，不是普通怪兽。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "刺潮",
+        "海中游动",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮门生态中的高压深海生命，尖刺结构来自压力环境，不是恶魔，不是普通怪兽。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-THORN_TIDE-V005",
+      "domain": "怪兽",
+      "name": "刺潮",
+      "variant": "扑击",
+      "version": "V005",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/thorn_tide/THORN_TIDE_V005.png",
+      "metadataPath": "assets/creature/thorn_tide/THORN_TIDE_V005.json",
+      "promptPath": "assets/creature/thorn_tide/THORN_TIDE_V005_PROMPT.md",
+      "referencePath": "assets/creature/thorn_tide/THORN_TIDE_V005_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 刺潮. Variant: 扑击.\n潮门生态中的高压深海生命，尖刺结构来自压力环境，不是恶魔，不是普通怪兽。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "刺潮",
+        "扑击",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮门生态中的高压深海生命，尖刺结构来自压力环境，不是恶魔，不是普通怪兽。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-THORN_TIDE-V006",
+      "domain": "怪兽",
+      "name": "刺潮",
+      "variant": "摆尾",
+      "version": "V006",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/thorn_tide/THORN_TIDE_V006.png",
+      "metadataPath": "assets/creature/thorn_tide/THORN_TIDE_V006.json",
+      "promptPath": "assets/creature/thorn_tide/THORN_TIDE_V006_PROMPT.md",
+      "referencePath": "assets/creature/thorn_tide/THORN_TIDE_V006_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 刺潮. Variant: 摆尾.\n潮门生态中的高压深海生命，尖刺结构来自压力环境，不是恶魔，不是普通怪兽。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "刺潮",
+        "摆尾",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮门生态中的高压深海生命，尖刺结构来自压力环境，不是恶魔，不是普通怪兽。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-THORN_TIDE-V007",
+      "domain": "怪兽",
+      "name": "刺潮",
+      "variant": "受伤",
+      "version": "V007",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/thorn_tide/THORN_TIDE_V007.png",
+      "metadataPath": "assets/creature/thorn_tide/THORN_TIDE_V007.json",
+      "promptPath": "assets/creature/thorn_tide/THORN_TIDE_V007_PROMPT.md",
+      "referencePath": "assets/creature/thorn_tide/THORN_TIDE_V007_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 刺潮. Variant: 受伤.\n潮门生态中的高压深海生命，尖刺结构来自压力环境，不是恶魔，不是普通怪兽。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "刺潮",
+        "受伤",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮门生态中的高压深海生命，尖刺结构来自压力环境，不是恶魔，不是普通怪兽。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-THORN_TIDE-V008",
+      "domain": "怪兽",
+      "name": "刺潮",
+      "variant": "暴雨夜景",
+      "version": "V008",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/thorn_tide/THORN_TIDE_V008.png",
+      "metadataPath": "assets/creature/thorn_tide/THORN_TIDE_V008.json",
+      "promptPath": "assets/creature/thorn_tide/THORN_TIDE_V008_PROMPT.md",
+      "referencePath": "assets/creature/thorn_tide/THORN_TIDE_V008_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 刺潮. Variant: 暴雨夜景.\n潮门生态中的高压深海生命，尖刺结构来自压力环境，不是恶魔，不是普通怪兽。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "刺潮",
+        "暴雨夜景",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮门生态中的高压深海生命，尖刺结构来自压力环境，不是恶魔，不是普通怪兽。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-THORN_TIDE-V009",
+      "domain": "怪兽",
+      "name": "刺潮",
+      "variant": "城市尺度",
+      "version": "V009",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/thorn_tide/THORN_TIDE_V009.png",
+      "metadataPath": "assets/creature/thorn_tide/THORN_TIDE_V009.json",
+      "promptPath": "assets/creature/thorn_tide/THORN_TIDE_V009_PROMPT.md",
+      "referencePath": "assets/creature/thorn_tide/THORN_TIDE_V009_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 刺潮. Variant: 城市尺度.\n潮门生态中的高压深海生命，尖刺结构来自压力环境，不是恶魔，不是普通怪兽。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "刺潮",
+        "城市尺度",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮门生态中的高压深海生命，尖刺结构来自压力环境，不是恶魔，不是普通怪兽。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-THORN_TIDE-V010",
+      "domain": "怪兽",
+      "name": "刺潮",
+      "variant": "电影海报",
+      "version": "V010",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/thorn_tide/THORN_TIDE_V010.png",
+      "metadataPath": "assets/creature/thorn_tide/THORN_TIDE_V010.json",
+      "promptPath": "assets/creature/thorn_tide/THORN_TIDE_V010_PROMPT.md",
+      "referencePath": "assets/creature/thorn_tide/THORN_TIDE_V010_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 刺潮. Variant: 电影海报.\n潮门生态中的高压深海生命，尖刺结构来自压力环境，不是恶魔，不是普通怪兽。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "刺潮",
+        "电影海报",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮门生态中的高压深海生命，尖刺结构来自压力环境，不是恶魔，不是普通怪兽。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-BLACK_TIDE_MOTHER-V001",
+      "domain": "怪兽",
+      "name": "黑潮母体",
+      "variant": "完整轮廓",
+      "version": "V001",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V001.png",
+      "metadataPath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V001.json",
+      "promptPath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V001_PROMPT.md",
+      "referencePath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V001_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 黑潮母体. Variant: 完整轮廓.\n上一轮文明错误遗留系统的生命化阴影，黑色深海组织，母体尺度，未知而克制，不是最终Boss式登场。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "黑潮母体",
+        "完整轮廓",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "上一轮文明错误遗留系统的生命化阴影，黑色深海组织，母体尺度，未知而克制，不是最终Boss式登场。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-BLACK_TIDE_MOTHER-V002",
+      "domain": "怪兽",
+      "name": "黑潮母体",
+      "variant": "眼部",
+      "version": "V002",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V002.png",
+      "metadataPath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V002.json",
+      "promptPath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V002_PROMPT.md",
+      "referencePath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V002_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 黑潮母体. Variant: 眼部.\n上一轮文明错误遗留系统的生命化阴影，黑色深海组织，母体尺度，未知而克制，不是最终Boss式登场。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "黑潮母体",
+        "眼部",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "上一轮文明错误遗留系统的生命化阴影，黑色深海组织，母体尺度，未知而克制，不是最终Boss式登场。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-BLACK_TIDE_MOTHER-V003",
+      "domain": "怪兽",
+      "name": "黑潮母体",
+      "variant": "组织细节",
+      "version": "V003",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V003.png",
+      "metadataPath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V003.json",
+      "promptPath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V003_PROMPT.md",
+      "referencePath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V003_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 黑潮母体. Variant: 组织细节.\n上一轮文明错误遗留系统的生命化阴影，黑色深海组织，母体尺度，未知而克制，不是最终Boss式登场。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "黑潮母体",
+        "组织细节",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "上一轮文明错误遗留系统的生命化阴影，黑色深海组织，母体尺度，未知而克制，不是最终Boss式登场。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-BLACK_TIDE_MOTHER-V004",
+      "domain": "怪兽",
+      "name": "黑潮母体",
+      "variant": "潮门内部",
+      "version": "V004",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V004.png",
+      "metadataPath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V004.json",
+      "promptPath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V004_PROMPT.md",
+      "referencePath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V004_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 黑潮母体. Variant: 潮门内部.\n上一轮文明错误遗留系统的生命化阴影，黑色深海组织，母体尺度，未知而克制，不是最终Boss式登场。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "黑潮母体",
+        "潮门内部",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "上一轮文明错误遗留系统的生命化阴影，黑色深海组织，母体尺度，未知而克制，不是最终Boss式登场。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-BLACK_TIDE_MOTHER-V005",
+      "domain": "怪兽",
+      "name": "黑潮母体",
+      "variant": "深海尺度",
+      "version": "V005",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V005.png",
+      "metadataPath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V005.json",
+      "promptPath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V005_PROMPT.md",
+      "referencePath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V005_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 黑潮母体. Variant: 深海尺度.\n上一轮文明错误遗留系统的生命化阴影，黑色深海组织，母体尺度，未知而克制，不是最终Boss式登场。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "黑潮母体",
+        "深海尺度",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "上一轮文明错误遗留系统的生命化阴影，黑色深海组织，母体尺度，未知而克制，不是最终Boss式登场。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-BLACK_TIDE_MOTHER-V006",
+      "domain": "怪兽",
+      "name": "黑潮母体",
+      "variant": "能量脉动",
+      "version": "V006",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V006.png",
+      "metadataPath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V006.json",
+      "promptPath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V006_PROMPT.md",
+      "referencePath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V006_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 黑潮母体. Variant: 能量脉动.\n上一轮文明错误遗留系统的生命化阴影，黑色深海组织，母体尺度，未知而克制，不是最终Boss式登场。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "黑潮母体",
+        "能量脉动",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "上一轮文明错误遗留系统的生命化阴影，黑色深海组织，母体尺度，未知而克制，不是最终Boss式登场。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-BLACK_TIDE_MOTHER-V007",
+      "domain": "怪兽",
+      "name": "黑潮母体",
+      "variant": "受损状态",
+      "version": "V007",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V007.png",
+      "metadataPath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V007.json",
+      "promptPath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V007_PROMPT.md",
+      "referencePath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V007_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 黑潮母体. Variant: 受损状态.\n上一轮文明错误遗留系统的生命化阴影，黑色深海组织，母体尺度，未知而克制，不是最终Boss式登场。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "黑潮母体",
+        "受损状态",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "上一轮文明错误遗留系统的生命化阴影，黑色深海组织，母体尺度，未知而克制，不是最终Boss式登场。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-BLACK_TIDE_MOTHER-V008",
+      "domain": "怪兽",
+      "name": "黑潮母体",
+      "variant": "低频黑潮",
+      "version": "V008",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V008.png",
+      "metadataPath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V008.json",
+      "promptPath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V008_PROMPT.md",
+      "referencePath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V008_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 黑潮母体. Variant: 低频黑潮.\n上一轮文明错误遗留系统的生命化阴影，黑色深海组织，母体尺度，未知而克制，不是最终Boss式登场。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "黑潮母体",
+        "低频黑潮",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "上一轮文明错误遗留系统的生命化阴影，黑色深海组织，母体尺度，未知而克制，不是最终Boss式登场。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-BLACK_TIDE_MOTHER-V009",
+      "domain": "怪兽",
+      "name": "黑潮母体",
+      "variant": "巨大阴影",
+      "version": "V009",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V009.png",
+      "metadataPath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V009.json",
+      "promptPath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V009_PROMPT.md",
+      "referencePath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V009_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 黑潮母体. Variant: 巨大阴影.\n上一轮文明错误遗留系统的生命化阴影，黑色深海组织，母体尺度，未知而克制，不是最终Boss式登场。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "黑潮母体",
+        "巨大阴影",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "上一轮文明错误遗留系统的生命化阴影，黑色深海组织，母体尺度，未知而克制，不是最终Boss式登场。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "CREATURE-BLACK_TIDE_MOTHER-V010",
+      "domain": "怪兽",
+      "name": "黑潮母体",
+      "variant": "电影海报",
+      "version": "V010",
+      "status": "待图片落盘",
+      "imagePath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V010.png",
+      "metadataPath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V010.json",
+      "promptPath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V010_PROMPT.md",
+      "referencePath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V010_REFERENCE.json",
+      "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 黑潮母体. Variant: 电影海报.\n上一轮文明错误遗留系统的生命化阴影，黑色深海组织，母体尺度，未知而克制，不是最终Boss式登场。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+      "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+      "tags": [
+        "怪兽",
+        "黑潮母体",
+        "电影海报",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "上一轮文明错误遗留系统的生命化阴影，黑色深海组织，母体尺度，未知而克制，不是最终Boss式登场。",
+        "cannotChange": [
+          "身体结构",
+          "生态逻辑",
+          "材质",
+          "尺度",
+          "非普通怪兽化"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    }
+  ]
+}

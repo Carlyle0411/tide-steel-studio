@@ -1,0 +1,2983 @@
+{
+  "project": "潮汐钢魂",
+  "phase": "PHASE21C World Asset Library",
+  "generatedAt": "2026-07-10T00:00:00.000+08:00",
+  "rule": "建立2042杭州湾世界母资产。所有后续世界、场景、道具、天气、灯光镜头必须优先引用这里。",
+  "total": 90,
+  "landedImages": 1,
+  "generatedImages": 1,
+  "status": "部分图片已落盘，等待人工审核",
+  "assets": [
+    {
+      "assetId": "WORLD-HANGZHOU_BAY-V001",
+      "category": "杭州湾未来城市",
+      "slug": "hangzhou_bay_future_city",
+      "variant": "白天",
+      "version": "V001",
+      "status": "待人工审核",
+      "imagePath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V001.png",
+      "metadataPath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V001.json",
+      "promptPath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V001_PROMPT.md",
+      "referencePath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V001_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 杭州湾未来城市. Variant: 白天.\n2042杭州湾未来城市，海洋防线、未来港口、工业城市边缘，海洋比城市更大。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "杭州湾未来城市",
+        "白天",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "2042杭州湾未来城市，海洋防线、未来港口、工业城市边缘，海洋比城市更大。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-09T23:33:05.729Z",
+      "referenceStatus": "已落盘，等待人工审核锁定"
+    },
+    {
+      "assetId": "WORLD-HANGZHOU_BAY-V002",
+      "category": "杭州湾未来城市",
+      "slug": "hangzhou_bay_future_city",
+      "variant": "黄昏",
+      "version": "V002",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V002.png",
+      "metadataPath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V002.json",
+      "promptPath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V002_PROMPT.md",
+      "referencePath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V002_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 杭州湾未来城市. Variant: 黄昏.\n2042杭州湾未来城市，海洋防线、未来港口、工业城市边缘，海洋比城市更大。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "杭州湾未来城市",
+        "黄昏",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "2042杭州湾未来城市，海洋防线、未来港口、工业城市边缘，海洋比城市更大。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-HANGZHOU_BAY-V003",
+      "category": "杭州湾未来城市",
+      "slug": "hangzhou_bay_future_city",
+      "variant": "夜晚",
+      "version": "V003",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V003.png",
+      "metadataPath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V003.json",
+      "promptPath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V003_PROMPT.md",
+      "referencePath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V003_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 杭州湾未来城市. Variant: 夜晚.\n2042杭州湾未来城市，海洋防线、未来港口、工业城市边缘，海洋比城市更大。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "杭州湾未来城市",
+        "夜晚",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "2042杭州湾未来城市，海洋防线、未来港口、工业城市边缘，海洋比城市更大。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-HANGZHOU_BAY-V004",
+      "category": "杭州湾未来城市",
+      "slug": "hangzhou_bay_future_city",
+      "variant": "暴雨",
+      "version": "V004",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V004.png",
+      "metadataPath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V004.json",
+      "promptPath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V004_PROMPT.md",
+      "referencePath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V004_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 杭州湾未来城市. Variant: 暴雨.\n2042杭州湾未来城市，海洋防线、未来港口、工业城市边缘，海洋比城市更大。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "杭州湾未来城市",
+        "暴雨",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "2042杭州湾未来城市，海洋防线、未来港口、工业城市边缘，海洋比城市更大。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-HANGZHOU_BAY-V005",
+      "category": "杭州湾未来城市",
+      "slug": "hangzhou_bay_future_city",
+      "variant": "海雾",
+      "version": "V005",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V005.png",
+      "metadataPath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V005.json",
+      "promptPath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V005_PROMPT.md",
+      "referencePath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V005_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 杭州湾未来城市. Variant: 海雾.\n2042杭州湾未来城市，海洋防线、未来港口、工业城市边缘，海洋比城市更大。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "杭州湾未来城市",
+        "海雾",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "2042杭州湾未来城市，海洋防线、未来港口、工业城市边缘，海洋比城市更大。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-HANGZHOU_BAY-V006",
+      "category": "杭州湾未来城市",
+      "slug": "hangzhou_bay_future_city",
+      "variant": "高空",
+      "version": "V006",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V006.png",
+      "metadataPath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V006.json",
+      "promptPath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V006_PROMPT.md",
+      "referencePath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V006_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 杭州湾未来城市. Variant: 高空.\n2042杭州湾未来城市，海洋防线、未来港口、工业城市边缘，海洋比城市更大。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "杭州湾未来城市",
+        "高空",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "2042杭州湾未来城市，海洋防线、未来港口、工业城市边缘，海洋比城市更大。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-HANGZHOU_BAY-V007",
+      "category": "杭州湾未来城市",
+      "slug": "hangzhou_bay_future_city",
+      "variant": "街道",
+      "version": "V007",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V007.png",
+      "metadataPath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V007.json",
+      "promptPath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V007_PROMPT.md",
+      "referencePath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V007_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 杭州湾未来城市. Variant: 街道.\n2042杭州湾未来城市，海洋防线、未来港口、工业城市边缘，海洋比城市更大。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "杭州湾未来城市",
+        "街道",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "2042杭州湾未来城市，海洋防线、未来港口、工业城市边缘，海洋比城市更大。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-HANGZHOU_BAY-V008",
+      "category": "杭州湾未来城市",
+      "slug": "hangzhou_bay_future_city",
+      "variant": "港口",
+      "version": "V008",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V008.png",
+      "metadataPath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V008.json",
+      "promptPath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V008_PROMPT.md",
+      "referencePath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V008_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 杭州湾未来城市. Variant: 港口.\n2042杭州湾未来城市，海洋防线、未来港口、工业城市边缘，海洋比城市更大。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "杭州湾未来城市",
+        "港口",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "2042杭州湾未来城市，海洋防线、未来港口、工业城市边缘，海洋比城市更大。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-HANGZHOU_BAY-V009",
+      "category": "杭州湾未来城市",
+      "slug": "hangzhou_bay_future_city",
+      "variant": "防线",
+      "version": "V009",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V009.png",
+      "metadataPath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V009.json",
+      "promptPath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V009_PROMPT.md",
+      "referencePath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V009_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 杭州湾未来城市. Variant: 防线.\n2042杭州湾未来城市，海洋防线、未来港口、工业城市边缘，海洋比城市更大。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "杭州湾未来城市",
+        "防线",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "2042杭州湾未来城市，海洋防线、未来港口、工业城市边缘，海洋比城市更大。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-HANGZHOU_BAY-V010",
+      "category": "杭州湾未来城市",
+      "slug": "hangzhou_bay_future_city",
+      "variant": "电影海报",
+      "version": "V010",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V010.png",
+      "metadataPath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V010.json",
+      "promptPath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V010_PROMPT.md",
+      "referencePath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V010_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 杭州湾未来城市. Variant: 电影海报.\n2042杭州湾未来城市，海洋防线、未来港口、工业城市边缘，海洋比城市更大。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "杭州湾未来城市",
+        "电影海报",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "2042杭州湾未来城市，海洋防线、未来港口、工业城市边缘，海洋比城市更大。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-DEEP_BLUE_BASE-V001",
+      "category": "深蓝基地",
+      "slug": "deep_blue_base",
+      "variant": "外观",
+      "version": "V001",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V001.png",
+      "metadataPath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V001.json",
+      "promptPath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V001_PROMPT.md",
+      "referencePath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V001_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 深蓝基地. Variant: 外观.\n运行三十年的湿冷海洋防御基地，巨大工程结构、金属、玻璃、水汽、盐雾腐蚀。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "深蓝基地",
+        "外观",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "运行三十年的湿冷海洋防御基地，巨大工程结构、金属、玻璃、水汽、盐雾腐蚀。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-DEEP_BLUE_BASE-V002",
+      "category": "深蓝基地",
+      "slug": "deep_blue_base",
+      "variant": "大厅",
+      "version": "V002",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V002.png",
+      "metadataPath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V002.json",
+      "promptPath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V002_PROMPT.md",
+      "referencePath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V002_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 深蓝基地. Variant: 大厅.\n运行三十年的湿冷海洋防御基地，巨大工程结构、金属、玻璃、水汽、盐雾腐蚀。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "深蓝基地",
+        "大厅",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "运行三十年的湿冷海洋防御基地，巨大工程结构、金属、玻璃、水汽、盐雾腐蚀。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-DEEP_BLUE_BASE-V003",
+      "category": "深蓝基地",
+      "slug": "deep_blue_base",
+      "variant": "指挥中心",
+      "version": "V003",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V003.png",
+      "metadataPath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V003.json",
+      "promptPath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V003_PROMPT.md",
+      "referencePath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V003_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 深蓝基地. Variant: 指挥中心.\n运行三十年的湿冷海洋防御基地，巨大工程结构、金属、玻璃、水汽、盐雾腐蚀。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "深蓝基地",
+        "指挥中心",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "运行三十年的湿冷海洋防御基地，巨大工程结构、金属、玻璃、水汽、盐雾腐蚀。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-DEEP_BLUE_BASE-V004",
+      "category": "深蓝基地",
+      "slug": "deep_blue_base",
+      "variant": "机库",
+      "version": "V004",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V004.png",
+      "metadataPath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V004.json",
+      "promptPath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V004_PROMPT.md",
+      "referencePath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V004_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 深蓝基地. Variant: 机库.\n运行三十年的湿冷海洋防御基地，巨大工程结构、金属、玻璃、水汽、盐雾腐蚀。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "深蓝基地",
+        "机库",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "运行三十年的湿冷海洋防御基地，巨大工程结构、金属、玻璃、水汽、盐雾腐蚀。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-DEEP_BLUE_BASE-V005",
+      "category": "深蓝基地",
+      "slug": "deep_blue_base",
+      "variant": "维修区",
+      "version": "V005",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V005.png",
+      "metadataPath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V005.json",
+      "promptPath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V005_PROMPT.md",
+      "referencePath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V005_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 深蓝基地. Variant: 维修区.\n运行三十年的湿冷海洋防御基地，巨大工程结构、金属、玻璃、水汽、盐雾腐蚀。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "深蓝基地",
+        "维修区",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "运行三十年的湿冷海洋防御基地，巨大工程结构、金属、玻璃、水汽、盐雾腐蚀。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-DEEP_BLUE_BASE-V006",
+      "category": "深蓝基地",
+      "slug": "deep_blue_base",
+      "variant": "驾驶舱入口",
+      "version": "V006",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V006.png",
+      "metadataPath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V006.json",
+      "promptPath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V006_PROMPT.md",
+      "referencePath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V006_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 深蓝基地. Variant: 驾驶舱入口.\n运行三十年的湿冷海洋防御基地，巨大工程结构、金属、玻璃、水汽、盐雾腐蚀。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "深蓝基地",
+        "驾驶舱入口",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "运行三十年的湿冷海洋防御基地，巨大工程结构、金属、玻璃、水汽、盐雾腐蚀。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-DEEP_BLUE_BASE-V007",
+      "category": "深蓝基地",
+      "slug": "deep_blue_base",
+      "variant": "实验室",
+      "version": "V007",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V007.png",
+      "metadataPath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V007.json",
+      "promptPath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V007_PROMPT.md",
+      "referencePath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V007_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 深蓝基地. Variant: 实验室.\n运行三十年的湿冷海洋防御基地，巨大工程结构、金属、玻璃、水汽、盐雾腐蚀。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "深蓝基地",
+        "实验室",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "运行三十年的湿冷海洋防御基地，巨大工程结构、金属、玻璃、水汽、盐雾腐蚀。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-DEEP_BLUE_BASE-V008",
+      "category": "深蓝基地",
+      "slug": "deep_blue_base",
+      "variant": "通道",
+      "version": "V008",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V008.png",
+      "metadataPath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V008.json",
+      "promptPath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V008_PROMPT.md",
+      "referencePath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V008_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 深蓝基地. Variant: 通道.\n运行三十年的湿冷海洋防御基地，巨大工程结构、金属、玻璃、水汽、盐雾腐蚀。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "深蓝基地",
+        "通道",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "运行三十年的湿冷海洋防御基地，巨大工程结构、金属、玻璃、水汽、盐雾腐蚀。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-DEEP_BLUE_BASE-V009",
+      "category": "深蓝基地",
+      "slug": "deep_blue_base",
+      "variant": "警报状态",
+      "version": "V009",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V009.png",
+      "metadataPath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V009.json",
+      "promptPath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V009_PROMPT.md",
+      "referencePath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V009_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 深蓝基地. Variant: 警报状态.\n运行三十年的湿冷海洋防御基地，巨大工程结构、金属、玻璃、水汽、盐雾腐蚀。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "深蓝基地",
+        "警报状态",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "运行三十年的湿冷海洋防御基地，巨大工程结构、金属、玻璃、水汽、盐雾腐蚀。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-DEEP_BLUE_BASE-V010",
+      "category": "深蓝基地",
+      "slug": "deep_blue_base",
+      "variant": "夜景",
+      "version": "V010",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V010.png",
+      "metadataPath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V010.json",
+      "promptPath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V010_PROMPT.md",
+      "referencePath": "assets/world/deep_blue_base/DEEP_BLUE_BASE_V010_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 深蓝基地. Variant: 夜景.\n运行三十年的湿冷海洋防御基地，巨大工程结构、金属、玻璃、水汽、盐雾腐蚀。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "深蓝基地",
+        "夜景",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "运行三十年的湿冷海洋防御基地，巨大工程结构、金属、玻璃、水汽、盐雾腐蚀。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-TIDE_GATE_RIFT-V001",
+      "category": "潮门裂口",
+      "slug": "tide_gate_rift",
+      "variant": "远景",
+      "version": "V001",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V001.png",
+      "metadataPath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V001.json",
+      "promptPath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V001_PROMPT.md",
+      "referencePath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V001_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 潮门裂口. Variant: 远景.\n潮门不是传送门，是未知海洋生命系统与地球连接的位置，深海压力、冰川裂缝、生物组织感。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "潮门裂口",
+        "远景",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮门不是传送门，是未知海洋生命系统与地球连接的位置，深海压力、冰川裂缝、生物组织感。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-TIDE_GATE_RIFT-V002",
+      "category": "潮门裂口",
+      "slug": "tide_gate_rift",
+      "variant": "近景",
+      "version": "V002",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V002.png",
+      "metadataPath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V002.json",
+      "promptPath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V002_PROMPT.md",
+      "referencePath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V002_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 潮门裂口. Variant: 近景.\n潮门不是传送门，是未知海洋生命系统与地球连接的位置，深海压力、冰川裂缝、生物组织感。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "潮门裂口",
+        "近景",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮门不是传送门，是未知海洋生命系统与地球连接的位置，深海压力、冰川裂缝、生物组织感。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-TIDE_GATE_RIFT-V003",
+      "category": "潮门裂口",
+      "slug": "tide_gate_rift",
+      "variant": "开启",
+      "version": "V003",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V003.png",
+      "metadataPath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V003.json",
+      "promptPath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V003_PROMPT.md",
+      "referencePath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V003_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 潮门裂口. Variant: 开启.\n潮门不是传送门，是未知海洋生命系统与地球连接的位置，深海压力、冰川裂缝、生物组织感。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "潮门裂口",
+        "开启",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮门不是传送门，是未知海洋生命系统与地球连接的位置，深海压力、冰川裂缝、生物组织感。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-TIDE_GATE_RIFT-V004",
+      "category": "潮门裂口",
+      "slug": "tide_gate_rift",
+      "variant": "能量",
+      "version": "V004",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V004.png",
+      "metadataPath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V004.json",
+      "promptPath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V004_PROMPT.md",
+      "referencePath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V004_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 潮门裂口. Variant: 能量.\n潮门不是传送门，是未知海洋生命系统与地球连接的位置，深海压力、冰川裂缝、生物组织感。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "潮门裂口",
+        "能量",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮门不是传送门，是未知海洋生命系统与地球连接的位置，深海压力、冰川裂缝、生物组织感。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-TIDE_GATE_RIFT-V005",
+      "category": "潮门裂口",
+      "slug": "tide_gate_rift",
+      "variant": "内部",
+      "version": "V005",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V005.png",
+      "metadataPath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V005.json",
+      "promptPath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V005_PROMPT.md",
+      "referencePath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V005_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 潮门裂口. Variant: 内部.\n潮门不是传送门，是未知海洋生命系统与地球连接的位置，深海压力、冰川裂缝、生物组织感。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "潮门裂口",
+        "内部",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮门不是传送门，是未知海洋生命系统与地球连接的位置，深海压力、冰川裂缝、生物组织感。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-TIDE_GATE_RIFT-V006",
+      "category": "潮门裂口",
+      "slug": "tide_gate_rift",
+      "variant": "海底",
+      "version": "V006",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V006.png",
+      "metadataPath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V006.json",
+      "promptPath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V006_PROMPT.md",
+      "referencePath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V006_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 潮门裂口. Variant: 海底.\n潮门不是传送门，是未知海洋生命系统与地球连接的位置，深海压力、冰川裂缝、生物组织感。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "潮门裂口",
+        "海底",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮门不是传送门，是未知海洋生命系统与地球连接的位置，深海压力、冰川裂缝、生物组织感。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-TIDE_GATE_RIFT-V007",
+      "category": "潮门裂口",
+      "slug": "tide_gate_rift",
+      "variant": "巨大尺度",
+      "version": "V007",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V007.png",
+      "metadataPath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V007.json",
+      "promptPath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V007_PROMPT.md",
+      "referencePath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V007_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 潮门裂口. Variant: 巨大尺度.\n潮门不是传送门，是未知海洋生命系统与地球连接的位置，深海压力、冰川裂缝、生物组织感。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "潮门裂口",
+        "巨大尺度",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮门不是传送门，是未知海洋生命系统与地球连接的位置，深海压力、冰川裂缝、生物组织感。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-TIDE_GATE_RIFT-V008",
+      "category": "潮门裂口",
+      "slug": "tide_gate_rift",
+      "variant": "边缘组织",
+      "version": "V008",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V008.png",
+      "metadataPath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V008.json",
+      "promptPath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V008_PROMPT.md",
+      "referencePath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V008_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 潮门裂口. Variant: 边缘组织.\n潮门不是传送门，是未知海洋生命系统与地球连接的位置，深海压力、冰川裂缝、生物组织感。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "潮门裂口",
+        "边缘组织",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮门不是传送门，是未知海洋生命系统与地球连接的位置，深海压力、冰川裂缝、生物组织感。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-TIDE_GATE_RIFT-V009",
+      "category": "潮门裂口",
+      "slug": "tide_gate_rift",
+      "variant": "低频波纹",
+      "version": "V009",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V009.png",
+      "metadataPath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V009.json",
+      "promptPath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V009_PROMPT.md",
+      "referencePath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V009_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 潮门裂口. Variant: 低频波纹.\n潮门不是传送门，是未知海洋生命系统与地球连接的位置，深海压力、冰川裂缝、生物组织感。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "潮门裂口",
+        "低频波纹",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮门不是传送门，是未知海洋生命系统与地球连接的位置，深海压力、冰川裂缝、生物组织感。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-TIDE_GATE_RIFT-V010",
+      "category": "潮门裂口",
+      "slug": "tide_gate_rift",
+      "variant": "电影海报",
+      "version": "V010",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V010.png",
+      "metadataPath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V010.json",
+      "promptPath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V010_PROMPT.md",
+      "referencePath": "assets/world/tide_gate_rift/TIDE_GATE_RIFT_V010_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 潮门裂口. Variant: 电影海报.\n潮门不是传送门，是未知海洋生命系统与地球连接的位置，深海压力、冰川裂缝、生物组织感。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "潮门裂口",
+        "电影海报",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮门不是传送门，是未知海洋生命系统与地球连接的位置，深海压力、冰川裂缝、生物组织感。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-UNDERSEA_RUINS-V001",
+      "category": "海底废墟",
+      "slug": "undersea_ruins",
+      "variant": "远景",
+      "version": "V001",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V001.png",
+      "metadataPath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V001.json",
+      "promptPath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V001_PROMPT.md",
+      "referencePath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V001_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 海底废墟. Variant: 远景.\n海底旧文明遗迹，被深海压力、盐蚀和未知生态覆盖，非游戏副本。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "海底废墟",
+        "远景",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "海底旧文明遗迹，被深海压力、盐蚀和未知生态覆盖，非游戏副本。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-UNDERSEA_RUINS-V002",
+      "category": "海底废墟",
+      "slug": "undersea_ruins",
+      "variant": "近景",
+      "version": "V002",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V002.png",
+      "metadataPath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V002.json",
+      "promptPath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V002_PROMPT.md",
+      "referencePath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V002_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 海底废墟. Variant: 近景.\n海底旧文明遗迹，被深海压力、盐蚀和未知生态覆盖，非游戏副本。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "海底废墟",
+        "近景",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "海底旧文明遗迹，被深海压力、盐蚀和未知生态覆盖，非游戏副本。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-UNDERSEA_RUINS-V003",
+      "category": "海底废墟",
+      "slug": "undersea_ruins",
+      "variant": "入口",
+      "version": "V003",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V003.png",
+      "metadataPath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V003.json",
+      "promptPath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V003_PROMPT.md",
+      "referencePath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V003_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 海底废墟. Variant: 入口.\n海底旧文明遗迹，被深海压力、盐蚀和未知生态覆盖，非游戏副本。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "海底废墟",
+        "入口",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "海底旧文明遗迹，被深海压力、盐蚀和未知生态覆盖，非游戏副本。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-UNDERSEA_RUINS-V004",
+      "category": "海底废墟",
+      "slug": "undersea_ruins",
+      "variant": "大厅",
+      "version": "V004",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V004.png",
+      "metadataPath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V004.json",
+      "promptPath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V004_PROMPT.md",
+      "referencePath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V004_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 海底废墟. Variant: 大厅.\n海底旧文明遗迹，被深海压力、盐蚀和未知生态覆盖，非游戏副本。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "海底废墟",
+        "大厅",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "海底旧文明遗迹，被深海压力、盐蚀和未知生态覆盖，非游戏副本。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-UNDERSEA_RUINS-V005",
+      "category": "海底废墟",
+      "slug": "undersea_ruins",
+      "variant": "断裂结构",
+      "version": "V005",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V005.png",
+      "metadataPath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V005.json",
+      "promptPath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V005_PROMPT.md",
+      "referencePath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V005_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 海底废墟. Variant: 断裂结构.\n海底旧文明遗迹，被深海压力、盐蚀和未知生态覆盖，非游戏副本。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "海底废墟",
+        "断裂结构",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "海底旧文明遗迹，被深海压力、盐蚀和未知生态覆盖，非游戏副本。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-UNDERSEA_RUINS-V006",
+      "category": "海底废墟",
+      "slug": "undersea_ruins",
+      "variant": "旧文明符号",
+      "version": "V006",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V006.png",
+      "metadataPath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V006.json",
+      "promptPath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V006_PROMPT.md",
+      "referencePath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V006_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 海底废墟. Variant: 旧文明符号.\n海底旧文明遗迹，被深海压力、盐蚀和未知生态覆盖，非游戏副本。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "海底废墟",
+        "旧文明符号",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "海底旧文明遗迹，被深海压力、盐蚀和未知生态覆盖，非游戏副本。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-UNDERSEA_RUINS-V007",
+      "category": "海底废墟",
+      "slug": "undersea_ruins",
+      "variant": "深海光束",
+      "version": "V007",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V007.png",
+      "metadataPath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V007.json",
+      "promptPath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V007_PROMPT.md",
+      "referencePath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V007_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 海底废墟. Variant: 深海光束.\n海底旧文明遗迹，被深海压力、盐蚀和未知生态覆盖，非游戏副本。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "海底废墟",
+        "深海光束",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "海底旧文明遗迹，被深海压力、盐蚀和未知生态覆盖，非游戏副本。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-UNDERSEA_RUINS-V008",
+      "category": "海底废墟",
+      "slug": "undersea_ruins",
+      "variant": "沉积层",
+      "version": "V008",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V008.png",
+      "metadataPath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V008.json",
+      "promptPath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V008_PROMPT.md",
+      "referencePath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V008_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 海底废墟. Variant: 沉积层.\n海底旧文明遗迹，被深海压力、盐蚀和未知生态覆盖，非游戏副本。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "海底废墟",
+        "沉积层",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "海底旧文明遗迹，被深海压力、盐蚀和未知生态覆盖，非游戏副本。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-UNDERSEA_RUINS-V009",
+      "category": "海底废墟",
+      "slug": "undersea_ruins",
+      "variant": "巨大尺度",
+      "version": "V009",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V009.png",
+      "metadataPath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V009.json",
+      "promptPath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V009_PROMPT.md",
+      "referencePath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V009_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 海底废墟. Variant: 巨大尺度.\n海底旧文明遗迹，被深海压力、盐蚀和未知生态覆盖，非游戏副本。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "海底废墟",
+        "巨大尺度",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "海底旧文明遗迹，被深海压力、盐蚀和未知生态覆盖，非游戏副本。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-UNDERSEA_RUINS-V010",
+      "category": "海底废墟",
+      "slug": "undersea_ruins",
+      "variant": "电影海报",
+      "version": "V010",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V010.png",
+      "metadataPath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V010.json",
+      "promptPath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V010_PROMPT.md",
+      "referencePath": "assets/world/undersea_ruins/UNDERSEA_RUINS_V010_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 海底废墟. Variant: 电影海报.\n海底旧文明遗迹，被深海压力、盐蚀和未知生态覆盖，非游戏副本。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "海底废墟",
+        "电影海报",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "海底旧文明遗迹，被深海压力、盐蚀和未知生态覆盖，非游戏副本。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-PROPS-V001",
+      "category": "道具",
+      "slug": "props",
+      "variant": "头盔01",
+      "version": "V001",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/props/PROPS_V001.png",
+      "metadataPath": "assets/world/props/PROPS_V001.json",
+      "promptPath": "assets/world/props/PROPS_V001_PROMPT.md",
+      "referencePath": "assets/world/props/PROPS_V001_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 道具. Variant: 头盔01.\n潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "道具",
+        "头盔01",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-PROPS-V002",
+      "category": "道具",
+      "slug": "props",
+      "variant": "头盔02",
+      "version": "V002",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/props/PROPS_V002.png",
+      "metadataPath": "assets/world/props/PROPS_V002.json",
+      "promptPath": "assets/world/props/PROPS_V002_PROMPT.md",
+      "referencePath": "assets/world/props/PROPS_V002_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 道具. Variant: 头盔02.\n潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "道具",
+        "头盔02",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-PROPS-V003",
+      "category": "道具",
+      "slug": "props",
+      "variant": "控制器01",
+      "version": "V003",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/props/PROPS_V003.png",
+      "metadataPath": "assets/world/props/PROPS_V003.json",
+      "promptPath": "assets/world/props/PROPS_V003_PROMPT.md",
+      "referencePath": "assets/world/props/PROPS_V003_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 道具. Variant: 控制器01.\n潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "道具",
+        "控制器01",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-PROPS-V004",
+      "category": "道具",
+      "slug": "props",
+      "variant": "控制器02",
+      "version": "V004",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/props/PROPS_V004.png",
+      "metadataPath": "assets/world/props/PROPS_V004.json",
+      "promptPath": "assets/world/props/PROPS_V004_PROMPT.md",
+      "referencePath": "assets/world/props/PROPS_V004_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 道具. Variant: 控制器02.\n潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "道具",
+        "控制器02",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-PROPS-V005",
+      "category": "道具",
+      "slug": "props",
+      "variant": "能源核心01",
+      "version": "V005",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/props/PROPS_V005.png",
+      "metadataPath": "assets/world/props/PROPS_V005.json",
+      "promptPath": "assets/world/props/PROPS_V005_PROMPT.md",
+      "referencePath": "assets/world/props/PROPS_V005_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 道具. Variant: 能源核心01.\n潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "道具",
+        "能源核心01",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-PROPS-V006",
+      "category": "道具",
+      "slug": "props",
+      "variant": "能源核心02",
+      "version": "V006",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/props/PROPS_V006.png",
+      "metadataPath": "assets/world/props/PROPS_V006.json",
+      "promptPath": "assets/world/props/PROPS_V006_PROMPT.md",
+      "referencePath": "assets/world/props/PROPS_V006_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 道具. Variant: 能源核心02.\n潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "道具",
+        "能源核心02",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-PROPS-V007",
+      "category": "道具",
+      "slug": "props",
+      "variant": "AI终端01",
+      "version": "V007",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/props/PROPS_V007.png",
+      "metadataPath": "assets/world/props/PROPS_V007.json",
+      "promptPath": "assets/world/props/PROPS_V007_PROMPT.md",
+      "referencePath": "assets/world/props/PROPS_V007_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 道具. Variant: AI终端01.\n潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "道具",
+        "AI终端01",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-PROPS-V008",
+      "category": "道具",
+      "slug": "props",
+      "variant": "AI终端02",
+      "version": "V008",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/props/PROPS_V008.png",
+      "metadataPath": "assets/world/props/PROPS_V008.json",
+      "promptPath": "assets/world/props/PROPS_V008_PROMPT.md",
+      "referencePath": "assets/world/props/PROPS_V008_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 道具. Variant: AI终端02.\n潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "道具",
+        "AI终端02",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-PROPS-V009",
+      "category": "道具",
+      "slug": "props",
+      "variant": "维修工具01",
+      "version": "V009",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/props/PROPS_V009.png",
+      "metadataPath": "assets/world/props/PROPS_V009.json",
+      "promptPath": "assets/world/props/PROPS_V009_PROMPT.md",
+      "referencePath": "assets/world/props/PROPS_V009_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 道具. Variant: 维修工具01.\n潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "道具",
+        "维修工具01",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-PROPS-V010",
+      "category": "道具",
+      "slug": "props",
+      "variant": "维修工具02",
+      "version": "V010",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/props/PROPS_V010.png",
+      "metadataPath": "assets/world/props/PROPS_V010.json",
+      "promptPath": "assets/world/props/PROPS_V010_PROMPT.md",
+      "referencePath": "assets/world/props/PROPS_V010_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 道具. Variant: 维修工具02.\n潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "道具",
+        "维修工具02",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-PROPS-V011",
+      "category": "道具",
+      "slug": "props",
+      "variant": "武器模块01",
+      "version": "V011",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/props/PROPS_V011.png",
+      "metadataPath": "assets/world/props/PROPS_V011.json",
+      "promptPath": "assets/world/props/PROPS_V011_PROMPT.md",
+      "referencePath": "assets/world/props/PROPS_V011_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 道具. Variant: 武器模块01.\n潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "道具",
+        "武器模块01",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-PROPS-V012",
+      "category": "道具",
+      "slug": "props",
+      "variant": "武器模块02",
+      "version": "V012",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/props/PROPS_V012.png",
+      "metadataPath": "assets/world/props/PROPS_V012.json",
+      "promptPath": "assets/world/props/PROPS_V012_PROMPT.md",
+      "referencePath": "assets/world/props/PROPS_V012_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 道具. Variant: 武器模块02.\n潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "道具",
+        "武器模块02",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-PROPS-V013",
+      "category": "道具",
+      "slug": "props",
+      "variant": "身份卡",
+      "version": "V013",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/props/PROPS_V013.png",
+      "metadataPath": "assets/world/props/PROPS_V013.json",
+      "promptPath": "assets/world/props/PROPS_V013_PROMPT.md",
+      "referencePath": "assets/world/props/PROPS_V013_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 道具. Variant: 身份卡.\n潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "道具",
+        "身份卡",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-PROPS-V014",
+      "category": "道具",
+      "slug": "props",
+      "variant": "同步装置",
+      "version": "V014",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/props/PROPS_V014.png",
+      "metadataPath": "assets/world/props/PROPS_V014.json",
+      "promptPath": "assets/world/props/PROPS_V014_PROMPT.md",
+      "referencePath": "assets/world/props/PROPS_V014_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 道具. Variant: 同步装置.\n潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "道具",
+        "同步装置",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-PROPS-V015",
+      "category": "道具",
+      "slug": "props",
+      "variant": "声呐模块",
+      "version": "V015",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/props/PROPS_V015.png",
+      "metadataPath": "assets/world/props/PROPS_V015.json",
+      "promptPath": "assets/world/props/PROPS_V015_PROMPT.md",
+      "referencePath": "assets/world/props/PROPS_V015_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 道具. Variant: 声呐模块.\n潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "道具",
+        "声呐模块",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-PROPS-V016",
+      "category": "道具",
+      "slug": "props",
+      "variant": "浮标终端",
+      "version": "V016",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/props/PROPS_V016.png",
+      "metadataPath": "assets/world/props/PROPS_V016.json",
+      "promptPath": "assets/world/props/PROPS_V016_PROMPT.md",
+      "referencePath": "assets/world/props/PROPS_V016_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 道具. Variant: 浮标终端.\n潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "道具",
+        "浮标终端",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-PROPS-V017",
+      "category": "道具",
+      "slug": "props",
+      "variant": "机械手套",
+      "version": "V017",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/props/PROPS_V017.png",
+      "metadataPath": "assets/world/props/PROPS_V017.json",
+      "promptPath": "assets/world/props/PROPS_V017_PROMPT.md",
+      "referencePath": "assets/world/props/PROPS_V017_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 道具. Variant: 机械手套.\n潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "道具",
+        "机械手套",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-PROPS-V018",
+      "category": "道具",
+      "slug": "props",
+      "variant": "数据盒",
+      "version": "V018",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/props/PROPS_V018.png",
+      "metadataPath": "assets/world/props/PROPS_V018.json",
+      "promptPath": "assets/world/props/PROPS_V018_PROMPT.md",
+      "referencePath": "assets/world/props/PROPS_V018_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 道具. Variant: 数据盒.\n潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "道具",
+        "数据盒",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-PROPS-V019",
+      "category": "道具",
+      "slug": "props",
+      "variant": "海水采样器",
+      "version": "V019",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/props/PROPS_V019.png",
+      "metadataPath": "assets/world/props/PROPS_V019.json",
+      "promptPath": "assets/world/props/PROPS_V019_PROMPT.md",
+      "referencePath": "assets/world/props/PROPS_V019_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 道具. Variant: 海水采样器.\n潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "道具",
+        "海水采样器",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-PROPS-V020",
+      "category": "道具",
+      "slug": "props",
+      "variant": "应急灯",
+      "version": "V020",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/props/PROPS_V020.png",
+      "metadataPath": "assets/world/props/PROPS_V020.json",
+      "promptPath": "assets/world/props/PROPS_V020_PROMPT.md",
+      "referencePath": "assets/world/props/PROPS_V020_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 道具. Variant: 应急灯.\n潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "道具",
+        "应急灯",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂标准电影道具，真实工业用途，服务角色动作和世界规则。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-WEATHER-V001",
+      "category": "天气库",
+      "slug": "weather",
+      "variant": "暴雨01",
+      "version": "V001",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/weather/WEATHER_V001.png",
+      "metadataPath": "assets/world/weather/WEATHER_V001.json",
+      "promptPath": "assets/world/weather/WEATHER_V001_PROMPT.md",
+      "referencePath": "assets/world/weather/WEATHER_V001_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 天气库. Variant: 暴雨01.\n杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "天气库",
+        "暴雨01",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-WEATHER-V002",
+      "category": "天气库",
+      "slug": "weather",
+      "variant": "暴雨02",
+      "version": "V002",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/weather/WEATHER_V002.png",
+      "metadataPath": "assets/world/weather/WEATHER_V002.json",
+      "promptPath": "assets/world/weather/WEATHER_V002_PROMPT.md",
+      "referencePath": "assets/world/weather/WEATHER_V002_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 天气库. Variant: 暴雨02.\n杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "天气库",
+        "暴雨02",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-WEATHER-V003",
+      "category": "天气库",
+      "slug": "weather",
+      "variant": "暴雨03",
+      "version": "V003",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/weather/WEATHER_V003.png",
+      "metadataPath": "assets/world/weather/WEATHER_V003.json",
+      "promptPath": "assets/world/weather/WEATHER_V003_PROMPT.md",
+      "referencePath": "assets/world/weather/WEATHER_V003_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 天气库. Variant: 暴雨03.\n杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "天气库",
+        "暴雨03",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-WEATHER-V004",
+      "category": "天气库",
+      "slug": "weather",
+      "variant": "海雾01",
+      "version": "V004",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/weather/WEATHER_V004.png",
+      "metadataPath": "assets/world/weather/WEATHER_V004.json",
+      "promptPath": "assets/world/weather/WEATHER_V004_PROMPT.md",
+      "referencePath": "assets/world/weather/WEATHER_V004_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 天气库. Variant: 海雾01.\n杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "天气库",
+        "海雾01",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-WEATHER-V005",
+      "category": "天气库",
+      "slug": "weather",
+      "variant": "海雾02",
+      "version": "V005",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/weather/WEATHER_V005.png",
+      "metadataPath": "assets/world/weather/WEATHER_V005.json",
+      "promptPath": "assets/world/weather/WEATHER_V005_PROMPT.md",
+      "referencePath": "assets/world/weather/WEATHER_V005_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 天气库. Variant: 海雾02.\n杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "天气库",
+        "海雾02",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-WEATHER-V006",
+      "category": "天气库",
+      "slug": "weather",
+      "variant": "海雾03",
+      "version": "V006",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/weather/WEATHER_V006.png",
+      "metadataPath": "assets/world/weather/WEATHER_V006.json",
+      "promptPath": "assets/world/weather/WEATHER_V006_PROMPT.md",
+      "referencePath": "assets/world/weather/WEATHER_V006_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 天气库. Variant: 海雾03.\n杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "天气库",
+        "海雾03",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-WEATHER-V007",
+      "category": "天气库",
+      "slug": "weather",
+      "variant": "雷暴01",
+      "version": "V007",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/weather/WEATHER_V007.png",
+      "metadataPath": "assets/world/weather/WEATHER_V007.json",
+      "promptPath": "assets/world/weather/WEATHER_V007_PROMPT.md",
+      "referencePath": "assets/world/weather/WEATHER_V007_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 天气库. Variant: 雷暴01.\n杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "天气库",
+        "雷暴01",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-WEATHER-V008",
+      "category": "天气库",
+      "slug": "weather",
+      "variant": "雷暴02",
+      "version": "V008",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/weather/WEATHER_V008.png",
+      "metadataPath": "assets/world/weather/WEATHER_V008.json",
+      "promptPath": "assets/world/weather/WEATHER_V008_PROMPT.md",
+      "referencePath": "assets/world/weather/WEATHER_V008_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 天气库. Variant: 雷暴02.\n杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "天气库",
+        "雷暴02",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-WEATHER-V009",
+      "category": "天气库",
+      "slug": "weather",
+      "variant": "雷暴03",
+      "version": "V009",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/weather/WEATHER_V009.png",
+      "metadataPath": "assets/world/weather/WEATHER_V009.json",
+      "promptPath": "assets/world/weather/WEATHER_V009_PROMPT.md",
+      "referencePath": "assets/world/weather/WEATHER_V009_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 天气库. Variant: 雷暴03.\n杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "天气库",
+        "雷暴03",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-WEATHER-V010",
+      "category": "天气库",
+      "slug": "weather",
+      "variant": "夕阳01",
+      "version": "V010",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/weather/WEATHER_V010.png",
+      "metadataPath": "assets/world/weather/WEATHER_V010.json",
+      "promptPath": "assets/world/weather/WEATHER_V010_PROMPT.md",
+      "referencePath": "assets/world/weather/WEATHER_V010_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 天气库. Variant: 夕阳01.\n杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "天气库",
+        "夕阳01",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-WEATHER-V011",
+      "category": "天气库",
+      "slug": "weather",
+      "variant": "夕阳02",
+      "version": "V011",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/weather/WEATHER_V011.png",
+      "metadataPath": "assets/world/weather/WEATHER_V011.json",
+      "promptPath": "assets/world/weather/WEATHER_V011_PROMPT.md",
+      "referencePath": "assets/world/weather/WEATHER_V011_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 天气库. Variant: 夕阳02.\n杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "天气库",
+        "夕阳02",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-WEATHER-V012",
+      "category": "天气库",
+      "slug": "weather",
+      "variant": "夕阳03",
+      "version": "V012",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/weather/WEATHER_V012.png",
+      "metadataPath": "assets/world/weather/WEATHER_V012.json",
+      "promptPath": "assets/world/weather/WEATHER_V012_PROMPT.md",
+      "referencePath": "assets/world/weather/WEATHER_V012_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 天气库. Variant: 夕阳03.\n杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "天气库",
+        "夕阳03",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-WEATHER-V013",
+      "category": "天气库",
+      "slug": "weather",
+      "variant": "夜晚01",
+      "version": "V013",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/weather/WEATHER_V013.png",
+      "metadataPath": "assets/world/weather/WEATHER_V013.json",
+      "promptPath": "assets/world/weather/WEATHER_V013_PROMPT.md",
+      "referencePath": "assets/world/weather/WEATHER_V013_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 天气库. Variant: 夜晚01.\n杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "天气库",
+        "夜晚01",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-WEATHER-V014",
+      "category": "天气库",
+      "slug": "weather",
+      "variant": "夜晚02",
+      "version": "V014",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/weather/WEATHER_V014.png",
+      "metadataPath": "assets/world/weather/WEATHER_V014.json",
+      "promptPath": "assets/world/weather/WEATHER_V014_PROMPT.md",
+      "referencePath": "assets/world/weather/WEATHER_V014_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 天气库. Variant: 夜晚02.\n杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "天气库",
+        "夜晚02",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-WEATHER-V015",
+      "category": "天气库",
+      "slug": "weather",
+      "variant": "夜晚03",
+      "version": "V015",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/weather/WEATHER_V015.png",
+      "metadataPath": "assets/world/weather/WEATHER_V015.json",
+      "promptPath": "assets/world/weather/WEATHER_V015_PROMPT.md",
+      "referencePath": "assets/world/weather/WEATHER_V015_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 天气库. Variant: 夜晚03.\n杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "天气库",
+        "夜晚03",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-WEATHER-V016",
+      "category": "天气库",
+      "slug": "weather",
+      "variant": "黎明01",
+      "version": "V016",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/weather/WEATHER_V016.png",
+      "metadataPath": "assets/world/weather/WEATHER_V016.json",
+      "promptPath": "assets/world/weather/WEATHER_V016_PROMPT.md",
+      "referencePath": "assets/world/weather/WEATHER_V016_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 天气库. Variant: 黎明01.\n杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "天气库",
+        "黎明01",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-WEATHER-V017",
+      "category": "天气库",
+      "slug": "weather",
+      "variant": "黎明02",
+      "version": "V017",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/weather/WEATHER_V017.png",
+      "metadataPath": "assets/world/weather/WEATHER_V017.json",
+      "promptPath": "assets/world/weather/WEATHER_V017_PROMPT.md",
+      "referencePath": "assets/world/weather/WEATHER_V017_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 天气库. Variant: 黎明02.\n杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "天气库",
+        "黎明02",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-WEATHER-V018",
+      "category": "天气库",
+      "slug": "weather",
+      "variant": "黎明03",
+      "version": "V018",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/weather/WEATHER_V018.png",
+      "metadataPath": "assets/world/weather/WEATHER_V018.json",
+      "promptPath": "assets/world/weather/WEATHER_V018_PROMPT.md",
+      "referencePath": "assets/world/weather/WEATHER_V018_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 天气库. Variant: 黎明03.\n杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "天气库",
+        "黎明03",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-WEATHER-V019",
+      "category": "天气库",
+      "slug": "weather",
+      "variant": "低云",
+      "version": "V019",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/weather/WEATHER_V019.png",
+      "metadataPath": "assets/world/weather/WEATHER_V019.json",
+      "promptPath": "assets/world/weather/WEATHER_V019_PROMPT.md",
+      "referencePath": "assets/world/weather/WEATHER_V019_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 天气库. Variant: 低云.\n杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "天气库",
+        "低云",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-WEATHER-V020",
+      "category": "天气库",
+      "slug": "weather",
+      "variant": "潮湿空气",
+      "version": "V020",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/weather/WEATHER_V020.png",
+      "metadataPath": "assets/world/weather/WEATHER_V020.json",
+      "promptPath": "assets/world/weather/WEATHER_V020_PROMPT.md",
+      "referencePath": "assets/world/weather/WEATHER_V020_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 天气库. Variant: 潮湿空气.\n杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "天气库",
+        "潮湿空气",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "杭州湾海洋防线天气母资产，作为所有剧集气氛和可灵视频模板Reference。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-LIGHTING-V001",
+      "category": "灯光库",
+      "slug": "lighting",
+      "variant": "蓝色基地光01",
+      "version": "V001",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/lighting/LIGHTING_V001.png",
+      "metadataPath": "assets/world/lighting/LIGHTING_V001.json",
+      "promptPath": "assets/world/lighting/LIGHTING_V001_PROMPT.md",
+      "referencePath": "assets/world/lighting/LIGHTING_V001_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 灯光库. Variant: 蓝色基地光01.\n潮汐钢魂电影灯光母资产，所有镜头必须遵守真实光源逻辑。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "灯光库",
+        "蓝色基地光01",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂电影灯光母资产，所有镜头必须遵守真实光源逻辑。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-LIGHTING-V002",
+      "category": "灯光库",
+      "slug": "lighting",
+      "variant": "蓝色基地光02",
+      "version": "V002",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/lighting/LIGHTING_V002.png",
+      "metadataPath": "assets/world/lighting/LIGHTING_V002.json",
+      "promptPath": "assets/world/lighting/LIGHTING_V002_PROMPT.md",
+      "referencePath": "assets/world/lighting/LIGHTING_V002_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 灯光库. Variant: 蓝色基地光02.\n潮汐钢魂电影灯光母资产，所有镜头必须遵守真实光源逻辑。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "灯光库",
+        "蓝色基地光02",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂电影灯光母资产，所有镜头必须遵守真实光源逻辑。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-LIGHTING-V003",
+      "category": "灯光库",
+      "slug": "lighting",
+      "variant": "红色警报光01",
+      "version": "V003",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/lighting/LIGHTING_V003.png",
+      "metadataPath": "assets/world/lighting/LIGHTING_V003.json",
+      "promptPath": "assets/world/lighting/LIGHTING_V003_PROMPT.md",
+      "referencePath": "assets/world/lighting/LIGHTING_V003_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 灯光库. Variant: 红色警报光01.\n潮汐钢魂电影灯光母资产，所有镜头必须遵守真实光源逻辑。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "灯光库",
+        "红色警报光01",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂电影灯光母资产，所有镜头必须遵守真实光源逻辑。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-LIGHTING-V004",
+      "category": "灯光库",
+      "slug": "lighting",
+      "variant": "红色警报光02",
+      "version": "V004",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/lighting/LIGHTING_V004.png",
+      "metadataPath": "assets/world/lighting/LIGHTING_V004.json",
+      "promptPath": "assets/world/lighting/LIGHTING_V004_PROMPT.md",
+      "referencePath": "assets/world/lighting/LIGHTING_V004_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 灯光库. Variant: 红色警报光02.\n潮汐钢魂电影灯光母资产，所有镜头必须遵守真实光源逻辑。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "灯光库",
+        "红色警报光02",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂电影灯光母资产，所有镜头必须遵守真实光源逻辑。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-LIGHTING-V005",
+      "category": "灯光库",
+      "slug": "lighting",
+      "variant": "海洋反射光01",
+      "version": "V005",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/lighting/LIGHTING_V005.png",
+      "metadataPath": "assets/world/lighting/LIGHTING_V005.json",
+      "promptPath": "assets/world/lighting/LIGHTING_V005_PROMPT.md",
+      "referencePath": "assets/world/lighting/LIGHTING_V005_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 灯光库. Variant: 海洋反射光01.\n潮汐钢魂电影灯光母资产，所有镜头必须遵守真实光源逻辑。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "灯光库",
+        "海洋反射光01",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂电影灯光母资产，所有镜头必须遵守真实光源逻辑。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-LIGHTING-V006",
+      "category": "灯光库",
+      "slug": "lighting",
+      "variant": "海洋反射光02",
+      "version": "V006",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/lighting/LIGHTING_V006.png",
+      "metadataPath": "assets/world/lighting/LIGHTING_V006.json",
+      "promptPath": "assets/world/lighting/LIGHTING_V006_PROMPT.md",
+      "referencePath": "assets/world/lighting/LIGHTING_V006_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 灯光库. Variant: 海洋反射光02.\n潮汐钢魂电影灯光母资产，所有镜头必须遵守真实光源逻辑。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "灯光库",
+        "海洋反射光02",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂电影灯光母资产，所有镜头必须遵守真实光源逻辑。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-LIGHTING-V007",
+      "category": "灯光库",
+      "slug": "lighting",
+      "variant": "逆光01",
+      "version": "V007",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/lighting/LIGHTING_V007.png",
+      "metadataPath": "assets/world/lighting/LIGHTING_V007.json",
+      "promptPath": "assets/world/lighting/LIGHTING_V007_PROMPT.md",
+      "referencePath": "assets/world/lighting/LIGHTING_V007_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 灯光库. Variant: 逆光01.\n潮汐钢魂电影灯光母资产，所有镜头必须遵守真实光源逻辑。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "灯光库",
+        "逆光01",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂电影灯光母资产，所有镜头必须遵守真实光源逻辑。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-LIGHTING-V008",
+      "category": "灯光库",
+      "slug": "lighting",
+      "variant": "逆光02",
+      "version": "V008",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/lighting/LIGHTING_V008.png",
+      "metadataPath": "assets/world/lighting/LIGHTING_V008.json",
+      "promptPath": "assets/world/lighting/LIGHTING_V008_PROMPT.md",
+      "referencePath": "assets/world/lighting/LIGHTING_V008_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 灯光库. Variant: 逆光02.\n潮汐钢魂电影灯光母资产，所有镜头必须遵守真实光源逻辑。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "灯光库",
+        "逆光02",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂电影灯光母资产，所有镜头必须遵守真实光源逻辑。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-LIGHTING-V009",
+      "category": "灯光库",
+      "slug": "lighting",
+      "variant": "电影光影01",
+      "version": "V009",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/lighting/LIGHTING_V009.png",
+      "metadataPath": "assets/world/lighting/LIGHTING_V009.json",
+      "promptPath": "assets/world/lighting/LIGHTING_V009_PROMPT.md",
+      "referencePath": "assets/world/lighting/LIGHTING_V009_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 灯光库. Variant: 电影光影01.\n潮汐钢魂电影灯光母资产，所有镜头必须遵守真实光源逻辑。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "灯光库",
+        "电影光影01",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂电影灯光母资产，所有镜头必须遵守真实光源逻辑。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "assetId": "WORLD-LIGHTING-V010",
+      "category": "灯光库",
+      "slug": "lighting",
+      "variant": "电影光影02",
+      "version": "V010",
+      "status": "待图片落盘",
+      "imagePath": "assets/world/lighting/LIGHTING_V010.png",
+      "metadataPath": "assets/world/lighting/LIGHTING_V010.json",
+      "promptPath": "assets/world/lighting/LIGHTING_V010_PROMPT.md",
+      "referencePath": "assets/world/lighting/LIGHTING_V010_REFERENCE.json",
+      "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 灯光库. Variant: 电影光影02.\n潮汐钢魂电影灯光母资产，所有镜头必须遵守真实光源逻辑。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+      "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+      "tags": [
+        "世界资产",
+        "灯光库",
+        "电影光影02",
+        "母资产",
+        "Reference"
+      ],
+      "consistencyLock": {
+        "description": "潮汐钢魂电影灯光母资产，所有镜头必须遵守真实光源逻辑。",
+        "cannotChange": [
+          "2042杭州湾世界观",
+          "工业真实感",
+          "低饱和电影摄影",
+          "海洋尺度",
+          "非赛博朋克"
+        ]
+      },
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    }
+  ]
+}

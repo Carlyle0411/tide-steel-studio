@@ -1,0 +1,135 @@
+{
+  "schema": "Tide Steel Soul Scene",
+  "generatedAt": "2026-07-10T00:00:00.000+08:00",
+  "scenes": [
+    {
+      "id": "SCENE-HANGZHOUBAY-001",
+      "originalId": "hangzhou_bay",
+      "name": "2042 Hangzhou Bay Ocean Defense Line",
+      "type": "场景",
+      "status": "草稿 Draft",
+      "tags": [
+        "场景",
+        "2042 Hangzhou Bay Ocean Defense Line",
+        "待制作"
+      ],
+      "assets": [],
+      "shots": [
+        "EP01_KF01",
+        "EP01_KF02",
+        "EP01_KF11",
+        "EP01_KF13",
+        "EP01_KF17"
+      ],
+      "notes": "2042 Hangzhou Bay Ocean Defense Line 的制作资产包，来自 EP01 Asset Manifest。"
+    },
+    {
+      "id": "SCENE-DEEPBLUEBASE-002",
+      "originalId": "deep_blue_base",
+      "name": "Deep Blue Base Interior",
+      "type": "场景",
+      "status": "草稿 Draft",
+      "tags": [
+        "场景",
+        "Deep Blue Base Interior",
+        "待制作"
+      ],
+      "assets": [],
+      "shots": [
+        "EP01_KF03",
+        "EP01_KF04",
+        "EP01_KF06"
+      ],
+      "notes": "Deep Blue Base Interior 的制作资产包，来自 EP01 Asset Manifest。"
+    },
+    {
+      "id": "SCENE-COCKPIT-003",
+      "originalId": "cockpit",
+      "name": "Cockpit Interior",
+      "type": "场景",
+      "status": "草稿 Draft",
+      "tags": [
+        "场景",
+        "Cockpit Interior",
+        "待制作"
+      ],
+      "assets": [
+        "MECHA-CHITING01-011"
+      ],
+      "shots": [
+        "EP01_KF08",
+        "EP01_KF09",
+        "EP01_KF10"
+      ],
+      "notes": "Cockpit Interior 的制作资产包，来自 EP01 Asset Manifest。"
+    },
+    {
+      "id": "SCENE-TIDEGATE-004",
+      "originalId": "tide_gate",
+      "name": "Tide Gate Rift",
+      "type": "场景",
+      "status": "草稿 Draft",
+      "tags": [
+        "场景",
+        "Tide Gate Rift",
+        "待制作"
+      ],
+      "assets": [],
+      "shots": [
+        "EP01_KF17",
+        "EP01_KF18"
+      ],
+      "notes": "Tide Gate Rift 的制作资产包，来自 EP01 Asset Manifest。"
+    },
+    {
+      "id": "SCENE-UNDERWATERRUINS-005",
+      "originalId": "underwater_ruins",
+      "name": "Underwater Ruins",
+      "type": "场景",
+      "status": "草稿 Draft",
+      "tags": [
+        "场景",
+        "Underwater Ruins",
+        "待制作"
+      ],
+      "assets": [],
+      "shots": [],
+      "notes": "Underwater Ruins 的制作资产包，来自 EP01 Asset Manifest。"
+    },
+    {
+      "id": "SCENE-EVACUATIONCITY-006",
+      "originalId": "evacuation_city",
+      "name": "Evacuation City",
+      "type": "场景",
+      "status": "草稿 Draft",
+      "tags": [
+        "场景",
+        "Evacuation City",
+        "待制作"
+      ],
+      "assets": [],
+      "shots": [],
+      "notes": "Evacuation City 的制作资产包，来自 EP01 Asset Manifest。"
+    },
+    {
+      "id": "SCENE-COCKPIT-001",
+      "name": "赤霆驾驶舱",
+      "type": "场景",
+      "status": "审核 Review",
+      "tags": [
+        "场景",
+        "驾驶舱",
+        "蓝光"
+      ],
+      "assets": [
+        "MECHA-CHITING01-011"
+      ],
+      "shots": [
+        "EP01_KF08",
+        "EP01_KF09",
+        "EP01_KF10"
+      ],
+      "notes": "赤霆启动与同步失败的核心空间。"
+    }
+  ]
+}

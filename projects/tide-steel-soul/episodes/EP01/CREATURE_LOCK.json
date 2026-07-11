@@ -1,0 +1,15 @@
+{
+  "White Tide": {
+    "shell": "white armor shell",
+    "patterns": "cracked glowing patterns, low intensity, biological not magical",
+    "scale": "large ocean creature",
+    "structure": "ancient biological structure adapted to deep pressure",
+    "forbidden": [
+      "boss monster entrance",
+      "demon design",
+      "purple energy",
+      "roaring attack pose",
+      "pet-like human expression"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "assetId": "MECHA-CRT001-V004",
+  "domain": "机甲",
+  "name": "赤霆01",
+  "variant": "45度展示",
+  "version": "V004",
+  "status": "待图片落盘",
+  "imagePath": "assets/mecha/chiting01/CHITING01_V004.png",
+  "metadataPath": "assets/mecha/chiting01/CHITING01_V004.json",
+  "promptPath": "assets/mecha/chiting01/CHITING01_V004_PROMPT.md",
+  "referencePath": "assets/mecha/chiting01/CHITING01_V004_REFERENCE.json",
+  "prompt": "Create a master mecha asset reference image for Tide Steel Soul.\nMecha: 赤霆01. Variant: 45度展示.\n20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。\nThis is a reusable standard design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+  "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+  "tags": [
+    "机甲",
+    "赤霆01",
+    "45度展示",
+    "母资产",
+    "Reference"
+  ],
+  "consistencyLock": {
+    "description": "20米级红黑工业机甲，暗红装甲，黑色机械骨架，蓝色能源核心，真实军事机械感，不是动漫机器人。",
+    "cannotChange": [
+      "比例",
+      "装甲颜色",
+      "机械骨架",
+      "能源颜色",
+      "工业真实感"
+    ]
+  },
+  "createdAt": "2026-07-10T00:00:00.000+08:00",
+  "updatedAt": "2026-07-10T00:00:00.000+08:00"
+}

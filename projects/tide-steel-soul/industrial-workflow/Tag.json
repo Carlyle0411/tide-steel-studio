@@ -1,0 +1,134 @@
+{
+  "schema": "Tide Steel Soul Tags",
+  "generatedAt": "2026-07-10T00:00:00.000+08:00",
+  "tags": [
+    {
+      "id": "TAG-主角",
+      "name": "主角",
+      "color": "#7ed6bd",
+      "group": "角色",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "editable": true
+    },
+    {
+      "id": "TAG-配角",
+      "name": "配角",
+      "color": "#8fb3ff",
+      "group": "角色",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "editable": true
+    },
+    {
+      "id": "TAG-主战",
+      "name": "主战",
+      "color": "#d64b4b",
+      "group": "机甲",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "editable": true
+    },
+    {
+      "id": "TAG-辅助",
+      "name": "辅助",
+      "color": "#6aa7d6",
+      "group": "机甲",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "editable": true
+    },
+    {
+      "id": "TAG-城市",
+      "name": "城市",
+      "color": "#8f9aa8",
+      "group": "场景",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "editable": true
+    },
+    {
+      "id": "TAG-海洋",
+      "name": "海洋",
+      "color": "#3f8fb6",
+      "group": "场景",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "editable": true
+    },
+    {
+      "id": "TAG-基地",
+      "name": "基地",
+      "color": "#617087",
+      "group": "场景",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "editable": true
+    },
+    {
+      "id": "TAG-室内",
+      "name": "室内",
+      "color": "#9ca3af",
+      "group": "场景",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "editable": true
+    },
+    {
+      "id": "TAG-战斗",
+      "name": "战斗",
+      "color": "#d6b46a",
+      "group": "镜头",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "editable": true
+    },
+    {
+      "id": "TAG-情绪",
+      "name": "情绪",
+      "color": "#d68fb3",
+      "group": "镜头",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "editable": true
+    },
+    {
+      "id": "TAG-转场",
+      "name": "转场",
+      "color": "#8b7ed6",
+      "group": "镜头",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "editable": true
+    },
+    {
+      "id": "TAG-特写",
+      "name": "特写",
+      "color": "#7ed6bd",
+      "group": "镜头",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "editable": true
+    },
+    {
+      "id": "TAG-远景",
+      "name": "远景",
+      "color": "#70a6ff",
+      "group": "镜头",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "editable": true
+    },
+    {
+      "id": "TAG-已完成",
+      "name": "已完成",
+      "color": "#7ed6bd",
+      "group": "视频",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "editable": true
+    },
+    {
+      "id": "TAG-待制作",
+      "name": "待制作",
+      "color": "#d6b46a",
+      "group": "视频",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "editable": true
+    },
+    {
+      "id": "TAG-审核中",
+      "name": "审核中",
+      "color": "#f59e0b",
+      "group": "视频",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "editable": true
+    }
+  ]
+}

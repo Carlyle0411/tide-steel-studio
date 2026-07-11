@@ -1,0 +1,12 @@
+{
+  "assetId": "WORLD-WEATHER-V002",
+  "referenceStatus": "等待真实图片生成后锁定",
+  "cannotChange": [
+    "2042杭州湾世界观",
+    "工业真实感",
+    "低饱和电影摄影",
+    "海洋尺度",
+    "非赛博朋克"
+  ],
+  "reuseRule": "后续关键帧、Storyboard、GPT Image2图片、可灵视频、海报、宣传片必须引用此Reference。"
+}

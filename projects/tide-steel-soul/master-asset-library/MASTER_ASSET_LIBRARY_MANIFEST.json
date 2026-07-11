@@ -1,0 +1,314 @@
+{
+  "project": "潮汐钢魂",
+  "englishName": "Tide Steel Soul",
+  "phase": "PHASE 20 MASTER ASSET LIBRARY",
+  "generatedAt": "2026-07-11T00:00:00.000+08:00",
+  "purpose": "建立未来12集共用的电影母资产库。所有图片、关键帧、视频片段、可灵Prompt必须优先引用这里。",
+  "categories": [
+    {
+      "id": "MASTER-CAT-01",
+      "prefix": "CHAR",
+      "name": "人物",
+      "englishName": "Characters",
+      "variants": [
+        "角色卡",
+        "三视图",
+        "360参考",
+        "全身",
+        "半身",
+        "头像",
+        "侧脸",
+        "背影",
+        "站姿",
+        "坐姿",
+        "驾驶姿势",
+        "跑步",
+        "行走",
+        "愤怒",
+        "沉默",
+        "微笑",
+        "流血",
+        "受伤",
+        "不同光线",
+        "不同天气",
+        "不同镜头"
+      ],
+      "status": "母库标准",
+      "rule": "所有剧集、关键帧、视频片段与可灵Prompt必须优先引用本分类资产。"
+    },
+    {
+      "id": "MASTER-CAT-02",
+      "prefix": "MECHA",
+      "name": "机甲",
+      "englishName": "Mechas",
+      "variants": [
+        "正面",
+        "三视图",
+        "背面",
+        "侧面",
+        "俯视",
+        "驾驶舱",
+        "腿部",
+        "武器",
+        "推进器",
+        "开机",
+        "待机",
+        "冲刺",
+        "跳跃",
+        "攻击",
+        "受伤",
+        "战损",
+        "夜景",
+        "暴雨",
+        "海面"
+      ],
+      "status": "母库标准",
+      "rule": "所有剧集、关键帧、视频片段与可灵Prompt必须优先引用本分类资产。"
+    },
+    {
+      "id": "MASTER-CAT-03",
+      "prefix": "CREATURE",
+      "name": "怪兽",
+      "englishName": "Creatures",
+      "variants": [
+        "远景",
+        "三视图",
+        "近景",
+        "正面",
+        "嘴部",
+        "眼睛",
+        "身体",
+        "攻击",
+        "游泳",
+        "登陆",
+        "怒吼",
+        "死亡",
+        "战损",
+        "海底",
+        "暴雨",
+        "夜晚"
+      ],
+      "status": "母库标准",
+      "rule": "所有剧集、关键帧、视频片段与可灵Prompt必须优先引用本分类资产。"
+    },
+    {
+      "id": "MASTER-CAT-04",
+      "prefix": "ENV",
+      "name": "场景",
+      "englishName": "Environment",
+      "variants": [
+        "白天",
+        "黄昏",
+        "夜晚",
+        "暴雨",
+        "浓雾",
+        "远景",
+        "近景",
+        "标准平面",
+        "灯光参考"
+      ],
+      "status": "母库标准",
+      "rule": "所有剧集、关键帧、视频片段与可灵Prompt必须优先引用本分类资产。"
+    },
+    {
+      "id": "MASTER-CAT-05",
+      "prefix": "PROP",
+      "name": "道具",
+      "englishName": "Props",
+      "variants": [
+        "标准图",
+        "手持",
+        "使用中",
+        "磨损",
+        "特写"
+      ],
+      "status": "母库标准",
+      "rule": "所有剧集、关键帧、视频片段与可灵Prompt必须优先引用本分类资产。"
+    },
+    {
+      "id": "MASTER-CAT-06",
+      "prefix": "ACTION",
+      "name": "动作",
+      "englishName": "Actions",
+      "variants": [
+        "人物动作",
+        "机甲动作",
+        "怪兽动作"
+      ],
+      "status": "母库标准",
+      "rule": "所有剧集、关键帧、视频片段与可灵Prompt必须优先引用本分类资产。"
+    },
+    {
+      "id": "MASTER-CAT-07",
+      "prefix": "CAM",
+      "name": "运镜",
+      "englishName": "Camera",
+      "variants": [
+        "推镜",
+        "拉镜",
+        "横移",
+        "环绕",
+        "升降",
+        "无人机",
+        "第一人称",
+        "长焦",
+        "广角",
+        "手持",
+        "跟拍",
+        "肩扛"
+      ],
+      "status": "母库标准",
+      "rule": "所有剧集、关键帧、视频片段与可灵Prompt必须优先引用本分类资产。"
+    },
+    {
+      "id": "MASTER-CAT-08",
+      "prefix": "LIGHT",
+      "name": "灯光",
+      "englishName": "Lighting",
+      "variants": [
+        "电影冷光",
+        "基地蓝光",
+        "应急红光",
+        "暴雨反光",
+        "机甲灯",
+        "火焰光",
+        "月光",
+        "逆光"
+      ],
+      "status": "母库标准",
+      "rule": "所有剧集、关键帧、视频片段与可灵Prompt必须优先引用本分类资产。"
+    },
+    {
+      "id": "MASTER-CAT-09",
+      "prefix": "WEATHER",
+      "name": "天气",
+      "englishName": "Weather",
+      "variants": [
+        "暴雨",
+        "小雨",
+        "乌云",
+        "晴天",
+        "黄昏",
+        "黎明",
+        "雷暴",
+        "海雾",
+        "雪"
+      ],
+      "status": "母库标准",
+      "rule": "所有剧集、关键帧、视频片段与可灵Prompt必须优先引用本分类资产。"
+    },
+    {
+      "id": "MASTER-CAT-10",
+      "prefix": "VFX",
+      "name": "特效",
+      "englishName": "VFX",
+      "variants": [
+        "海浪",
+        "火花",
+        "电流",
+        "爆炸",
+        "烟尘",
+        "雨滴",
+        "粒子",
+        "能量场",
+        "火焰"
+      ],
+      "status": "母库标准",
+      "rule": "所有剧集、关键帧、视频片段与可灵Prompt必须优先引用本分类资产。"
+    },
+    {
+      "id": "MASTER-CAT-11",
+      "prefix": "COMP",
+      "name": "构图",
+      "englishName": "Composition",
+      "variants": [
+        "中心构图",
+        "三分法",
+        "对角线",
+        "对称",
+        "负空间",
+        "框架构图",
+        "低机位",
+        "高机位"
+      ],
+      "status": "母库标准",
+      "rule": "所有剧集、关键帧、视频片段与可灵Prompt必须优先引用本分类资产。"
+    },
+    {
+      "id": "MASTER-CAT-12",
+      "prefix": "COLOR",
+      "name": "色彩",
+      "englishName": "Color",
+      "variants": [
+        "深蓝",
+        "冷灰",
+        "黑色金属",
+        "暗红",
+        "蓝色能源",
+        "白色生物甲壳"
+      ],
+      "status": "母库标准",
+      "rule": "所有剧集、关键帧、视频片段与可灵Prompt必须优先引用本分类资产。"
+    },
+    {
+      "id": "MASTER-CAT-13",
+      "prefix": "MAT",
+      "name": "材质",
+      "englishName": "Materials",
+      "variants": [
+        "湿金属",
+        "盐雾腐蚀",
+        "玻璃",
+        "海水",
+        "生物甲壳",
+        "磨损涂层"
+      ],
+      "status": "母库标准",
+      "rule": "所有剧集、关键帧、视频片段与可灵Prompt必须优先引用本分类资产。"
+    },
+    {
+      "id": "MASTER-CAT-14",
+      "prefix": "VIDEO",
+      "name": "视频模板",
+      "englishName": "Video Templates",
+      "variants": [
+        "人物走路模板",
+        "人物驾驶模板",
+        "机甲冲刺模板",
+        "怪兽登陆模板",
+        "城市远景模板",
+        "海浪模板",
+        "暴雨模板"
+      ],
+      "status": "母库标准",
+      "rule": "所有剧集、关键帧、视频片段与可灵Prompt必须优先引用本分类资产。"
+    },
+    {
+      "id": "MASTER-CAT-15",
+      "prefix": "PROMPT",
+      "name": "Prompt模板",
+      "englishName": "Prompt Templates",
+      "variants": [
+        "GPT Image2 Prompt",
+        "Kling Prompt",
+        "Negative Prompt",
+        "Camera Prompt",
+        "Lighting Prompt"
+      ],
+      "status": "母库标准",
+      "rule": "所有剧集、关键帧、视频片段与可灵Prompt必须优先引用本分类资产。"
+    }
+  ],
+  "stats": {
+    "categories": 15,
+    "masterAssets": 344,
+    "actionTemplates": 23,
+    "cameraTemplates": 12,
+    "weatherTemplates": 9,
+    "lightingTemplates": 8,
+    "vfxTemplates": 9,
+    "compositionTemplates": 8,
+    "promptTemplates": 92,
+    "videoTemplates": 7
+  }
+}

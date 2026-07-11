@@ -1,0 +1,755 @@
+{
+  "count": 150,
+  "prompts": [
+    {
+      "id": "VIDEO_001",
+      "name": "暴风雨海面",
+      "prompt": "片段: VIDEO_001 暴风雨海面\n人物: 按镜头需要调用已审核角色资产\n动作: 暴风雨海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 慢推镜\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_002",
+      "name": "驾驶舱启动",
+      "prompt": "片段: VIDEO_002 驾驶舱启动\n人物: 按镜头需要调用已审核角色资产\n动作: 驾驶舱启动发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 推近\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_003",
+      "name": "赤霆01拔刀",
+      "prompt": "片段: VIDEO_003 赤霆01拔刀\n人物: 按镜头需要调用已审核角色资产\n动作: 赤霆01拔刀发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 环绕\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_004",
+      "name": "白潮浮上海面",
+      "prompt": "片段: VIDEO_004 白潮浮上海面\n人物: 按镜头需要调用已审核角色资产\n动作: 白潮浮上海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 跟拍\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_005",
+      "name": "基地警报",
+      "prompt": "片段: VIDEO_005 基地警报\n人物: 按镜头需要调用已审核角色资产\n动作: 基地警报发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 固定停留\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_006",
+      "name": "人物回头",
+      "prompt": "片段: VIDEO_006 人物回头\n人物: 按镜头需要调用已审核角色资产\n动作: 人物回头发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 横移\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_007",
+      "name": "机甲脚步",
+      "prompt": "片段: VIDEO_007 机甲脚步\n人物: 按镜头需要调用已审核角色资产\n动作: 机甲脚步发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 低机位推进\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_008",
+      "name": "潮门裂缝",
+      "prompt": "片段: VIDEO_008 潮门裂缝\n人物: 按镜头需要调用已审核角色资产\n动作: 潮门裂缝发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 俯视下降\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_009",
+      "name": "HUD亮起",
+      "prompt": "片段: VIDEO_009 HUD亮起\n人物: 按镜头需要调用已审核角色资产\n动作: HUD亮起发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 手持轻微震动\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_010",
+      "name": "城市撤离",
+      "prompt": "片段: VIDEO_010 城市撤离\n人物: 按镜头需要调用已审核角色资产\n动作: 城市撤离发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 长焦压缩\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_011",
+      "name": "暴风雨海面",
+      "prompt": "片段: VIDEO_011 暴风雨海面\n人物: 按镜头需要调用已审核角色资产\n动作: 暴风雨海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 慢推镜\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_012",
+      "name": "驾驶舱启动",
+      "prompt": "片段: VIDEO_012 驾驶舱启动\n人物: 按镜头需要调用已审核角色资产\n动作: 驾驶舱启动发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 推近\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_013",
+      "name": "赤霆01拔刀",
+      "prompt": "片段: VIDEO_013 赤霆01拔刀\n人物: 按镜头需要调用已审核角色资产\n动作: 赤霆01拔刀发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 环绕\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_014",
+      "name": "白潮浮上海面",
+      "prompt": "片段: VIDEO_014 白潮浮上海面\n人物: 按镜头需要调用已审核角色资产\n动作: 白潮浮上海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 跟拍\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_015",
+      "name": "基地警报",
+      "prompt": "片段: VIDEO_015 基地警报\n人物: 按镜头需要调用已审核角色资产\n动作: 基地警报发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 固定停留\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_016",
+      "name": "人物回头",
+      "prompt": "片段: VIDEO_016 人物回头\n人物: 按镜头需要调用已审核角色资产\n动作: 人物回头发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 横移\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_017",
+      "name": "机甲脚步",
+      "prompt": "片段: VIDEO_017 机甲脚步\n人物: 按镜头需要调用已审核角色资产\n动作: 机甲脚步发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 低机位推进\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_018",
+      "name": "潮门裂缝",
+      "prompt": "片段: VIDEO_018 潮门裂缝\n人物: 按镜头需要调用已审核角色资产\n动作: 潮门裂缝发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 俯视下降\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_019",
+      "name": "HUD亮起",
+      "prompt": "片段: VIDEO_019 HUD亮起\n人物: 按镜头需要调用已审核角色资产\n动作: HUD亮起发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 手持轻微震动\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_020",
+      "name": "城市撤离",
+      "prompt": "片段: VIDEO_020 城市撤离\n人物: 按镜头需要调用已审核角色资产\n动作: 城市撤离发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 长焦压缩\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_021",
+      "name": "暴风雨海面",
+      "prompt": "片段: VIDEO_021 暴风雨海面\n人物: 按镜头需要调用已审核角色资产\n动作: 暴风雨海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 慢推镜\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_022",
+      "name": "驾驶舱启动",
+      "prompt": "片段: VIDEO_022 驾驶舱启动\n人物: 按镜头需要调用已审核角色资产\n动作: 驾驶舱启动发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 推近\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_023",
+      "name": "赤霆01拔刀",
+      "prompt": "片段: VIDEO_023 赤霆01拔刀\n人物: 按镜头需要调用已审核角色资产\n动作: 赤霆01拔刀发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 环绕\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_024",
+      "name": "白潮浮上海面",
+      "prompt": "片段: VIDEO_024 白潮浮上海面\n人物: 按镜头需要调用已审核角色资产\n动作: 白潮浮上海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 跟拍\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_025",
+      "name": "基地警报",
+      "prompt": "片段: VIDEO_025 基地警报\n人物: 按镜头需要调用已审核角色资产\n动作: 基地警报发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 固定停留\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_026",
+      "name": "人物回头",
+      "prompt": "片段: VIDEO_026 人物回头\n人物: 按镜头需要调用已审核角色资产\n动作: 人物回头发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 横移\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_027",
+      "name": "机甲脚步",
+      "prompt": "片段: VIDEO_027 机甲脚步\n人物: 按镜头需要调用已审核角色资产\n动作: 机甲脚步发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 低机位推进\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_028",
+      "name": "潮门裂缝",
+      "prompt": "片段: VIDEO_028 潮门裂缝\n人物: 按镜头需要调用已审核角色资产\n动作: 潮门裂缝发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 俯视下降\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_029",
+      "name": "HUD亮起",
+      "prompt": "片段: VIDEO_029 HUD亮起\n人物: 按镜头需要调用已审核角色资产\n动作: HUD亮起发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 手持轻微震动\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_030",
+      "name": "城市撤离",
+      "prompt": "片段: VIDEO_030 城市撤离\n人物: 按镜头需要调用已审核角色资产\n动作: 城市撤离发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 长焦压缩\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_031",
+      "name": "暴风雨海面",
+      "prompt": "片段: VIDEO_031 暴风雨海面\n人物: 按镜头需要调用已审核角色资产\n动作: 暴风雨海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 慢推镜\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_032",
+      "name": "驾驶舱启动",
+      "prompt": "片段: VIDEO_032 驾驶舱启动\n人物: 按镜头需要调用已审核角色资产\n动作: 驾驶舱启动发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 推近\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_033",
+      "name": "赤霆01拔刀",
+      "prompt": "片段: VIDEO_033 赤霆01拔刀\n人物: 按镜头需要调用已审核角色资产\n动作: 赤霆01拔刀发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 环绕\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_034",
+      "name": "白潮浮上海面",
+      "prompt": "片段: VIDEO_034 白潮浮上海面\n人物: 按镜头需要调用已审核角色资产\n动作: 白潮浮上海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 跟拍\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_035",
+      "name": "基地警报",
+      "prompt": "片段: VIDEO_035 基地警报\n人物: 按镜头需要调用已审核角色资产\n动作: 基地警报发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 固定停留\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_036",
+      "name": "人物回头",
+      "prompt": "片段: VIDEO_036 人物回头\n人物: 按镜头需要调用已审核角色资产\n动作: 人物回头发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 横移\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_037",
+      "name": "机甲脚步",
+      "prompt": "片段: VIDEO_037 机甲脚步\n人物: 按镜头需要调用已审核角色资产\n动作: 机甲脚步发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 低机位推进\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_038",
+      "name": "潮门裂缝",
+      "prompt": "片段: VIDEO_038 潮门裂缝\n人物: 按镜头需要调用已审核角色资产\n动作: 潮门裂缝发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 俯视下降\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_039",
+      "name": "HUD亮起",
+      "prompt": "片段: VIDEO_039 HUD亮起\n人物: 按镜头需要调用已审核角色资产\n动作: HUD亮起发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 手持轻微震动\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_040",
+      "name": "城市撤离",
+      "prompt": "片段: VIDEO_040 城市撤离\n人物: 按镜头需要调用已审核角色资产\n动作: 城市撤离发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 长焦压缩\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_041",
+      "name": "暴风雨海面",
+      "prompt": "片段: VIDEO_041 暴风雨海面\n人物: 按镜头需要调用已审核角色资产\n动作: 暴风雨海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 慢推镜\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_042",
+      "name": "驾驶舱启动",
+      "prompt": "片段: VIDEO_042 驾驶舱启动\n人物: 按镜头需要调用已审核角色资产\n动作: 驾驶舱启动发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 推近\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_043",
+      "name": "赤霆01拔刀",
+      "prompt": "片段: VIDEO_043 赤霆01拔刀\n人物: 按镜头需要调用已审核角色资产\n动作: 赤霆01拔刀发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 环绕\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_044",
+      "name": "白潮浮上海面",
+      "prompt": "片段: VIDEO_044 白潮浮上海面\n人物: 按镜头需要调用已审核角色资产\n动作: 白潮浮上海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 跟拍\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_045",
+      "name": "基地警报",
+      "prompt": "片段: VIDEO_045 基地警报\n人物: 按镜头需要调用已审核角色资产\n动作: 基地警报发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 固定停留\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_046",
+      "name": "人物回头",
+      "prompt": "片段: VIDEO_046 人物回头\n人物: 按镜头需要调用已审核角色资产\n动作: 人物回头发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 横移\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_047",
+      "name": "机甲脚步",
+      "prompt": "片段: VIDEO_047 机甲脚步\n人物: 按镜头需要调用已审核角色资产\n动作: 机甲脚步发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 低机位推进\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_048",
+      "name": "潮门裂缝",
+      "prompt": "片段: VIDEO_048 潮门裂缝\n人物: 按镜头需要调用已审核角色资产\n动作: 潮门裂缝发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 俯视下降\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_049",
+      "name": "HUD亮起",
+      "prompt": "片段: VIDEO_049 HUD亮起\n人物: 按镜头需要调用已审核角色资产\n动作: HUD亮起发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 手持轻微震动\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_050",
+      "name": "城市撤离",
+      "prompt": "片段: VIDEO_050 城市撤离\n人物: 按镜头需要调用已审核角色资产\n动作: 城市撤离发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 长焦压缩\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_051",
+      "name": "暴风雨海面",
+      "prompt": "片段: VIDEO_051 暴风雨海面\n人物: 按镜头需要调用已审核角色资产\n动作: 暴风雨海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 慢推镜\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_052",
+      "name": "驾驶舱启动",
+      "prompt": "片段: VIDEO_052 驾驶舱启动\n人物: 按镜头需要调用已审核角色资产\n动作: 驾驶舱启动发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 推近\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_053",
+      "name": "赤霆01拔刀",
+      "prompt": "片段: VIDEO_053 赤霆01拔刀\n人物: 按镜头需要调用已审核角色资产\n动作: 赤霆01拔刀发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 环绕\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_054",
+      "name": "白潮浮上海面",
+      "prompt": "片段: VIDEO_054 白潮浮上海面\n人物: 按镜头需要调用已审核角色资产\n动作: 白潮浮上海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 跟拍\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_055",
+      "name": "基地警报",
+      "prompt": "片段: VIDEO_055 基地警报\n人物: 按镜头需要调用已审核角色资产\n动作: 基地警报发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 固定停留\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_056",
+      "name": "人物回头",
+      "prompt": "片段: VIDEO_056 人物回头\n人物: 按镜头需要调用已审核角色资产\n动作: 人物回头发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 横移\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_057",
+      "name": "机甲脚步",
+      "prompt": "片段: VIDEO_057 机甲脚步\n人物: 按镜头需要调用已审核角色资产\n动作: 机甲脚步发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 低机位推进\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_058",
+      "name": "潮门裂缝",
+      "prompt": "片段: VIDEO_058 潮门裂缝\n人物: 按镜头需要调用已审核角色资产\n动作: 潮门裂缝发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 俯视下降\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_059",
+      "name": "HUD亮起",
+      "prompt": "片段: VIDEO_059 HUD亮起\n人物: 按镜头需要调用已审核角色资产\n动作: HUD亮起发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 手持轻微震动\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_060",
+      "name": "城市撤离",
+      "prompt": "片段: VIDEO_060 城市撤离\n人物: 按镜头需要调用已审核角色资产\n动作: 城市撤离发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 长焦压缩\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_061",
+      "name": "暴风雨海面",
+      "prompt": "片段: VIDEO_061 暴风雨海面\n人物: 按镜头需要调用已审核角色资产\n动作: 暴风雨海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 慢推镜\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_062",
+      "name": "驾驶舱启动",
+      "prompt": "片段: VIDEO_062 驾驶舱启动\n人物: 按镜头需要调用已审核角色资产\n动作: 驾驶舱启动发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 推近\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_063",
+      "name": "赤霆01拔刀",
+      "prompt": "片段: VIDEO_063 赤霆01拔刀\n人物: 按镜头需要调用已审核角色资产\n动作: 赤霆01拔刀发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 环绕\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_064",
+      "name": "白潮浮上海面",
+      "prompt": "片段: VIDEO_064 白潮浮上海面\n人物: 按镜头需要调用已审核角色资产\n动作: 白潮浮上海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 跟拍\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_065",
+      "name": "基地警报",
+      "prompt": "片段: VIDEO_065 基地警报\n人物: 按镜头需要调用已审核角色资产\n动作: 基地警报发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 固定停留\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_066",
+      "name": "人物回头",
+      "prompt": "片段: VIDEO_066 人物回头\n人物: 按镜头需要调用已审核角色资产\n动作: 人物回头发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 横移\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_067",
+      "name": "机甲脚步",
+      "prompt": "片段: VIDEO_067 机甲脚步\n人物: 按镜头需要调用已审核角色资产\n动作: 机甲脚步发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 低机位推进\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_068",
+      "name": "潮门裂缝",
+      "prompt": "片段: VIDEO_068 潮门裂缝\n人物: 按镜头需要调用已审核角色资产\n动作: 潮门裂缝发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 俯视下降\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_069",
+      "name": "HUD亮起",
+      "prompt": "片段: VIDEO_069 HUD亮起\n人物: 按镜头需要调用已审核角色资产\n动作: HUD亮起发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 手持轻微震动\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_070",
+      "name": "城市撤离",
+      "prompt": "片段: VIDEO_070 城市撤离\n人物: 按镜头需要调用已审核角色资产\n动作: 城市撤离发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 长焦压缩\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_071",
+      "name": "暴风雨海面",
+      "prompt": "片段: VIDEO_071 暴风雨海面\n人物: 按镜头需要调用已审核角色资产\n动作: 暴风雨海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 慢推镜\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_072",
+      "name": "驾驶舱启动",
+      "prompt": "片段: VIDEO_072 驾驶舱启动\n人物: 按镜头需要调用已审核角色资产\n动作: 驾驶舱启动发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 推近\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_073",
+      "name": "赤霆01拔刀",
+      "prompt": "片段: VIDEO_073 赤霆01拔刀\n人物: 按镜头需要调用已审核角色资产\n动作: 赤霆01拔刀发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 环绕\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_074",
+      "name": "白潮浮上海面",
+      "prompt": "片段: VIDEO_074 白潮浮上海面\n人物: 按镜头需要调用已审核角色资产\n动作: 白潮浮上海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 跟拍\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_075",
+      "name": "基地警报",
+      "prompt": "片段: VIDEO_075 基地警报\n人物: 按镜头需要调用已审核角色资产\n动作: 基地警报发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 固定停留\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_076",
+      "name": "人物回头",
+      "prompt": "片段: VIDEO_076 人物回头\n人物: 按镜头需要调用已审核角色资产\n动作: 人物回头发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 横移\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_077",
+      "name": "机甲脚步",
+      "prompt": "片段: VIDEO_077 机甲脚步\n人物: 按镜头需要调用已审核角色资产\n动作: 机甲脚步发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 低机位推进\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_078",
+      "name": "潮门裂缝",
+      "prompt": "片段: VIDEO_078 潮门裂缝\n人物: 按镜头需要调用已审核角色资产\n动作: 潮门裂缝发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 俯视下降\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_079",
+      "name": "HUD亮起",
+      "prompt": "片段: VIDEO_079 HUD亮起\n人物: 按镜头需要调用已审核角色资产\n动作: HUD亮起发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 手持轻微震动\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_080",
+      "name": "城市撤离",
+      "prompt": "片段: VIDEO_080 城市撤离\n人物: 按镜头需要调用已审核角色资产\n动作: 城市撤离发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 长焦压缩\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_081",
+      "name": "暴风雨海面",
+      "prompt": "片段: VIDEO_081 暴风雨海面\n人物: 按镜头需要调用已审核角色资产\n动作: 暴风雨海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 慢推镜\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_082",
+      "name": "驾驶舱启动",
+      "prompt": "片段: VIDEO_082 驾驶舱启动\n人物: 按镜头需要调用已审核角色资产\n动作: 驾驶舱启动发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 推近\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_083",
+      "name": "赤霆01拔刀",
+      "prompt": "片段: VIDEO_083 赤霆01拔刀\n人物: 按镜头需要调用已审核角色资产\n动作: 赤霆01拔刀发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 环绕\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_084",
+      "name": "白潮浮上海面",
+      "prompt": "片段: VIDEO_084 白潮浮上海面\n人物: 按镜头需要调用已审核角色资产\n动作: 白潮浮上海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 跟拍\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_085",
+      "name": "基地警报",
+      "prompt": "片段: VIDEO_085 基地警报\n人物: 按镜头需要调用已审核角色资产\n动作: 基地警报发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 固定停留\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_086",
+      "name": "人物回头",
+      "prompt": "片段: VIDEO_086 人物回头\n人物: 按镜头需要调用已审核角色资产\n动作: 人物回头发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 横移\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_087",
+      "name": "机甲脚步",
+      "prompt": "片段: VIDEO_087 机甲脚步\n人物: 按镜头需要调用已审核角色资产\n动作: 机甲脚步发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 低机位推进\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_088",
+      "name": "潮门裂缝",
+      "prompt": "片段: VIDEO_088 潮门裂缝\n人物: 按镜头需要调用已审核角色资产\n动作: 潮门裂缝发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 俯视下降\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_089",
+      "name": "HUD亮起",
+      "prompt": "片段: VIDEO_089 HUD亮起\n人物: 按镜头需要调用已审核角色资产\n动作: HUD亮起发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 手持轻微震动\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_090",
+      "name": "城市撤离",
+      "prompt": "片段: VIDEO_090 城市撤离\n人物: 按镜头需要调用已审核角色资产\n动作: 城市撤离发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 长焦压缩\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_091",
+      "name": "暴风雨海面",
+      "prompt": "片段: VIDEO_091 暴风雨海面\n人物: 按镜头需要调用已审核角色资产\n动作: 暴风雨海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 慢推镜\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_092",
+      "name": "驾驶舱启动",
+      "prompt": "片段: VIDEO_092 驾驶舱启动\n人物: 按镜头需要调用已审核角色资产\n动作: 驾驶舱启动发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 推近\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_093",
+      "name": "赤霆01拔刀",
+      "prompt": "片段: VIDEO_093 赤霆01拔刀\n人物: 按镜头需要调用已审核角色资产\n动作: 赤霆01拔刀发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 环绕\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_094",
+      "name": "白潮浮上海面",
+      "prompt": "片段: VIDEO_094 白潮浮上海面\n人物: 按镜头需要调用已审核角色资产\n动作: 白潮浮上海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 跟拍\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_095",
+      "name": "基地警报",
+      "prompt": "片段: VIDEO_095 基地警报\n人物: 按镜头需要调用已审核角色资产\n动作: 基地警报发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 固定停留\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_096",
+      "name": "人物回头",
+      "prompt": "片段: VIDEO_096 人物回头\n人物: 按镜头需要调用已审核角色资产\n动作: 人物回头发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 横移\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_097",
+      "name": "机甲脚步",
+      "prompt": "片段: VIDEO_097 机甲脚步\n人物: 按镜头需要调用已审核角色资产\n动作: 机甲脚步发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 低机位推进\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_098",
+      "name": "潮门裂缝",
+      "prompt": "片段: VIDEO_098 潮门裂缝\n人物: 按镜头需要调用已审核角色资产\n动作: 潮门裂缝发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 俯视下降\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_099",
+      "name": "HUD亮起",
+      "prompt": "片段: VIDEO_099 HUD亮起\n人物: 按镜头需要调用已审核角色资产\n动作: HUD亮起发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 手持轻微震动\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_100",
+      "name": "城市撤离",
+      "prompt": "片段: VIDEO_100 城市撤离\n人物: 按镜头需要调用已审核角色资产\n动作: 城市撤离发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 长焦压缩\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_101",
+      "name": "暴风雨海面",
+      "prompt": "片段: VIDEO_101 暴风雨海面\n人物: 按镜头需要调用已审核角色资产\n动作: 暴风雨海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 慢推镜\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_102",
+      "name": "驾驶舱启动",
+      "prompt": "片段: VIDEO_102 驾驶舱启动\n人物: 按镜头需要调用已审核角色资产\n动作: 驾驶舱启动发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 推近\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_103",
+      "name": "赤霆01拔刀",
+      "prompt": "片段: VIDEO_103 赤霆01拔刀\n人物: 按镜头需要调用已审核角色资产\n动作: 赤霆01拔刀发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 环绕\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_104",
+      "name": "白潮浮上海面",
+      "prompt": "片段: VIDEO_104 白潮浮上海面\n人物: 按镜头需要调用已审核角色资产\n动作: 白潮浮上海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 跟拍\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_105",
+      "name": "基地警报",
+      "prompt": "片段: VIDEO_105 基地警报\n人物: 按镜头需要调用已审核角色资产\n动作: 基地警报发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 固定停留\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_106",
+      "name": "人物回头",
+      "prompt": "片段: VIDEO_106 人物回头\n人物: 按镜头需要调用已审核角色资产\n动作: 人物回头发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 横移\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_107",
+      "name": "机甲脚步",
+      "prompt": "片段: VIDEO_107 机甲脚步\n人物: 按镜头需要调用已审核角色资产\n动作: 机甲脚步发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 低机位推进\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_108",
+      "name": "潮门裂缝",
+      "prompt": "片段: VIDEO_108 潮门裂缝\n人物: 按镜头需要调用已审核角色资产\n动作: 潮门裂缝发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 俯视下降\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_109",
+      "name": "HUD亮起",
+      "prompt": "片段: VIDEO_109 HUD亮起\n人物: 按镜头需要调用已审核角色资产\n动作: HUD亮起发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 手持轻微震动\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_110",
+      "name": "城市撤离",
+      "prompt": "片段: VIDEO_110 城市撤离\n人物: 按镜头需要调用已审核角色资产\n动作: 城市撤离发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 长焦压缩\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_111",
+      "name": "暴风雨海面",
+      "prompt": "片段: VIDEO_111 暴风雨海面\n人物: 按镜头需要调用已审核角色资产\n动作: 暴风雨海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 慢推镜\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_112",
+      "name": "驾驶舱启动",
+      "prompt": "片段: VIDEO_112 驾驶舱启动\n人物: 按镜头需要调用已审核角色资产\n动作: 驾驶舱启动发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 推近\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_113",
+      "name": "赤霆01拔刀",
+      "prompt": "片段: VIDEO_113 赤霆01拔刀\n人物: 按镜头需要调用已审核角色资产\n动作: 赤霆01拔刀发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 环绕\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_114",
+      "name": "白潮浮上海面",
+      "prompt": "片段: VIDEO_114 白潮浮上海面\n人物: 按镜头需要调用已审核角色资产\n动作: 白潮浮上海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 跟拍\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_115",
+      "name": "基地警报",
+      "prompt": "片段: VIDEO_115 基地警报\n人物: 按镜头需要调用已审核角色资产\n动作: 基地警报发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 固定停留\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_116",
+      "name": "人物回头",
+      "prompt": "片段: VIDEO_116 人物回头\n人物: 按镜头需要调用已审核角色资产\n动作: 人物回头发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 横移\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_117",
+      "name": "机甲脚步",
+      "prompt": "片段: VIDEO_117 机甲脚步\n人物: 按镜头需要调用已审核角色资产\n动作: 机甲脚步发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 低机位推进\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_118",
+      "name": "潮门裂缝",
+      "prompt": "片段: VIDEO_118 潮门裂缝\n人物: 按镜头需要调用已审核角色资产\n动作: 潮门裂缝发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 俯视下降\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_119",
+      "name": "HUD亮起",
+      "prompt": "片段: VIDEO_119 HUD亮起\n人物: 按镜头需要调用已审核角色资产\n动作: HUD亮起发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 手持轻微震动\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_120",
+      "name": "城市撤离",
+      "prompt": "片段: VIDEO_120 城市撤离\n人物: 按镜头需要调用已审核角色资产\n动作: 城市撤离发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 长焦压缩\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_121",
+      "name": "暴风雨海面",
+      "prompt": "片段: VIDEO_121 暴风雨海面\n人物: 按镜头需要调用已审核角色资产\n动作: 暴风雨海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 慢推镜\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_122",
+      "name": "驾驶舱启动",
+      "prompt": "片段: VIDEO_122 驾驶舱启动\n人物: 按镜头需要调用已审核角色资产\n动作: 驾驶舱启动发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 推近\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_123",
+      "name": "赤霆01拔刀",
+      "prompt": "片段: VIDEO_123 赤霆01拔刀\n人物: 按镜头需要调用已审核角色资产\n动作: 赤霆01拔刀发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 环绕\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_124",
+      "name": "白潮浮上海面",
+      "prompt": "片段: VIDEO_124 白潮浮上海面\n人物: 按镜头需要调用已审核角色资产\n动作: 白潮浮上海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 跟拍\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_125",
+      "name": "基地警报",
+      "prompt": "片段: VIDEO_125 基地警报\n人物: 按镜头需要调用已审核角色资产\n动作: 基地警报发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 固定停留\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_126",
+      "name": "人物回头",
+      "prompt": "片段: VIDEO_126 人物回头\n人物: 按镜头需要调用已审核角色资产\n动作: 人物回头发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 横移\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_127",
+      "name": "机甲脚步",
+      "prompt": "片段: VIDEO_127 机甲脚步\n人物: 按镜头需要调用已审核角色资产\n动作: 机甲脚步发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 低机位推进\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_128",
+      "name": "潮门裂缝",
+      "prompt": "片段: VIDEO_128 潮门裂缝\n人物: 按镜头需要调用已审核角色资产\n动作: 潮门裂缝发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 俯视下降\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_129",
+      "name": "HUD亮起",
+      "prompt": "片段: VIDEO_129 HUD亮起\n人物: 按镜头需要调用已审核角色资产\n动作: HUD亮起发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 手持轻微震动\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_130",
+      "name": "城市撤离",
+      "prompt": "片段: VIDEO_130 城市撤离\n人物: 按镜头需要调用已审核角色资产\n动作: 城市撤离发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 长焦压缩\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_131",
+      "name": "暴风雨海面",
+      "prompt": "片段: VIDEO_131 暴风雨海面\n人物: 按镜头需要调用已审核角色资产\n动作: 暴风雨海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 慢推镜\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_132",
+      "name": "驾驶舱启动",
+      "prompt": "片段: VIDEO_132 驾驶舱启动\n人物: 按镜头需要调用已审核角色资产\n动作: 驾驶舱启动发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 推近\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_133",
+      "name": "赤霆01拔刀",
+      "prompt": "片段: VIDEO_133 赤霆01拔刀\n人物: 按镜头需要调用已审核角色资产\n动作: 赤霆01拔刀发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 环绕\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_134",
+      "name": "白潮浮上海面",
+      "prompt": "片段: VIDEO_134 白潮浮上海面\n人物: 按镜头需要调用已审核角色资产\n动作: 白潮浮上海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 跟拍\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_135",
+      "name": "基地警报",
+      "prompt": "片段: VIDEO_135 基地警报\n人物: 按镜头需要调用已审核角色资产\n动作: 基地警报发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 固定停留\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_136",
+      "name": "人物回头",
+      "prompt": "片段: VIDEO_136 人物回头\n人物: 按镜头需要调用已审核角色资产\n动作: 人物回头发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 横移\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_137",
+      "name": "机甲脚步",
+      "prompt": "片段: VIDEO_137 机甲脚步\n人物: 按镜头需要调用已审核角色资产\n动作: 机甲脚步发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 低机位推进\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_138",
+      "name": "潮门裂缝",
+      "prompt": "片段: VIDEO_138 潮门裂缝\n人物: 按镜头需要调用已审核角色资产\n动作: 潮门裂缝发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 俯视下降\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_139",
+      "name": "HUD亮起",
+      "prompt": "片段: VIDEO_139 HUD亮起\n人物: 按镜头需要调用已审核角色资产\n动作: HUD亮起发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 手持轻微震动\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_140",
+      "name": "城市撤离",
+      "prompt": "片段: VIDEO_140 城市撤离\n人物: 按镜头需要调用已审核角色资产\n动作: 城市撤离发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 长焦压缩\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_141",
+      "name": "暴风雨海面",
+      "prompt": "片段: VIDEO_141 暴风雨海面\n人物: 按镜头需要调用已审核角色资产\n动作: 暴风雨海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 慢推镜\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_142",
+      "name": "驾驶舱启动",
+      "prompt": "片段: VIDEO_142 驾驶舱启动\n人物: 按镜头需要调用已审核角色资产\n动作: 驾驶舱启动发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 推近\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_143",
+      "name": "赤霆01拔刀",
+      "prompt": "片段: VIDEO_143 赤霆01拔刀\n人物: 按镜头需要调用已审核角色资产\n动作: 赤霆01拔刀发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 环绕\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_144",
+      "name": "白潮浮上海面",
+      "prompt": "片段: VIDEO_144 白潮浮上海面\n人物: 按镜头需要调用已审核角色资产\n动作: 白潮浮上海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 跟拍\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_145",
+      "name": "基地警报",
+      "prompt": "片段: VIDEO_145 基地警报\n人物: 按镜头需要调用已审核角色资产\n动作: 基地警报发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 固定停留\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_146",
+      "name": "人物回头",
+      "prompt": "片段: VIDEO_146 人物回头\n人物: 按镜头需要调用已审核角色资产\n动作: 人物回头发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 横移\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_147",
+      "name": "机甲脚步",
+      "prompt": "片段: VIDEO_147 机甲脚步\n人物: 按镜头需要调用已审核角色资产\n动作: 机甲脚步发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 低机位推进\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_148",
+      "name": "潮门裂缝",
+      "prompt": "片段: VIDEO_148 潮门裂缝\n人物: 按镜头需要调用已审核角色资产\n动作: 潮门裂缝发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 俯视下降\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_149",
+      "name": "HUD亮起",
+      "prompt": "片段: VIDEO_149 HUD亮起\n人物: 按镜头需要调用已审核角色资产\n动作: HUD亮起发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 手持轻微震动\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    },
+    {
+      "id": "VIDEO_150",
+      "name": "城市撤离",
+      "prompt": "片段: VIDEO_150 城市撤离\n人物: 按镜头需要调用已审核角色资产\n动作: 城市撤离发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 长焦压缩\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark"
+    }
+  ]
+}

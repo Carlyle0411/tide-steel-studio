@@ -1,0 +1,33 @@
+{
+  "assetId": "CREATURE-BLACK_TIDE_MOTHER-V004",
+  "domain": "怪兽",
+  "name": "黑潮母体",
+  "variant": "潮门内部",
+  "version": "V004",
+  "status": "待图片落盘",
+  "imagePath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V004.png",
+  "metadataPath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V004.json",
+  "promptPath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V004_PROMPT.md",
+  "referencePath": "assets/creature/black_tide_mother/BLACK_TIDE_MOTHER_V004_REFERENCE.json",
+  "prompt": "Create a master creature asset reference image for Tide Steel Soul.\nCreature: 黑潮母体. Variant: 潮门内部.\n上一轮文明错误遗留系统的生命化阴影，黑色深海组织，母体尺度，未知而克制，不是最终Boss式登场。\nThis is a reusable biological design asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, real materials, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+  "negativePrompt": "anime, cartoon, game render, toy robot, plastic surface, superhero pose, fantasy demon, normal whale, random redesign, over-saturated neon, text, logo, watermark, fake scale",
+  "tags": [
+    "怪兽",
+    "黑潮母体",
+    "潮门内部",
+    "母资产",
+    "Reference"
+  ],
+  "consistencyLock": {
+    "description": "上一轮文明错误遗留系统的生命化阴影，黑色深海组织，母体尺度，未知而克制，不是最终Boss式登场。",
+    "cannotChange": [
+      "身体结构",
+      "生态逻辑",
+      "材质",
+      "尺度",
+      "非普通怪兽化"
+    ]
+  },
+  "createdAt": "2026-07-10T00:00:00.000+08:00",
+  "updatedAt": "2026-07-10T00:00:00.000+08:00"
+}

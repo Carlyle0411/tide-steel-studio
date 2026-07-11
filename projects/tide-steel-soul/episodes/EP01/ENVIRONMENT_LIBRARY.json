@@ -1,0 +1,27 @@
+{
+  "2042 Hangzhou Bay": {
+    "visual": "industrial ocean defense coastline, wet concrete, sea haze, low clouds",
+    "color": "deep blue, cold gray, black metal",
+    "rule": "the sea must feel larger than the defense line"
+  },
+  "Deep Blue Base": {
+    "visual": "30-year future military engineering facility, wet air, metal walls, observation glass",
+    "color": "deep blue base light, cold monitors, worn industrial surfaces",
+    "rule": "not cyberpunk, not clean sci-fi showroom"
+  },
+  "Ocean Rift Gate": {
+    "visual": "unknown ecological entry under ocean pressure, not portal, not wormhole",
+    "color": "low saturation deep sea blue and biological white",
+    "rule": "no purple energy, no lightning"
+  },
+  "Mecha Hangar": {
+    "visual": "subsea heavy maintenance shaft, cranes, salt corrosion, blue standby light",
+    "color": "dark steel, wet black, deep crimson mech parts, blue reactor spill",
+    "rule": "CRT001 appears in partial details only in EP01"
+  },
+  "Underwater Ruins": {
+    "visual": "ancient pressure-worn structures, sediment, scale hidden by darkness",
+    "color": "deep ocean black-blue, mineral white, muted green corrosion",
+    "rule": "only tease as later-series world material"
+  }
+}

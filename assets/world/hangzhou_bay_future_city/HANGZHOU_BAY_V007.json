@@ -1,0 +1,33 @@
+{
+  "assetId": "WORLD-HANGZHOU_BAY-V007",
+  "category": "杭州湾未来城市",
+  "slug": "hangzhou_bay_future_city",
+  "variant": "街道",
+  "version": "V007",
+  "status": "待图片落盘",
+  "imagePath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V007.png",
+  "metadataPath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V007.json",
+  "promptPath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V007_PROMPT.md",
+  "referencePath": "assets/world/hangzhou_bay_future_city/HANGZHOU_BAY_V007_REFERENCE.json",
+  "prompt": "Create a master world asset reference image for Tide Steel Soul.\nAsset: 杭州湾未来城市. Variant: 街道.\n2042杭州湾未来城市，海洋防线、未来港口、工业城市边缘，海洋比城市更大。\nThis is a reusable standard world asset for 12 episodes, not a story screenshot.\n16:9, cinematic realistic sci-fi, Hollywood production design, high detail, low saturation, real materials, 2042 Hangzhou Bay ocean-defense future, not cyberpunk, no anime, no game render, no text, no logo, no watermark",
+  "negativePrompt": "placeholder, mock image, anime, cartoon, game render, cyberpunk neon city, plastic sci-fi, over-saturated, fantasy portal, magic glow, text, logo, watermark",
+  "tags": [
+    "世界资产",
+    "杭州湾未来城市",
+    "街道",
+    "母资产",
+    "Reference"
+  ],
+  "consistencyLock": {
+    "description": "2042杭州湾未来城市，海洋防线、未来港口、工业城市边缘，海洋比城市更大。",
+    "cannotChange": [
+      "2042杭州湾世界观",
+      "工业真实感",
+      "低饱和电影摄影",
+      "海洋尺度",
+      "非赛博朋克"
+    ]
+  },
+  "createdAt": "2026-07-10T00:00:00.000+08:00",
+  "updatedAt": "2026-07-10T00:00:00.000+08:00"
+}

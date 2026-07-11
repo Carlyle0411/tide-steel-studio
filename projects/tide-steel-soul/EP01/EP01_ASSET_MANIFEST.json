@@ -1,0 +1,31 @@
+{
+  "episode": "EP01",
+  "title": "Sea Surface Low Frequency",
+  "status": "local_production",
+  "characters": [
+    { "id": "linzhou", "name": "Lin Zhou", "assets": ["v001_portrait", "v001_full_body", "v001_pilot_suit", "v001_emotion_sheet"], "generated": ["001_portrait.png", "002_fullbody.png", "003_pilot_suit.png", "004_emotion_sheet.png"] },
+    { "id": "xuran", "name": "Xu Ran", "assets": ["v001_portrait", "v001_full_body", "v001_pilot_suit", "v001_emotion_sheet"], "generated": [] },
+    { "id": "chenmu", "name": "Commander Chen", "assets": ["v001_portrait", "v001_command_room", "v001_uniform"], "generated": [] },
+    { "id": "tangxiaoman", "name": "Tang Xiaoman", "assets": ["v001_portrait", "v001_repair_suit", "v001_workshop"], "generated": [] },
+    { "id": "lan", "name": "Lan AI", "assets": ["v001_hologram_form", "v001_interface_form"], "generated": [] }
+  ],
+  "mechas": [
+    { "id": "chiting01", "name": "Chiting-01", "assets": ["v001_front_design", "v001_side_design", "v001_back_design", "v001_cockpit", "v001_weapon_system", "v001_battle_damage"], "generated": ["front.png", "side.png", "back.png", "cockpit.png", "battle_damage.png"] },
+    { "id": "xuanjing03", "name": "Xuanjing-03", "assets": ["v001_front", "v001_side", "v001_battle_scene"], "generated": [] },
+    { "id": "baiyuan07", "name": "Baiyuan-07", "assets": ["v001_front", "v001_side", "v001_flight_mode"], "generated": [] }
+  ],
+  "creatures": [
+    { "id": "white_tide", "name": "White Tide", "assets": ["v001_full_body", "v001_head_detail", "v001_ocean_emergence", "v001_damage_state"], "generated": ["full_body.png", "head_detail.png", "battle_pose.png", "damage_state.png"] },
+    { "id": "thorn_tide", "name": "Thorn Tide", "assets": ["v001_full_body", "v001_attack_pose"], "generated": [] },
+    { "id": "black_tide_mother", "name": "Black Tide Mother", "assets": ["v001_silhouette", "v001_eye_open", "v001_giant_scale"], "generated": [] }
+  ],
+  "environment": [
+    { "id": "hangzhou_bay", "name": "2042 Hangzhou Bay Ocean Defense Line", "assets": ["v001_wide"], "generated": [] },
+    { "id": "deep_blue_base", "name": "Deep Blue Base Interior", "assets": ["v001_interior"], "generated": [] },
+    { "id": "cockpit", "name": "Cockpit Interior", "assets": ["v001"], "generated": [] },
+    { "id": "tide_gate", "name": "Tide Gate Rift", "assets": ["v001"], "generated": [] },
+    { "id": "underwater_ruins", "name": "Underwater Ruins", "assets": ["v001"], "generated": [] },
+    { "id": "evacuation_city", "name": "Evacuation City", "assets": ["v001"], "generated": [] }
+  ],
+  "keyframes": []
+}

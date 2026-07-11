@@ -1,0 +1,126 @@
+{
+  "schema": "Tide Steel Soul Character",
+  "generatedAt": "2026-07-10T00:00:00.000+08:00",
+  "characters": [
+    {
+      "id": "CHAR-LINZHOU-001",
+      "originalId": "linzhou",
+      "name": "Lin Zhou",
+      "type": "角色",
+      "status": "审核 Review",
+      "tags": [
+        "角色",
+        "Lin Zhou",
+        "已有资产"
+      ],
+      "assets": [
+        "CHAR-LINZHOU-001",
+        "CHAR-LINZHOU-002",
+        "CHAR-LINZHOU-003",
+        "CHAR-LINZHOU-004"
+      ],
+      "shots": [
+        "EP01_KF05",
+        "EP01_KF06",
+        "EP01_KF09"
+      ],
+      "notes": "Lin Zhou 的制作资产包，来自 EP01 Asset Manifest。"
+    },
+    {
+      "id": "CHAR-XURAN-002",
+      "originalId": "xuran",
+      "name": "Xu Ran",
+      "type": "角色",
+      "status": "草稿 Draft",
+      "tags": [
+        "角色",
+        "Xu Ran",
+        "待制作"
+      ],
+      "assets": [],
+      "shots": [
+        "EP01_KF10"
+      ],
+      "notes": "Xu Ran 的制作资产包，来自 EP01 Asset Manifest。"
+    },
+    {
+      "id": "CHAR-CHENMU-003",
+      "originalId": "chenmu",
+      "name": "Commander Chen",
+      "type": "角色",
+      "status": "草稿 Draft",
+      "tags": [
+        "角色",
+        "Commander Chen",
+        "待制作"
+      ],
+      "assets": [],
+      "shots": [
+        "EP01_KF04"
+      ],
+      "notes": "Commander Chen 的制作资产包，来自 EP01 Asset Manifest。"
+    },
+    {
+      "id": "CHAR-TANGXIAOMAN-004",
+      "originalId": "tangxiaoman",
+      "name": "Tang Xiaoman",
+      "type": "角色",
+      "status": "草稿 Draft",
+      "tags": [
+        "角色",
+        "Tang Xiaoman",
+        "待制作"
+      ],
+      "assets": [],
+      "shots": [],
+      "notes": "Tang Xiaoman 的制作资产包，来自 EP01 Asset Manifest。"
+    },
+    {
+      "id": "CHAR-LAN-005",
+      "originalId": "lan",
+      "name": "Lan AI",
+      "type": "角色",
+      "status": "草稿 Draft",
+      "tags": [
+        "角色",
+        "Lan AI",
+        "待制作"
+      ],
+      "assets": [],
+      "shots": [],
+      "notes": "Lan AI 的制作资产包，来自 EP01 Asset Manifest。"
+    },
+    {
+      "id": "CHAR-XURAN-001",
+      "name": "许燃",
+      "type": "角色",
+      "status": "草稿 Draft",
+      "tags": [
+        "角色",
+        "理性",
+        "驾驶舱"
+      ],
+      "assets": [],
+      "shots": [
+        "EP01_KF10"
+      ],
+      "notes": "待补齐角色 Reference 与驾驶舱表情资产。"
+    },
+    {
+      "id": "CHAR-CHENMU-001",
+      "name": "陈牧",
+      "type": "角色",
+      "status": "草稿 Draft",
+      "tags": [
+        "角色",
+        "指挥官",
+        "经验"
+      ],
+      "assets": [],
+      "shots": [
+        "EP01_KF04"
+      ],
+      "notes": "已有视觉参考图，待导入本地项目资产库。"
+    }
+  ]
+}

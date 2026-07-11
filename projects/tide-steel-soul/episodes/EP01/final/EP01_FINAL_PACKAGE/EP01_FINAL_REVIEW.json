@@ -1,0 +1,11 @@
+{
+  "episodeId": "EP01",
+  "status": "draft",
+  "canApproveEpisode": false,
+  "blockers": [
+    "Images incomplete: approved image count must reach 18/18.",
+    "Videos incomplete: generated video count must reach 18/18.",
+    "Audio final mix not rendered.",
+    "Final editor approval not recorded."
+  ]
+}

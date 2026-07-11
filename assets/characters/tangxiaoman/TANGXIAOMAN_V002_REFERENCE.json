@@ -1,0 +1,14 @@
+{
+  "assetId": "CHAR-TANGXIAOMAN-V002",
+  "character": "唐小满",
+  "referenceStatus": "等待真实图片生成后锁定",
+  "cannotChange": [
+    "脸型",
+    "年龄",
+    "发型",
+    "服装逻辑",
+    "标志特征",
+    "电影质感"
+  ],
+  "reuseRule": "后续关键帧、Storyboard、GPT Image2图片、可灵视频、海报、宣传片必须引用此Reference。"
+}

@@ -1,0 +1,1182 @@
+{
+  "schema": "Tide Steel Soul Prompts",
+  "generatedAt": "2026-07-10T00:00:00.000+08:00",
+  "prompts": [
+    {
+      "id": "PROMPT-LIB-001",
+      "type": "可灵视频 Prompt",
+      "name": "暴风雨海面",
+      "prompt": "片段: VIDEO_001 暴风雨海面\n人物: 按镜头需要调用已审核角色资产\n动作: 暴风雨海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 慢推镜\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 1,
+      "linkedAssets": [],
+      "linkedShots": [
+        "EP01_KF01"
+      ],
+      "favorite": true,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-002",
+      "type": "可灵视频 Prompt",
+      "name": "驾驶舱启动",
+      "prompt": "片段: VIDEO_002 驾驶舱启动\n人物: 按镜头需要调用已审核角色资产\n动作: 驾驶舱启动发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 推近\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 1,
+      "linkedAssets": [],
+      "linkedShots": [
+        "EP01_KF02"
+      ],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-003",
+      "type": "可灵视频 Prompt",
+      "name": "赤霆01拔刀",
+      "prompt": "片段: VIDEO_003 赤霆01拔刀\n人物: 按镜头需要调用已审核角色资产\n动作: 赤霆01拔刀发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 环绕\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 1,
+      "linkedAssets": [],
+      "linkedShots": [
+        "EP01_KF03"
+      ],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-004",
+      "type": "可灵视频 Prompt",
+      "name": "白潮浮上海面",
+      "prompt": "片段: VIDEO_004 白潮浮上海面\n人物: 按镜头需要调用已审核角色资产\n动作: 白潮浮上海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 跟拍\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 1,
+      "linkedAssets": [],
+      "linkedShots": [
+        "EP01_KF04"
+      ],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-005",
+      "type": "可灵视频 Prompt",
+      "name": "基地警报",
+      "prompt": "片段: VIDEO_005 基地警报\n人物: 按镜头需要调用已审核角色资产\n动作: 基地警报发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 固定停留\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 1,
+      "linkedAssets": [],
+      "linkedShots": [
+        "EP01_KF05"
+      ],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-006",
+      "type": "可灵视频 Prompt",
+      "name": "人物回头",
+      "prompt": "片段: VIDEO_006 人物回头\n人物: 按镜头需要调用已审核角色资产\n动作: 人物回头发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 横移\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 1,
+      "linkedAssets": [],
+      "linkedShots": [
+        "EP01_KF06"
+      ],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-007",
+      "type": "可灵视频 Prompt",
+      "name": "机甲脚步",
+      "prompt": "片段: VIDEO_007 机甲脚步\n人物: 按镜头需要调用已审核角色资产\n动作: 机甲脚步发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 低机位推进\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 1,
+      "linkedAssets": [],
+      "linkedShots": [
+        "EP01_KF07"
+      ],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-008",
+      "type": "可灵视频 Prompt",
+      "name": "潮门裂缝",
+      "prompt": "片段: VIDEO_008 潮门裂缝\n人物: 按镜头需要调用已审核角色资产\n动作: 潮门裂缝发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 俯视下降\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 1,
+      "linkedAssets": [],
+      "linkedShots": [
+        "EP01_KF08"
+      ],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-009",
+      "type": "可灵视频 Prompt",
+      "name": "HUD亮起",
+      "prompt": "片段: VIDEO_009 HUD亮起\n人物: 按镜头需要调用已审核角色资产\n动作: HUD亮起发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 手持轻微震动\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 1,
+      "linkedAssets": [],
+      "linkedShots": [
+        "EP01_KF09"
+      ],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-010",
+      "type": "可灵视频 Prompt",
+      "name": "城市撤离",
+      "prompt": "片段: VIDEO_010 城市撤离\n人物: 按镜头需要调用已审核角色资产\n动作: 城市撤离发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 长焦压缩\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 1,
+      "linkedAssets": [],
+      "linkedShots": [
+        "EP01_KF10"
+      ],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-011",
+      "type": "可灵视频 Prompt",
+      "name": "暴风雨海面",
+      "prompt": "片段: VIDEO_011 暴风雨海面\n人物: 按镜头需要调用已审核角色资产\n动作: 暴风雨海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 慢推镜\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 1,
+      "linkedAssets": [],
+      "linkedShots": [
+        "EP01_KF11"
+      ],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-012",
+      "type": "可灵视频 Prompt",
+      "name": "驾驶舱启动",
+      "prompt": "片段: VIDEO_012 驾驶舱启动\n人物: 按镜头需要调用已审核角色资产\n动作: 驾驶舱启动发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 推近\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 1,
+      "linkedAssets": [],
+      "linkedShots": [
+        "EP01_KF12"
+      ],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-013",
+      "type": "可灵视频 Prompt",
+      "name": "赤霆01拔刀",
+      "prompt": "片段: VIDEO_013 赤霆01拔刀\n人物: 按镜头需要调用已审核角色资产\n动作: 赤霆01拔刀发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 环绕\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 1,
+      "linkedAssets": [],
+      "linkedShots": [
+        "EP01_KF13"
+      ],
+      "favorite": true,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-014",
+      "type": "可灵视频 Prompt",
+      "name": "白潮浮上海面",
+      "prompt": "片段: VIDEO_014 白潮浮上海面\n人物: 按镜头需要调用已审核角色资产\n动作: 白潮浮上海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 跟拍\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 1,
+      "linkedAssets": [],
+      "linkedShots": [
+        "EP01_KF14"
+      ],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-015",
+      "type": "可灵视频 Prompt",
+      "name": "基地警报",
+      "prompt": "片段: VIDEO_015 基地警报\n人物: 按镜头需要调用已审核角色资产\n动作: 基地警报发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 固定停留\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 1,
+      "linkedAssets": [],
+      "linkedShots": [
+        "EP01_KF15"
+      ],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-016",
+      "type": "可灵视频 Prompt",
+      "name": "人物回头",
+      "prompt": "片段: VIDEO_016 人物回头\n人物: 按镜头需要调用已审核角色资产\n动作: 人物回头发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 横移\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 1,
+      "linkedAssets": [],
+      "linkedShots": [
+        "EP01_KF16"
+      ],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-017",
+      "type": "可灵视频 Prompt",
+      "name": "机甲脚步",
+      "prompt": "片段: VIDEO_017 机甲脚步\n人物: 按镜头需要调用已审核角色资产\n动作: 机甲脚步发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 低机位推进\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 1,
+      "linkedAssets": [],
+      "linkedShots": [
+        "EP01_KF17"
+      ],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-018",
+      "type": "可灵视频 Prompt",
+      "name": "潮门裂缝",
+      "prompt": "片段: VIDEO_018 潮门裂缝\n人物: 按镜头需要调用已审核角色资产\n动作: 潮门裂缝发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 俯视下降\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 1,
+      "linkedAssets": [],
+      "linkedShots": [
+        "EP01_KF18"
+      ],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-019",
+      "type": "可灵视频 Prompt",
+      "name": "HUD亮起",
+      "prompt": "片段: VIDEO_019 HUD亮起\n人物: 按镜头需要调用已审核角色资产\n动作: HUD亮起发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 手持轻微震动\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-020",
+      "type": "可灵视频 Prompt",
+      "name": "城市撤离",
+      "prompt": "片段: VIDEO_020 城市撤离\n人物: 按镜头需要调用已审核角色资产\n动作: 城市撤离发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 长焦压缩\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-021",
+      "type": "可灵视频 Prompt",
+      "name": "暴风雨海面",
+      "prompt": "片段: VIDEO_021 暴风雨海面\n人物: 按镜头需要调用已审核角色资产\n动作: 暴风雨海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 慢推镜\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-022",
+      "type": "可灵视频 Prompt",
+      "name": "驾驶舱启动",
+      "prompt": "片段: VIDEO_022 驾驶舱启动\n人物: 按镜头需要调用已审核角色资产\n动作: 驾驶舱启动发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 推近\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-023",
+      "type": "可灵视频 Prompt",
+      "name": "赤霆01拔刀",
+      "prompt": "片段: VIDEO_023 赤霆01拔刀\n人物: 按镜头需要调用已审核角色资产\n动作: 赤霆01拔刀发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 环绕\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-024",
+      "type": "可灵视频 Prompt",
+      "name": "白潮浮上海面",
+      "prompt": "片段: VIDEO_024 白潮浮上海面\n人物: 按镜头需要调用已审核角色资产\n动作: 白潮浮上海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 跟拍\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-025",
+      "type": "可灵视频 Prompt",
+      "name": "基地警报",
+      "prompt": "片段: VIDEO_025 基地警报\n人物: 按镜头需要调用已审核角色资产\n动作: 基地警报发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 固定停留\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": true,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-026",
+      "type": "可灵视频 Prompt",
+      "name": "人物回头",
+      "prompt": "片段: VIDEO_026 人物回头\n人物: 按镜头需要调用已审核角色资产\n动作: 人物回头发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 横移\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-027",
+      "type": "可灵视频 Prompt",
+      "name": "机甲脚步",
+      "prompt": "片段: VIDEO_027 机甲脚步\n人物: 按镜头需要调用已审核角色资产\n动作: 机甲脚步发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 低机位推进\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-028",
+      "type": "可灵视频 Prompt",
+      "name": "潮门裂缝",
+      "prompt": "片段: VIDEO_028 潮门裂缝\n人物: 按镜头需要调用已审核角色资产\n动作: 潮门裂缝发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 俯视下降\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-029",
+      "type": "可灵视频 Prompt",
+      "name": "HUD亮起",
+      "prompt": "片段: VIDEO_029 HUD亮起\n人物: 按镜头需要调用已审核角色资产\n动作: HUD亮起发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 手持轻微震动\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-030",
+      "type": "可灵视频 Prompt",
+      "name": "城市撤离",
+      "prompt": "片段: VIDEO_030 城市撤离\n人物: 按镜头需要调用已审核角色资产\n动作: 城市撤离发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 长焦压缩\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-031",
+      "type": "可灵视频 Prompt",
+      "name": "暴风雨海面",
+      "prompt": "片段: VIDEO_031 暴风雨海面\n人物: 按镜头需要调用已审核角色资产\n动作: 暴风雨海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 慢推镜\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-032",
+      "type": "可灵视频 Prompt",
+      "name": "驾驶舱启动",
+      "prompt": "片段: VIDEO_032 驾驶舱启动\n人物: 按镜头需要调用已审核角色资产\n动作: 驾驶舱启动发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 推近\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-033",
+      "type": "可灵视频 Prompt",
+      "name": "赤霆01拔刀",
+      "prompt": "片段: VIDEO_033 赤霆01拔刀\n人物: 按镜头需要调用已审核角色资产\n动作: 赤霆01拔刀发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 环绕\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-034",
+      "type": "可灵视频 Prompt",
+      "name": "白潮浮上海面",
+      "prompt": "片段: VIDEO_034 白潮浮上海面\n人物: 按镜头需要调用已审核角色资产\n动作: 白潮浮上海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 跟拍\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-035",
+      "type": "可灵视频 Prompt",
+      "name": "基地警报",
+      "prompt": "片段: VIDEO_035 基地警报\n人物: 按镜头需要调用已审核角色资产\n动作: 基地警报发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 固定停留\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-036",
+      "type": "可灵视频 Prompt",
+      "name": "人物回头",
+      "prompt": "片段: VIDEO_036 人物回头\n人物: 按镜头需要调用已审核角色资产\n动作: 人物回头发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 横移\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-037",
+      "type": "可灵视频 Prompt",
+      "name": "机甲脚步",
+      "prompt": "片段: VIDEO_037 机甲脚步\n人物: 按镜头需要调用已审核角色资产\n动作: 机甲脚步发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 低机位推进\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": true,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-038",
+      "type": "可灵视频 Prompt",
+      "name": "潮门裂缝",
+      "prompt": "片段: VIDEO_038 潮门裂缝\n人物: 按镜头需要调用已审核角色资产\n动作: 潮门裂缝发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 俯视下降\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-039",
+      "type": "可灵视频 Prompt",
+      "name": "HUD亮起",
+      "prompt": "片段: VIDEO_039 HUD亮起\n人物: 按镜头需要调用已审核角色资产\n动作: HUD亮起发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 手持轻微震动\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-040",
+      "type": "可灵视频 Prompt",
+      "name": "城市撤离",
+      "prompt": "片段: VIDEO_040 城市撤离\n人物: 按镜头需要调用已审核角色资产\n动作: 城市撤离发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 长焦压缩\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-041",
+      "type": "可灵视频 Prompt",
+      "name": "暴风雨海面",
+      "prompt": "片段: VIDEO_041 暴风雨海面\n人物: 按镜头需要调用已审核角色资产\n动作: 暴风雨海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 慢推镜\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-042",
+      "type": "可灵视频 Prompt",
+      "name": "驾驶舱启动",
+      "prompt": "片段: VIDEO_042 驾驶舱启动\n人物: 按镜头需要调用已审核角色资产\n动作: 驾驶舱启动发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 推近\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-043",
+      "type": "可灵视频 Prompt",
+      "name": "赤霆01拔刀",
+      "prompt": "片段: VIDEO_043 赤霆01拔刀\n人物: 按镜头需要调用已审核角色资产\n动作: 赤霆01拔刀发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 环绕\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-044",
+      "type": "可灵视频 Prompt",
+      "name": "白潮浮上海面",
+      "prompt": "片段: VIDEO_044 白潮浮上海面\n人物: 按镜头需要调用已审核角色资产\n动作: 白潮浮上海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 跟拍\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-045",
+      "type": "可灵视频 Prompt",
+      "name": "基地警报",
+      "prompt": "片段: VIDEO_045 基地警报\n人物: 按镜头需要调用已审核角色资产\n动作: 基地警报发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 固定停留\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-046",
+      "type": "可灵视频 Prompt",
+      "name": "人物回头",
+      "prompt": "片段: VIDEO_046 人物回头\n人物: 按镜头需要调用已审核角色资产\n动作: 人物回头发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 横移\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-047",
+      "type": "可灵视频 Prompt",
+      "name": "机甲脚步",
+      "prompt": "片段: VIDEO_047 机甲脚步\n人物: 按镜头需要调用已审核角色资产\n动作: 机甲脚步发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 低机位推进\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-048",
+      "type": "可灵视频 Prompt",
+      "name": "潮门裂缝",
+      "prompt": "片段: VIDEO_048 潮门裂缝\n人物: 按镜头需要调用已审核角色资产\n动作: 潮门裂缝发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 俯视下降\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-049",
+      "type": "可灵视频 Prompt",
+      "name": "HUD亮起",
+      "prompt": "片段: VIDEO_049 HUD亮起\n人物: 按镜头需要调用已审核角色资产\n动作: HUD亮起发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 手持轻微震动\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": true,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-050",
+      "type": "可灵视频 Prompt",
+      "name": "城市撤离",
+      "prompt": "片段: VIDEO_050 城市撤离\n人物: 按镜头需要调用已审核角色资产\n动作: 城市撤离发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 长焦压缩\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-051",
+      "type": "可灵视频 Prompt",
+      "name": "暴风雨海面",
+      "prompt": "片段: VIDEO_051 暴风雨海面\n人物: 按镜头需要调用已审核角色资产\n动作: 暴风雨海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 慢推镜\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-052",
+      "type": "可灵视频 Prompt",
+      "name": "驾驶舱启动",
+      "prompt": "片段: VIDEO_052 驾驶舱启动\n人物: 按镜头需要调用已审核角色资产\n动作: 驾驶舱启动发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 推近\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-053",
+      "type": "可灵视频 Prompt",
+      "name": "赤霆01拔刀",
+      "prompt": "片段: VIDEO_053 赤霆01拔刀\n人物: 按镜头需要调用已审核角色资产\n动作: 赤霆01拔刀发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 环绕\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-054",
+      "type": "可灵视频 Prompt",
+      "name": "白潮浮上海面",
+      "prompt": "片段: VIDEO_054 白潮浮上海面\n人物: 按镜头需要调用已审核角色资产\n动作: 白潮浮上海面发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 跟拍\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-055",
+      "type": "可灵视频 Prompt",
+      "name": "基地警报",
+      "prompt": "片段: VIDEO_055 基地警报\n人物: 按镜头需要调用已审核角色资产\n动作: 基地警报发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 固定停留\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-056",
+      "type": "可灵视频 Prompt",
+      "name": "人物回头",
+      "prompt": "片段: VIDEO_056 人物回头\n人物: 按镜头需要调用已审核角色资产\n动作: 人物回头发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 横移\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-057",
+      "type": "可灵视频 Prompt",
+      "name": "机甲脚步",
+      "prompt": "片段: VIDEO_057 机甲脚步\n人物: 按镜头需要调用已审核角色资产\n动作: 机甲脚步发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 低机位推进\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-058",
+      "type": "可灵视频 Prompt",
+      "name": "潮门裂缝",
+      "prompt": "片段: VIDEO_058 潮门裂缝\n人物: 按镜头需要调用已审核角色资产\n动作: 潮门裂缝发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 俯视下降\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-059",
+      "type": "可灵视频 Prompt",
+      "name": "HUD亮起",
+      "prompt": "片段: VIDEO_059 HUD亮起\n人物: 按镜头需要调用已审核角色资产\n动作: HUD亮起发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 手持轻微震动\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "环境"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "PROMPT-LIB-060",
+      "type": "可灵视频 Prompt",
+      "name": "城市撤离",
+      "prompt": "片段: VIDEO_060 城市撤离\n人物: 按镜头需要调用已审核角色资产\n动作: 城市撤离发生细微但明确的电影动作\n镜头: 真实电影摄影机，有物理重量\n运镜: 长焦压缩\n速度: 克制，避免短视频式加速\n灯光: 深蓝、冷灰、低饱和，必要时加入警报红光\n情绪: 海洋压迫，人类尺度渺小\nNegative Prompt: anime, cartoon, game render, fake physics, random design, text, logo, watermark",
+      "negativePrompt": "anime, cartoon, game render, fake motion, watermark",
+      "tags": [
+        "Prompt",
+        "视频",
+        "运镜"
+      ],
+      "usageCount": 0,
+      "linkedAssets": [],
+      "linkedShots": [],
+      "favorite": false,
+      "status": "草稿 Draft",
+      "version": "V001",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "assetId": "CHAR-TANGXIAOMAN-V002",
+  "character": "唐小满",
+  "englishName": "Tang Xiaoman",
+  "variant": "维修服",
+  "version": "V002",
+  "status": "待图片落盘",
+  "imagePath": "assets/characters/tangxiaoman/TANGXIAOMAN_V002.png",
+  "metadataPath": "assets/characters/tangxiaoman/TANGXIAOMAN_V002.json",
+  "promptPath": "assets/characters/tangxiaoman/TANGXIAOMAN_V002_PROMPT.md",
+  "referencePath": "assets/characters/tangxiaoman/TANGXIAOMAN_V002_REFERENCE.json",
+  "prompt": "Create a character master asset reference image for Tide Steel Soul.\nCharacter: 唐小满 / Tang Xiaoman.\nVariant: 维修服.\nCore identity: young Chinese female mechanic, practical maintenance suit, tool belt, humid mech hangar, quick intelligent expression, grounded film realism.\nCharacter Bible: age 22, height 165cm, personality 敏捷、明亮、工程直觉强，紧张时仍能动手解决问题, costume 维修服，工具带，湿金属工作环境，真实工程质感, color 冷灰、工具黄、小面积蓝光, signature feature 年轻工程师气质，手部动作熟练，非偶像化.\nThis is a reusable standard character model asset, not a story screenshot.\n16:9, Cinematic Sci-Fi, Hollywood realistic, high detail, natural skin when human, film lighting, low saturation, industrial ocean defense future, no anime, no cartoon, no game render, no text, no logo, no watermark",
+  "negativePrompt": "placeholder, mock image, random face, different age, different costume, anime, cartoon, game render, beauty ad, superhero pose, text, logo, watermark",
+  "tags": [
+    "人物",
+    "英雄角色",
+    "唐小满",
+    "维修服",
+    "母资产",
+    "Reference"
+  ],
+  "consistencyLock": {
+    "age": 22,
+    "height": "165cm",
+    "costume": "维修服，工具带，湿金属工作环境，真实工程质感",
+    "color": "冷灰、工具黄、小面积蓝光",
+    "feature": "年轻工程师气质，手部动作熟练，非偶像化"
+  },
+  "createdAt": "2026-07-10T00:00:00.000+08:00",
+  "updatedAt": "2026-07-10T00:00:00.000+08:00"
+}

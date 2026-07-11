@@ -1,0 +1,720 @@
+{
+  "schema": "Tide Steel Soul Industrial Shot",
+  "generatedAt": "2026-07-10T00:00:00.000+08:00",
+  "shots": [
+    {
+      "id": "SHOT-EP01-001",
+      "shotId": "EP01_KF01",
+      "episode": "EP01",
+      "order": 1,
+      "name": "2042 Hangzhou Bay Future Coastline",
+      "description": "Wide establishing image for the world before the anomaly.",
+      "type": "远景",
+      "camera": "缓慢推镜",
+      "lens": "24mm",
+      "duration": 8,
+      "status": "草稿 Draft",
+      "tags": [
+        "EP01",
+        "Shot",
+        "建立恐惧"
+      ],
+      "characters": [],
+      "mechas": [],
+      "creatures": [],
+      "scenes": [
+        "杭州湾"
+      ],
+      "requiredAssets": [
+        "hangzhou_bay"
+      ],
+      "linkedAssets": [],
+      "promptId": "PROMPT-EP01-001",
+      "videoPromptId": "KLING-EP01-001",
+      "review": "草稿 Draft",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "SHOT-EP01-002",
+      "shotId": "EP01_KF02",
+      "episode": "EP01",
+      "order": 2,
+      "name": "White Tide First Appearance",
+      "description": "A huge body breaks the storm sea without monster-show spectacle.",
+      "type": "中景",
+      "camera": "固定镜头",
+      "lens": "35mm",
+      "duration": 5,
+      "status": "草稿 Draft",
+      "tags": [
+        "EP01",
+        "Shot",
+        "建立恐惧"
+      ],
+      "characters": [],
+      "mechas": [],
+      "creatures": [
+        "白潮"
+      ],
+      "scenes": [
+        "杭州湾"
+      ],
+      "requiredAssets": [
+        "white_tide",
+        "hangzhou_bay"
+      ],
+      "linkedAssets": [
+        "CREATURE-WHITETIDE-005",
+        "CREATURE-WHITETIDE-006",
+        "CREATURE-WHITETIDE-007",
+        "CREATURE-WHITETIDE-008"
+      ],
+      "promptId": "PROMPT-EP01-002",
+      "videoPromptId": "KLING-EP01-002",
+      "review": "审核 Review",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "SHOT-EP01-003",
+      "shotId": "EP01_KF03",
+      "episode": "EP01",
+      "order": 3,
+      "name": "Deep Blue Base Alarm",
+      "description": "The base reacts before people understand the event.",
+      "type": "特写",
+      "camera": "横移跟拍",
+      "lens": "50mm",
+      "duration": 5,
+      "status": "草稿 Draft",
+      "tags": [
+        "EP01",
+        "Shot",
+        "建立恐惧"
+      ],
+      "characters": [],
+      "mechas": [],
+      "creatures": [],
+      "scenes": [
+        "深蓝基地"
+      ],
+      "requiredAssets": [
+        "deep_blue_base"
+      ],
+      "linkedAssets": [],
+      "promptId": "PROMPT-EP01-003",
+      "videoPromptId": "KLING-EP01-003",
+      "review": "草稿 Draft",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "SHOT-EP01-004",
+      "shotId": "EP01_KF04",
+      "episode": "EP01",
+      "order": 4,
+      "name": "Commander Chen Detects Signal",
+      "description": "Chen Mu trusts experience before the automated system does.",
+      "type": "远景",
+      "camera": "低机位仰拍",
+      "lens": "85mm",
+      "duration": 5,
+      "status": "草稿 Draft",
+      "tags": [
+        "EP01",
+        "Shot",
+        "建立恐惧"
+      ],
+      "characters": [
+        "陈牧"
+      ],
+      "mechas": [],
+      "creatures": [],
+      "scenes": [
+        "深蓝基地"
+      ],
+      "requiredAssets": [
+        "chenmu",
+        "deep_blue_base"
+      ],
+      "linkedAssets": [],
+      "promptId": "PROMPT-EP01-004",
+      "videoPromptId": "KLING-EP01-004",
+      "review": "草稿 Draft",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "SHOT-EP01-005",
+      "shotId": "EP01_KF05",
+      "episode": "EP01",
+      "order": 5,
+      "name": "Lin Zhou Recall Notice",
+      "description": "Lin Zhou is pulled back toward the machine and the old wound.",
+      "type": "中景",
+      "camera": "缓慢推镜",
+      "lens": "24mm",
+      "duration": 8,
+      "status": "草稿 Draft",
+      "tags": [
+        "EP01",
+        "Shot",
+        "人物进入"
+      ],
+      "characters": [
+        "林舟"
+      ],
+      "mechas": [],
+      "creatures": [],
+      "scenes": [],
+      "requiredAssets": [
+        "linzhou"
+      ],
+      "linkedAssets": [
+        "CHAR-LINZHOU-001",
+        "CHAR-LINZHOU-002",
+        "CHAR-LINZHOU-003",
+        "CHAR-LINZHOU-004"
+      ],
+      "promptId": "PROMPT-EP01-005",
+      "videoPromptId": "KLING-EP01-005",
+      "review": "审核 Review",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "SHOT-EP01-006",
+      "shotId": "EP01_KF06",
+      "episode": "EP01",
+      "order": 6,
+      "name": "Lin Zhou Enters Deep Blue Base",
+      "description": "The human story enters the industrial defense system.",
+      "type": "特写",
+      "camera": "固定镜头",
+      "lens": "35mm",
+      "duration": 5,
+      "status": "草稿 Draft",
+      "tags": [
+        "EP01",
+        "Shot",
+        "人物进入"
+      ],
+      "characters": [
+        "林舟"
+      ],
+      "mechas": [],
+      "creatures": [],
+      "scenes": [
+        "深蓝基地"
+      ],
+      "requiredAssets": [
+        "linzhou",
+        "deep_blue_base"
+      ],
+      "linkedAssets": [
+        "CHAR-LINZHOU-001",
+        "CHAR-LINZHOU-002",
+        "CHAR-LINZHOU-003",
+        "CHAR-LINZHOU-004"
+      ],
+      "promptId": "PROMPT-EP01-006",
+      "videoPromptId": "KLING-EP01-006",
+      "review": "审核 Review",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "SHOT-EP01-007",
+      "shotId": "EP01_KF07",
+      "episode": "EP01",
+      "order": 7,
+      "name": "Chiting-01 First Reveal",
+      "description": "Reveal the machine as weight and danger, not salvation.",
+      "type": "远景",
+      "camera": "横移跟拍",
+      "lens": "50mm",
+      "duration": 5,
+      "status": "草稿 Draft",
+      "tags": [
+        "EP01",
+        "Shot",
+        "人物进入"
+      ],
+      "characters": [],
+      "mechas": [
+        "赤霆01"
+      ],
+      "creatures": [],
+      "scenes": [],
+      "requiredAssets": [
+        "chiting01"
+      ],
+      "linkedAssets": [
+        "MECHA-CHITING01-009",
+        "MECHA-CHITING01-010",
+        "MECHA-CHITING01-011",
+        "MECHA-CHITING01-012",
+        "MECHA-CHITING01-013"
+      ],
+      "promptId": "PROMPT-EP01-007",
+      "videoPromptId": "KLING-EP01-007",
+      "review": "审核 Review",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "SHOT-EP01-008",
+      "shotId": "EP01_KF08",
+      "episode": "EP01",
+      "order": 8,
+      "name": "Cockpit Opens",
+      "description": "The cockpit becomes a threshold rather than a vehicle entrance.",
+      "type": "中景",
+      "camera": "低机位仰拍",
+      "lens": "85mm",
+      "duration": 5,
+      "status": "草稿 Draft",
+      "tags": [
+        "EP01",
+        "Shot",
+        "人物进入"
+      ],
+      "characters": [],
+      "mechas": [
+        "赤霆01"
+      ],
+      "creatures": [],
+      "scenes": [
+        "驾驶舱"
+      ],
+      "requiredAssets": [
+        "chiting01",
+        "cockpit"
+      ],
+      "linkedAssets": [
+        "MECHA-CHITING01-009",
+        "MECHA-CHITING01-010",
+        "MECHA-CHITING01-011",
+        "MECHA-CHITING01-012",
+        "MECHA-CHITING01-013"
+      ],
+      "promptId": "PROMPT-EP01-008",
+      "videoPromptId": "KLING-EP01-008",
+      "review": "审核 Review",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "SHOT-EP01-009",
+      "shotId": "EP01_KF09",
+      "episode": "EP01",
+      "order": 9,
+      "name": "Lin Zhou Enters Cockpit",
+      "description": "Lin Zhou chooses the place that once represented failure.",
+      "type": "特写",
+      "camera": "缓慢推镜",
+      "lens": "24mm",
+      "duration": 8,
+      "status": "草稿 Draft",
+      "tags": [
+        "EP01",
+        "Shot",
+        "人物进入"
+      ],
+      "characters": [
+        "林舟"
+      ],
+      "mechas": [
+        "赤霆01"
+      ],
+      "creatures": [],
+      "scenes": [
+        "驾驶舱"
+      ],
+      "requiredAssets": [
+        "linzhou",
+        "chiting01",
+        "cockpit"
+      ],
+      "linkedAssets": [
+        "CHAR-LINZHOU-001",
+        "CHAR-LINZHOU-002",
+        "CHAR-LINZHOU-003",
+        "CHAR-LINZHOU-004",
+        "MECHA-CHITING01-009",
+        "MECHA-CHITING01-010",
+        "MECHA-CHITING01-011",
+        "MECHA-CHITING01-012",
+        "MECHA-CHITING01-013"
+      ],
+      "promptId": "PROMPT-EP01-009",
+      "videoPromptId": "KLING-EP01-009",
+      "review": "审核 Review",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "SHOT-EP01-010",
+      "shotId": "EP01_KF10",
+      "episode": "EP01",
+      "order": 10,
+      "name": "Xu Ran Connection Failure",
+      "description": "The first synchronization attempt fails without melodrama.",
+      "type": "远景",
+      "camera": "固定镜头",
+      "lens": "35mm",
+      "duration": 5,
+      "status": "草稿 Draft",
+      "tags": [
+        "EP01",
+        "Shot",
+        "战斗"
+      ],
+      "characters": [
+        "许燃"
+      ],
+      "mechas": [],
+      "creatures": [],
+      "scenes": [
+        "驾驶舱"
+      ],
+      "requiredAssets": [
+        "xuran",
+        "cockpit"
+      ],
+      "linkedAssets": [
+        "MECHA-CHITING01-009",
+        "MECHA-CHITING01-011"
+      ],
+      "promptId": "PROMPT-EP01-010",
+      "videoPromptId": "KLING-EP01-010",
+      "review": "审核 Review",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "SHOT-EP01-011",
+      "shotId": "EP01_KF11",
+      "episode": "EP01",
+      "order": 11,
+      "name": "White Tide Hits Defense Line",
+      "description": "The city defense is stressed by behavior it misreads as attack.",
+      "type": "中景",
+      "camera": "横移跟拍",
+      "lens": "50mm",
+      "duration": 5,
+      "status": "草稿 Draft",
+      "tags": [
+        "EP01",
+        "Shot",
+        "战斗"
+      ],
+      "characters": [],
+      "mechas": [],
+      "creatures": [
+        "白潮"
+      ],
+      "scenes": [
+        "杭州湾"
+      ],
+      "requiredAssets": [
+        "white_tide",
+        "hangzhou_bay"
+      ],
+      "linkedAssets": [
+        "CREATURE-WHITETIDE-005",
+        "CREATURE-WHITETIDE-006",
+        "CREATURE-WHITETIDE-007",
+        "CREATURE-WHITETIDE-008"
+      ],
+      "promptId": "PROMPT-EP01-011",
+      "videoPromptId": "KLING-EP01-011",
+      "review": "审核 Review",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "SHOT-EP01-012",
+      "shotId": "EP01_KF12",
+      "episode": "EP01",
+      "order": 12,
+      "name": "Chiting-01 Starts",
+      "description": "The machine wakes as a dangerous decision.",
+      "type": "特写",
+      "camera": "低机位仰拍",
+      "lens": "85mm",
+      "duration": 5,
+      "status": "草稿 Draft",
+      "tags": [
+        "EP01",
+        "Shot",
+        "战斗"
+      ],
+      "characters": [],
+      "mechas": [
+        "赤霆01"
+      ],
+      "creatures": [],
+      "scenes": [],
+      "requiredAssets": [
+        "chiting01"
+      ],
+      "linkedAssets": [
+        "MECHA-CHITING01-009",
+        "MECHA-CHITING01-010",
+        "MECHA-CHITING01-011",
+        "MECHA-CHITING01-012",
+        "MECHA-CHITING01-013"
+      ],
+      "promptId": "PROMPT-EP01-012",
+      "videoPromptId": "KLING-EP01-012",
+      "review": "审核 Review",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "SHOT-EP01-013",
+      "shotId": "EP01_KF13",
+      "episode": "EP01",
+      "order": 13,
+      "name": "Chiting-01 Moves Toward Sea",
+      "description": "Human engineering moves into a scale it cannot own.",
+      "type": "远景",
+      "camera": "缓慢推镜",
+      "lens": "24mm",
+      "duration": 8,
+      "status": "草稿 Draft",
+      "tags": [
+        "EP01",
+        "Shot",
+        "战斗"
+      ],
+      "characters": [],
+      "mechas": [
+        "赤霆01"
+      ],
+      "creatures": [],
+      "scenes": [
+        "杭州湾"
+      ],
+      "requiredAssets": [
+        "chiting01",
+        "hangzhou_bay"
+      ],
+      "linkedAssets": [
+        "MECHA-CHITING01-009",
+        "MECHA-CHITING01-010",
+        "MECHA-CHITING01-011",
+        "MECHA-CHITING01-012",
+        "MECHA-CHITING01-013"
+      ],
+      "promptId": "PROMPT-EP01-013",
+      "videoPromptId": "KLING-EP01-013",
+      "review": "审核 Review",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "SHOT-EP01-014",
+      "shotId": "EP01_KF14",
+      "episode": "EP01",
+      "order": 14,
+      "name": "Chiting-01 First Combat",
+      "description": "The first fight proves force is not understanding.",
+      "type": "中景",
+      "camera": "固定镜头",
+      "lens": "35mm",
+      "duration": 5,
+      "status": "草稿 Draft",
+      "tags": [
+        "EP01",
+        "Shot",
+        "战斗"
+      ],
+      "characters": [],
+      "mechas": [
+        "赤霆01"
+      ],
+      "creatures": [
+        "白潮"
+      ],
+      "scenes": [],
+      "requiredAssets": [
+        "chiting01",
+        "white_tide"
+      ],
+      "linkedAssets": [
+        "CREATURE-WHITETIDE-005",
+        "CREATURE-WHITETIDE-006",
+        "CREATURE-WHITETIDE-007",
+        "CREATURE-WHITETIDE-008",
+        "MECHA-CHITING01-009",
+        "MECHA-CHITING01-010",
+        "MECHA-CHITING01-011",
+        "MECHA-CHITING01-012",
+        "MECHA-CHITING01-013"
+      ],
+      "promptId": "PROMPT-EP01-014",
+      "videoPromptId": "KLING-EP01-014",
+      "review": "审核 Review",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "SHOT-EP01-015",
+      "shotId": "EP01_KF15",
+      "episode": "EP01",
+      "order": 15,
+      "name": "White Tide and Chiting Face Each Other",
+      "description": "The confrontation begins to resemble recognition.",
+      "type": "特写",
+      "camera": "横移跟拍",
+      "lens": "50mm",
+      "duration": 5,
+      "status": "草稿 Draft",
+      "tags": [
+        "EP01",
+        "Shot",
+        "战斗"
+      ],
+      "characters": [],
+      "mechas": [
+        "赤霆01"
+      ],
+      "creatures": [
+        "白潮"
+      ],
+      "scenes": [],
+      "requiredAssets": [
+        "chiting01",
+        "white_tide"
+      ],
+      "linkedAssets": [
+        "CREATURE-WHITETIDE-005",
+        "CREATURE-WHITETIDE-006",
+        "CREATURE-WHITETIDE-007",
+        "CREATURE-WHITETIDE-008",
+        "MECHA-CHITING01-009",
+        "MECHA-CHITING01-010",
+        "MECHA-CHITING01-011",
+        "MECHA-CHITING01-012",
+        "MECHA-CHITING01-013"
+      ],
+      "promptId": "PROMPT-EP01-015",
+      "videoPromptId": "KLING-EP01-015",
+      "review": "审核 Review",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "SHOT-EP01-016",
+      "shotId": "EP01_KF16",
+      "episode": "EP01",
+      "order": 16,
+      "name": "White Tide Releases Unknown Signal",
+      "description": "The creature communicates in a form humans cannot classify.",
+      "type": "远景",
+      "camera": "低机位仰拍",
+      "lens": "85mm",
+      "duration": 5,
+      "status": "草稿 Draft",
+      "tags": [
+        "EP01",
+        "Shot",
+        "未知"
+      ],
+      "characters": [],
+      "mechas": [],
+      "creatures": [
+        "白潮"
+      ],
+      "scenes": [],
+      "requiredAssets": [
+        "white_tide"
+      ],
+      "linkedAssets": [
+        "CREATURE-WHITETIDE-005",
+        "CREATURE-WHITETIDE-006",
+        "CREATURE-WHITETIDE-007",
+        "CREATURE-WHITETIDE-008"
+      ],
+      "promptId": "PROMPT-EP01-016",
+      "videoPromptId": "KLING-EP01-016",
+      "review": "审核 Review",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "SHOT-EP01-017",
+      "shotId": "EP01_KF17",
+      "episode": "EP01",
+      "order": 17,
+      "name": "Tide Gate Rift Appears",
+      "description": "The real unknown enters the frame as ecology, not portal effect.",
+      "type": "中景",
+      "camera": "缓慢推镜",
+      "lens": "24mm",
+      "duration": 8,
+      "status": "草稿 Draft",
+      "tags": [
+        "EP01",
+        "Shot",
+        "未知"
+      ],
+      "characters": [],
+      "mechas": [],
+      "creatures": [],
+      "scenes": [
+        "潮门",
+        "杭州湾"
+      ],
+      "requiredAssets": [
+        "tide_gate",
+        "hangzhou_bay"
+      ],
+      "linkedAssets": [],
+      "promptId": "PROMPT-EP01-017",
+      "videoPromptId": "KLING-EP01-017",
+      "review": "草稿 Draft",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    },
+    {
+      "id": "SHOT-EP01-018",
+      "shotId": "EP01_KF18",
+      "episode": "EP01",
+      "order": 18,
+      "name": "Black Tide Mother Opens Eye",
+      "description": "End on a living system watching back.",
+      "type": "特写",
+      "camera": "固定镜头",
+      "lens": "35mm",
+      "duration": 5,
+      "status": "草稿 Draft",
+      "tags": [
+        "EP01",
+        "Shot",
+        "未知"
+      ],
+      "characters": [],
+      "mechas": [],
+      "creatures": [
+        "black tide mother"
+      ],
+      "scenes": [
+        "潮门"
+      ],
+      "requiredAssets": [
+        "black_tide_mother",
+        "tide_gate"
+      ],
+      "linkedAssets": [],
+      "promptId": "PROMPT-EP01-018",
+      "videoPromptId": "KLING-EP01-018",
+      "review": "草稿 Draft",
+      "createdAt": "2026-07-10T00:00:00.000+08:00",
+      "updatedAt": "2026-07-10T00:00:00.000+08:00"
+    }
+  ]
+}

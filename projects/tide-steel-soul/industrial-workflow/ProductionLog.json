@@ -1,0 +1,78 @@
+{
+  "schema": "Tide Steel Soul Production Log",
+  "generatedAt": "2026-07-10T00:00:00.000+08:00",
+  "logs": [
+    {
+      "id": "LOG-001",
+      "action": "导入图片",
+      "target": "本地 Asset Library",
+      "status": "完成",
+      "time": "2026-07-10T00:00:00.000+08:00",
+      "detail": "已登记 13 张真实本地图片。"
+    },
+    {
+      "id": "LOG-002",
+      "action": "建立 Shot 索引",
+      "target": "EP01",
+      "status": "完成",
+      "time": "2026-07-10T00:00:00.000+08:00",
+      "detail": "已登记 18 个镜头。"
+    },
+    {
+      "id": "LOG-003",
+      "action": "建立引用关系",
+      "target": "Asset Relationship",
+      "status": "完成",
+      "time": "2026-07-10T00:00:00.000+08:00",
+      "detail": "已生成 138 条引用关系。"
+    }
+  ],
+  "audio": {
+    "episodeId": "EP01",
+    "durationTarget": "3-5 minutes",
+    "events": [
+      {
+        "timestamp": "00:00",
+        "track": "Ambient Sound",
+        "cue": "deep ocean pressure, almost below hearing",
+        "status": "planned"
+      },
+      {
+        "timestamp": "00:22",
+        "track": "SFX",
+        "cue": "paper cup water surface gathers inward",
+        "status": "planned"
+      },
+      {
+        "timestamp": "01:20",
+        "track": "SFX",
+        "cue": "first restrained alarm pulse, no melody",
+        "status": "planned"
+      },
+      {
+        "timestamp": "02:10",
+        "track": "Dialogue",
+        "cue": "command room fragments only; no exposition",
+        "status": "planned"
+      },
+      {
+        "timestamp": "02:30",
+        "track": "SFX",
+        "cue": "manual observation gate mechanics begin",
+        "status": "planned"
+      },
+      {
+        "timestamp": "03:10",
+        "track": "BGM",
+        "cue": "low drone enters after irreversible choice",
+        "status": "planned"
+      },
+      {
+        "timestamp": "03:45",
+        "track": "Ambient Sound",
+        "cue": "ocean sound disappears for one beat",
+        "status": "planned"
+      }
+    ]
+  }
+}

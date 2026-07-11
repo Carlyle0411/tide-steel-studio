@@ -1,0 +1,28 @@
+export type EP01AudioEvent = {
+  timestamp: string;
+  track: "BGM" | "Ambient Sound" | "SFX" | "Dialogue";
+  cue: string;
+  status: "planned" | "recorded" | "mixed";
+};
+
+export type EP01AudioTimeline = {
+  episodeId: "EP01";
+  durationTarget: "3-5 minutes";
+  events: EP01AudioEvent[];
+};
+
+export function buildEP01AudioTimeline(): EP01AudioTimeline {
+  return {
+    episodeId: "EP01",
+    durationTarget: "3-5 minutes",
+    events: [
+      { timestamp: "00:00", track: "Ambient Sound", cue: "deep ocean pressure, almost below hearing", status: "planned" },
+      { timestamp: "00:22", track: "SFX", cue: "paper cup water surface gathers inward", status: "planned" },
+      { timestamp: "01:20", track: "SFX", cue: "first restrained alarm pulse, no melody", status: "planned" },
+      { timestamp: "02:10", track: "Dialogue", cue: "command room fragments only; no exposition", status: "planned" },
+      { timestamp: "02:30", track: "SFX", cue: "manual observation gate mechanics begin", status: "planned" },
+      { timestamp: "03:10", track: "BGM", cue: "low drone enters after irreversible choice", status: "planned" },
+      { timestamp: "03:45", track: "Ambient Sound", cue: "ocean sound disappears for one beat", status: "planned" }
+    ]
+  };
+}

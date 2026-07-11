@@ -1,0 +1,117 @@
+{
+  "generatedAt": "2026-07-10T00:00:00.000+08:00",
+  "templates": [
+    {
+      "id": "VIDEO-HUMAN-WALK-001",
+      "name": "人物走路模板",
+      "category": "人物",
+      "firstFrame": "由母资产Reference生成首帧",
+      "lastFrame": "根据动作终点生成尾帧建议",
+      "klingPrompt": "Scene: Tide Steel Soul master video template\nSubject: 人物走路模板\nAction: 从冷蓝基地通道尽头走向镜头\nCamera Movement: 慢推镜\nDuration: 5s\nLighting: cinematic low saturation industrial ocean light\nNegative Prompt: cartoon, anime, game render, plastic sci-fi, neon cyberpunk, over-saturated, logo, watermark, subtitles, wrong character, inconsistent mech design",
+      "cameraMovement": "慢推镜",
+      "duration": 5,
+      "status": "模板可用",
+      "tags": [
+        "人物",
+        "人物走路模板",
+        "可灵模板"
+      ]
+    },
+    {
+      "id": "VIDEO-HUMAN-PILOT-001",
+      "name": "人物驾驶模板",
+      "category": "人物",
+      "firstFrame": "由母资产Reference生成首帧",
+      "lastFrame": "根据动作终点生成尾帧建议",
+      "klingPrompt": "Scene: Tide Steel Soul master video template\nSubject: 人物驾驶模板\nAction: 驾驶舱内完成同步操作\nCamera Movement: 85mm轻微推进\nDuration: 5s\nLighting: cinematic low saturation industrial ocean light\nNegative Prompt: cartoon, anime, game render, plastic sci-fi, neon cyberpunk, over-saturated, logo, watermark, subtitles, wrong character, inconsistent mech design",
+      "cameraMovement": "85mm轻微推进",
+      "duration": 5,
+      "status": "模板可用",
+      "tags": [
+        "人物",
+        "人物驾驶模板",
+        "可灵模板"
+      ]
+    },
+    {
+      "id": "VIDEO-MECHA-DASH-001",
+      "name": "机甲冲刺模板",
+      "category": "机甲",
+      "firstFrame": "由母资产Reference生成首帧",
+      "lastFrame": "根据动作终点生成尾帧建议",
+      "klingPrompt": "Scene: Tide Steel Soul master video template\nSubject: 机甲冲刺模板\nAction: 赤霆01在暴雨海防线上向前冲刺\nCamera Movement: 低机位跟拍\nDuration: 6s\nLighting: cinematic low saturation industrial ocean light\nNegative Prompt: cartoon, anime, game render, plastic sci-fi, neon cyberpunk, over-saturated, logo, watermark, subtitles, wrong character, inconsistent mech design",
+      "cameraMovement": "低机位跟拍",
+      "duration": 6,
+      "status": "模板可用",
+      "tags": [
+        "机甲",
+        "机甲冲刺模板",
+        "可灵模板"
+      ]
+    },
+    {
+      "id": "VIDEO-CREATURE-LAND-001",
+      "name": "怪兽登陆模板",
+      "category": "怪兽",
+      "firstFrame": "由母资产Reference生成首帧",
+      "lastFrame": "根据动作终点生成尾帧建议",
+      "klingPrompt": "Scene: Tide Steel Soul master video template\nSubject: 怪兽登陆模板\nAction: 白潮从海雾中靠近防线\nCamera Movement: 24mm稳定远景\nDuration: 6s\nLighting: cinematic low saturation industrial ocean light\nNegative Prompt: cartoon, anime, game render, plastic sci-fi, neon cyberpunk, over-saturated, logo, watermark, subtitles, wrong character, inconsistent mech design",
+      "cameraMovement": "24mm稳定远景",
+      "duration": 6,
+      "status": "模板可用",
+      "tags": [
+        "怪兽",
+        "怪兽登陆模板",
+        "可灵模板"
+      ]
+    },
+    {
+      "id": "VIDEO-CITY-WIDE-001",
+      "name": "城市远景模板",
+      "category": "场景",
+      "firstFrame": "由母资产Reference生成首帧",
+      "lastFrame": "根据动作终点生成尾帧建议",
+      "klingPrompt": "Scene: Tide Steel Soul master video template\nSubject: 城市远景模板\nAction: 杭州湾防线在压低云层下维持秩序\nCamera Movement: 无人机缓慢横移\nDuration: 5s\nLighting: cinematic low saturation industrial ocean light\nNegative Prompt: cartoon, anime, game render, plastic sci-fi, neon cyberpunk, over-saturated, logo, watermark, subtitles, wrong character, inconsistent mech design",
+      "cameraMovement": "无人机缓慢横移",
+      "duration": 5,
+      "status": "模板可用",
+      "tags": [
+        "场景",
+        "城市远景模板",
+        "可灵模板"
+      ]
+    },
+    {
+      "id": "VIDEO-OCEAN-WAVE-001",
+      "name": "海浪模板",
+      "category": "特效",
+      "firstFrame": "由母资产Reference生成首帧",
+      "lastFrame": "根据动作终点生成尾帧建议",
+      "klingPrompt": "Scene: Tide Steel Soul master video template\nSubject: 海浪模板\nAction: 海浪反向起纹，异常极轻微\nCamera Movement: 固定镜头\nDuration: 5s\nLighting: cinematic low saturation industrial ocean light\nNegative Prompt: cartoon, anime, game render, plastic sci-fi, neon cyberpunk, over-saturated, logo, watermark, subtitles, wrong character, inconsistent mech design",
+      "cameraMovement": "固定镜头",
+      "duration": 5,
+      "status": "模板可用",
+      "tags": [
+        "特效",
+        "海浪模板",
+        "可灵模板"
+      ]
+    },
+    {
+      "id": "VIDEO-RAIN-001",
+      "name": "暴雨模板",
+      "category": "天气",
+      "firstFrame": "由母资产Reference生成首帧",
+      "lastFrame": "根据动作终点生成尾帧建议",
+      "klingPrompt": "Scene: Tide Steel Soul master video template\nSubject: 暴雨模板\nAction: 暴雨落在湿金属和玻璃上\nCamera Movement: 微距转中景\nDuration: 5s\nLighting: cinematic low saturation industrial ocean light\nNegative Prompt: cartoon, anime, game render, plastic sci-fi, neon cyberpunk, over-saturated, logo, watermark, subtitles, wrong character, inconsistent mech design",
+      "cameraMovement": "微距转中景",
+      "duration": 5,
+      "status": "模板可用",
+      "tags": [
+        "天气",
+        "暴雨模板",
+        "可灵模板"
+      ]
+    }
+  ]
+}
