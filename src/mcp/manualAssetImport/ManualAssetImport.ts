@@ -177,7 +177,7 @@ function buildReferenceFirstPrompt(asset: PromptableAsset, template: VariantTemp
   const variantInstruction = buildShortVariantInstruction(asset, template);
   const background = simplifyBackground(template.backgroundRule);
   const lock = buildShortReferenceLock(asset);
-  return `把我上传的${asset.baseName}图片作为唯一Reference。${variantInstruction}${lock}构图：${template.composition}${background}16:9，真实电影摄影，低饱和，自然材质。禁止换脸、改年龄、改服装、重设计、结构漂移、动漫、游戏CG、塑料感、文字、水印、logo、字幕。`;
+  return `参考我上传的${asset.baseName}图片，生成“${asset.variant}”。画面内容：${variantInstruction}${lock}构图：${template.composition}${background}16:9，电影级真实质感。禁止改变主体设计、动漫、游戏CG、塑料感、文字、水印、logo、字幕。`;
 }
 
 function buildShortVariantInstruction(asset: PromptableAsset, template: VariantTemplate) {
@@ -186,63 +186,123 @@ function buildShortVariantInstruction(asset: PromptableAsset, template: VariantT
   if (asset.category === "人物") return buildCharacterShortInstruction(name, variant);
   if (asset.category === "机甲") return buildMechaShortInstruction(name, variant);
   if (asset.category === "怪兽") return buildCreatureShortInstruction(name, variant);
-  return `生成${name}的“${variant}”母资产。${template.prompt}`;
+  if (asset.category === "场景") return buildEnvironmentShortInstruction(name, variant, asset.description);
+  if (asset.category === "道具") return buildPropShortInstruction(name, variant, asset.description);
+  return `${template.prompt}`;
 }
 
 function buildCharacterShortInstruction(name: string, variant: string) {
-  if (variant.includes("三视图") || variant.includes("360")) return `生成${name}角色三视图，同一人物正面、侧面、背面并列，姿态高度一致，服装结构对齐。`;
-  if (variant.includes("角色卡")) return `生成${name}角色识别卡，保留同一张脸，可组合头像、半身和服装细节，方便后续一致性引用。`;
-  if (variant.includes("头像")) return `生成${name}标准头像，头肩构图，面部识别清晰，保留发型、年龄感和服装领口。`;
-  if (variant.includes("45") || variant.includes("侧脸")) return `生成${name}45度侧脸参考图，五官结构清楚，仍然是参考图里的同一人物。`;
-  if (variant.includes("正面")) return `生成${name}全身正面参考图，站姿自然，完整显示服装、鞋、手套和身体比例。`;
-  if (variant.includes("侧面")) return `生成${name}全身侧面参考图，身体轮廓、服装厚度和头部侧面清楚。`;
-  if (variant.includes("背")) return `生成${name}全身背面参考图，完整显示背部服装结构和装备位置。`;
-  if (variant.includes("坐姿")) return `生成${name}坐姿参考图，肢体自然，身体重心和手部位置清楚。`;
-  if (variant.includes("驾驶")) return `生成${name}驾驶姿态，穿驾驶服坐在简化座椅中，双手接近操控位置。`;
-  if (variant.includes("行走")) return `生成${name}行走动作参考，身体重心前移，动作自然，脸和服装不变。`;
-  if (variant.includes("奔跑")) return `生成${name}奔跑动作参考，身体前倾、重心明确，保持同一人物和同一服装。`;
-  if (variant.includes("愤怒")) return `生成${name}克制愤怒表情，中近景，眼神和下颌紧张，不要夸张咆哮。`;
-  if (variant.includes("悲伤")) return `生成${name}悲伤表情，中近景，情绪压住，不要戏剧化哭喊。`;
-  if (variant.includes("海报")) return `生成${name}电影海报姿态，主体清晰，弱工业海防氛围背景。`;
-  return `生成${name}的${variant}参考图，保持同一人物身份，只改变本次指定状态。`;
+  if (variant.includes("三视图") || variant.includes("360")) return `${name}同一人物的正面、左侧面、背面全身并列，三个人像等高，站姿、脸、发型和服装完全一致。`;
+  if (variant.includes("角色卡")) return `${name}头肩正面、半身正面和服装局部组合在一张图中，面部无遮挡，清楚显示年龄、发型、伤痕与服装领口。`;
+  if (variant.includes("驾驶服全身")) return `${name}穿固定驾驶服正面站立，完整显示头部、手套、同步接口、裤装和靴子，双脚入画。`;
+  if (variant.includes("驾驶舱坐姿") || variant.includes("副同步位工作姿态")) return `${name}坐入同步座椅，背部贴靠，双手分别放在左右控制器，完整显示头部、上身、手和膝部。`;
+  if (variant.includes("头像")) return `${name}头肩正面肖像，双眼与五官清晰，完整保留发型、年龄感、伤痕和服装领口。`;
+  if (variant.includes("45") || variant.includes("侧脸")) return `${name}头部向右转约45度，清楚显示眼形、鼻梁、颧骨、下颌线和耳廓。`;
+  if (variant.includes("全身正面") || variant === "全身") return `${name}正面自然站立，完整显示身体比例、服装、手套、装备挂点和双脚。`;
+  if (variant.includes("全身侧面")) return `${name}完整左侧面站立，清楚显示身体轮廓、服装厚度、背部装备和鞋靴。`;
+  if (variant.includes("全身背面") || variant.includes("背影")) return `${name}背对镜头完整站立，不回头，清楚显示后脑、肩背、腰部装备、裤装和靴底。`;
+  if (variant.includes("半身") || variant.includes("制服半身")) return `${name}腰部以上正面工作肖像，双手自然入画，清楚显示脸、肩部和制服结构。`;
+  if (variant.includes("坐姿")) return `${name}坐在简洁工业椅上，背部微紧，双脚落地，双手自然放在膝部，完整显示坐姿受力。`;
+  if (variant.includes("驾驶姿态") || variant.includes("驾驶姿势")) return `${name}穿驾驶服坐入同步座，身体微向前，双手握住控制器，视线看向前方仪表。`;
+  if (variant.includes("工业通道奔跑") || variant.includes("奔跑") || variant.includes("跑步")) return `${name}向画面右前方奔跑，身体前倾，一脚离地，手臂自然摆动，脸和服装保持不变。`;
+  if (variant.includes("行走")) return `${name}从左向右迈步，前脚即将落地，身体重心前移，手臂与衣料呈自然运动状态。`;
+  if (variant.includes("站姿")) return `${name}双脚自然分开站立，双臂放松垂下，完整显示正面身体比例和服装结构。`;
+  if (variant.includes("同步疼痛") || variant.includes("受伤") || variant.includes("流血")) return `${name}中近景，左肩因同步反馈绷紧，面部克制疼痛，可见少量真实伤痕，不喊叫、不摆英雄姿势。`;
+  if (variant.includes("数拍同步")) return `${name}坐在副同步位，一手按住控制器，另一手清楚敲出节拍，目光看向搭档。`;
+  if (variant.includes("侧听异常")) return `${name}停下手中动作，头部轻转向画外监听设备，表情沉稳，只表现察觉异常的瞬间。`;
+  if (variant.includes("愤怒")) return `${name}中近景克制愤怒，眉眼收紧、下颌绷住、嘴唇闭合，不咆哮。`;
+  if (variant.includes("悲伤")) return `${name}中近景沉默悲伤，眼神下落、眼眶微红，面部不夸张扭曲。`;
+  if (variant.includes("沉默") || variant.includes("凝视")) return `${name}中近景看向画外，嘴部闭合，肩颈微僵，留出视线方向的负空间。`;
+  if (variant.includes("微笑")) return `${name}中近景轻微自然微笑，只改变嘴角与眼神，不做商业偶像表情。`;
+  if (variant.includes("不同光线")) return `${name}同一头肩肖像四格并列，分别使用自然日光、基地冷蓝光、警报红光和雨夜反射光。`;
+  if (variant.includes("不同天气")) return `${name}同一半身姿态四格并列，分别呈现晴天、海雾、小雨和暴雨，人物身份与服装不变。`;
+  if (variant.includes("不同镜头")) return `${name}同一服装与状态的广角全身、中景半身、长焦近景三格并列，人物身份完全一致。`;
+  if (variant.includes("海报")) return `${name}全身站立于弱工业海防背景，主体轮廓清晰，画面一侧保留片名负空间。`;
+  return `${name}${variant}：${name}作为唯一主体，清楚呈现该状态，脸、年龄、发型和服装不变。`;
 }
 
 function buildMechaShortInstruction(name: string, variant: string) {
-  if (variant.includes("三视图")) return `生成${name}机甲三视图，同一机体正面、侧面、背面并列，比例和装甲结构完全一致。`;
-  if (variant.includes("正面")) return `生成${name}正面设计图，完整机体，结构清晰，左右对称，方便作为标准母资产。`;
-  if (variant.includes("侧面")) return `生成${name}侧面设计图，显示机体厚度、背部结构、腿部关节和脚部重心。`;
-  if (variant.includes("背")) return `生成${name}背面设计图，显示背部装甲、推进器、维修接口和驾驶舱区域。`;
-  if (variant.includes("驾驶舱开启")) return `生成${name}驾驶舱开启状态，展示舱门结构、入口缝隙、内部座舱和蓝色同步光。`;
-  if (variant.includes("驾驶舱")) return `生成${name}驾驶舱结构参考，简洁展示座舱、控制接口和冷蓝系统光。`;
-  if (variant.includes("武器展开")) return `生成${name}武器展开状态，右臂武器结构清楚，机体设计不改变。`;
-  if (variant.includes("武器")) return `生成${name}武器细节参考，机械连接、能量接口和磨损金属清楚。`;
-  if (variant.includes("核心")) return `生成${name}胸口核心细节，蓝色能源反应炉、装甲开口和维护痕迹清楚。`;
-  if (variant.includes("腿") || variant.includes("脚")) return `生成${name}腿部结构参考，膝关节、液压件、脚掌承重逻辑清楚。`;
-  if (variant.includes("战斗")) return `生成${name}战斗姿态，重心压低，有动作张力，但机体结构必须和参考图一致。`;
-  if (variant.includes("冲刺")) return `生成${name}冲刺姿态，低重心向前，脚部重量感明确，避免游戏海报感。`;
-  if (variant.includes("海报")) return `生成${name}电影海报姿态，弱环境背景，机体清晰，突出真实工业重量。`;
-  return `生成${name}的${variant}参考图，保持同一机体设计，只改变角度、状态或局部展示。`;
+  if (variant.includes("三视图")) return `${name}同一机体的正面、左侧面、背面全身并列，三台机体等高，装甲分块、关节位置和颜色完全对应。`;
+  if (variant.includes("正面")) return `${name}完整正面站立，双脚入画，清楚显示头部、胸甲、双臂、腿部关节和脚掌承重结构。`;
+  if (variant.includes("侧面")) return `${name}完整左侧面站立，清楚显示机体厚度、背部装置、膝踝关节和脚掌重心。`;
+  if (variant.includes("背")) return `${name}完整背面站立，清楚显示背部装甲、驾驶舱舱门、推进器、脊柱骨架和维修接口。`;
+  if (variant.includes("俯视")) return `从高处45度俯视${name}完整机体，清楚显示肩甲、背部、头顶、手臂和脚部相对比例。`;
+  if (variant.includes("驾驶舱开启")) return `${name}背部驾驶舱液压开启，清楚显示舱门厚度、锁扣、入口、同步座椅和冷蓝舱内光。`;
+  if (variant.includes("驾驶舱内部") || variant.includes("驾驶舱")) return `${name}驾驶舱内部正视图，清楚显示同步座椅、左右控制器、约束装置、舱壁和冷蓝界面。`;
+  if (variant.includes("链刃熄灭")) return `${name}右臂链刃刚刚熄灭，机械拳头松开，雨水沿冷却金属指节流下。`;
+  if (variant.includes("链刃点亮")) return `${name}右臂链刃逐节锁定，边缘出现克制的蓝白等离子光，锁扣与机械连接清楚。`;
+  if (variant.includes("拳头撑墙")) return `${name}巨大左拳支撑正在变形的海防墙，一辆撤离车从指缝下通过，机体承重姿态清楚。`;
+  if (variant.includes("左臂战损")) return `${name}左臂装甲破裂、液压管受损并冒少量白汽，其他机体结构完整不变。`;
+  if (variant.includes("首次站立")) return `${name}脚掌压入机库浅水，机体刚完成承重站立，水被重量向四周推开。`;
+  if (variant.includes("武器展开") || variant.includes("武器")) return `${name}右臂武器完整展开，清楚显示折叠机构、导轨、锁扣、能源接口和与手臂的连接。`;
+  if (variant.includes("核心")) return `${name}胸口核心近距离结构图，蓝色反应炉位于暗红装甲开口内，可见玻璃保护层和维护痕迹。`;
+  if (variant.includes("腿") || variant.includes("脚")) return `${name}单侧腿部与脚掌结构特写，清楚显示膝关节、液压杆、踝部连接和接地面积。`;
+  if (variant.includes("推进器")) return `${name}背部推进器结构特写，清楚显示推进口、散热鳍片、连接件和海盐腐蚀。`;
+  if (variant.includes("开机")) return `${name}保持待机站姿，胸口核心与头部传感器依次亮起蓝光，装甲结构不变化。`;
+  if (variant.includes("待机")) return `${name}双脚承重站立、双臂自然下垂，武器收纳，能源仅保留微弱蓝光。`;
+  if (variant.includes("冲刺") || variant.includes("冲锋")) return `${name}低重心向右前方冲刺，一脚落地承重、另一脚后蹬，重型机体不飞行。`;
+  if (variant.includes("跳跃")) return `${name}刚离开地面的起跳瞬间，双腿仍保持重型机械受力，推进器只提供短时辅助。`;
+  if (variant.includes("攻击") || variant.includes("战斗")) return `${name}降低重心进入攻击准备，右臂武器朝画面外，双脚稳定承重，完整机体清晰可读。`;
+  if (variant.includes("受伤") || variant.includes("战损")) return `${name}保持完整站姿，局部装甲破裂、擦伤、液压泄漏和少量白汽，核心结构仍可辨认。`;
+  if (variant.includes("夜景")) return `${name}完整站在夜间海防平台，暗红装甲由冷蓝工作灯勾边，机体结构仍清晰。`;
+  if (variant.includes("暴雨")) return `${name}完整站在暴雨中，雨水沿装甲和骨架流下，脚部积水反射蓝色能源光。`;
+  if (variant.includes("海面")) return `${name}站在浅海防御平台，海水到脚踝附近，远处防线只作尺度参照。`;
+  if (variant.includes("海报")) return `${name}完整低机位站立于弱海防背景，机体清晰，画面一侧保留片名负空间。`;
+  return `${name}${variant}：完整清楚呈现该结构或状态，装甲分块、颜色、比例和武器位置不变。`;
 }
 
 function buildCreatureShortInstruction(name: string, variant: string) {
-  if (variant.includes("三视图")) return `生成${name}怪兽三视图，同一只生物正面、侧面、背面并列，身体比例、甲壳结构和尾部轮廓保持一致。`;
-  if (variant.includes("完整") || variant.includes("身体") || variant.includes("全身")) return `生成${name}完整身体参考图，轮廓完整，白色甲壳和半透明组织清楚。`;
-  if (variant.includes("头")) return `生成${name}头部参考图，结构清晰，古老深海生命感，不要怪兽咆哮。`;
-  if (variant.includes("眼")) return `生成${name}眼睛或感知器官特写，湿润反光和半透明膜层清楚。`;
-  if (variant.includes("甲壳") || variant.includes("皮肤")) return `生成${name}甲壳细节，裂纹、湿润反光、盐水附着和生物组织边缘清楚。`;
-  if (variant.includes("游泳")) return `生成${name}游泳姿态，暗蓝水体中横向推进，轮廓清楚，不要普通鲸鱼。`;
-  if (variant.includes("海面") || variant.includes("登陆")) return `生成${name}海面出现画面，身体局部破浪，像寻找方向，不是攻击城市。`;
-  if (variant.includes("攻击")) return `生成${name}攻击姿态，身体前压有压迫感，但不要恶魔化或Boss登场。`;
-  if (variant.includes("远景")) return `生成${name}远景轮廓，海雾中巨大但边缘可读，远处设施只做尺度参考。`;
-  if (variant.includes("海报")) return `生成${name}电影海报姿态，弱海雾背景，古老、脆弱、未知。`;
-  return `生成${name}的${variant}参考图，保持同一生物结构，只改变动作、角度或尺度。`;
+  if (variant.includes("三视图")) return `${name}同一生物的正面、左侧面、背面完整并列，三幅等高，头部、甲壳、躯干和尾部结构完全对应。`;
+  if (variant.includes("完整") || variant.includes("身体") || variant.includes("全身") || variant === "正面") return `${name}完整身体入画，清楚显示头部、躯干、白色甲壳、半透明组织和主要运动结构。`;
+  if (variant.includes("头") || variant.includes("近景")) return `${name}头部占画面主体，清楚显示甲壳边缘、呼吸结构、感知器官和湿润组织，不张嘴咆哮。`;
+  if (variant.includes("嘴")) return `${name}口部结构特写，清楚显示闭合状态、甲壳边缘与内部柔软组织，不做獠牙怪物。`;
+  if (variant.includes("眼")) return `${name}眼睛或感知器官微距，清楚显示半透明膜层、冷光反射和附着盐水。`;
+  if (variant.includes("甲壳") || variant.includes("皮肤")) return `${name}甲壳局部微距，清楚显示白色硬壳、细小裂纹、湿润反光和半透明组织连接处。`;
+  if (variant.includes("游泳")) return `${name}完整侧身在暗蓝水中横向推进，身体保持深海受压形态，不使用普通鱼类或鲸类摆尾姿势。`;
+  if (variant.includes("海雾局部")) return `海雾和暴雨中只出现${name}的水下白影与一片破浪甲壳，不显示完整身体。`;
+  if (variant.includes("海面") || variant.includes("登陆")) return `${name}从灰蓝海面缓慢破浪抬升，甲壳带水，身体朝向海防线但不攻击。`;
+  if (variant.includes("停在赤霆前")) return `${name}头部停在赤霆驾驶舱前方，随后略向侧面偏转，双方保持危险距离，不示好。`;
+  if (variant.includes("低鸣")) return `${name}头颈与甲壳近景，低鸣时多层壳片发生细微同步振动，身体不攻击。`;
+  if (variant.includes("攻击")) return `${name}身体向前压低，主要运动结构发力，形成明确攻击趋势，但完整生物结构保持清楚。`;
+  if (variant.includes("怒吼")) return `${name}头部抬起发出低频鸣叫，甲壳片振动，不使用张开巨口的怪兽咆哮姿势。`;
+  if (variant.includes("远景")) return `${name}完整巨大轮廓位于海雾深处，远处海防设施只作为尺度参照，主体边缘可辨。`;
+  if (variant.includes("死亡")) return `${name}身体失去支撑漂浮于海面，甲壳暗淡、组织停止运动，不使用血腥肢解。`;
+  if (variant.includes("受伤") || variant.includes("战损")) return `${name}局部甲壳破裂并露出半透明组织，动作迟缓，身体总体结构保持完整。`;
+  if (variant.includes("海底")) return `${name}完整身体位于深海压力环境，贴近海底缓慢移动，悬浮物表现水流方向。`;
+  if (variant.includes("暴雨")) return `${name}巨大身体在暴雨海面部分显露，闪电只勾出甲壳轮廓，海防设施作为尺度参照。`;
+  if (variant.includes("夜晚")) return `${name}在夜间海雾中显露完整轮廓，探照灯只照亮局部湿润甲壳。`;
+  if (variant.includes("海报")) return `${name}完整轮廓置于弱海雾背景，主体清楚，画面一侧保留片名负空间。`;
+  return `${name}${variant}：清楚呈现该动作或局部结构，身体比例、甲壳纹理和感知器官不变。`;
+}
+
+function buildEnvironmentShortInstruction(name: string, variant: string, description: string) {
+  const view = variant.includes("远景") ? "24mm远景，完整显示地平线、主体建筑和周边尺度。" : variant.includes("近景") ? "35mm近景，显示入口、结构接缝、设备和人物尺度。" : "35mm平视广角，完整显示空间结构与前中后景。";
+  if (variant.includes("标准平面")) return `${name}标准空间参考图，正视呈现主要建筑、道路、平台和海岸位置关系，结构清楚，不加入剧情事件。`;
+  if (variant.includes("灯光参考")) return `${name}同一固定机位的灯光参考，清楚显示主光、工作灯、反射面和暗部层次，不改变建筑结构。`;
+  if (variant.includes("白天")) return `${name}白天状态，阴天自然光，建筑、道路、海面与工业设备清晰可读。${view}`;
+  if (variant.includes("黄昏")) return `${name}黄昏状态，低角度冷暖交界光照亮建筑边缘，工作灯刚刚开启。${view}`;
+  if (variant.includes("夜") || variant.includes("警戒")) return `${name}夜间状态，冷蓝工作灯照明主要通道和结构，远处仅少量警戒红光。${view}`;
+  if (variant.includes("暴雨")) return `${name}暴雨状态，低云、斜向雨线、积水反射和湿金属清楚，建筑结构保持可辨。${view}`;
+  if (variant.includes("雾")) return `${name}浓海雾状态，前景结构清楚，中景逐渐消失，远景仅保留轮廓和尺度灯。${view}`;
+  return `${name}的${variant}状态：${description}${view}`;
+}
+
+function buildPropShortInstruction(name: string, variant: string, description: string) {
+  if (variant.includes("标准")) return `${name}单体完整展示，正面略转30度，清楚显示外形、接口、尺寸比例和功能部件。`;
+  if (variant.includes("手持")) return `${name}被戴机械手套的手自然握持，清楚显示手与道具的尺寸、握持位置和操作方向。`;
+  if (variant.includes("使用中")) return `${name}处于实际工作状态，指示灯或机械部件按功能开启，操作者手部位置清楚。`;
+  if (variant.includes("磨损")) return `${name}保持完整可用，表面出现边缘掉漆、细划痕、盐雾残留和经常握持形成的磨耗。`;
+  if (variant.includes("特写")) return `${name}关键功能区域微距特写，清楚显示按钮、接口、材质接缝和使用痕迹。`;
+  return `${name}${variant}：${description}清楚显示主体、功能结构和真实使用尺度。`;
 }
 
 function buildShortReferenceLock(asset: PromptableAsset) {
-  if (asset.category === "人物") return "一致性：必须参考上传图片里的同一张脸、发型、年龄、身材和服装，不要换演员。";
-  if (asset.category === "机甲") return "一致性：必须参考上传图片里的同一台机甲，颜色、比例、装甲分块和机械结构不要重设计。";
-  if (asset.category === "怪兽") return "一致性：必须参考上传图片里的同一只生物，身体比例、甲壳纹理和生命结构不要重设计。";
-  return "一致性：必须参考上传图片里的同一资产，只生成指定变体，不要重新设计。";
+  if (asset.category === "人物") return "同一张脸、年龄、发型、身材和服装，不换演员。";
+  if (asset.category === "机甲") return "同一台机甲，颜色、比例、装甲分块、关节和武器不变。";
+  if (asset.category === "怪兽") return "同一只生物，身体比例、甲壳纹理和器官位置不变。";
+  if (asset.category === "场景") return "同一地点，建筑结构、道路、设备位置和尺度不变。";
+  if (asset.category === "道具") return "同一件道具，外形、颜色、接口和功能结构不变。";
+  return "主体设计不变。";
 }
 
 function simplifyBackground(backgroundRule: string) {
@@ -424,7 +484,9 @@ function fallbackTemplate(asset: PromptableAsset): VariantTemplate {
   if (asset.category === "人物") return characterTemplates[0];
   if (asset.category === "机甲") return mechaTemplates[0];
   if (asset.category === "怪兽") return creatureTemplates[0];
-  return t([asset.variant], "中性浅灰背景，保持主体清晰，不做复杂剧情环境。", "主体完整，结构清楚，适合后续资产引用。", "母资产参考", "生成标准资产参考图，突出主体形体、材质、比例和世界观一致性。");
+  if (asset.category === "场景") return t([asset.variant], "真实杭州湾工业环境，不增加无关建筑或霓虹。", "空间层次清楚，地平线稳定，主要结构不被裁切。", "场景母资产", asset.description);
+  if (asset.category === "道具") return t([asset.variant], "浅灰无影棚或弱工业工作台背景。", "单体居中，完整显示外形和功能结构。", "道具母资产", asset.description);
+  return t([asset.variant], "简洁中性背景。", "主体完整清晰。", "母资产参考", asset.description);
 }
 
 function getPromptCategory(category: string): PromptCategory {
