@@ -174,20 +174,19 @@ export function getPromptStatus(asset: MasterAsset): ManualPromptStatus {
 }
 
 function buildReferenceFirstPrompt(asset: PromptableAsset, template: VariantTemplate) {
-  const variantInstruction = buildShortVariantInstruction(asset);
+  const variantInstruction = buildShortVariantInstruction(asset, template);
   const background = simplifyBackground(template.backgroundRule);
   const lock = buildShortReferenceLock(asset);
-  const frame = asset.category === "人物" || asset.category === "机甲" || asset.category === "怪兽" ? "16:9，主体完整清晰，方便后续作为母资产继续引用。" : "16:9，电影级真实质感，主体清晰。";
-  return `根据我上传的${asset.baseName}参考图，${variantInstruction}${lock}${background}${frame}保持真实电影摄影、低饱和与自然材质，只完成当前指定变体，不增加剧情元素。禁止换脸、重新设计、结构漂移、动漫、游戏CG、塑料感、文字、水印、logo和字幕。`;
+  return `把我上传的${asset.baseName}图片作为唯一Reference。${variantInstruction}${lock}构图：${template.composition}${background}16:9，真实电影摄影，低饱和，自然材质。禁止换脸、改年龄、改服装、重设计、结构漂移、动漫、游戏CG、塑料感、文字、水印、logo、字幕。`;
 }
 
-function buildShortVariantInstruction(asset: PromptableAsset) {
+function buildShortVariantInstruction(asset: PromptableAsset, template: VariantTemplate) {
   const variant = asset.variant;
   const name = asset.baseName;
   if (asset.category === "人物") return buildCharacterShortInstruction(name, variant);
   if (asset.category === "机甲") return buildMechaShortInstruction(name, variant);
   if (asset.category === "怪兽") return buildCreatureShortInstruction(name, variant);
-  return `生成${name}的${variant}参考图，保持与参考图同一设计语言，只改变本次要求的角度、状态或用途。`;
+  return `生成${name}的“${variant}”母资产。${template.prompt}`;
 }
 
 function buildCharacterShortInstruction(name: string, variant: string) {

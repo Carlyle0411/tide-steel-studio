@@ -20,6 +20,7 @@ import {
   type IndustrialShot
 } from "../../../mcp/industrialWorkflow/IndustrialWorkflowData";
 import { getAssetBibleShots, getAssetBibleVideoClips } from "../../../mcp/assetBible/AssetBibleData";
+import { trailer90Shots } from "../../../mcp/trailer/Trailer90StudioData";
 import { ProductionCard } from "./ProductionShell";
 
 type Navigate = (section: ProductionSection) => void;
@@ -122,10 +123,40 @@ export function Phase19WorldBible() {
 
 export function Phase19ScriptManager({ navigate }: { navigate: Navigate }) {
   const shots = getIndustrialShots();
+  const [project, setProject] = useState<"episode" | "trailer">("trailer");
   return (
     <Page title="剧本管理" subtitle="剧集、Scene、Shot、对白、旁白、镜头说明和素材引用。">
+      <ProductionCard className="flex flex-wrap items-center justify-between gap-3 p-3">
+        <div className="flex flex-wrap gap-2">
+          <button className={`btn h-10 ${project === "trailer" ? "border-jade bg-jade/10 text-jade" : ""}`} onClick={() => setProject("trailer")}>90秒概念预告片</button>
+          <button className={`btn h-10 ${project === "episode" ? "border-jade bg-jade/10 text-jade" : ""}`} onClick={() => setProject("episode")}>EP01《海面低频》</button>
+        </div>
+        <div className="text-xs text-slate-500">{project === "trailer" ? "20 Shot / 90秒 / 10个首尾帧" : `${shots.length} Shot / 第一集`}</div>
+      </ProductionCard>
       <div className="grid gap-4">
-        {shots.slice(0, 8).map((shot) => (
+        {project === "trailer" && trailer90Shots.map((shot) => (
+          <ProductionCard key={shot.id} className="grid gap-4 p-4 xl:grid-cols-[170px_minmax(0,1fr)_220px]">
+            <div>
+              <div className="font-mono text-jade">{shot.id}</div>
+              <div className="mt-1 text-sm font-semibold text-white">{shot.title}</div>
+              <div className="mt-2 text-xs text-slate-500">{shot.time} · {shot.mode}</div>
+            </div>
+            <div className="space-y-3 text-sm leading-6">
+              <div><span className="text-slate-500">剧情作用：</span><span className="text-slate-300">{shot.purpose}</span></div>
+              <div className="rounded border border-jade/20 bg-jade/[0.04] p-3"><span className="text-jade">关键帧 Prompt：</span><span className="text-slate-200">{shot.imagePrompt}</span></div>
+              <div><span className="text-slate-500">对白/字幕：</span><span className="text-slate-300">{shot.dialogue}</span></div>
+              <div><span className="text-slate-500">声音：</span><span className="text-slate-300">{shot.sound}</span></div>
+            </div>
+            <div className="space-y-3">
+              <div className="rounded border border-white/10 bg-black/20 p-3 text-xs leading-5 text-slate-400">
+                <div className="mb-1 text-slate-500">引用母资产</div>
+                {shot.assets.join(" / ")}
+              </div>
+              <button className="btn h-10 w-full" onClick={() => navigate("storyboard")}>打开Storyboard</button>
+            </div>
+          </ProductionCard>
+        ))}
+        {project === "episode" && shots.map((shot) => (
           <ProductionCard key={shot.id} className="grid gap-4 p-4 lg:grid-cols-[160px_minmax(0,1fr)_180px]">
             <div>
               <div className="font-mono text-jade">{shot.shotId}</div>
