@@ -9,7 +9,6 @@ import {
 } from "../../../mcp/masterAssetLibrary/MasterAssetLibraryData";
 import {
   buildAssetImagePrompt,
-  buildAssetPromptDetails,
   getAssetImageStatusFromVersions,
   getPromptStatus,
   normalizeChecklist,
@@ -331,7 +330,6 @@ function MasterAssetDetail({ asset, versions }: { asset: MasterAsset | null; ver
   if (!asset) return null;
 
   const prompt = buildAssetImagePrompt(asset);
-  const promptDetails = buildAssetPromptDetails(asset);
   const imageStatus = getAssetImageStatusFromVersions(versions);
   const master = versions.find((version) => version.status === "MASTER_REFERENCE" || String(version.status) === "MASTER") ?? versions[versions.length - 1];
   const activeVersion = master ?? versions[0];
@@ -435,8 +433,10 @@ function MasterAssetDetail({ asset, versions }: { asset: MasterAsset | null; ver
             <div className="text-xs uppercase tracking-[0.22em] text-slate-500">核心 GPT IMAGE Prompt</div>
             <span className="rounded-full border border-jade/30 bg-jade/10 px-2 py-0.5 text-[11px] text-jade">READY</span>
           </div>
-          <PromptStructuredPanel details={promptDetails} />
-          <textarea className="min-h-44 w-full resize-y rounded border border-white/10 bg-black/25 p-3 font-mono text-xs leading-5 text-slate-300 outline-none" value={prompt} readOnly />
+          <div className="mb-3 rounded border border-jade/20 bg-jade/5 px-3 py-2 text-xs leading-5 text-slate-400">
+            当前资产只保留一份完整Prompt。复制后连同对应Reference图片一起发送给GPT Image。
+          </div>
+          <textarea className="min-h-56 w-full resize-y rounded border border-white/10 bg-black/25 p-4 text-sm leading-7 text-slate-200 outline-none" value={prompt} readOnly />
         </div>
         <VersionPanel asset={asset} versions={versions} onMessage={setMessage} />
       </div>
@@ -467,21 +467,6 @@ function ProductionQueue({ assets, assetStore, onSelect }: { assets: MasterAsset
         ))}
       </div>
     </ProductionCard>
-  );
-}
-
-function PromptStructuredPanel({ details }: { details: ReturnType<typeof buildAssetPromptDetails> }) {
-  return (
-    <div className="mb-3 grid gap-2 md:grid-cols-2">
-      <PromptInfoBlock title="固定身份锁定" value={details.identityLock} />
-      <PromptInfoBlock title="资产类型要求" value={details.assetRequirement} />
-      <PromptInfoBlock title="构图要求" value={details.composition} />
-      <PromptInfoBlock title="摄影要求" value={details.cameraRule} />
-      <PromptInfoBlock title="材质要求" value={details.materialRule} />
-      <PromptInfoBlock title="背景要求" value={details.backgroundRule} />
-      <PromptInfoBlock title="Negative Prompt" value={details.negativePrompt} />
-      <PromptInfoBlock title="用途说明" value={details.usage} />
-    </div>
   );
 }
 
@@ -662,15 +647,6 @@ function Info({ label, value }: { label: string; value: string | number }) {
     <div className="rounded border border-white/10 bg-black/20 p-2">
       <div className="text-[10px] uppercase tracking-wide text-slate-500">{label}</div>
       <div className="mt-1 line-clamp-2 text-xs text-slate-300">{value}</div>
-    </div>
-  );
-}
-
-function PromptInfoBlock({ title, value }: { title: string; value: string }) {
-  return (
-    <div className="rounded border border-white/10 bg-black/20 p-3">
-      <div className="text-[10px] uppercase tracking-[0.18em] text-slate-500">{title}</div>
-      <div className="mt-2 text-xs leading-5 text-slate-300">{value}</div>
     </div>
   );
 }

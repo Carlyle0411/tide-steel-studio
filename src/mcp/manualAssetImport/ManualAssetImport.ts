@@ -178,15 +178,7 @@ function buildReferenceFirstPrompt(asset: PromptableAsset, template: VariantTemp
   const background = simplifyBackground(template.backgroundRule);
   const lock = buildShortReferenceLock(asset);
   const frame = asset.category === "人物" || asset.category === "机甲" || asset.category === "怪兽" ? "16:9，主体完整清晰，方便后续作为母资产继续引用。" : "16:9，电影级真实质感，主体清晰。";
-  return [
-    `${getPromptCategory(asset.category)}: ${asset.baseName} / ${asset.variant}`,
-    `根据参考图，${variantInstruction}`,
-    lock,
-    `背景：${background}`,
-    frame,
-    "风格：真实电影质感，低饱和，干净，不要过度戏剧化。",
-    "禁止：文字、水印、logo、字幕、动漫、游戏CG、换脸、重新设计。"
-  ].join("\n");
+  return `根据我上传的${asset.baseName}参考图，${variantInstruction}${lock}${background}${frame}保持真实电影摄影、低饱和与自然材质，只完成当前指定变体，不增加剧情元素。禁止换脸、重新设计、结构漂移、动漫、游戏CG、塑料感、文字、水印、logo和字幕。`;
 }
 
 function buildShortVariantInstruction(asset: PromptableAsset) {
