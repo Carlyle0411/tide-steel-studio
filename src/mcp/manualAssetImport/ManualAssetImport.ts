@@ -52,6 +52,7 @@ export type ManualAssetMetadata = {
   usage: string[];
   file_name: string;
   uploaded_at: string;
+  cloud_path?: string;
 };
 
 export type ManualAssetVersion = {

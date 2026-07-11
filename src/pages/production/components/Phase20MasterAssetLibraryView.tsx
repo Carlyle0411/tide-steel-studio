@@ -8,32 +8,44 @@ import {
   type MasterAsset
 } from "../../../mcp/masterAssetLibrary/MasterAssetLibraryData";
 import {
-  approveVersion,
-  addPromptVersion,
   buildAssetImagePrompt,
   buildAssetPromptDetails,
-  deleteAssetVersions,
-  deleteManyAssetVersions,
-  deleteAssetVersion,
   getAssetImageStatusFromVersions,
   getPromptStatus,
-  importAssetFiles,
-  loadAssetStore,
-  markRegenerate,
   normalizeChecklist,
   normalizePromptVersions,
   normalizeRating,
-  rejectVersion,
-  setMasterVersion,
-  subscribeManualAssetStore,
-  updateChecklist,
-  updateRating,
   type AssetRating,
   type ConsistencyChecklist,
   type ManualAssetStore,
   type ManualAssetVersion,
   type ManualImageStatus
 } from "../../../mcp/manualAssetImport/ManualAssetImport";
+import {
+  addPromptVersion,
+  approveVersion,
+  deleteAssetVersion,
+  deleteAssetVersions,
+  deleteManyAssetVersions,
+  importAssetFiles,
+  loadAssetStore,
+  markRegenerate,
+  migrateCurrentBrowserAssetsToCloud,
+  rejectVersion,
+  setMasterVersion,
+  subscribeAssetStore,
+  updateChecklist,
+  updateRating
+} from "../../../mcp/cloudAssetSync/AssetStoreGateway";
+import {
+  CloudAssetAuthRequiredError,
+  getCloudSession,
+  isCloudAssetSyncEnabled,
+  signInCloud,
+  signOutCloud,
+  signUpCloud,
+  subscribeCloudAuth
+} from "../../../mcp/cloudAssetSync/CloudAssetRepository";
 import { ProductionCard } from "./ProductionShell";
 
 const categoryIcons: Record<string, JSX.Element> = {
@@ -77,7 +89,7 @@ export function Phase20MasterAssetLibraryView({ initialCategory = "全部" }: Pr
       if (alive) setAssetStore(store);
     }
     void reload();
-    const unsubscribe = subscribeManualAssetStore(() => void reload());
+    const unsubscribe = subscribeAssetStore(() => void reload());
     return () => {
       alive = false;
       unsubscribe();
@@ -112,8 +124,9 @@ export function Phase20MasterAssetLibraryView({ initialCategory = "全部" }: Pr
         <h2 className="mt-2 text-2xl font-semibold text-white">电影母资产库</h2>
         <p className="mt-2 max-w-4xl text-sm leading-6 text-slate-400">{manifest.purpose}</p>
         <div className="mt-3 rounded-md border border-jade/20 bg-jade/10 px-3 py-2 text-sm leading-6 text-jade">
-          当前工作流：一键复制核心 Prompt，在 ChatGPT / GPT Image 中出图，或手动制作视频，然后把 PNG / JPG / WEBP / MP4 / WEBM 上传回来。素材会保存到浏览器 IndexedDB，本机重启后仍会保留。
+          云端工作流：复制核心 Prompt，在 ChatGPT / GPT Image 出图后，将 PNG / JPG / WEBP / MP4 / WEBM 上传到个人云端资产库。只有登录自己的云端账户才能查看、审核、替换或删除资产。
         </div>
+        <CloudAssetAccess />
       </header>
 
       <div className="grid gap-4 md:grid-cols-3 xl:grid-cols-6">
@@ -203,6 +216,77 @@ export function Phase20MasterAssetLibraryView({ initialCategory = "全部" }: Pr
   );
 }
 
+function CloudAssetAccess() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [account, setAccount] = useState("");
+  const [message, setMessage] = useState("");
+  const [busy, setBusy] = useState(false);
+
+  useEffect(() => {
+    if (!isCloudAssetSyncEnabled()) return;
+    let active = true;
+    const refresh = async () => {
+      const session = await getCloudSession();
+      if (active) setAccount(session?.user.email ?? "");
+    };
+    void refresh();
+    return subscribeCloudAuth(() => void refresh());
+  }, []);
+
+  if (!isCloudAssetSyncEnabled()) {
+    return <div className="mt-3 rounded-md border border-red-400/30 bg-red-400/10 px-3 py-2 text-sm text-red-200">云端资产库尚未配置。请设置 VITE_SUPABASE_URL 与 VITE_SUPABASE_PUBLISHABLE_KEY。</div>;
+  }
+
+  async function run(action: "signin" | "signup" | "signout" | "migrate") {
+    setBusy(true);
+    try {
+      if (action === "signin") {
+        await signInCloud(email.trim(), password);
+        setMessage("云端资产库已登录。");
+      }
+      if (action === "signup") {
+        const result = await signUpCloud(email.trim(), password);
+        setMessage(result.session ? "账号已创建并登录。" : "账号已创建，请到邮箱确认后再登录。");
+      }
+      if (action === "signout") {
+        await signOutCloud();
+        setMessage("已退出云端资产库。");
+      }
+      if (action === "migrate") {
+        const count = await migrateCurrentBrowserAssetsToCloud();
+        setMessage(count ? `已迁移 ${count} 个本机素材版本到云端。` : "没有可迁移的本机素材，或这些资产已存在于云端。");
+      }
+    } catch (error) {
+      setMessage(`操作失败：${error instanceof Error ? error.message : "未知错误"}`);
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  if (account) {
+    return (
+      <div className="mt-3 flex flex-wrap items-center gap-2 rounded-md border border-jade/30 bg-black/20 px-3 py-2 text-sm">
+        <span className="text-jade">云端已登录：{account}</span>
+        <button className="btn h-8 text-xs" disabled={busy} onClick={() => void run("migrate")}>迁移本机素材到云端</button>
+        <button className="btn h-8 text-xs text-slate-400" disabled={busy} onClick={() => void run("signout")}>退出登录</button>
+        {message && <span className="text-xs text-slate-400">{message}</span>}
+      </div>
+    );
+  }
+
+  return (
+    <div className="mt-3 flex flex-wrap items-center gap-2 rounded-md border border-white/10 bg-black/20 p-3">
+      <span className="mr-1 text-sm text-slate-300">登录个人云端资产库</span>
+      <input className="h-9 min-w-48 rounded border border-white/10 bg-black/30 px-3 text-xs outline-none" type="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder="邮箱" />
+      <input className="h-9 min-w-40 rounded border border-white/10 bg-black/30 px-3 text-xs outline-none" type="password" value={password} onChange={(event) => setPassword(event.target.value)} placeholder="密码（至少 6 位）" />
+      <button className="btn h-9 text-xs" disabled={busy || !email || password.length < 6} onClick={() => void run("signin")}>登录</button>
+      <button className="btn h-9 text-xs border-jade text-jade" disabled={busy || !email || password.length < 6} onClick={() => void run("signup")}>创建账号</button>
+      {message && <span className="basis-full text-xs text-slate-400">{message}</span>}
+    </div>
+  );
+}
+
 function AssetCard({ asset, selected, versions, onSelect }: { asset: MasterAsset; selected: boolean; versions: ManualAssetVersion[]; onSelect: () => void }) {
   const imageStatus = getAssetImageStatusFromVersions(versions);
   const master = versions.find((version) => version.status === "MASTER_REFERENCE" || String(version.status) === "MASTER") ?? versions[versions.length - 1];
@@ -243,8 +327,12 @@ function MasterAssetDetail({ asset, versions }: { asset: MasterAsset | null; ver
   const activeVersion = master ?? versions[0];
 
   async function handleFiles(files: FileList | File[]) {
-    const imported = await importAssetFiles(asset, files);
-    setMessage(imported.length > 0 ? `已保存 ${imported.length} 个素材版本。下次打开网页仍会保留。` : "没有可导入的 PNG / JPG / WEBP / MP4 / WEBM / MOV 素材。");
+    try {
+      const imported = await importAssetFiles(asset, files);
+      setMessage(imported.length > 0 ? `已上传 ${imported.length} 个素材版本到云端，其他设备登录后可见。` : "没有可导入的 PNG / JPG / WEBP / MP4 / WEBM / MOV 素材。");
+    } catch (error) {
+      setMessage(error instanceof CloudAssetAuthRequiredError ? error.message : `上传失败：${error instanceof Error ? error.message : "未知错误"}`);
+    }
   }
 
   async function clearCurrentAsset() {
