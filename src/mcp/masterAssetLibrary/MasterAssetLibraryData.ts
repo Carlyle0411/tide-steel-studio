@@ -10,6 +10,7 @@ import promptTemplates from "../../../projects/tide-steel-soul/master-asset-libr
 import vfxLibrary from "../../../projects/tide-steel-soul/master-asset-library/VFX_LIBRARY.json";
 import videoTemplates from "../../../projects/tide-steel-soul/master-asset-library/VIDEO_TEMPLATE_LIBRARY.json";
 import weatherLibrary from "../../../projects/tide-steel-soul/master-asset-library/WEATHER_LIBRARY.json";
+import { trailerMasterAssets } from "./TrailerMasterAssets";
 
 export type MasterAsset = (typeof masterAssets.assets)[number];
 export type MasterCategory = (typeof manifest.categories)[number];
@@ -22,7 +23,7 @@ export function getMasterAssetManifest() {
 }
 
 export function getMasterAssets(): MasterAsset[] {
-  return masterAssets.assets;
+  return [...trailerMasterAssets, ...masterAssets.assets] as MasterAsset[];
 }
 
 export function getMasterCategories(): MasterCategory[] {
@@ -81,7 +82,7 @@ export function searchMasterAssets(query: string, category = "全部") {
 export function getMasterLibraryStats() {
   return {
     categories: manifest.stats.categories,
-    masterAssets: manifest.stats.masterAssets,
+    masterAssets: getMasterAssets().length,
     actionTemplates: manifest.stats.actionTemplates,
     cameraTemplates: manifest.stats.cameraTemplates,
     weatherTemplates: manifest.stats.weatherTemplates,

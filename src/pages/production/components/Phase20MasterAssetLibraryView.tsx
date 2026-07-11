@@ -157,6 +157,16 @@ export function Phase20MasterAssetLibraryView({ initialCategory = "全部" }: Pr
               {item.name}
             </button>
           ))}
+          <button
+            className={`btn h-10 ${query === "90秒预告片" ? "border-gold bg-gold/10 text-gold" : "border-gold/40 text-gold"}`}
+            onClick={() => {
+              setCategory("全部");
+              setQuery("90秒预告片");
+              setSelected(null);
+            }}
+          >
+            90秒预告优先资产
+          </button>
           <button className="btn h-10 text-red-300" onClick={() => void clearCurrentCategory()}>
             清空当前分类素材
           </button>
