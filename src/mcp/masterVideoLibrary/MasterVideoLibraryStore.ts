@@ -3,6 +3,7 @@ export type MasterVideoTemplate = {
   id: string; name: string; category: MasterVideoCategory; description: string; tags: string[];
   firstFramePrompt: string; endFramePrompt: string; videoPrompt: string;
   duration: number; camera: string; usage: string; status: "可用" | "修订中";
+  referenceAssets?: string[];
   createdAt: string; updatedAt: string;
 };
 export type MasterVideoImages = Record<string, { first?: string; end?: string }>;
@@ -22,6 +23,7 @@ export async function loadMasterVideoImages():Promise<MasterVideoImages>{const d
 export async function setMasterVideoImage(id:string,kind:"first"|"end",file:File){if(!["image/png","image/jpeg","image/webp"].includes(file.type))throw new Error("仅支持 PNG、JPG、WEBP");const images=await loadMasterVideoImages();images[id]={...(images[id]??{}),[kind]:await dataUrl(file)};await saveImages(images);window.dispatchEvent(new Event(EVENT));}
 export function loadMasterVideoShotLinks():Record<string,string>{try{return JSON.parse(localStorage.getItem(LINKS_KEY)??"{}")}catch{return{}}}
 export function linkMasterVideoToShot(shotId:string,templateId:string){const links=loadMasterVideoShotLinks();links[shotId]=templateId;localStorage.setItem(LINKS_KEY,JSON.stringify(links));window.dispatchEvent(new Event(EVENT));}
+export function getTemplateReferenceAssets(template: MasterVideoTemplate) { return template.referenceAssets?.length ? template.referenceAssets : referenceMap[template.id] ?? categoryReferences[template.category]; }
 
 function persist(values:MasterVideoTemplate[]){localStorage.setItem(DATA_KEY,JSON.stringify(values));window.dispatchEvent(new Event(EVENT))}
 function prefixOf(category:MasterVideoCategory){return ({人物:"HUM",机甲:"MECH",潮兽:"CRE",环境:"ENV",机械细节:"MEC",转场:"TRANS"} as const)[category]}
@@ -50,4 +52,26 @@ function seeds():MasterVideoTemplate[]{const now="2026-07-12T00:00:00.000Z";retu
   seed("MVL-TRANS-001","声波匹配转场","转场","用相似波形连接海面与系统屏幕。","海面长波横向穿过画面，低饱和冷灰光。","画面保持相同波形位置，转为监听屏幕上的冷蓝低频曲线。","以波形轮廓完成匹配剪辑，不使用闪白或粒子转场；海浪声在切换后变成监听底噪。","固定构图，后期匹配剪辑",3,"海洋到指挥中心转场",["转场","匹配剪辑","声波"]),
   seed("MVL-TRANS-002","雨滴到冷凝水转场","转场","用同方向水滴连接外景与机库。","暴雨水滴从装甲边缘向下坠落，背景虚化。","同一画面位置变为机库管线上的冷凝水滴，落入积水。","保持水滴运动方向和速度连续，在落下瞬间匹配切换；不使用溶解、闪光或数字特效。","85mm微距固定",3,"外景到基地转场",["转场","水滴","匹配剪辑"])
 ];}
-function seed(id:string,name:string,category:MasterVideoCategory,description:string,firstFramePrompt:string,endFramePrompt:string,videoPrompt:string,camera:string,duration:number,usage:string,tags:string[]):MasterVideoTemplate{return{id,name,category,description,firstFramePrompt,endFramePrompt,videoPrompt,duration,camera,usage,tags,status:"可用",createdAt:"2026-07-12T00:00:00.000Z",updatedAt:"2026-07-12T00:00:00.000Z"}}
+function seed(id:string,name:string,category:MasterVideoCategory,description:string,firstFramePrompt:string,endFramePrompt:string,videoPrompt:string,camera:string,duration:number,usage:string,tags:string[]):MasterVideoTemplate{return{id,name,category,description,firstFramePrompt,endFramePrompt,videoPrompt,duration,camera,usage,tags,status:"可用",referenceAssets:referenceMap[id]??categoryReferences[category],createdAt:"2026-07-12T00:00:00.000Z",updatedAt:"2026-07-12T00:00:00.000Z"}}
+const categoryReferences: Record<MasterVideoCategory,string[]>={人物:["角色资产库：对应人物标准头像","角色资产库：对应人物核心三视图","角色资产库：对应人物服装全身参考"],机甲:["机甲资产库：赤霆01核心三视图","机甲资产库：赤霆01对应结构细节","场景资产库：对应机库或海防环境"],潮兽:["怪兽资产库：白潮核心三视图","怪兽资产库：白潮头部或甲壳细节","场景资产库：对应海面或深海环境"],环境:["场景资产库：对应场景标准远景","天气资产库：对应天气参考","灯光资产库：对应真实光源参考"],机械细节:["机甲资产库：赤霆01核心三视图","机甲资产库：对应局部结构细节","材质资产库：湿金属与海盐腐蚀参考"],转场:["场景资产库：转场起始画面","场景资产库：转场结束画面","镜头资产库：匹配构图参考"]};
+const referenceMap:Record<string,string[]>={
+  "MVL-HUM-001":["角色资产库：林舟/标准头像（锁定脸型与左眉伤痕）","角色资产库：林舟/核心三视图（锁定头部转向）","角色资产库：林舟/驾驶服全身（锁定服装）"],
+  "MVL-HUM-002":["角色资产库：林舟/标准头像","角色资产库：林舟/驾驶舱坐姿","机甲资产库：赤霆01/驾驶舱内部"],
+  "MVL-HUM-003":["角色资产库：林舟/工业通道奔跑","角色资产库：林舟/驾驶服全身","场景资产库：深蓝基地/驾驶员工业通道"],
+  "MVL-HUM-004":["角色资产库：陈牧/标准头像","角色资产库：陈牧/指挥制服半身","场景资产库：深蓝基地/指挥中心"],
+  "MVL-MECH-001":["机甲资产库：赤霆01/核心三视图","机甲资产库：赤霆01/腿部结构","场景资产库：深蓝基地/赤霆机库"],
+  "MVL-MECH-002":["机甲资产库：赤霆01/完整背面","机甲资产库：赤霆01/驾驶舱开启","场景资产库：深蓝基地/赤霆机库"],
+  "MVL-MECH-003":["机甲资产库：赤霆01/核心三视图","机甲资产库：赤霆01/暴雨低重心冲锋","场景资产库：杭州湾海防闸口"],
+  "MVL-MECH-004":["机甲资产库：赤霆01/左臂战损","机甲资产库：赤霆01/拳头撑墙","场景资产库：海防撤离通道/撤离车辆"],
+  "MVL-MECH-005":["机甲资产库：赤霆01/右臂链刃细节","机甲资产库：赤霆01/核心三视图","材质资产库：湿金属与雨水参考"],
+  "MVL-CRE-001":["怪兽资产库：白潮/核心三视图","怪兽资产库：白潮/游泳姿态","场景资产库：深海压力环境"],
+  "MVL-CRE-002":["怪兽资产库：白潮/甲壳细节","怪兽资产库：白潮/海雾局部显现","场景资产库：杭州湾海防线/暴雨警戒"],
+  "MVL-CRE-003":["怪兽资产库：白潮/头部结构","怪兽资产库：白潮/低鸣壳片振动","机甲资产库：赤霆01/驾驶舱局部"],
+  "MVL-ENV-001":["场景资产库：杭州湾海防线/阴天正常世界","天气资产库：阴天海雾","镜头资产库：24mm海防远景"],
+  "MVL-ENV-002":["场景资产库：巨型观测闸/关闭状态","角色资产库：陈牧/指挥制服半身","镜头资产库：24mm建筑广角"],
+  "MVL-ENV-003":["场景资产库：深蓝基地/指挥中心","灯光资产库：基地冷蓝光","灯光资产库：应急红光"],
+  "MVL-ENV-004":["场景资产库：潮门/海底压力边界远景","场景资产库：潮门/边界逆流近景","特效资产库：深海悬浮颗粒"],
+  "MVL-MEC-001":["机甲资产库：赤霆01/腿部结构","场景资产库：深蓝基地/赤霆维修平台","材质资产库：湿金属与海盐腐蚀"],
+  "MVL-TRANS-001":["场景资产库：杭州湾海防线/阴天正常世界","道具资产库：AI澜/冷蓝标准界面","镜头资产库：波形匹配构图"],
+  "MVL-TRANS-002":["机甲资产库：赤霆01/装甲细节","场景资产库：深蓝基地/赤霆机库","镜头资产库：85mm水滴微距"]
+};
