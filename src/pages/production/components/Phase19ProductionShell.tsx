@@ -78,6 +78,7 @@ const navGroups: NavGroup[] = [
   {
     title: "视频制作",
     entries: [
+      { key: "master-video-library", id: "masterVideoLibrary", label: "母资产视频库", helper: "三部曲可复用片段与 Prompt", icon: <Database size={17} /> },
       { key: "kling", id: "klingPromptLibrary", label: "可灵提示词", helper: "EP01 逐镜头中文 Prompt", icon: <Wand2 size={17} /> },
       { key: "video", id: "video", label: "视频片段", helper: "上传真实视频与绑定 Shot", icon: <MonitorPlay size={17} /> },
       { key: "video-version", id: "visualReview", label: "视频版本管理", helper: "审核、比较与 Master 版本", icon: <Film size={17} /> }

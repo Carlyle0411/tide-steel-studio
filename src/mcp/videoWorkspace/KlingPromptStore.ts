@@ -1,4 +1,5 @@
 import type { StoryboardShot } from "../storyboardWorkspace/StoryboardWorkspaceStore";
+import { loadMasterVideoShotLinks, loadMasterVideoTemplates } from "../masterVideoLibrary/MasterVideoLibraryStore";
 
 const STORAGE_KEY = "tide-steel-soul-kling-prompts-v2";
 const EVENT_NAME = "tide-steel-soul-kling-prompts-change";
@@ -49,7 +50,12 @@ export function loadKlingPromptOverrides(): KlingPromptOverrides {
 }
 
 export function getKlingPrompt(shot: StoryboardShot) {
-  return loadKlingPromptOverrides()[shot.id] || buildChineseKlingPrompt(shot);
+  const manual = loadKlingPromptOverrides()[shot.id];
+  if (manual) return manual;
+  const base = buildChineseKlingPrompt(shot);
+  const templateId = loadMasterVideoShotLinks()[shot.id];
+  const template = templateId ? loadMasterVideoTemplates().find((item) => item.id === templateId) : null;
+  return template ? [base, "", `调用母资产视频模板：${template.id}《${template.name}》`, `复用动作：${template.videoPrompt}`, `复用摄影：${template.camera}`, `模板时长参考：${template.duration}秒`].join("\n") : base;
 }
 
 export function saveKlingPrompt(shotId: string, prompt: string) {

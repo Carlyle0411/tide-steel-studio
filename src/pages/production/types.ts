@@ -1,6 +1,7 @@
 export type ProductionSection =
   | "dashboard"
   | "assetBible"
+  | "masterVideoLibrary"
   | "generationQueue"
   | "tideSteelStudio"
   | "reuseCenter"

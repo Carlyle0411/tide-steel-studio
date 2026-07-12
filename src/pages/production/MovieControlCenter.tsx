@@ -55,6 +55,7 @@ import { ScriptWorkspaceView } from "./components/ScriptWorkspaceView";
 import { StoryboardWorkspaceView } from "./components/StoryboardWorkspaceView";
 import { CameraDesignWorkspaceView } from "./components/CameraDesignWorkspaceView";
 import { KlingPromptWorkspaceView, VideoClipWorkspaceView, VideoVersionManagerView } from "./components/VideoProductionWorkspaceViews";
+import { MasterVideoLibraryView } from "./components/MasterVideoLibraryView";
 import {
   Phase19AssetReference,
   Phase19DirectorDashboard,
@@ -89,6 +90,8 @@ function renderSection(active: ProductionSection, navigate: (section: Production
       return <Phase19DirectorDashboard navigate={navigate} />;
     case "assetBible":
       return <Phase20MasterAssetLibraryView />;
+    case "masterVideoLibrary":
+      return <MasterVideoLibraryView />;
     case "generationQueue":
       return <Phase20MasterAssetLibraryView />;
     case "tideSteelStudio":

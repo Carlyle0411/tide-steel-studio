@@ -1,0 +1,63 @@
+import { useEffect, useMemo, useRef, useState } from "react";
+import { Clipboard, Film, Plus, Save, Trash2, Upload } from "lucide-react";
+import { createMasterVideoTemplate, deleteMasterVideoTemplate, linkMasterVideoToShot, loadMasterVideoImages, loadMasterVideoShotLinks, loadMasterVideoTemplates, saveMasterVideoTemplate, setMasterVideoImage, subscribeMasterVideoLibrary, type MasterVideoCategory, type MasterVideoImages, type MasterVideoTemplate } from "../../../mcp/masterVideoLibrary/MasterVideoLibraryStore";
+import { getVideoProjects, type VideoProjectId } from "../../../mcp/videoWorkspace/VideoProjectData";
+
+const categories: Array<"全部" | MasterVideoCategory> = ["全部", "人物", "机甲", "潮兽", "环境", "机械细节", "转场"];
+
+export function MasterVideoLibraryView() {
+  const [templates, setTemplates] = useState(loadMasterVideoTemplates);
+  const [images, setImages] = useState<MasterVideoImages>({});
+  const [selectedId, setSelectedId] = useState(templates[0]?.id ?? "");
+  const [category, setCategory] = useState<(typeof categories)[number]>("全部");
+  const [query, setQuery] = useState("");
+  const [editing, setEditing] = useState(false);
+  const [draft, setDraft] = useState<MasterVideoTemplate | null>(null);
+  const [projectId, setProjectId] = useState<VideoProjectId>("TRAILER90");
+  const [shotId, setShotId] = useState("");
+  const firstRef = useRef<HTMLInputElement>(null);
+  const endRef = useRef<HTMLInputElement>(null);
+  const projects = useMemo(getVideoProjects, []);
+  const project = projects.find(item => item.id === projectId) ?? projects[0];
+  const selected = templates.find(item => item.id === selectedId) ?? templates[0];
+  const filtered = templates.filter(item => (category === "全部" || item.category === category) && [item.id, item.name, item.description, item.usage, ...item.tags].join(" ").toLowerCase().includes(query.toLowerCase()));
+  const links = loadMasterVideoShotLinks();
+  const usageCount = selected ? Object.values(links).filter(value => value === selected.id).length : 0;
+
+  const refresh = () => { setTemplates(loadMasterVideoTemplates()); loadMasterVideoImages().then(setImages); };
+  useEffect(() => { refresh(); return subscribeMasterVideoLibrary(refresh); }, []);
+  useEffect(() => { if (selected && !editing) setDraft(selected); }, [selected?.id, selected?.updatedAt, editing]);
+  useEffect(() => setShotId(project.shots[0]?.id ?? ""), [projectId]);
+
+  function add() { const created = createMasterVideoTemplate(category === "全部" ? "人物" : category); setSelectedId(created.id); setDraft(created); setEditing(true); }
+  function save() { if (!draft) return; saveMasterVideoTemplate({ ...draft, tags: draft.tags.filter(Boolean) }); setEditing(false); }
+  async function remove() { if (!selected || !confirm(`确认删除 ${selected.id}《${selected.name}》？该操作会同时删除已上传的首尾帧。`)) return; await deleteMasterVideoTemplate(selected.id); setSelectedId(loadMasterVideoTemplates()[0]?.id ?? ""); }
+  async function upload(kind:"first"|"end", files:FileList|null) { const file = files?.[0]; if (!selected || !file) return; try { await setMasterVideoImage(selected.id, kind, file); } catch (error) { alert(error instanceof Error ? error.message : "上传失败"); } }
+  function bind() { if (!selected || !shotId) return; linkMasterVideoToShot(shotId, selected.id); alert(`已将 ${selected.id} 绑定到 ${shotId}`); }
+
+  return <div>
+    <div className="mb-5"><div className="text-xs uppercase tracking-[.28em] text-jade">Master Video Asset Library</div><h2 className="mt-2 text-2xl font-bold text-white">母资产视频库</h2><p className="mt-2 text-sm text-slate-400">面向《潮汐钢魂》三部曲的可复用视频片段。每项包含规范编号、首尾帧图片 Prompt、通用视频 Prompt、真实参考图与 Shot 调用关系。</p></div>
+    <div className="grid gap-4 md:grid-cols-4"><Stat label="可复用模板" value={String(templates.length)}/><Stat label="已上传首帧" value={String(Object.values(images).filter(item=>item.first).length)}/><Stat label="已上传尾帧" value={String(Object.values(images).filter(item=>item.end).length)}/><Stat label="Shot 调用" value={String(Object.keys(links).length)}/></div>
+    <div className="mt-4 flex flex-wrap gap-2 rounded border border-white/10 bg-white/[.02] p-3"><input className="min-w-[260px] flex-1 rounded border border-white/10 bg-black/30 px-3 py-2 text-sm outline-none focus:border-jade/50" placeholder="搜索名称、编号、标签、用途" value={query} onChange={event=>setQuery(event.target.value)}/>{categories.map(item=><button key={item} className={`btn ${category===item?"border-jade/50 text-jade":""}`} onClick={()=>setCategory(item)}>{item}</button>)}<button className="btn border-jade/40 text-jade" onClick={add}><Plus size={15}/>新增模板</button></div>
+    <div className="mt-4 grid gap-4 xl:grid-cols-[440px_minmax(0,1fr)]">
+      <section className="rounded border border-white/10 bg-white/[.02]"><div className="border-b border-white/10 px-4 py-4 font-semibold">模板清单 · {filtered.length}</div><div className="max-h-[760px] space-y-2 overflow-y-auto p-3">{filtered.map(item=><button key={item.id} onClick={()=>{setSelectedId(item.id);setEditing(false)}} className={`w-full rounded border p-3 text-left ${item.id===selected?.id?"border-jade/60 bg-jade/10":"border-white/10 bg-black/20 hover:border-white/25"}`}><div className="flex justify-between text-xs"><span className="font-mono text-jade">{item.id}</span><span className="text-slate-500">{item.duration}秒</span></div><div className="mt-1 font-semibold text-white">{item.name}</div><div className="mt-1 line-clamp-2 text-xs leading-5 text-slate-400">{item.description}</div><div className="mt-2 flex flex-wrap gap-1">{item.tags.slice(0,4).map(tag=><span key={tag} className="rounded border border-white/10 px-2 py-0.5 text-[10px] text-slate-500">{tag}</span>)}</div></button>)}</div></section>
+      {selected && draft && <section className="rounded border border-white/10 bg-white/[.02]"><div className="flex flex-wrap items-center justify-between gap-2 border-b border-white/10 px-4 py-3"><div><div className="font-mono text-xs text-jade">{selected.id}</div><h3 className="mt-1 text-lg font-semibold text-white">{selected.name}</h3></div><div className="flex gap-2">{editing?<button className="btn border-jade/40 text-jade" onClick={save}><Save size={15}/>保存修改</button>:<button className="btn" onClick={()=>setEditing(true)}>编辑内容</button>}<button className="btn text-red-300" onClick={remove}><Trash2 size={15}/>删除</button></div></div><div className="p-4">
+        {editing ? <Editor value={draft} onChange={setDraft}/> : <>
+          <div className="grid gap-3 sm:grid-cols-4"><Info label="分类" value={selected.category}/><Info label="推荐时长" value={`${selected.duration}秒`}/><Info label="摄影机" value={selected.camera}/><Info label="已调用" value={`${usageCount} Shot`}/></div>
+          <p className="mt-3 rounded border border-white/10 bg-black/20 p-3 text-sm leading-6 text-slate-300">{selected.description}</p>
+          <div className="mt-4 grid gap-4 lg:grid-cols-2"><ImageSlot title="首帧参考" src={images[selected.id]?.first} onUpload={()=>firstRef.current?.click()}/><ImageSlot title="尾帧参考" src={images[selected.id]?.end} onUpload={()=>endRef.current?.click()}/><input ref={firstRef} hidden type="file" accept="image/png,image/jpeg,image/webp" onChange={event=>upload("first",event.target.files)}/><input ref={endRef} hidden type="file" accept="image/png,image/jpeg,image/webp" onChange={event=>upload("end",event.target.files)}/></div>
+          <PromptBlock title="首帧图片 Prompt" text={selected.firstFramePrompt}/><PromptBlock title="尾帧图片 Prompt" text={selected.endFramePrompt}/><PromptBlock title="通用可灵 Prompt" text={`${selected.videoPrompt}\n摄影机：${selected.camera}\n推荐时长：${selected.duration}秒\n禁止：换脸、结构漂移、无重量运动、夸张表情、随机口型、动漫、游戏CG、文字、水印。`}/>
+          <div className="mt-4 rounded border border-white/10 bg-black/20 p-3"><div className="text-xs text-slate-500">调用到具体 Shot</div><div className="mt-2 grid gap-2 sm:grid-cols-[180px_minmax(0,1fr)_auto]"><select className="rounded border border-white/10 bg-[#0b1017] p-2 text-sm" value={projectId} onChange={event=>setProjectId(event.target.value as VideoProjectId)}>{projects.map(item=><option key={item.id} value={item.id}>{item.label}</option>)}</select><select className="rounded border border-white/10 bg-[#0b1017] p-2 text-sm" value={shotId} onChange={event=>setShotId(event.target.value)}><option value="">选择 Shot</option>{project.shots.map(shot=><option key={shot.id} value={shot.id}>{shot.id} · {shot.title}</option>)}</select><button className="btn" disabled={!shotId} onClick={bind}><Film size={15}/>调用模板</button></div>{!project.shots.length&&<p className="mt-2 text-xs text-amber-300">该集尚未建立正式 Shot，暂不能绑定。</p>}</div>
+        </>}
+      </div></section>}
+    </div>
+  </div>;
+}
+
+function Editor({value,onChange}:{value:MasterVideoTemplate;onChange:(value:MasterVideoTemplate)=>void}){const field=(key:keyof MasterVideoTemplate,next:string|number)=>onChange({...value,[key]:next});return <div className="space-y-3"><div className="grid gap-3 sm:grid-cols-3"><label className="text-xs text-slate-500">名称<input className="mt-1 w-full rounded border border-white/10 bg-black/30 p-2 text-sm text-white" value={value.name} onChange={e=>field("name",e.target.value)}/></label><label className="text-xs text-slate-500">分类<select className="mt-1 w-full rounded border border-white/10 bg-[#0b1017] p-2 text-sm text-white" value={value.category} onChange={e=>field("category",e.target.value)}>{categories.slice(1).map(item=><option key={item}>{item}</option>)}</select></label><label className="text-xs text-slate-500">时长<input type="number" min="1" max="15" className="mt-1 w-full rounded border border-white/10 bg-black/30 p-2 text-sm text-white" value={value.duration} onChange={e=>field("duration",Number(e.target.value))}/></label></div><TextArea label="片段用途" value={value.description} onChange={next=>field("description",next)}/><TextArea label="首帧图片 Prompt" value={value.firstFramePrompt} onChange={next=>field("firstFramePrompt",next)}/><TextArea label="尾帧图片 Prompt" value={value.endFramePrompt} onChange={next=>field("endFramePrompt",next)}/><TextArea label="通用视频 Prompt" value={value.videoPrompt} onChange={next=>field("videoPrompt",next)}/><div className="grid gap-3 sm:grid-cols-2"><label className="text-xs text-slate-500">摄影机<input className="mt-1 w-full rounded border border-white/10 bg-black/30 p-2 text-sm text-white" value={value.camera} onChange={e=>field("camera",e.target.value)}/></label><label className="text-xs text-slate-500">标签（逗号分隔）<input className="mt-1 w-full rounded border border-white/10 bg-black/30 p-2 text-sm text-white" value={value.tags.join(",")} onChange={e=>onChange({...value,tags:e.target.value.split(/[,，]/).map(item=>item.trim())})}/></label></div></div>}
+function TextArea({label,value,onChange}:{label:string;value:string;onChange:(value:string)=>void}){return <label className="block text-xs text-slate-500">{label}<textarea className="mt-1 min-h-24 w-full rounded border border-white/10 bg-black/30 p-3 text-sm leading-6 text-white" value={value} onChange={e=>onChange(e.target.value)}/></label>}
+function PromptBlock({title,text}:{title:string;text:string}){return <div className="mt-4 rounded border border-white/10 bg-black/20 p-3"><div className="flex items-center justify-between"><div className="text-xs uppercase tracking-[.16em] text-jade">{title}</div><button className="btn h-8" onClick={()=>copy(text)}><Clipboard size={14}/>复制</button></div><pre className="mt-3 whitespace-pre-wrap text-sm leading-6 text-slate-300">{text}</pre></div>}
+function ImageSlot({title,src,onUpload}:{title:string;src?:string;onUpload:()=>void}){return <div><div className="mb-2 text-xs text-slate-500">{title}</div><div className="aspect-video overflow-hidden rounded border border-white/10 bg-black/30">{src?<img src={src} className="h-full w-full object-cover"/>:<div className="flex h-full items-center justify-center text-sm text-slate-600">尚未上传</div>}</div><button className="btn mt-2 w-full" onClick={onUpload}><Upload size={15}/>上传/替换</button></div>}
+function Info({label,value}:{label:string;value:string}){return <div className="rounded border border-white/10 bg-black/20 p-3"><div className="text-[10px] text-slate-500">{label}</div><div className="mt-1 truncate text-sm text-white" title={value}>{value}</div></div>}
+function Stat({label,value}:{label:string;value:string}){return <div className="rounded border border-white/10 bg-white/[.02] p-4"><div className="text-xs text-slate-500">{label}</div><div className="mt-2 text-2xl font-bold text-white">{value}</div></div>}
+async function copy(text:string){try{await navigator.clipboard.writeText(text)}catch{const area=document.createElement("textarea");area.value=text;document.body.appendChild(area);area.select();document.execCommand("copy");area.remove()}}
