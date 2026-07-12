@@ -23,7 +23,10 @@ import {
   Waves
 } from "lucide-react";
 import type { ProductionSection } from "../types";
-import { getWorkflowStats, globalSearch } from "../../../mcp/industrialWorkflow/IndustrialWorkflowData";
+import { getIndustrialShots, globalSearch } from "../../../mcp/industrialWorkflow/IndustrialWorkflowData";
+import { getMasterAssets } from "../../../mcp/masterAssetLibrary/MasterAssetLibraryData";
+import { loadAssetStore, subscribeAssetStore } from "../../../mcp/cloudAssetSync/AssetStoreGateway";
+import type { ManualAssetStore } from "../../../mcp/manualAssetImport/ManualAssetImport";
 
 type NavEntry = {
   key: string;
@@ -256,21 +259,43 @@ export function Phase19ProductionShell({
 }
 
 export function Phase19Inspector({ active }: { active: ProductionSection }) {
-  const stats = getWorkflowStats();
+  const assets = useMemo(() => getMasterAssets(), []);
+  const [store, setStore] = useState<ManualAssetStore>({});
+
+  useEffect(() => {
+    let alive = true;
+    const refresh = async () => {
+      try {
+        const next = await loadAssetStore();
+        if (alive) setStore(next);
+      } catch {
+        if (alive) setStore({});
+      }
+    };
+    void refresh();
+    const unsubscribe = subscribeAssetStore(() => void refresh());
+    return () => { alive = false; unsubscribe(); };
+  }, []);
+
+  const uploaded = assets.filter((asset) => (store[asset.id]?.length ?? 0) > 0).length;
+  const review = assets.filter((asset) => store[asset.id]?.some((version) => version.status === "REVIEW")).length;
+  const master = assets.filter((asset) => store[asset.id]?.some((version) => version.status === "MASTER_REFERENCE")).length;
+  const versions = Object.values(store).reduce((total, items) => total + items.length, 0);
   return (
     <div className="space-y-4">
       <ProductionMiniCard title="制作状态">
         <div className="space-y-2 text-sm text-slate-300">
           <Row label="当前页面" value={active} />
-          <Row label="资产" value={stats.assets} />
-          <Row label="Shot" value={stats.shots} />
-          <Row label="Prompt" value={stats.prompts} />
-          <Row label="引用关系" value={stats.relationships} />
-          <Row label="收藏" value={stats.favorites} />
+          <Row label="母资产" value={assets.length} />
+          <Row label="已上传" value={uploaded} />
+          <Row label="Version" value={versions} />
+          <Row label="待审核" value={review} />
+          <Row label="Master Reference" value={master} />
+          <Row label="EP01 Shot" value={getIndustrialShots().length} />
         </div>
       </ProductionMiniCard>
-      <ProductionMiniCard title="PHASE 24 原则">
-        <p className="text-sm leading-6 text-slate-400">主导航只保留电影制作流程。生成队列、独立资产库、Prompt库和制作日志从左侧隐藏，但仍可通过 Command+K 访问。</p>
+      <ProductionMiniCard title="当前任务">
+        <p className="text-sm leading-6 text-slate-400">{review > 0 ? `审核 ${review} 项已上传素材，确认后设为 Master Reference。` : uploaded < assets.length ? `继续生产并上传 ${assets.length - uploaded} 项缺失母资产。` : "母资产已上传完成，可以进入关键帧与Storyboard制作。"}</p>
       </ProductionMiniCard>
       <ProductionMiniCard title="当前工作流">
         <p className="text-sm leading-6 text-slate-400">故事世界 → 资产中心 → 镜头制作 → 视频制作 → 时间线 → 成片输出。所有图片仍必须来自真实 PNG，不能伪造完成状态。</p>

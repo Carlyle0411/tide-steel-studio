@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Archive, Copy, Download, Eye, Film, GitBranch, Heart, Image, Layers, Link2, Lock, MoreHorizontal, Search, Star, Tags, Unlock, Video } from "lucide-react";
 import type { ProductionSection } from "../types";
 import {
@@ -21,25 +21,58 @@ import {
 } from "../../../mcp/industrialWorkflow/IndustrialWorkflowData";
 import { getAssetBibleShots, getAssetBibleVideoClips } from "../../../mcp/assetBible/AssetBibleData";
 import { trailer90Shots } from "../../../mcp/trailer/Trailer90StudioData";
+import { getMasterAssets } from "../../../mcp/masterAssetLibrary/MasterAssetLibraryData";
+import { loadAssetStore, subscribeAssetStore } from "../../../mcp/cloudAssetSync/AssetStoreGateway";
+import type { ManualAssetStore } from "../../../mcp/manualAssetImport/ManualAssetImport";
 import { ProductionCard } from "./ProductionShell";
 
 type Navigate = (section: ProductionSection) => void;
 
 export function Phase19DirectorDashboard({ navigate }: { navigate: Navigate }) {
-  const stats = getWorkflowStats();
-  const logs = getIndustrialLogs();
-  const flow = ["世界观", "剧本", "角色", "机甲", "怪兽", "场景", "资产", "关键帧", "分镜", "可灵视频", "剪辑", "第一集完成"];
+  const assets = useMemo(() => getMasterAssets(), []);
+  const episodeShots = getIndustrialShots();
+  const [assetStore, setAssetStore] = useState<ManualAssetStore>({});
+
+  useEffect(() => {
+    let alive = true;
+    const refresh = async () => {
+      try {
+        const store = await loadAssetStore();
+        if (alive) setAssetStore(store);
+      } catch {
+        if (alive) setAssetStore({});
+      }
+    };
+    void refresh();
+    const unsubscribe = subscribeAssetStore(() => void refresh());
+    return () => { alive = false; unsubscribe(); };
+  }, []);
+
+  const versions = Object.values(assetStore).flat();
+  const uploadedAssets = assets.filter((asset) => (assetStore[asset.id]?.length ?? 0) > 0).length;
+  const masterAssets = assets.filter((asset) => assetStore[asset.id]?.some((version) => version.status === "MASTER_REFERENCE")).length;
+  const reviewAssets = assets.filter((asset) => assetStore[asset.id]?.some((version) => version.status === "REVIEW")).length;
+  const missingAssets = assets.length - uploadedAssets;
+  const progress = assets.length ? Math.round((masterAssets / assets.length) * 100) : 0;
+  const recent = [...versions].sort((a, b) => b.uploadedAt.localeCompare(a.uploadedAt)).slice(0, 6);
+  const priorityQueue = assets.filter((asset) => !(assetStore[asset.id]?.length)).slice(0, 6);
+  const flow: Array<{ label: string; section: ProductionSection }> = [
+    { label: "世界观", section: "story" }, { label: "剧本", section: "episode" }, { label: "角色", section: "characters" },
+    { label: "机甲", section: "mechas" }, { label: "怪兽", section: "creatures" }, { label: "场景", section: "environment" },
+    { label: "资产", section: "assetBible" }, { label: "关键帧", section: "image" }, { label: "分镜", section: "storyboard" },
+    { label: "可灵视频", section: "klingPromptLibrary" }, { label: "时间线", section: "timeline" }, { label: "成片输出", section: "export" }
+  ];
   return (
-    <Page title="导演工作台" subtitle="PHASE 19 工业级本地电影制作系统。所有数据来自当前《潮汐钢魂》项目。">
+    <Page title="导演工作台" subtitle="《潮汐钢魂》当前生产状态。统计来自母资产库、上传版本、EP01与90秒预告片。">
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-        <Metric label="今天待完成" value="资产审核 / Storyboard 绑定" />
-        <Metric label="当前剧集" value="EP01 海面低频" />
-        <Metric label="资产统计" value={`${stats.assets} 个`} />
-        <Metric label="镜头统计" value={`${stats.shots} 个 Shot`} />
-        <Metric label="Prompt统计" value={`${stats.prompts} 条`} />
-        <Metric label="Review统计" value={`${stats.review} 个审核中`} />
-        <Metric label="引用关系" value={`${stats.relationships} 条`} />
-        <Metric label="项目健康度" value="本地生产正常" />
+        <Metric label="母资产完成率" value={`${progress}%`} />
+        <Metric label="Master Reference" value={`${masterAssets} / ${assets.length}`} />
+        <Metric label="已上传资产" value={`${uploadedAssets} 项 / ${versions.length} 个Version`} />
+        <Metric label="待审核" value={`${reviewAssets} 项`} />
+        <Metric label="待上传" value={`${missingAssets} 项`} />
+        <Metric label="EP01镜头" value={`${episodeShots.length} Shot`} />
+        <Metric label="90秒预告片" value={`${trailer90Shots.length} Shot`} />
+        <Metric label="项目状态" value={reviewAssets > 0 ? "等待资产审核" : missingAssets > 0 ? "母资产生产中" : "可进入镜头制作"} />
       </div>
 
       <ProductionCard className="p-5">
@@ -52,34 +85,64 @@ export function Phase19DirectorDashboard({ navigate }: { navigate: Navigate }) {
         </div>
         <div className="grid gap-3 md:grid-cols-6">
           {flow.map((item, index) => (
-            <div key={item} className="rounded-md border border-white/10 bg-black/20 p-3">
+            <button key={item.label} className="rounded-md border border-white/10 bg-black/20 p-3 text-left transition hover:border-jade/50 hover:bg-jade/5" onClick={() => navigate(item.section)}>
               <div className="font-mono text-[11px] text-jade">{String(index + 1).padStart(2, "0")}</div>
-              <div className="mt-1 text-sm font-semibold text-white">{item}</div>
+              <div className="mt-1 text-sm font-semibold text-white">{item.label}</div>
               {index < flow.length - 1 && <div className="mt-3 h-px bg-gradient-to-r from-jade/50 to-transparent" />}
-            </div>
+            </button>
           ))}
         </div>
       </ProductionCard>
 
       <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_380px]">
-        <GlobalSearchPanel navigate={navigate} />
         <ProductionCard className="p-4">
-          <h3 className="text-sm font-semibold text-white">最近制作日志</h3>
+          <div className="flex items-center justify-between gap-3">
+            <div>
+              <h3 className="text-sm font-semibold text-white">当前优先生产</h3>
+              <p className="mt-1 text-xs text-slate-500">尚未上传任何Version的母资产，点击直接进入对应卡片所在资产库。</p>
+            </div>
+            <button className="btn h-9" onClick={() => navigate("assetBible")}>打开母资产库</button>
+          </div>
           <div className="mt-3 space-y-3">
-            {logs.map((log) => (
-              <div key={log.id} className="rounded border border-white/10 bg-white/[0.03] p-3 text-sm">
+            {priorityQueue.map((asset) => (
+              <button key={asset.id} className="flex w-full items-center justify-between gap-3 rounded border border-white/10 bg-white/[0.03] p-3 text-left text-sm hover:border-jade/40" onClick={() => navigate(categoryToSection(asset.category))}>
+                <span>
+                  <span className="block text-white">{asset.name}</span>
+                  <span className="mt-1 block font-mono text-[10px] text-slate-500">{asset.id}</span>
+                </span>
+                <Status label="Prompt Ready" />
+              </button>
+            ))}
+            {!priorityQueue.length && <div className="rounded border border-jade/30 bg-jade/10 p-3 text-sm text-jade">全部母资产均已上传版本。</div>}
+          </div>
+        </ProductionCard>
+        <ProductionCard className="p-4">
+          <h3 className="text-sm font-semibold text-white">最近上传</h3>
+          <div className="mt-3 space-y-3">
+            {recent.map((version) => (
+              <div key={`${version.metadata.asset_id}-${version.versionId}`} className="rounded border border-white/10 bg-white/[0.03] p-3 text-sm">
                 <div className="flex items-center justify-between gap-3">
-                  <span className="text-white">{log.action}</span>
-                  <Status label={log.status} />
+                  <span className="truncate text-white">{version.metadata.asset_id}</span>
+                  <Status label={version.status} />
                 </div>
-                <div className="mt-1 text-xs text-slate-500">{log.detail}</div>
+                <div className="mt-1 text-xs text-slate-500">{version.versionId} · {new Date(version.uploadedAt).toLocaleString("zh-CN")}</div>
               </div>
             ))}
+            {!recent.length && <div className="rounded border border-white/10 p-3 text-xs leading-5 text-slate-500">尚未上传素材。进入母资产库复制Prompt并导入首个版本。</div>}
           </div>
         </ProductionCard>
       </div>
     </Page>
   );
+}
+
+function categoryToSection(category: string): ProductionSection {
+  if (category === "人物") return "characters";
+  if (category === "机甲") return "mechas";
+  if (category === "怪兽") return "creatures";
+  if (category === "场景") return "environment";
+  if (category === "道具") return "props";
+  return "assetBible";
 }
 
 export function Phase19ProjectOverview({ navigate }: { navigate: Navigate }) {
