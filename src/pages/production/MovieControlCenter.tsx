@@ -51,6 +51,7 @@ import { Phase21BMechaCreatureBibleView } from "./components/Phase21BMechaCreatu
 import { Phase21CWorldAssetLibraryView } from "./components/Phase21CWorldAssetLibraryView";
 import { Phase21DKlingVideoTemplateView } from "./components/Phase21DKlingVideoTemplateView";
 import { WorldBibleEnhancedView } from "./components/WorldBibleEnhancedView";
+import { ScriptWorkspaceView } from "./components/ScriptWorkspaceView";
 import {
   Phase19AssetReference,
   Phase19DirectorDashboard,
@@ -118,7 +119,7 @@ function renderSection(active: ProductionSection, navigate: (section: Production
     case "story":
       return <WorldBibleEnhancedView />;
     case "episode":
-      return <Phase19ScriptManager navigate={navigate} />;
+      return <ScriptWorkspaceView navigate={navigate} />;
     case "assets":
       return <Phase20MasterAssetLibraryView />;
     case "characters":
