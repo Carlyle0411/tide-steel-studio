@@ -54,6 +54,7 @@ import { WorldBibleEnhancedView } from "./components/WorldBibleEnhancedView";
 import { ScriptWorkspaceView } from "./components/ScriptWorkspaceView";
 import { StoryboardWorkspaceView } from "./components/StoryboardWorkspaceView";
 import { CameraDesignWorkspaceView } from "./components/CameraDesignWorkspaceView";
+import { KlingPromptWorkspaceView, VideoClipWorkspaceView, VideoVersionManagerView } from "./components/VideoProductionWorkspaceViews";
 import {
   Phase19AssetReference,
   Phase19DirectorDashboard,
@@ -99,7 +100,7 @@ function renderSection(active: ProductionSection, navigate: (section: Production
     case "gptPromptLibrary":
       return <Phase19PromptCenter />;
     case "klingPromptLibrary":
-      return <Phase21DKlingVideoTemplateView />;
+      return <KlingPromptWorkspaceView />;
     case "production":
       return <ProjectOverviewPage navigate={navigate} />;
     case "producerDashboard":
@@ -109,7 +110,7 @@ function renderSection(active: ProductionSection, navigate: (section: Production
     case "ep01FinalReview":
       return <EpisodeFinalReviewView />;
     case "visualReview":
-      return <VisualReviewCenterView />;
+      return <VideoVersionManagerView />;
     case "aiAssetLibrary":
       return <AIAssetLibraryView />;
     case "mcp":
@@ -143,7 +144,7 @@ function renderSection(active: ProductionSection, navigate: (section: Production
     case "image":
       return <EpisodeKeyframeLibraryView />;
     case "video":
-      return <Phase20MasterAssetLibraryView initialCategory="视频模板" />;
+      return <VideoClipWorkspaceView />;
     case "review":
       return <Phase19ProductionLog />;
     case "export":
