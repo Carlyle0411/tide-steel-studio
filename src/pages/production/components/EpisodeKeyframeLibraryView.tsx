@@ -45,18 +45,18 @@ export function EpisodeKeyframeLibraryView() {
   const review = Object.values(store).flat().filter((version) => version.status === "REVIEW").length;
 
   async function copyPrompt(keyframe: EP01Keyframe) {
-    const prompt = buildKlingPrompt(keyframe);
+    const prompt = buildKeyframeImagePrompt(keyframe);
     await copyText(prompt);
-    setMessage(`${keyframe.id} 可灵 Prompt 已复制。`);
+    setMessage(`${keyframe.id} 中文关键帧 Prompt 已复制。`);
   }
 
   return (
     <div className="space-y-5">
       <header>
-        <div className="text-xs uppercase tracking-[0.24em] text-jade/70">Keyframe / Kling First Frame</div>
+        <div className="text-xs uppercase tracking-[0.24em] text-jade/70">Keyframe / GPT Image</div>
         <h2 className="mt-2 text-2xl font-semibold text-white">关键帧制作</h2>
         <p className="mt-2 max-w-4xl text-sm leading-6 text-slate-400">
-          这里管理每一集用于可灵制作的关键帧图片。当前开放 EP01《海面低频》18 张关键帧：复制 Prompt 到 ChatGPT 出图，审核后把 PNG / JPG / WEBP 拖回对应镜头，素材会保存在本地 IndexedDB，刷新和重启后仍会保留。
+          这里管理每一集用于可灵制作的关键帧图片。当前开放 EP01《海面低频》18 张关键帧：复制中文关键帧 Prompt 到 ChatGPT 出图，审核后把 PNG / JPG / WEBP 拖回对应镜头。
         </p>
       </header>
 
@@ -148,7 +148,7 @@ function KeyframeCard({ keyframe, versions, selected, onSelect, onCopy }: { keyf
 function KeyframeInspector({ keyframe, versions, onCopied, onMessage }: { keyframe: EP01Keyframe; versions: KeyframeAssetVersion[]; onCopied: () => void; onMessage: (message: string) => void }) {
   const inputRef = useRef<HTMLInputElement | null>(null);
   const best = getBestKeyframeVersion(versions);
-  const prompt = buildKlingPrompt(keyframe);
+  const prompt = buildKeyframeImagePrompt(keyframe);
 
   async function upload(files: FileList | File[] | null) {
     if (!files?.length) return;
@@ -192,7 +192,7 @@ function KeyframeInspector({ keyframe, versions, onCopied, onMessage }: { keyfra
       <div className="grid gap-2 px-4 md:grid-cols-2">
         <input ref={inputRef} type="file" accept="image/png,image/jpeg,image/webp" multiple className="hidden" onChange={(event) => void upload(event.target.files)} />
         <button className="btn h-10" onClick={() => inputRef.current?.click()}><Upload size={15} /> 上传/替换</button>
-        <button className="btn h-10" onClick={onCopied}><Copy size={15} /> 复制可灵 Prompt</button>
+        <button className="btn h-10" onClick={onCopied}><Copy size={15} /> 复制关键帧 Prompt</button>
         <button className="btn h-10" onClick={deleteAll} disabled={!versions.length}><Trash2 size={15} /> 删除本镜头图片</button>
       </div>
 
@@ -204,7 +204,7 @@ function KeyframeInspector({ keyframe, versions, onCopied, onMessage }: { keyfra
       </div>
 
       <div className="px-4 pb-4">
-        <div className="mb-2 text-xs uppercase tracking-[0.22em] text-slate-500">Kling Prompt</div>
+        <div className="mb-2 text-xs uppercase tracking-[0.22em] text-slate-500">GPT Image 关键帧 Prompt</div>
         <textarea className="min-h-44 w-full resize-y rounded-md border border-white/10 bg-black/25 p-3 text-xs leading-5 text-slate-300 outline-none" value={prompt} readOnly />
       </div>
 
@@ -244,17 +244,49 @@ function KeyframeInspector({ keyframe, versions, onCopied, onMessage }: { keyfra
   );
 }
 
-function buildKlingPrompt(keyframe: EP01Keyframe) {
+const visualDescriptions: Record<string, string> = {
+  KF01: "清晨阴天的杭州湾海防线稳定运行，海洋占画面三分之二，巨型海防墙、观测塔和浮标阵列保持秩序；极远处海面只有一小片反向收束的水纹。",
+  KF02: "暴雨中的杭州湾外海没有完整怪兽，只在水下出现巨大模糊白影，一片湿润白色甲壳短暂穿过浪面，探照灯扫过后再次消失。",
+  KF03: "深蓝基地指挥区进入冷蓝警戒，工作人员仍在岗位上，屏幕数据大部分正常，只有一条低频波形归零，基地比人更早作出反应。",
+  KF04: "陈牧位于画面左侧，停下手中的记录动作，侧头看向监听设备；背景工作人员继续工作，自动系统仍显示正常。",
+  KF05: "林舟在狭窄值班舱中收到蓝色召回警报，坐在床沿抬头看向门外，警戒光掠过左眉浅伤痕，神情不是兴奋而是害怕再次错过。",
+  KF06: "林舟穿深灰驾驶服沿深蓝基地潮湿工业通道向机库快步前行，前景管线和维护设备形成遮挡，远处机库冷蓝灯光引导方向。",
+  KF07: "只展示赤霆01暗红色巨大脚部、腿部黑色骨架和部分肩甲，维护人员在脚边极小，湿金属表面有盐雾腐蚀与维修焊痕，不展示完整英雄全景。",
+  KF08: "赤霆01背部驾驶舱液压开启，厚重暗红舱门、机械锁扣和入口结构清晰，冷蓝同步光照亮维护平台，林舟站在入口前显得很小。",
+  KF09: "林舟背对镜头跨入赤霆狭窄驾驶舱，一只手扶住舱门边缘，冷蓝舱内光照出深灰驾驶服轮廓，动作迟疑但已经作出选择。",
+  KF10: "许燃坐在副同步位，一手按住控制器，另一手停在节奏指示器上；同步界面出现断裂波形，她看向林舟而不是屏幕，情绪冷静且承担风险。",
+  KF11: "杭州湾海防墙内侧承受结构冲击，金属接缝变形、灯具摇晃、地面积水形成长波，人群沿撤离通道移动；白潮仍然不在画面中完整出现。",
+  KF12: "赤霆01在机库中完成启动，胸口蓝色能源核心和头部传感器刚刚亮起，暗红装甲仍带冷凝水，机械结构承重下沉，禁止英雄姿势。",
+  KF13: "赤霆01以低重心穿过海防闸口走向暴雨海面，每一步把积水向外推开，远处海洋和防线尺度远大于机甲。",
+  KF14: "赤霆01在暴雨海面第一次与白潮局部发生接触，机甲拳头或前臂承受冲击，白潮只显示甲壳和身体一部分；动作遵循接触、承重和后果。",
+  KF15: "赤霆01与白潮在暴雨和海雾中近距离停住，赤霆保持防御姿态但没有继续攻击，白潮头部略微偏转，双方之间留有危险距离。",
+  KF16: "白潮头颈与多层白色甲壳近景，低频释放时壳片发生细微同步振动，周围雨滴和海面水纹向外形成规律变化，不张嘴咆哮。",
+  KF17: "深海中的潮门呈冰川裂缝与生物组织共同受压的生态边界，悬浮物停止后逆向移动，边缘短暂浮现旧文明几何，禁止紫色能量和圆形传送门。",
+  KF18: "黑潮母体隐藏在潮门后的深海黑暗中，只显露巨大矿化甲壳、环状压力腔和一处暗红感知结构，像整个活体系统开始反向观察人类。"
+};
+
+const assetLabels: Record<string, string> = {
+  hangzhou_bay: "杭州湾海防线",
+  white_tide: "白潮",
+  deep_blue_base: "深蓝基地",
+  chenmu: "陈牧",
+  linzhou: "林舟",
+  chiting01: "赤霆01",
+  cockpit: "赤霆驾驶舱",
+  xuran: "许燃",
+  tide_gate: "潮门",
+  black_tide_mother: "黑潮母体"
+};
+
+function buildKeyframeImagePrompt(keyframe: EP01Keyframe) {
   return [
-    `Scene: ${keyframe.title}`,
-    `Shot: ${keyframe.shot}`,
-    `Action: ${keyframe.purpose}`,
-    `Assets: ${keyframe.required_assets.join(", ")}`,
-    "Camera: cinematic realistic sci-fi, controlled camera movement, no short-video shake",
-    "Lighting: cold ocean industrial light, low saturation, humid air, rain or sea mist when appropriate",
-    "Duration: 5 seconds",
-    "Motion Physics: real weight, real ocean scale, no game-like movement",
-    "Negative Prompt: anime, cartoon, game render, plastic texture, neon cyberpunk, text, logo, watermark, unstable character face, changed mech design"
+    `关键帧：${keyframe.id}《${keyframe.title}》`,
+    `剧情作用：${keyframe.purpose}`,
+    `画面内容：${visualDescriptions[keyframe.id]}`,
+    `必须参考的母资产：${keyframe.required_assets.map((asset) => assetLabels[asset] ?? asset).join("、")}；人物脸型、服装，机甲装甲结构，怪兽身体结构和场景建筑必须与上传参考图一致。`,
+    "构图与摄影：16:9，电影级真实科幻摄影，主体关系清楚，低饱和，镜头克制，海洋尺度始终大于人造设施。",
+    "光线与材质：冷蓝工业实景光，湿金属、海盐腐蚀、玻璃反射、水汽和雨痕真实；人物皮肤和织物自然。",
+    "禁止：动漫、二次元、游戏CG、塑料质感、霓虹赛博朋克、英雄摆拍、人物换脸、机甲结构改变、怪兽结构漂移、紫色传送门、文字、字幕、logo、水印。"
   ].join("\n");
 }
 

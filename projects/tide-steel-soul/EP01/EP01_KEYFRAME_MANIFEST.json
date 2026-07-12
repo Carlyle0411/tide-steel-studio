@@ -1,14 +1,14 @@
 {
   "episode": "EP01",
-  "title": "Sea Surface Low Frequency",
-  "format": "16:9 cinematic 4K concept keyframes",
+  "title": "海面低频",
+  "format": "16:9电影级4K关键帧",
   "status": "task_manifest",
   "keyframes": [
     {
       "id": "KF01",
       "shot": "EP01_KF01",
-      "title": "2042 Hangzhou Bay Future Coastline",
-      "purpose": "Wide establishing image for the world before the anomaly.",
+      "title": "2042杭州湾未来海防线",
+      "purpose": "在异常出现前建立仍然正常运转的杭州湾海防世界。",
       "required_assets": [
         "hangzhou_bay"
       ],
@@ -21,8 +21,8 @@
     {
       "id": "KF02",
       "shot": "EP01_KF02",
-      "title": "White Tide First Appearance",
-      "purpose": "A huge body breaks the storm sea without monster-show spectacle.",
+      "title": "白潮首次显现",
+      "purpose": "巨大生命只改变暴雨海面，不以怪兽登场方式完整出现。",
       "required_assets": [
         "white_tide",
         "hangzhou_bay"
@@ -36,8 +36,8 @@
     {
       "id": "KF03",
       "shot": "EP01_KF03",
-      "title": "Deep Blue Base Alarm",
-      "purpose": "The base reacts before people understand the event.",
+      "title": "深蓝基地进入警戒",
+      "purpose": "基地先对异常作出反应，而人还没有理解发生了什么。",
       "required_assets": [
         "deep_blue_base"
       ],
@@ -50,8 +50,8 @@
     {
       "id": "KF04",
       "shot": "EP01_KF04",
-      "title": "Commander Chen Detects Signal",
-      "purpose": "Chen Mu trusts experience before the automated system does.",
+      "title": "陈牧察觉低频信号",
+      "purpose": "陈牧比自动系统更早相信自己的海防经验。",
       "required_assets": [
         "chenmu",
         "deep_blue_base"
@@ -65,8 +65,8 @@
     {
       "id": "KF05",
       "shot": "EP01_KF05",
-      "title": "Lin Zhou Recall Notice",
-      "purpose": "Lin Zhou is pulled back toward the machine and the old wound.",
+      "title": "林舟收到召回通知",
+      "purpose": "警戒通知把林舟重新拉向赤霆，也拉回三年前的伤口。",
       "required_assets": [
         "linzhou"
       ],
@@ -79,8 +79,8 @@
     {
       "id": "KF06",
       "shot": "EP01_KF06",
-      "title": "Lin Zhou Enters Deep Blue Base",
-      "purpose": "The human story enters the industrial defense system.",
+      "title": "林舟进入深蓝基地",
+      "purpose": "林舟穿过潮湿工业通道，进入庞大的海防工程系统。",
       "required_assets": [
         "linzhou",
         "deep_blue_base"
@@ -94,8 +94,8 @@
     {
       "id": "KF07",
       "shot": "EP01_KF07",
-      "title": "Chiting-01 First Reveal",
-      "purpose": "Reveal the machine as weight and danger, not salvation.",
+      "title": "赤霆01首次露出",
+      "purpose": "先展示重量、磨损和危险，不把赤霆拍成救世主。",
       "required_assets": [
         "chiting01"
       ],
@@ -108,8 +108,8 @@
     {
       "id": "KF08",
       "shot": "EP01_KF08",
-      "title": "Cockpit Opens",
-      "purpose": "The cockpit becomes a threshold rather than a vehicle entrance.",
+      "title": "背部驾驶舱开启",
+      "purpose": "驾驶舱入口像一道必须跨过的旧伤，而不是普通载具舱门。",
       "required_assets": [
         "chiting01",
         "cockpit"
@@ -123,8 +123,8 @@
     {
       "id": "KF09",
       "shot": "EP01_KF09",
-      "title": "Lin Zhou Enters Cockpit",
-      "purpose": "Lin Zhou chooses the place that once represented failure.",
+      "title": "林舟进入驾驶舱",
+      "purpose": "林舟主动进入曾经代表失败和失去的位置。",
       "required_assets": [
         "linzhou",
         "chiting01",
@@ -139,8 +139,8 @@
     {
       "id": "KF10",
       "shot": "EP01_KF10",
-      "title": "Xu Ran Connection Failure",
-      "purpose": "The first synchronization attempt fails without melodrama.",
+      "title": "许燃首次同步失败",
+      "purpose": "第一次双人同步安静地失败，暴露流程无法覆盖的风险。",
       "required_assets": [
         "xuran",
         "cockpit"
@@ -154,8 +154,8 @@
     {
       "id": "KF11",
       "shot": "EP01_KF11",
-      "title": "White Tide Hits Defense Line",
-      "purpose": "The city defense is stressed by behavior it misreads as attack.",
+      "title": "白潮逼近海防线",
+      "purpose": "防线承受巨大压力，人类把无法理解的靠近误判为攻击。",
       "required_assets": [
         "white_tide",
         "hangzhou_bay"
@@ -169,8 +169,8 @@
     {
       "id": "KF12",
       "shot": "EP01_KF12",
-      "title": "Chiting-01 Starts",
-      "purpose": "The machine wakes as a dangerous decision.",
+      "title": "赤霆01启动",
+      "purpose": "赤霆苏醒不是胜利时刻，而是一次代价未知的危险决定。",
       "required_assets": [
         "chiting01"
       ],
@@ -183,8 +183,8 @@
     {
       "id": "KF13",
       "shot": "EP01_KF13",
-      "title": "Chiting-01 Moves Toward Sea",
-      "purpose": "Human engineering moves into a scale it cannot own.",
+      "title": "赤霆01走向海面",
+      "purpose": "人类工程造物进入远大于自身的海洋尺度。",
       "required_assets": [
         "chiting01",
         "hangzhou_bay"
@@ -198,8 +198,8 @@
     {
       "id": "KF14",
       "shot": "EP01_KF14",
-      "title": "Chiting-01 First Combat",
-      "purpose": "The first fight proves force is not understanding.",
+      "title": "赤霆01首次交锋",
+      "purpose": "第一次接触证明力量可以造成后果，却不能带来理解。",
       "required_assets": [
         "chiting01",
         "white_tide"
@@ -213,8 +213,8 @@
     {
       "id": "KF15",
       "shot": "EP01_KF15",
-      "title": "White Tide and Chiting Face Each Other",
-      "purpose": "The confrontation begins to resemble recognition.",
+      "title": "白潮与赤霆对峙",
+      "purpose": "敌我对峙开始出现无法用攻击解释的停顿。",
       "required_assets": [
         "chiting01",
         "white_tide"
@@ -228,8 +228,8 @@
     {
       "id": "KF16",
       "shot": "EP01_KF16",
-      "title": "White Tide Releases Unknown Signal",
-      "purpose": "The creature communicates in a form humans cannot classify.",
+      "title": "白潮释放未知低频",
+      "purpose": "白潮用人类无法分类的方式发出信号。",
       "required_assets": [
         "white_tide"
       ],
@@ -242,8 +242,8 @@
     {
       "id": "KF17",
       "shot": "EP01_KF17",
-      "title": "Tide Gate Rift Appears",
-      "purpose": "The real unknown enters the frame as ecology, not portal effect.",
+      "title": "潮门生态边界显现",
+      "purpose": "真正的未知以深海生态边界进入画面，而不是传送门特效。",
       "required_assets": [
         "tide_gate",
         "hangzhou_bay"
@@ -257,8 +257,8 @@
     {
       "id": "KF18",
       "shot": "EP01_KF18",
-      "title": "Black Tide Mother Opens Eye",
-      "purpose": "End on a living system watching back.",
+      "title": "黑潮母体首次回应",
+      "purpose": "以一个正在反向观察人类的活体系统结束本集。",
       "required_assets": [
         "black_tide_mother",
         "tide_gate"
