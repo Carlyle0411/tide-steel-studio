@@ -49,14 +49,23 @@ export function resetAssetContentOverride(assetId: string) {
 
 export function applyAssetContentOverride(asset: MasterAsset): MasterAsset {
   const override = getAssetContentOverride(asset.id);
-  const variant = override.variant?.trim() || asset.variant;
   const baseName = asset.baseName;
+  const titleVariant = override.name ? parseVariant(override.name, baseName) : "";
+  const variant = titleVariant || override.variant?.trim() || asset.variant;
   return {
     ...asset,
-    name: override.name?.trim() || `${baseName} / ${variant}`,
+    name: `${baseName} / ${variant}`,
     variant,
     description: override.description?.trim() || asset.description
   } as MasterAsset;
+}
+
+function parseVariant(title: string, baseName: string) {
+  const trimmed = title.trim();
+  const slashIndex = Math.max(trimmed.lastIndexOf("/"), trimmed.lastIndexOf("／"));
+  if (slashIndex >= 0) return trimmed.slice(slashIndex + 1).trim();
+  if (trimmed.startsWith(baseName)) return trimmed.slice(baseName.length).replace(/^\s*[-—:：]\s*/, "").trim();
+  return trimmed;
 }
 
 export function subscribeAssetContentOverrides(callback: () => void) {

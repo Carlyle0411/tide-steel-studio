@@ -380,8 +380,28 @@ function MasterAssetDetail({ asset, versions }: { asset: MasterAsset | null; ver
     setDraft((current) => ({ ...current, [key]: value }));
   }
 
+  function updateTitle(value: string) {
+    const variant = variantFromTitle(value, asset.baseName);
+    setDraft((current) => ({ ...current, name: value, ...(variant ? { variant } : {}) }));
+  }
+
+  function updateVariant(value: string) {
+    setDraft((current) => ({
+      ...current,
+      variant: value,
+      name: `${asset.baseName} / ${value.trim() || asset.variant}`
+    }));
+  }
+
   function saveContent() {
-    saveAssetContentOverride(asset.id, draft);
+    const normalizedVariant = variantFromTitle(draft.name ?? "", asset.baseName) || draft.variant?.trim() || asset.variant;
+    const normalized = {
+      ...draft,
+      variant: normalizedVariant,
+      name: `${asset.baseName} / ${normalizedVariant}`
+    };
+    setDraft(normalized);
+    saveAssetContentOverride(asset.id, normalized);
     setEditing(false);
     setMessage("资产名称、说明和Prompt字段已保存，卡片、搜索、完整Prompt与复制内容已同步更新。");
   }
@@ -427,7 +447,7 @@ function MasterAssetDetail({ asset, versions }: { asset: MasterAsset | null; ver
           <div>
             <div className="text-xs uppercase tracking-[0.22em] text-slate-500">Asset Workbench</div>
             {editing ? (
-              <input className="mt-2 h-10 w-full rounded border border-jade/40 bg-black/30 px-3 text-base font-semibold text-white outline-none" value={draft.name ?? ""} onChange={(event) => updateDraft("name", event.target.value)} />
+              <input className="mt-2 h-10 w-full rounded border border-jade/40 bg-black/30 px-3 text-base font-semibold text-white outline-none" value={draft.name ?? ""} onChange={(event) => updateTitle(event.target.value)} />
             ) : <h3 className="mt-2 text-lg font-semibold text-white">{asset.name}</h3>}
             <p className="mt-1 text-xs text-slate-500">{asset.id} / {asset.category} / {asset.variant}</p>
           </div>
@@ -505,7 +525,7 @@ function MasterAssetDetail({ asset, versions }: { asset: MasterAsset | null; ver
           </div>
           {editing && (
             <div className="mb-3 grid gap-3 rounded border border-jade/25 bg-jade/[0.04] p-3 md:grid-cols-2">
-              <EditablePromptField label="资产变体" value={draft.variant ?? ""} onChange={(value) => updateDraft("variant", value)} />
+              <EditablePromptField label="资产变体" value={draft.variant ?? ""} onChange={updateVariant} />
               <EditablePromptField label="资产说明" value={draft.description ?? ""} onChange={(value) => updateDraft("description", value)} />
             </div>
           )}
@@ -802,4 +822,13 @@ function hasApprovedVersion(versions: ManualAssetVersion[]) {
 
 function confirmApprovedDelete(message: string) {
   return window.confirm(`${message}\n\n这个操作只会删除网页本地资产库中的上传版本，不会删除你电脑里的原始图片文件。`);
+}
+
+function variantFromTitle(title: string, baseName: string) {
+  const trimmed = title.trim();
+  if (!trimmed) return "";
+  const slashIndex = Math.max(trimmed.lastIndexOf("/"), trimmed.lastIndexOf("／"));
+  if (slashIndex >= 0) return trimmed.slice(slashIndex + 1).trim();
+  if (trimmed.startsWith(baseName)) return trimmed.slice(baseName.length).replace(/^\s*[-—:：]\s*/, "").trim();
+  return trimmed;
 }
