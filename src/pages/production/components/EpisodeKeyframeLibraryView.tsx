@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { CheckCircle2, Copy, Image, Trash2, Upload } from "lucide-react";
-import { getEP01Keyframes, type EP01Keyframe } from "../../../mcp/tideSteelStudio/EP01StudioData";
+import { getEP01Keyframes } from "../../../mcp/tideSteelStudio/EP01StudioData";
+import { getVideoProjects, type VideoProjectId } from "../../../mcp/videoWorkspace/VideoProjectData";
 import {
   approveKeyframeVersion,
   deleteAllKeyframeVersions,
@@ -16,13 +17,26 @@ import {
 } from "../../../mcp/keyframeLibrary/KeyframeAssetStore";
 import { ProductionCard } from "./ProductionShell";
 
-type EpisodeId = "EP01";
+type KeyframeItem = {
+  id: string;
+  storageId: string;
+  shot: string;
+  title: string;
+  purpose: string;
+  required_assets: string[];
+  status: string;
+  visual: string;
+};
+
+type KeyframeProject = { id: VideoProjectId; label: string; helper: string; keyframes: KeyframeItem[] };
 
 export function EpisodeKeyframeLibraryView() {
-  const [episode] = useState<EpisodeId>("EP01");
-  const keyframes = useMemo(() => getEP01Keyframes(), []);
+  const projects = useMemo(getKeyframeProjects, []);
+  const [episode, setEpisode] = useState<VideoProjectId>("TRAILER90");
+  const project = projects.find((item) => item.id === episode) ?? projects[0];
+  const keyframes = project.keyframes;
   const [store, setStore] = useState<KeyframeAssetStore>({});
-  const [selectedId, setSelectedId] = useState(keyframes[0]?.id ?? "");
+  const [selectedId, setSelectedId] = useState(keyframes[0]?.storageId ?? "");
   const [message, setMessage] = useState("");
 
   useEffect(() => {
@@ -39,12 +53,14 @@ export function EpisodeKeyframeLibraryView() {
     };
   }, []);
 
-  const selected = keyframes.find((item) => item.id === selectedId) ?? keyframes[0];
-  const uploaded = keyframes.filter((item) => (store[item.id] ?? []).length > 0).length;
-  const approved = keyframes.filter((item) => (store[item.id] ?? []).some((version) => version.status === "MASTER_REFERENCE" || version.status === "APPROVED")).length;
-  const review = Object.values(store).flat().filter((version) => version.status === "REVIEW").length;
+  useEffect(() => { setSelectedId(keyframes[0]?.storageId ?? ""); }, [episode]);
 
-  async function copyPrompt(keyframe: EP01Keyframe) {
+  const selected = keyframes.find((item) => item.storageId === selectedId) ?? keyframes[0];
+  const uploaded = keyframes.filter((item) => (store[item.storageId] ?? []).length > 0).length;
+  const approved = keyframes.filter((item) => (store[item.storageId] ?? []).some((version) => version.status === "MASTER_REFERENCE" || version.status === "APPROVED")).length;
+  const review = keyframes.flatMap((item) => store[item.storageId] ?? []).filter((version) => version.status === "REVIEW").length;
+
+  async function copyPrompt(keyframe: KeyframeItem) {
     const prompt = buildKeyframeImagePrompt(keyframe);
     await copyText(prompt);
     setMessage(`${keyframe.id} 中文关键帧 Prompt 已复制。`);
@@ -56,12 +72,20 @@ export function EpisodeKeyframeLibraryView() {
         <div className="text-xs uppercase tracking-[0.24em] text-jade/70">Keyframe / GPT Image</div>
         <h2 className="mt-2 text-2xl font-semibold text-white">关键帧制作</h2>
         <p className="mt-2 max-w-4xl text-sm leading-6 text-slate-400">
-          这里管理每一集用于可灵制作的关键帧图片。当前开放 EP01《海面低频》18 张关键帧：复制中文关键帧 Prompt 到 ChatGPT 出图，审核后把 PNG / JPG / WEBP 拖回对应镜头。
+          这里管理预告片与每一集用于可灵制作的关键帧图片。每个 Prompt 会明确列出生成前必须上传参考的母资产图片；审核后把 PNG / JPG / WEBP 拖回对应镜头。
         </p>
       </header>
 
+      <div className="flex flex-wrap items-center gap-3 rounded-md border border-white/10 bg-white/[0.02] p-3">
+        <span className="text-xs uppercase tracking-[0.18em] text-slate-500">作品分区</span>
+        <select className="min-w-[240px] rounded border border-jade/30 bg-[#0b1017] px-3 py-2 text-sm text-white outline-none" value={episode} onChange={(event) => setEpisode(event.target.value as VideoProjectId)}>
+          {projects.map((item) => <option key={item.id} value={item.id}>{item.label} · {item.id}</option>)}
+        </select>
+        <span className="text-xs text-slate-500">{project.helper}</span>
+      </div>
+
       <div className="grid gap-4 md:grid-cols-4">
-        <Metric label="当前剧集" value={episode} />
+        <Metric label="当前分区" value={project.label} />
         <Metric label="关键帧总数" value={`${keyframes.length} 张`} />
         <Metric label="已上传" value={`${uploaded}/${keyframes.length}`} />
         <Metric label="待审核" value={review} />
@@ -71,11 +95,11 @@ export function EpisodeKeyframeLibraryView() {
         <div className="rounded-md border border-jade/25 bg-jade/10 px-3 py-2 text-sm text-jade">{message}</div>
       )}
 
-      <div className="grid gap-5 2xl:grid-cols-[minmax(0,1fr)_420px]">
+      {!keyframes.length ? <div className="rounded-md border border-white/10 bg-white/[0.02] p-16 text-center"><div className="text-lg font-semibold text-white">{project.label}尚未建立正式关键帧</div><p className="mt-2 text-sm text-slate-500">这里不生成占位关键帧。请先完成该集的剧本与 Storyboard，关键帧会自动进入此分区。</p></div> : <div className="grid gap-5 2xl:grid-cols-[minmax(0,1fr)_420px]">
         <ProductionCard className="order-2 p-4 2xl:order-1">
           <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
             <div>
-              <h3 className="text-lg font-semibold text-white">EP01 关键帧清单</h3>
+              <h3 className="text-lg font-semibold text-white">{project.label}关键帧清单</h3>
               <p className="mt-1 text-xs text-slate-500">每张图都是一个可灵视频镜头的首帧或完整画面参考。</p>
             </div>
             <div className="rounded-full border border-jade/30 bg-jade/10 px-3 py-1 text-xs text-jade">已通过 {approved}/{keyframes.length}</div>
@@ -85,9 +109,9 @@ export function EpisodeKeyframeLibraryView() {
               <KeyframeCard
                 key={keyframe.id}
                 keyframe={keyframe}
-                versions={store[keyframe.id] ?? []}
-                selected={selected?.id === keyframe.id}
-                onSelect={() => setSelectedId(keyframe.id)}
+                versions={store[keyframe.storageId] ?? []}
+                selected={selected?.storageId === keyframe.storageId}
+                onSelect={() => setSelectedId(keyframe.storageId)}
                 onCopy={() => void copyPrompt(keyframe)}
               />
             ))}
@@ -98,18 +122,18 @@ export function EpisodeKeyframeLibraryView() {
           <div className="order-1 2xl:order-2">
             <KeyframeInspector
               keyframe={selected}
-              versions={store[selected.id] ?? []}
+              versions={store[selected.storageId] ?? []}
               onCopied={() => void copyPrompt(selected)}
               onMessage={setMessage}
             />
           </div>
         )}
-      </div>
+      </div>}
     </div>
   );
 }
 
-function KeyframeCard({ keyframe, versions, selected, onSelect, onCopy }: { keyframe: EP01Keyframe; versions: KeyframeAssetVersion[]; selected: boolean; onSelect: () => void; onCopy: () => void }) {
+function KeyframeCard({ keyframe, versions, selected, onSelect, onCopy }: { keyframe: KeyframeItem; versions: KeyframeAssetVersion[]; selected: boolean; onSelect: () => void; onCopy: () => void }) {
   const best = getBestKeyframeVersion(versions);
   const status = best?.status ?? "EMPTY";
   return (
@@ -145,20 +169,20 @@ function KeyframeCard({ keyframe, versions, selected, onSelect, onCopy }: { keyf
   );
 }
 
-function KeyframeInspector({ keyframe, versions, onCopied, onMessage }: { keyframe: EP01Keyframe; versions: KeyframeAssetVersion[]; onCopied: () => void; onMessage: (message: string) => void }) {
+function KeyframeInspector({ keyframe, versions, onCopied, onMessage }: { keyframe: KeyframeItem; versions: KeyframeAssetVersion[]; onCopied: () => void; onMessage: (message: string) => void }) {
   const inputRef = useRef<HTMLInputElement | null>(null);
   const best = getBestKeyframeVersion(versions);
   const prompt = buildKeyframeImagePrompt(keyframe);
 
   async function upload(files: FileList | File[] | null) {
     if (!files?.length) return;
-    const imported = await importKeyframeFiles(keyframe, files, prompt);
+    const imported = await importKeyframeFiles({ id: keyframe.storageId, shot: keyframe.shot, title: keyframe.title }, files, prompt, keyframe.storageId.startsWith("TRAILER_") ? "TRAILER90" : "EP01");
     onMessage(imported.length ? `${keyframe.id} 已导入 ${imported.length} 个版本，状态为 Review。` : "没有可导入的图片，请使用 PNG / JPG / WEBP。");
   }
 
   async function deleteAll() {
     if (versions.some(isLockedKeyframeVersion) && !confirmLockedKeyframeDelete("本镜头包含已通过或 Master 关键帧，确定删除本镜头全部本地图片吗？")) return;
-    await deleteAllKeyframeVersions(keyframe.id);
+    await deleteAllKeyframeVersions(keyframe.storageId);
     onMessage(`${keyframe.id} 的本地上传图片已删除。`);
   }
 
@@ -203,6 +227,14 @@ function KeyframeInspector({ keyframe, versions, onCopied, onMessage }: { keyfra
         <Info label="当前版本" value={best?.versionId ?? "EMPTY"} />
       </div>
 
+      <div className="mx-4 mb-4 rounded border border-jade/25 bg-jade/[0.04] p-3">
+        <div className="text-xs font-semibold tracking-wide text-jade">生成前必须参考的母资产图片</div>
+        <ol className="mt-2 list-decimal space-y-1 pl-5 text-sm leading-6 text-slate-300">
+          {keyframe.required_assets.flatMap((asset) => assetReferenceDetails[asset] ?? [asset]).map((asset) => <li key={asset}>{asset}</li>)}
+        </ol>
+        <p className="mt-2 text-xs text-slate-500">先从资产库选择并上传这些参考图，再复制下方关键帧 Prompt 出图。</p>
+      </div>
+
       <div className="px-4 pb-4">
         <div className="mb-2 text-xs uppercase tracking-[0.22em] text-slate-500">GPT Image 关键帧 Prompt</div>
         <textarea className="min-h-44 w-full resize-y rounded-md border border-white/10 bg-black/25 p-3 text-xs leading-5 text-slate-300 outline-none" value={prompt} readOnly />
@@ -222,14 +254,14 @@ function KeyframeInspector({ keyframe, versions, onCopied, onMessage }: { keyfra
                 </div>
                 <div className="mt-1 truncate text-xs text-slate-400">{version.fileName}</div>
                 <div className="mt-2 flex flex-wrap gap-2">
-                  <button className="btn h-7 px-2 text-[11px]" onClick={() => void approveKeyframeVersion(keyframe.id, version.versionId)}>通过</button>
-                  <button className="btn h-7 px-2 text-[11px]" onClick={() => void setMasterKeyframeVersion(keyframe.id, version.versionId)}><CheckCircle2 size={13} /> Master</button>
-                  <button className="btn h-7 px-2 text-[11px]" onClick={() => void rejectKeyframeVersion(keyframe.id, version.versionId)}>退回</button>
+                  <button className="btn h-7 px-2 text-[11px]" onClick={() => void approveKeyframeVersion(keyframe.storageId, version.versionId)}>通过</button>
+                  <button className="btn h-7 px-2 text-[11px]" onClick={() => void setMasterKeyframeVersion(keyframe.storageId, version.versionId)}><CheckCircle2 size={13} /> Master</button>
+                  <button className="btn h-7 px-2 text-[11px]" onClick={() => void rejectKeyframeVersion(keyframe.storageId, version.versionId)}>退回</button>
                   <button
                     className="btn h-7 px-2 text-[11px]"
                     onClick={() => {
                       if (isLockedKeyframeVersion(version) && !confirmLockedKeyframeDelete(`${version.versionId} 是已通过或 Master 关键帧，确定删除吗？`)) return;
-                      void deleteKeyframeVersion(keyframe.id, version.versionId);
+                      void deleteKeyframeVersion(keyframe.storageId, version.versionId);
                     }}
                   >
                     <Trash2 size={13} /> 删除
@@ -265,29 +297,64 @@ const visualDescriptions: Record<string, string> = {
   KF18: "黑潮母体隐藏在潮门后的深海黑暗中，只显露巨大矿化甲壳、环状压力腔和一处暗红感知结构，像整个活体系统开始反向观察人类。"
 };
 
-const assetLabels: Record<string, string> = {
-  hangzhou_bay: "杭州湾海防线",
-  white_tide: "白潮",
-  deep_blue_base: "深蓝基地",
-  chenmu: "陈牧",
-  linzhou: "林舟",
-  chiting01: "赤霆01",
-  cockpit: "赤霆驾驶舱",
-  xuran: "许燃",
-  tide_gate: "潮门",
-  black_tide_mother: "黑潮母体"
+const assetReferenceDetails: Record<string, string[]> = {
+  hangzhou_bay: ["场景资产库：杭州湾海防线 / 阴天正常世界", "场景资产库：杭州湾海防线 / 暴雨警戒"],
+  white_tide: ["怪兽资产库：白潮 / 核心三视图", "怪兽资产库：白潮 / 甲壳细节或海雾局部显现"],
+  deep_blue_base: ["场景资产库：深蓝基地 / 指挥中心", "场景资产库：深蓝基地 / 赤霆机库"],
+  chenmu: ["角色资产库：陈牧 / 标准头像", "角色资产库：陈牧 / 指挥制服半身"],
+  linzhou: ["角色资产库：林舟 / 标准头像", "角色资产库：林舟 / 驾驶服全身或驾驶舱坐姿"],
+  chiting01: ["机甲资产库：赤霆01 / 核心三视图", "机甲资产库：赤霆01 / 对应局部结构参考"],
+  cockpit: ["机甲资产库：赤霆01 / 驾驶舱内部", "角色资产库：林舟或许燃 / 驾驶姿态"],
+  xuran: ["角色资产库：许燃 / 标准头像", "角色资产库：许燃 / 副同步位工作姿态"],
+  tide_gate: ["场景资产库：潮门 / 海底压力边界远景", "场景资产库：潮门 / 边界逆流近景"],
+  black_tide_mother: ["怪兽资产库：黑潮母体 / 核心结构参考", "场景资产库：潮门 / 深海压力边界"],
+  "杭州湾海防线/阴天正常世界": ["场景资产库：杭州湾海防线 / 阴天正常世界"],
+  "深蓝基地/观测站": ["场景资产库：深蓝基地 / 指挥中心", "道具资产库：旧金属杯"],
+  "深蓝基地/指挥中心": ["场景资产库：深蓝基地 / 指挥中心", "道具资产库：AI澜 / 冷蓝标准界面"],
+  "林舟/标准头像": ["角色资产库：林舟 / 标准头像", "角色资产库：林舟 / 核心三视图"],
+  "林舟/工业通道奔跑": ["角色资产库：林舟 / 工业通道奔跑", "场景资产库：深蓝基地 / 驾驶员工业通道"],
+  "赤霆01/完整背面": ["机甲资产库：赤霆01 / 完整背面", "机甲资产库：赤霆01 / 驾驶舱开启"],
+  "赤霆01/腿部结构": ["机甲资产库：赤霆01 / 核心三视图", "机甲资产库：赤霆01 / 腿部结构"],
+  "白潮/甲壳细节": ["怪兽资产库：白潮 / 核心三视图", "怪兽资产库：白潮 / 甲壳细节"],
+  "杭州湾海防线/暴雨警戒": ["场景资产库：杭州湾海防线 / 暴雨警戒", "天气资产库：暴雨海雾"],
+  "海防墙内侧道路": ["场景资产库：海防撤离通道 / 墙内道路", "场景资产库：杭州湾海防线 / 暴雨警戒"],
+  "赤霆01/左臂战损": ["机甲资产库：赤霆01 / 左臂战损", "机甲资产库：赤霆01 / 核心三视图"],
+  "赤霆01/右臂链刃细节": ["机甲资产库：赤霆01 / 右臂链刃细节", "机甲资产库：赤霆01 / 核心三视图"],
+  "白潮/暴雨完整尺度": ["怪兽资产库：白潮 / 完整身体", "怪兽资产库：白潮 / 暴雨完整尺度", "机甲资产库：赤霆01 / 首次站立"],
+  "AI澜/冷蓝标准界面": ["道具资产库：AI澜系统 / 冷蓝标准界面", "道具资产库：AI澜系统 / 0.7秒排序异常"],
+  "潮门/海底压力边界远景": ["场景资产库：潮门 / 海底压力边界远景", "场景资产库：潮门 / 旧文明几何浮现"]
 };
 
-function buildKeyframeImagePrompt(keyframe: EP01Keyframe) {
+function buildKeyframeImagePrompt(keyframe: KeyframeItem) {
+  const references = keyframe.required_assets.flatMap((asset) => assetReferenceDetails[asset] ?? [asset]);
   return [
     `关键帧：${keyframe.id}《${keyframe.title}》`,
     `剧情作用：${keyframe.purpose}`,
-    `画面内容：${visualDescriptions[keyframe.id]}`,
-    `必须参考的母资产：${keyframe.required_assets.map((asset) => assetLabels[asset] ?? asset).join("、")}；人物脸型、服装，机甲装甲结构，怪兽身体结构和场景建筑必须与上传参考图一致。`,
+    "生成前必须上传并参考以下母资产库图片：",
+    ...references.map((asset, index) => `${index + 1}. ${asset}`),
+    `画面内容：${keyframe.visual || visualDescriptions[keyframe.id] || keyframe.purpose}`,
+    "一致性锁定：人物脸型、服装，机甲装甲结构，怪兽身体结构和场景建筑必须与上传参考图一致，不得重新设计主体。",
     "构图与摄影：16:9，电影级真实科幻摄影，主体关系清楚，低饱和，镜头克制，海洋尺度始终大于人造设施。",
     "光线与材质：冷蓝工业实景光，湿金属、海盐腐蚀、玻璃反射、水汽和雨痕真实；人物皮肤和织物自然。",
     "禁止：动漫、二次元、游戏CG、塑料质感、霓虹赛博朋克、英雄摆拍、人物换脸、机甲结构改变、怪兽结构漂移、紫色传送门、文字、字幕、logo、水印。"
   ].join("\n");
+}
+
+function getKeyframeProjects(): KeyframeProject[] {
+  const ep01 = getEP01Keyframes().map((keyframe) => ({
+    id: keyframe.id,
+    storageId: keyframe.id,
+    shot: keyframe.shot,
+    title: keyframe.title,
+    purpose: keyframe.purpose,
+    required_assets: keyframe.required_assets,
+    status: keyframe.status,
+    visual: visualDescriptions[keyframe.id] ?? keyframe.purpose
+  }));
+  return getVideoProjects().map((project) => project.id === "EP01"
+    ? { id: project.id, label: project.label, helper: project.helper, keyframes: ep01 }
+    : { id: project.id, label: project.label, helper: project.helper, keyframes: project.shots.map((shot) => ({ id: shot.keyframeId, storageId: project.id === "TRAILER90" ? `TRAILER_${shot.keyframeId}` : `${project.id}_${shot.keyframeId}`, shot: shot.id, title: shot.title, purpose: shot.description, required_assets: project.requiredAssets[shot.id] ?? [], status: shot.status, visual: shot.notes || shot.description })) }
+  );
 }
 
 async function copyText(text: string) {
