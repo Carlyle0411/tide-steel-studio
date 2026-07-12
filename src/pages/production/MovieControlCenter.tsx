@@ -52,6 +52,8 @@ import { Phase21CWorldAssetLibraryView } from "./components/Phase21CWorldAssetLi
 import { Phase21DKlingVideoTemplateView } from "./components/Phase21DKlingVideoTemplateView";
 import { WorldBibleEnhancedView } from "./components/WorldBibleEnhancedView";
 import { ScriptWorkspaceView } from "./components/ScriptWorkspaceView";
+import { StoryboardWorkspaceView } from "./components/StoryboardWorkspaceView";
+import { CameraDesignWorkspaceView } from "./components/CameraDesignWorkspaceView";
 import {
   Phase19AssetReference,
   Phase19DirectorDashboard,
@@ -93,7 +95,7 @@ function renderSection(active: ProductionSection, navigate: (section: Production
     case "reuseCenter":
       return <Phase19AssetReference />;
     case "shotLibrary":
-      return <Phase19ShotLibrary />;
+      return <CameraDesignWorkspaceView />;
     case "gptPromptLibrary":
       return <Phase19PromptCenter />;
     case "klingPromptLibrary":
@@ -133,7 +135,7 @@ function renderSection(active: ProductionSection, navigate: (section: Production
     case "props":
       return <Phase20MasterAssetLibraryView initialCategory="道具" />;
     case "storyboard":
-      return <Phase19Storyboard />;
+      return <StoryboardWorkspaceView />;
     case "timeline":
       return <Phase19Timeline />;
     case "prompt":
