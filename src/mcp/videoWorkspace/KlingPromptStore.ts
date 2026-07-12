@@ -27,7 +27,7 @@ const performanceDirections: Record<string, { expression: string; action: string
 };
 
 export function buildChineseKlingPrompt(shot: StoryboardShot) {
-  const direction = performanceDirections[shot.keyframeId] ?? { expression: "人物表情保持克制并符合当前动作。", action: shot.description, voice: shot.dialogue === "无" ? "不开口。" : `对白语气自然克制：${shot.dialogue}` };
+  const direction = performanceDirections[shot.keyframeId] ?? { expression: shot.character === "无" ? "画面无人。" : "人物不做概念化表情；只通过视线停顿、呼吸、肩颈受力和手部动作呈现反应。", action: shot.notes || shot.description, voice: shot.dialogue === "无" ? "不开口，嘴部保持自然闭合。" : `按文本说出：${shot.dialogue}。语速稳定，不喊口号，不做夸张口型。` };
   return [
     `镜头：${shot.id}《${shot.title}》`,
     `时长：${shot.duration}秒`,

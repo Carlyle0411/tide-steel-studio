@@ -4,17 +4,27 @@ import { loadStoryboardWorkspace, subscribeStoryboardWorkspace, type StoryboardS
 import { getKlingPrompt, resetKlingPrompt, saveKlingPrompt, subscribeKlingPrompts } from "../../../mcp/videoWorkspace/KlingPromptStore";
 import { bestVideoVersion, deleteVideoVersion, importVideoClips, loadVideoClipStore, subscribeVideoClips, updateVideoVersion, type VideoClipStore, type VideoClipVersion, type VideoVersionStatus } from "../../../mcp/videoWorkspace/VideoClipStore";
 import { getBestKeyframeVersion, loadKeyframeStore, subscribeKeyframeStore, type KeyframeAssetStore } from "../../../mcp/keyframeLibrary/KeyframeAssetStore";
+import { getVideoProjects, type VideoProjectId } from "../../../mcp/videoWorkspace/VideoProjectData";
+import { loadShotImageLinks, saveShotImageLink, subscribeShotImageLinks } from "../../../mcp/videoWorkspace/ShotImageLinkStore";
+import { loadAssetStore, subscribeAssetStore } from "../../../mcp/cloudAssetSync/AssetStoreGateway";
+import { getMasterAssets } from "../../../mcp/masterAssetLibrary/MasterAssetLibraryData";
+import type { ManualAssetStore, ManualAssetVersion } from "../../../mcp/manualAssetImport/ManualAssetImport";
 
 const statusText: Record<VideoVersionStatus, string> = { REVIEW: "待审核", APPROVED: "已通过", MASTER: "Master 版本", REJECTED: "已退回" };
 
 export function KlingPromptWorkspaceView() {
-  const [shots, setShots] = useState(() => loadStoryboardWorkspace());
+  const [episodeShots, setEpisodeShots] = useState(() => loadStoryboardWorkspace());
+  const [projectId, setProjectId] = useState<VideoProjectId>("TRAILER90");
+  const projects = useMemo(() => getVideoProjects().map((project) => project.id === "EP01" ? { ...project, shots: episodeShots } : project), [episodeShots]);
+  const project = projects.find((item) => item.id === projectId) ?? projects[0];
+  const shots = project.shots;
   const [selectedId, setSelectedId] = useState(shots[0]?.id ?? "");
   const selected = shots.find((shot) => shot.id === selectedId) ?? shots[0];
   const [prompt, setPrompt] = useState(selected ? getKlingPrompt(selected) : "");
   const [saved, setSaved] = useState(true);
 
-  useEffect(() => subscribeStoryboardWorkspace(() => setShots(loadStoryboardWorkspace())), []);
+  useEffect(() => subscribeStoryboardWorkspace(() => setEpisodeShots(loadStoryboardWorkspace())), []);
+  useEffect(() => { setSelectedId(shots[0]?.id ?? ""); }, [projectId]);
   useEffect(() => subscribeKlingPrompts(() => selected && setPrompt(getKlingPrompt(selected))), [selected?.id]);
   useEffect(() => { if (selected) { setPrompt(getKlingPrompt(selected)); setSaved(true); } }, [selected?.id]);
 
@@ -22,12 +32,14 @@ export function KlingPromptWorkspaceView() {
   function save() { if (!selected) return; saveKlingPrompt(selected.id, prompt.trim()); setSaved(true); }
   function restore() { if (!selected || !confirm("恢复这个 Shot 的默认中文 Prompt？")) return; resetKlingPrompt(selected.id); setPrompt(getKlingPrompt(selected)); setSaved(true); }
   function exportAll() {
-    downloadText("EP01_可灵提示词.json", JSON.stringify(shots.map((shot) => ({ shotId: shot.id, keyframeId: shot.keyframeId, title: shot.title, prompt: getKlingPrompt(shot) })), null, 2), "application/json");
+    downloadText(`${project.id}_可灵提示词.json`, JSON.stringify(shots.map((shot) => ({ shotId: shot.id, keyframeId: shot.keyframeId, title: shot.title, requiredAssets: project.requiredAssets[shot.id] ?? [], prompt: getKlingPrompt(shot) })), null, 2), "application/json");
   }
 
-  return <Page title="可灵提示词" subtitle="EP01 的逐镜头中文视频 Prompt。人物表演拆分为表情、动作与说话语气，修改后保存在本机工作台。">
+  return <Page title="可灵提示词" subtitle="预告片与各集共用的逐镜头中文视频 Prompt。选择作品分区后，只显示对应 Shot、图片关联和视频指令。">
+    <ProjectSelector projects={projects} value={projectId} onChange={setProjectId}/>
+    {!shots.length ? <ProjectEmpty project={project.label}/> :
     <div className="grid gap-4 xl:grid-cols-[420px_minmax(0,1fr)]">
-      <Panel title={`EP01 Shot · ${shots.length}`}>
+      <Panel title={`${project.label} Shot · ${shots.length}`}>
         <div className="max-h-[720px] space-y-2 overflow-y-auto pr-1">{shots.map((shot) => <button key={shot.id} onClick={() => setSelectedId(shot.id)} className={`w-full rounded border p-3 text-left ${shot.id === selected?.id ? "border-jade/60 bg-jade/10" : "border-white/10 bg-black/20 hover:border-white/25"}`}>
           <div className="flex justify-between text-xs"><span className="text-jade">{shot.id}</span><span className="text-slate-500">{shot.duration} 秒</span></div>
           <div className="mt-1 font-semibold text-white">{shot.title}</div><div className="mt-1 line-clamp-2 text-xs leading-5 text-slate-400">{shot.description}</div>
@@ -35,41 +47,56 @@ export function KlingPromptWorkspaceView() {
       </Panel>
       {selected && <Panel title={`${selected.keyframeId} / ${selected.title}`} actions={<><button className="btn" onClick={copy}><Clipboard size={15}/>复制 Prompt</button><button className="btn" onClick={exportAll}><Download size={15}/>导出全部</button></>}>
         <div className="grid gap-3 sm:grid-cols-4"><Info label="角色" value={selected.character}/><Info label="场景" value={selected.environment}/><Info label="摄影" value={`${selected.shotSize} · ${selected.lens}`}/><Info label="运镜" value={selected.movement}/></div>
+        {!!project.requiredAssets[selected.id]?.length && <div className="mt-3 rounded border border-white/10 bg-black/20 p-3 text-sm"><span className="text-slate-500">所需母资产：</span>{project.requiredAssets[selected.id].join(" · ")}</div>}
+        <ShotImageBinder shotId={selected.id}/>
         <textarea className="mt-4 min-h-[520px] w-full resize-y rounded border border-white/10 bg-black/30 p-4 text-sm leading-7 text-slate-200 outline-none focus:border-jade/50" value={prompt} onChange={(event) => { setPrompt(event.target.value); setSaved(false); }} />
         <div className="mt-3 flex items-center justify-between"><span className={saved ? "text-xs text-jade" : "text-xs text-amber-300"}>{saved ? "当前修改已保存" : "存在未保存修改"}</span><div className="flex gap-2"><button className="btn" onClick={restore}><RotateCcw size={15}/>恢复默认</button><button className="btn border-jade/40 text-jade" onClick={save}><Save size={15}/>保存 Prompt</button></div></div>
       </Panel>}
-    </div>
+    </div>}
   </Page>;
 }
 
 export function VideoClipWorkspaceView() {
-  const shots = useMemo(() => loadStoryboardWorkspace(), []);
+  const [projectId, setProjectId] = useState<VideoProjectId>("TRAILER90");
+  const projects = useMemo(() => getVideoProjects(), []);
+  const project = projects.find((item) => item.id === projectId) ?? projects[0];
+  const shots = project.shots;
   const [selectedId, setSelectedId] = useState(shots[0]?.id ?? "");
   const [store, setStore] = useState<VideoClipStore>({});
   const [keyframes, setKeyframes] = useState<KeyframeAssetStore>({});
+  const [assetStore, setAssetStore] = useState<ManualAssetStore>({});
+  const [imageLinks, setImageLinks] = useState(loadShotImageLinks);
   const fileRef = useRef<HTMLInputElement>(null);
   const selected = shots.find((shot) => shot.id === selectedId) ?? shots[0];
   const versions = store[selectedId] ?? [];
   const current = bestVideoVersion(versions);
-  const firstFrame = selected ? getBestKeyframeVersion(keyframes[selected.keyframeId]) : null;
+  const linkedAsset = selected ? resolveLinkedAsset(selected.id, imageLinks, assetStore) : null;
+  const firstFrame = linkedAsset ?? (selected ? getBestKeyframeVersion(keyframes[selected.keyframeId]) : null);
   const refresh = () => loadVideoClipStore().then(setStore);
-  useEffect(() => { refresh(); loadKeyframeStore().then(setKeyframes); return subscribeVideoClips(refresh); }, []);
+  useEffect(() => { refresh(); loadKeyframeStore().then(setKeyframes); loadAssetStore().then(setAssetStore); return subscribeVideoClips(refresh); }, []);
   useEffect(() => subscribeKeyframeStore(() => loadKeyframeStore().then(setKeyframes)), []);
+  useEffect(() => subscribeAssetStore(() => loadAssetStore().then(setAssetStore)), []);
+  useEffect(() => subscribeShotImageLinks(() => setImageLinks(loadShotImageLinks())), []);
+  useEffect(() => setSelectedId(shots[0]?.id ?? ""), [projectId]);
 
   async function upload(files: FileList | File[]) { if (!selected) return; const imported = await importVideoClips(selected.id, files, getKlingPrompt(selected)); if (!imported.length) alert("请选择 MP4、WEBM 或 MOV 视频文件。"); }
   async function changeStatus(status: VideoVersionStatus) { if (current) await updateVideoVersion(selectedId, current.versionId, { status }); }
   async function remove() { if (!current) return; const warning = current.status === "MASTER" || current.status === "APPROVED" ? "该版本已通过审核。确认永久删除？" : "确认删除这个视频版本？"; if (confirm(warning)) await deleteVideoVersion(selectedId, current.versionId); }
 
-  const uploadedShots = Object.values(store).filter((items) => items.length).length;
-  return <Page title="视频片段" subtitle="上传你在可灵中制作的真实视频。文件保存在浏览器 IndexedDB，版本、Prompt 与对应 Shot 同步管理。">
-    <div className="grid gap-4 md:grid-cols-4"><Stat label="已有视频的 Shot" value={`${uploadedShots}/${shots.length}`}/><Stat label="视频版本" value={String(Object.values(store).flat().length)}/><Stat label="待审核" value={String(Object.values(store).flat().filter(v=>v.status==="REVIEW").length)}/><Stat label="Master" value={String(Object.values(store).flat().filter(v=>v.status==="MASTER").length)}/></div>
-    <div className="mt-4 grid gap-4 xl:grid-cols-[360px_minmax(0,1fr)]"><Panel title="EP01 Shot">
+  const scopedVersions = shots.flatMap((shot) => store[shot.id] ?? []);
+  const uploadedShots = shots.filter((shot) => (store[shot.id] ?? []).length).length;
+  const imageOptions = uploadedImageOptions(assetStore);
+  return <Page title="视频片段" subtitle="上传你在可灵中制作的真实视频，并把已生成母资产图片绑定到对应 Shot 作为首帧Reference。">
+    <ProjectSelector projects={projects} value={projectId} onChange={setProjectId}/>
+    {!shots.length ? <ProjectEmpty project={project.label}/> : <>
+    <div className="grid gap-4 md:grid-cols-4"><Stat label="已有视频的 Shot" value={`${uploadedShots}/${shots.length}`}/><Stat label="视频版本" value={String(scopedVersions.length)}/><Stat label="待审核" value={String(scopedVersions.filter(v=>v.status==="REVIEW").length)}/><Stat label="Master" value={String(scopedVersions.filter(v=>v.status==="MASTER").length)}/></div>
+    <div className="mt-4 grid gap-4 xl:grid-cols-[360px_minmax(0,1fr)]"><Panel title={`${project.label} Shot`}>
       <div className="max-h-[700px] space-y-2 overflow-y-auto">{shots.map((shot) => { const version = bestVideoVersion(store[shot.id] ?? []); return <button key={shot.id} onClick={()=>setSelectedId(shot.id)} className={`w-full rounded border p-3 text-left ${shot.id===selectedId?"border-jade/60 bg-jade/10":"border-white/10"}`}><div className="flex justify-between"><span className="text-xs text-jade">{shot.id}</span><span className="text-xs text-slate-500">{version ? statusText[version.status] : "未上传"}</span></div><div className="mt-1 text-sm font-semibold">{shot.title}</div></button>; })}</div>
     </Panel>{selected && <Panel title={`${selected.keyframeId} / ${selected.title}`} actions={<button className="btn" onClick={()=>copyText(getKlingPrompt(selected))}><Clipboard size={15}/>复制可灵 Prompt</button>}>
-      <div className="grid gap-4 lg:grid-cols-2"><div><div className="mb-2 text-xs text-slate-500">首帧参考</div><div className="aspect-video overflow-hidden rounded border border-white/10 bg-white/[0.03]">{firstFrame ? <img src={firstFrame.dataUrl} className="h-full w-full object-cover"/> : <Empty text="该 Shot 尚无关键帧"/>}</div></div><div><div className="mb-2 text-xs text-slate-500">当前视频</div><div className="aspect-video overflow-hidden rounded border border-white/10 bg-white/[0.03]">{current ? <BlobVideo version={current}/> : <Empty text="尚未上传视频"/>}</div></div></div>
+      <div className="grid gap-4 lg:grid-cols-2"><div><div className="mb-2 text-xs text-slate-500">首帧参考</div><div className="aspect-video overflow-hidden rounded border border-white/10 bg-white/[0.03]">{firstFrame ? <img src={firstFrame.dataUrl} className="h-full w-full object-cover"/> : <Empty text="该 Shot 尚未关联图片"/>}</div><select className="mt-2 w-full rounded border border-white/10 bg-[#0b1017] p-2 text-sm" value={imageLinks[selected.id] ? `${imageLinks[selected.id].assetId}|${imageLinks[selected.id].versionId}` : ""} onChange={event=>{const [assetId,versionId]=event.target.value.split("|");saveShotImageLink(selected.id,event.target.value?{assetId,versionId}:null)}}><option value="">自动使用对应关键帧</option>{imageOptions.map(option=><option key={`${option.assetId}-${option.version.versionId}`} value={`${option.assetId}|${option.version.versionId}`}>{option.label} · {option.version.versionId}</option>)}</select>{!!project.requiredAssets[selected.id]?.length&&<div className="mt-2 text-xs leading-5 text-slate-500">规划所需：{project.requiredAssets[selected.id].join(" · ")}</div>}</div><div><div className="mb-2 text-xs text-slate-500">当前视频</div><div className="aspect-video overflow-hidden rounded border border-white/10 bg-white/[0.03]">{current ? <BlobVideo version={current}/> : <Empty text="尚未上传视频"/>}</div></div></div>
       <div onDragOver={e=>e.preventDefault()} onDrop={e=>{e.preventDefault(); upload(e.dataTransfer.files);}} className="mt-4 rounded border border-dashed border-jade/30 p-6 text-center"><Upload className="mx-auto text-jade"/><div className="mt-2 text-sm">拖拽 MP4 / WEBM / MOV 到这里</div><button className="btn mt-3" onClick={()=>fileRef.current?.click()}>选择视频文件</button><input ref={fileRef} hidden type="file" multiple accept="video/mp4,video/webm,video/quicktime,.mov" onChange={e=>e.target.files&&upload(e.target.files)}/></div>
       {current && <><div className="mt-4 grid gap-3 sm:grid-cols-4"><Info label="Version" value={current.versionId}/><Info label="状态" value={statusText[current.status]}/><Info label="时长" value={`${current.duration || "未知"} 秒`}/><Info label="文件" value={current.fileName}/></div><div className="mt-3 flex flex-wrap gap-2"><button className="btn" onClick={()=>changeStatus("APPROVED")}><Check size={15}/>通过</button><button className="btn" onClick={()=>changeStatus("MASTER")}><Film size={15}/>设为 Master</button><button className="btn" onClick={()=>changeStatus("REJECTED")}><X size={15}/>退回</button><button className="btn text-red-300" onClick={remove}><Trash2 size={15}/>删除版本</button></div></>}
-    </Panel>}</div>
+    </Panel>}</div></>}
   </Page>;
 }
 
@@ -101,3 +128,8 @@ function NotesEditor({shotId,version}:{shotId:string;version:VideoClipVersion}){
 async function copyText(value:string){try{await navigator.clipboard.writeText(value)}catch{const area=document.createElement("textarea");area.value=value;document.body.appendChild(area);area.select();document.execCommand("copy");area.remove()} }
 function downloadText(name:string,value:string,type:string){const url=URL.createObjectURL(new Blob([value],{type}));const anchor=document.createElement("a");anchor.href=url;anchor.download=name;anchor.click();URL.revokeObjectURL(url)}
 function formatBytes(size:number){if(size<1024*1024)return `${(size/1024).toFixed(1)} KB`;return `${(size/1024/1024).toFixed(1)} MB`}
+function ProjectSelector({projects,value,onChange}:{projects:ReturnType<typeof getVideoProjects>;value:VideoProjectId;onChange:(value:VideoProjectId)=>void}){const current=projects.find(project=>project.id===value);return <div className="mb-4 flex flex-wrap items-center gap-3 rounded border border-white/10 bg-white/[.02] p-3"><div className="text-xs uppercase tracking-[.18em] text-slate-500">作品分区</div><select className="min-w-[240px] rounded border border-jade/30 bg-[#0b1017] px-3 py-2 text-sm text-white outline-none" value={value} onChange={event=>onChange(event.target.value as VideoProjectId)}>{projects.map(project=><option key={project.id} value={project.id}>{project.label} · {project.id}</option>)}</select><div className="text-xs text-slate-500">{current?.helper}</div></div>}
+function ProjectEmpty({project}:{project:string}){return <div className="rounded border border-white/10 bg-white/[.02] p-16 text-center"><div className="text-lg font-semibold text-white">{project}尚未建立正式 Shot</div><p className="mt-2 text-sm text-slate-500">这里不会生成占位 Prompt。请先在剧本管理与 Storyboard 中建立该集镜头，之后即可接入同一工作流。</p></div>}
+function uploadedImageOptions(store:ManualAssetStore){const assets=new Map(getMasterAssets().map(asset=>[asset.id,asset]));return Object.entries(store).flatMap(([assetId,versions])=>versions.filter(version=>version.mediaType==="image"&&version.status!=="REJECTED").map(version=>({assetId,version,label:assets.get(assetId)?.name??assetId})));}
+function resolveLinkedAsset(shotId:string,links:ReturnType<typeof loadShotImageLinks>,store:ManualAssetStore):ManualAssetVersion|null{const link=links[shotId];return link?(store[link.assetId]??[]).find(version=>version.versionId===link.versionId)??null:null;}
+function ShotImageBinder({shotId}:{shotId:string}){const [store,setStore]=useState<ManualAssetStore>({});const [links,setLinks]=useState(loadShotImageLinks);useEffect(()=>{loadAssetStore().then(setStore);return subscribeAssetStore(()=>loadAssetStore().then(setStore))},[]);useEffect(()=>subscribeShotImageLinks(()=>setLinks(loadShotImageLinks())),[]);const options=uploadedImageOptions(store);const current=resolveLinkedAsset(shotId,links,store);return <div className="mt-3 grid gap-3 rounded border border-white/10 bg-black/20 p-3 sm:grid-cols-[180px_minmax(0,1fr)]"><div className="aspect-video overflow-hidden rounded bg-white/[.03]">{current?<img src={current.dataUrl} className="h-full w-full object-cover"/>:<Empty text="未绑定首帧"/>}</div><div><div className="text-xs text-slate-500">关联已生成图片</div><select className="mt-2 w-full rounded border border-white/10 bg-[#0b1017] p-2 text-sm" value={links[shotId]?`${links[shotId].assetId}|${links[shotId].versionId}`:""} onChange={event=>{const [assetId,versionId]=event.target.value.split("|");saveShotImageLink(shotId,event.target.value?{assetId,versionId}:null)}}><option value="">未指定，使用对应关键帧</option>{options.map(option=><option key={`${option.assetId}-${option.version.versionId}`} value={`${option.assetId}|${option.version.versionId}`}>{option.label} · {option.version.versionId}</option>)}</select><p className="mt-2 text-xs text-slate-500">绑定后，“视频片段”会自动使用同一图片作为该 Shot 的首帧Reference。</p></div></div>}
