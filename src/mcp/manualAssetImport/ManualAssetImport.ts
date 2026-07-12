@@ -1,4 +1,5 @@
 import type { MasterAsset } from "../masterAssetLibrary/MasterAssetLibraryData";
+import { applyAssetContentOverride, getAssetContentOverride } from "../masterAssetLibrary/AssetContentOverrideStore";
 
 export type ManualImageStatus = "EMPTY" | "DRAFT" | "REVIEW" | "APPROVED" | "MASTER_REFERENCE" | "REJECTED";
 export type ManualPromptStatus = "READY" | "MISSING";
@@ -142,25 +143,36 @@ const creatureTemplates: VariantTemplate[] = [
 ];
 
 export function buildAssetPromptDetails(asset: PromptableAsset): AssetPromptDetails {
-  const template = resolveTemplate(asset);
-  const promptCategory = getPromptCategory(asset.category);
-  const assetType = `${asset.baseName} / ${asset.variant}`;
-  const identityLock = buildIdentityLock(asset);
-  const consistencyLock = buildConsistencyLock(asset);
-  const fullPrompt = buildReferenceFirstPrompt(asset, template);
+  const override = getAssetContentOverride(asset.id);
+  const effectiveAsset = applyAssetContentOverride(asset as MasterAsset) as PromptableAsset;
+  const template = resolveTemplate(effectiveAsset);
+  const promptCategory = getPromptCategory(effectiveAsset.category);
+  const assetType = `${effectiveAsset.baseName} / ${effectiveAsset.variant}`;
+  const identityLock = override.identityLock?.trim() || buildIdentityLock(effectiveAsset);
+  const consistencyLock = buildConsistencyLock(effectiveAsset);
+  const details = {
+    backgroundRule: override.backgroundRule?.trim() || template.backgroundRule,
+    composition: override.composition?.trim() || template.composition,
+    usage: override.usage?.trim() || template.usage,
+    assetRequirement: override.assetRequirement?.trim() || template.prompt,
+    cameraRule: override.cameraRule?.trim() || cameraRule,
+    materialRule: override.materialRule?.trim() || materialRule,
+    negativePrompt: override.negativePrompt?.trim() || negativePrompt
+  };
+  const fullPrompt = buildReferenceFirstPrompt(effectiveAsset, details, identityLock);
 
   return {
     assetType,
     promptCategory,
-    backgroundRule: template.backgroundRule,
-    composition: template.composition,
-    usage: template.usage,
+    backgroundRule: details.backgroundRule,
+    composition: details.composition,
+    usage: details.usage,
     identityLock,
-    assetRequirement: template.prompt,
-    cameraRule,
-    materialRule,
+    assetRequirement: details.assetRequirement,
+    cameraRule: details.cameraRule,
+    materialRule: details.materialRule,
     consistencyLock,
-    negativePrompt,
+    negativePrompt: details.negativePrompt,
     fullPrompt
   };
 }
@@ -173,27 +185,22 @@ export function getPromptStatus(asset: MasterAsset): ManualPromptStatus {
   return buildAssetImagePrompt(asset).trim() ? "READY" : "MISSING";
 }
 
-function buildReferenceFirstPrompt(asset: PromptableAsset, template: VariantTemplate) {
+function buildReferenceFirstPrompt(
+  asset: PromptableAsset,
+  details: Pick<AssetPromptDetails, "backgroundRule" | "composition" | "cameraRule" | "materialRule" | "negativePrompt" | "assetRequirement">,
+  identityLock: string
+) {
+  const template = t([asset.variant], details.backgroundRule, details.composition, "", details.assetRequirement);
   const variantInstruction = buildShortVariantInstruction(asset, template);
-  const background = simplifyBackground(template.backgroundRule);
   return [
-    `固定身份锁定：${buildIdentityLock(asset)}以我上传的${asset.baseName}图片作为唯一Reference，${buildShortReferenceLock(asset)}`,
-    `画面内容：生成“${asset.variant}”。${variantInstruction}`,
-    `构图要求：${template.composition}`,
-    `摄影要求：16:9，真实电影摄影，主体清晰，镜头克制，低饱和。`,
-    `材质要求：${buildShortMaterialRule(asset.category)}`,
-    `背景要求：${background}`,
-    `Negative Prompt：动漫、二次元、游戏CG、塑料感、重新设计、结构漂移、文字、水印、logo、字幕。`
+    `固定身份锁定：${identityLock}以我上传的${asset.baseName}图片作为唯一Reference，${buildShortReferenceLock(asset)}`,
+    `画面内容：生成“${asset.variant}”。${variantInstruction}补充要求：${details.assetRequirement}`,
+    `构图要求：${details.composition}`,
+    `摄影要求：${details.cameraRule}`,
+    `材质要求：${details.materialRule}`,
+    `背景要求：${details.backgroundRule}`,
+    `${details.negativePrompt.startsWith("Negative Prompt") ? details.negativePrompt : `Negative Prompt：${details.negativePrompt}`}`
   ].join("\n");
-}
-
-function buildShortMaterialRule(category: string) {
-  if (category === "人物") return "自然皮肤纹理，功能服装保留真实织物、接缝和轻度磨损。";
-  if (category === "机甲") return "重型湿金属、海盐腐蚀、工业磨损，机械连接可信。";
-  if (category === "怪兽") return "潮湿生物甲壳、半透明组织、盐水附着和真实冷光反射。";
-  if (category === "场景") return "湿金属、混凝土、玻璃、水汽、积水和雨痕符合真实尺度。";
-  if (category === "道具") return "功能材料、接缝、按钮、接口和使用磨损真实可读。";
-  return "自然、真实、符合工业海防世界。";
 }
 
 function buildShortVariantInstruction(asset: PromptableAsset, template: VariantTemplate) {

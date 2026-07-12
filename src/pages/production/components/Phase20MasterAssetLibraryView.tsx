@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Box, CheckCircle2, Copy, Database, Film, Image, Layers, Search, Trash2, Upload } from "lucide-react";
+import { Box, CheckCircle2, Copy, Database, Film, Image, Layers, Pencil, RotateCcw, Save, Search, Trash2, Upload } from "lucide-react";
 import {
   getMasterAssetManifest,
   getMasterAssets,
@@ -47,6 +47,14 @@ import {
   subscribeCloudAuth
 } from "../../../mcp/cloudAssetSync/CloudAssetRepository";
 import { ProductionCard } from "./ProductionShell";
+import {
+  applyAssetContentOverride,
+  getAssetContentOverride,
+  resetAssetContentOverride,
+  saveAssetContentOverride,
+  subscribeAssetContentOverrides,
+  type AssetContentOverride
+} from "../../../mcp/masterAssetLibrary/AssetContentOverrideStore";
 
 const categoryIcons: Record<string, JSX.Element> = {
   人物: <Image size={17} />,
@@ -73,7 +81,8 @@ export function Phase20MasterAssetLibraryView({ initialCategory = "全部" }: Pr
   const manifest = getMasterAssetManifest();
   const stats = getMasterLibraryStats();
   const categories = getMasterCategories();
-  const allAssets = useMemo(() => getMasterAssets(), []);
+  const [contentRevision, setContentRevision] = useState(0);
+  const allAssets = useMemo(() => getMasterAssets().map(applyAssetContentOverride), [contentRevision]);
   const [assetStore, setAssetStore] = useState<ManualAssetStore>({});
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState(initialCategory);
@@ -81,6 +90,14 @@ export function Phase20MasterAssetLibraryView({ initialCategory = "全部" }: Pr
   const [pageMessage, setPageMessage] = useState("");
 
   useEffect(() => setCategory(initialCategory), [initialCategory]);
+
+  useEffect(() => subscribeAssetContentOverrides(() => setContentRevision((value) => value + 1)), []);
+
+  useEffect(() => {
+    if (!selected) return;
+    const refreshed = allAssets.find((asset) => asset.id === selected.id);
+    if (refreshed && refreshed !== selected) setSelected(refreshed);
+  }, [allAssets, selected]);
 
   useEffect(() => {
     let alive = true;
@@ -328,6 +345,29 @@ function AssetCard({ asset, selected, versions, onSelect }: { asset: MasterAsset
 function MasterAssetDetail({ asset, versions }: { asset: MasterAsset | null; versions: ManualAssetVersion[] }) {
   const inputRef = useRef<HTMLInputElement | null>(null);
   const [message, setMessage] = useState("");
+  const [editing, setEditing] = useState(false);
+  const [draft, setDraft] = useState<AssetContentOverride>({});
+
+  useEffect(() => {
+    if (!asset) return;
+    const details = buildAssetPromptDetails(asset);
+    const override = getAssetContentOverride(asset.id);
+    setDraft({
+      name: override.name ?? asset.name,
+      variant: override.variant ?? asset.variant,
+      description: override.description ?? asset.description,
+      identityLock: override.identityLock ?? details.identityLock,
+      assetRequirement: override.assetRequirement ?? details.assetRequirement,
+      composition: override.composition ?? details.composition,
+      cameraRule: override.cameraRule ?? details.cameraRule,
+      materialRule: override.materialRule ?? details.materialRule,
+      backgroundRule: override.backgroundRule ?? details.backgroundRule,
+      negativePrompt: override.negativePrompt ?? details.negativePrompt,
+      usage: override.usage ?? details.usage
+    });
+    setEditing(false);
+  }, [asset?.id]);
+
   if (!asset) return null;
 
   const prompt = buildAssetImagePrompt(asset);
@@ -335,6 +375,23 @@ function MasterAssetDetail({ asset, versions }: { asset: MasterAsset | null; ver
   const imageStatus = getAssetImageStatusFromVersions(versions);
   const master = versions.find((version) => version.status === "MASTER_REFERENCE" || String(version.status) === "MASTER") ?? versions[versions.length - 1];
   const activeVersion = master ?? versions[0];
+
+  function updateDraft(key: keyof AssetContentOverride, value: string) {
+    setDraft((current) => ({ ...current, [key]: value }));
+  }
+
+  function saveContent() {
+    saveAssetContentOverride(asset.id, draft);
+    setEditing(false);
+    setMessage("资产名称、说明和Prompt字段已保存，卡片、搜索、完整Prompt与复制内容已同步更新。");
+  }
+
+  function restoreContent() {
+    if (!window.confirm("确定恢复该资产的项目默认标题、说明和Prompt吗？上传图片及Version不会被删除。")) return;
+    resetAssetContentOverride(asset.id);
+    setEditing(false);
+    setMessage("已恢复项目默认内容，上传素材未改变。");
+  }
 
   async function handleFiles(files: FileList | File[]) {
     try {
@@ -369,10 +426,18 @@ function MasterAssetDetail({ asset, versions }: { asset: MasterAsset | null; ver
         <div className="flex flex-col gap-3 2xl:flex-row 2xl:items-start 2xl:justify-between">
           <div>
             <div className="text-xs uppercase tracking-[0.22em] text-slate-500">Asset Workbench</div>
-            <h3 className="mt-2 text-lg font-semibold text-white">{asset.name}</h3>
+            {editing ? (
+              <input className="mt-2 h-10 w-full rounded border border-jade/40 bg-black/30 px-3 text-base font-semibold text-white outline-none" value={draft.name ?? ""} onChange={(event) => updateDraft("name", event.target.value)} />
+            ) : <h3 className="mt-2 text-lg font-semibold text-white">{asset.name}</h3>}
             <p className="mt-1 text-xs text-slate-500">{asset.id} / {asset.category} / {asset.variant}</p>
           </div>
           <div className="flex flex-wrap gap-2">
+            {editing ? (
+              <button className="btn h-10 border-jade text-jade" onClick={saveContent}><Save size={15} /> 保存内容</button>
+            ) : (
+              <button className="btn h-10" onClick={() => setEditing(true)}><Pencil size={15} /> 编辑内容</button>
+            )}
+            <button className="btn h-10" onClick={restoreContent}><RotateCcw size={15} /> 恢复默认</button>
             <button className="btn h-10 border-jade text-jade" onClick={copyPrompt}><Copy size={15} /> 一键复制 Prompt</button>
             <button className="btn h-10" onClick={() => void replaceCurrentAsset()}><Upload size={15} /> 替换素材</button>
             <button className="btn h-10 text-red-300" onClick={() => void clearCurrentAsset()}><Trash2 size={15} /> 删除本资产素材</button>
@@ -438,15 +503,21 @@ function MasterAssetDetail({ asset, versions }: { asset: MasterAsset | null; ver
           <div className="mb-3 rounded border border-jade/20 bg-jade/5 px-3 py-2 text-xs leading-5 text-slate-400">
             以下分项与复制内容完全一致。复制完整 Prompt 后，连同对应 Reference 图片一起发送给 GPT Image。
           </div>
+          {editing && (
+            <div className="mb-3 grid gap-3 rounded border border-jade/25 bg-jade/[0.04] p-3 md:grid-cols-2">
+              <EditablePromptField label="资产变体" value={draft.variant ?? ""} onChange={(value) => updateDraft("variant", value)} />
+              <EditablePromptField label="资产说明" value={draft.description ?? ""} onChange={(value) => updateDraft("description", value)} />
+            </div>
+          )}
           <div className="mb-3 grid gap-2 md:grid-cols-2">
-            <PromptInfo label="固定身份锁定" value={promptDetails.identityLock} />
-            <PromptInfo label="资产类型要求" value={promptDetails.assetRequirement} />
-            <PromptInfo label="构图要求" value={promptDetails.composition} />
-            <PromptInfo label="摄影要求" value={promptDetails.cameraRule} />
-            <PromptInfo label="材质要求" value={promptDetails.materialRule} />
-            <PromptInfo label="背景要求" value={promptDetails.backgroundRule} />
-            <PromptInfo label="Negative Prompt" value={promptDetails.negativePrompt} />
-            <PromptInfo label="用途说明" value={promptDetails.usage} />
+            <PromptInfo label="固定身份锁定" value={editing ? draft.identityLock ?? "" : promptDetails.identityLock} editing={editing} onChange={(value) => updateDraft("identityLock", value)} />
+            <PromptInfo label="资产类型要求" value={editing ? draft.assetRequirement ?? "" : promptDetails.assetRequirement} editing={editing} onChange={(value) => updateDraft("assetRequirement", value)} />
+            <PromptInfo label="构图要求" value={editing ? draft.composition ?? "" : promptDetails.composition} editing={editing} onChange={(value) => updateDraft("composition", value)} />
+            <PromptInfo label="摄影要求" value={editing ? draft.cameraRule ?? "" : promptDetails.cameraRule} editing={editing} onChange={(value) => updateDraft("cameraRule", value)} />
+            <PromptInfo label="材质要求" value={editing ? draft.materialRule ?? "" : promptDetails.materialRule} editing={editing} onChange={(value) => updateDraft("materialRule", value)} />
+            <PromptInfo label="背景要求" value={editing ? draft.backgroundRule ?? "" : promptDetails.backgroundRule} editing={editing} onChange={(value) => updateDraft("backgroundRule", value)} />
+            <PromptInfo label="Negative Prompt" value={editing ? draft.negativePrompt ?? "" : promptDetails.negativePrompt} editing={editing} onChange={(value) => updateDraft("negativePrompt", value)} />
+            <PromptInfo label="用途说明" value={editing ? draft.usage ?? "" : promptDetails.usage} editing={editing} onChange={(value) => updateDraft("usage", value)} />
           </div>
           <textarea className="min-h-56 w-full resize-y rounded border border-white/10 bg-black/25 p-4 text-sm leading-7 text-slate-200 outline-none" value={prompt} readOnly />
         </div>
@@ -663,12 +734,23 @@ function Info({ label, value }: { label: string; value: string | number }) {
   );
 }
 
-function PromptInfo({ label, value }: { label: string; value: string }) {
+function PromptInfo({ label, value, editing = false, onChange }: { label: string; value: string; editing?: boolean; onChange?: (value: string) => void }) {
   return (
     <div className="rounded border border-white/10 bg-black/20 p-3">
       <div className="text-[10px] uppercase tracking-[0.16em] text-slate-500">{label}</div>
-      <div className="mt-2 text-xs leading-5 text-slate-300">{value}</div>
+      {editing ? (
+        <textarea className="mt-2 min-h-28 w-full resize-y rounded border border-white/10 bg-black/30 p-2 text-xs leading-5 text-slate-200 outline-none" value={value} onChange={(event) => onChange?.(event.target.value)} />
+      ) : <div className="mt-2 text-xs leading-5 text-slate-300">{value}</div>}
     </div>
+  );
+}
+
+function EditablePromptField({ label, value, onChange }: { label: string; value: string; onChange: (value: string) => void }) {
+  return (
+    <label>
+      <span className="text-[10px] uppercase tracking-[0.16em] text-slate-500">{label}</span>
+      <textarea className="mt-2 min-h-20 w-full resize-y rounded border border-white/10 bg-black/30 p-2 text-xs leading-5 text-slate-200 outline-none" value={value} onChange={(event) => onChange(event.target.value)} />
+    </label>
   );
 }
 
