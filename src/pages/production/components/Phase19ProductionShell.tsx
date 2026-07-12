@@ -9,7 +9,6 @@ import {
   FolderKanban,
   Image,
   Layers,
-  Lightbulb,
   MonitorPlay,
   PanelLeftClose,
   PanelLeftOpen,
@@ -63,12 +62,9 @@ const navGroups: NavGroup[] = [
       { key: "characters", id: "characters", label: "角色", helper: "Character Bible", icon: <UserRound size={17} /> },
       { key: "mechas", id: "mechas", label: "机甲", helper: "Mecha Bible", icon: <ShieldCheck size={17} /> },
       { key: "creatures", id: "creatures", label: "怪兽", helper: "Creature Bible", icon: <Waves size={17} /> },
-      { key: "environment", id: "environment", label: "场景", helper: "Environment Library", icon: <MonitorPlay size={17} /> },
+      { key: "environment", id: "environment", label: "场景视觉", helper: "场景 / 天气 / 灯光 / VFX", icon: <MonitorPlay size={17} /> },
       { key: "props", id: "props", label: "道具", helper: "Props Library", icon: <Box size={17} /> },
-      { key: "asset-bible", id: "assetBible", label: "电影资产圣经", helper: "母资产库", icon: <Database size={17} /> },
-      { key: "weather", id: "environment", label: "天气", helper: "环境资产分类", icon: <CloudIcon /> },
-      { key: "lighting", id: "environment", label: "灯光", helper: "光影参考", icon: <Lightbulb size={17} /> },
-      { key: "vfx", id: "environment", label: "VFX", helper: "特效参考", icon: <Sparkles size={17} /> }
+      { key: "asset-bible", id: "assetBible", label: "电影资产圣经", helper: "母资产库", icon: <Database size={17} /> }
     ]
   },
   {
@@ -315,12 +311,4 @@ function ProductionMiniCard({ title, children }: { title: string; children: Reac
 
 function Row({ label, value }: { label: string; value: string | number }) {
   return <div className="flex items-center justify-between gap-3"><span>{label}</span><span className="text-jade">{value}</span></div>;
-}
-
-function CloudIcon() {
-  return (
-    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d="M17.5 19H8a5 5 0 1 1 1.2-9.85A6 6 0 0 1 20 12.5 3.5 3.5 0 0 1 17.5 19Z" />
-    </svg>
-  );
 }
