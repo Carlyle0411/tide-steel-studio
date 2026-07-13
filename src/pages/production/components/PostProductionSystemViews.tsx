@@ -50,10 +50,11 @@ export function VideoMaterialLibraryView() {
   const [clips, setClips] = useState<VideoClipStore>({});
   const [state, setState] = usePostState();
   const [filter, setFilter] = useState<PostCategory | "全部">("全部");
+  const [selectedVersionId, setSelectedVersionId] = useState("");
   const fileRef = useRef<HTMLInputElement>(null);
   const shot = shots.find((item) => item.id === selectedShot) ?? shots[0];
   const versions = shot ? (clips[shot.id] ?? []) : [];
-  const current = bestVideoVersion(versions);
+  const current = versions.find((version) => version.versionId === selectedVersionId) ?? bestVideoVersion(versions);
   const metaKey = current && shot ? videoMetaKey(shot.id, current.versionId) : "";
   const meta = metaKey ? state.videoMetadata[metaKey] ?? defaultMetadata(metaKey, shot?.id ?? "") : null;
   const visible = shots.flatMap((item) => (clips[item.id] ?? []).map((version) => ({ shot: item, version, meta: state.videoMetadata[videoMetaKey(item.id, version.versionId)] ?? defaultMetadata(videoMetaKey(item.id, version.versionId), item.id) }))).filter((row) => filter === "全部" || row.meta.category === filter);
@@ -63,12 +64,35 @@ export function VideoMaterialLibraryView() {
     reload();
     return subscribeVideoClips(reload);
   }, []);
-  useEffect(() => setSelectedShot(shots[0]?.id ?? ""), [projectId]);
+  useEffect(() => { setSelectedShot(shots[0]?.id ?? ""); setSelectedVersionId(""); }, [projectId]);
+  useEffect(() => {
+    if (!versions.length) { if (selectedVersionId) setSelectedVersionId(""); return; }
+    if (selectedVersionId && versions.some((version) => version.versionId === selectedVersionId)) return;
+    setSelectedVersionId(bestVideoVersion(versions)?.versionId ?? "");
+  }, [selectedShot, selectedVersionId, versions]);
 
   async function upload(files: FileList | File[] | null) {
     if (!shot || !files?.length) return;
-    const imported = await importVideoClips(shot.id, files, getKlingPrompt(shot));
-    imported.forEach((version) => upsertVideoMetadata(videoMetaKey(shot.id, version.versionId), { videoId: `VID-${shot.id}-${version.versionId}`, category: "场景运动", shotType: shot.shotSize, tool: "可灵", linkedAssets: project.requiredAssets[shot.id] ?? [], notes: shot.description }));
+    let lastImported: { shotId: string; versionId: string } | null = null;
+    for (const file of Array.from(files)) {
+      const targetShot = inferShotFromFileName(file.name, shots) ?? shot;
+      const imported = await importVideoClips(targetShot.id, [file], getKlingPrompt(targetShot));
+      imported.forEach((version) => {
+        upsertVideoMetadata(videoMetaKey(targetShot.id, version.versionId), {
+          videoId: `VID-${targetShot.id}-${version.versionId}`,
+          category: inferCategory(targetShot.title),
+          shotType: targetShot.shotSize,
+          tool: "可灵",
+          linkedAssets: project.requiredAssets[targetShot.id] ?? [],
+          notes: `由文件名「${file.name}」导入。${targetShot.description}`
+        });
+        lastImported = { shotId: targetShot.id, versionId: version.versionId };
+      });
+    }
+    if (lastImported) {
+      setSelectedShot(lastImported.shotId);
+      setSelectedVersionId(lastImported.versionId);
+    }
   }
   async function updateStatus(status: VideoVersionStatus) {
     if (shot && current) await updateVideoVersion(shot.id, current.versionId, { status });
@@ -76,7 +100,7 @@ export function VideoMaterialLibraryView() {
   async function removeVersion() {
     if (!shot || !current) return;
     const warning = current.status === "APPROVED" || current.status === "MASTER" ? "这是已通过或 Master 视频，确定永久删除吗？" : "确定删除这个视频版本吗？";
-    if (confirm(warning)) await deleteVideoVersion(shot.id, current.versionId);
+    if (confirm(warning)) { await deleteVideoVersion(shot.id, current.versionId); setSelectedVersionId(""); }
   }
   function saveMeta(patch: Partial<VideoMaterialMetadata>) {
     if (!metaKey) return;
@@ -95,17 +119,17 @@ export function VideoMaterialLibraryView() {
     <div className="mt-4 grid gap-4 xl:grid-cols-[420px_minmax(0,1fr)]">
       <Panel title="视频片段清单">
         <div className="max-h-[720px] space-y-2 overflow-y-auto pr-1">
-          {visible.length ? visible.map(({ shot, version, meta }) => <button key={`${shot.id}-${version.versionId}`} onClick={() => setSelectedShot(shot.id)} className={`w-full rounded border p-3 text-left ${shot.id === selectedShot && version.versionId === current?.versionId ? "border-jade/60 bg-jade/10" : "border-white/10 bg-black/20 hover:border-white/25"}`}>
+          {visible.length ? visible.map(({ shot, version, meta }) => <button key={`${shot.id}-${version.versionId}`} onClick={() => { setSelectedShot(shot.id); setSelectedVersionId(version.versionId); }} className={`w-full rounded border p-3 text-left ${shot.id === selectedShot && version.versionId === current?.versionId ? "border-jade/60 bg-jade/10" : "border-white/10 bg-black/20 hover:border-white/25"}`}>
             <div className="flex justify-between text-xs"><span className="text-jade">{meta.videoId}</span><span>{version.duration || 0}s</span></div>
             <div className="mt-1 font-semibold text-white">{shot.title}</div>
             <div className="mt-2 flex flex-wrap gap-1 text-[11px]">{[meta.category, version.status, meta.tool].map((tag) => <span key={tag} className="rounded border border-white/10 px-2 py-0.5 text-slate-400">{tag}</span>)}</div>
           </button>) : <Empty text="当前分类还没有上传视频。" />}
         </div>
       </Panel>
-      <Panel title={shot ? `${shot.id} / ${shot.title}` : "选择 Shot"} actions={<button className="btn" onClick={() => fileRef.current?.click()}><Upload size={15} />上传视频</button>}>
-        <input ref={fileRef} hidden type="file" multiple accept="video/mp4,video/webm,video/quicktime,.mov" onChange={(event) => void upload(event.target.files)} />
+      <Panel title={shot ? `${shot.id} / ${shot.title}${current ? ` · ${current.versionId}` : ""}` : "选择 Shot"} actions={<button className="btn" onClick={() => fileRef.current?.click()}><Upload size={15} />上传视频</button>}>
+        <input ref={fileRef} hidden type="file" multiple accept="video/mp4,video/webm,video/quicktime,.mov" onChange={(event) => { void upload(event.target.files); event.currentTarget.value = ""; }} />
         <div onDragOver={(event) => event.preventDefault()} onDrop={(event) => { event.preventDefault(); void upload(event.dataTransfer.files); }} className="rounded border border-dashed border-jade/30 bg-black/20 p-5 text-center text-sm text-slate-400">
-          <Upload className="mx-auto mb-2 text-jade" />拖拽 MP4 / WEBM / MOV 到这里，或点击右上角上传。
+          <Upload className="mx-auto mb-2 text-jade" />拖拽 MP4 / WEBM / MOV 到这里，或点击右上角上传。文件名含 TR01、TR02 会自动归入预告片对应镜头。
         </div>
         <div className="mt-4 aspect-video overflow-hidden rounded border border-white/10 bg-black">{current ? <VideoPreview version={current} /> : <Empty text="尚未选择或上传视频" />}</div>
         {current && meta && <div className="mt-4 grid gap-3 lg:grid-cols-2">
@@ -231,6 +255,31 @@ function usePostState(): [PostProductionState, (value: PostProductionState) => v
   const [state, setState] = useState(loadPostProductionState);
   useEffect(() => subscribePostProduction(() => setState(loadPostProductionState())), []);
   return [state, (value) => { savePostProductionState(value); setState(value); }];
+}
+
+function inferShotFromFileName(fileName: string, shots: ReturnType<typeof getVideoProjects>[number]["shots"]) {
+  const normalized = fileName.toUpperCase().replace(/\.[^.]+$/, "");
+  const trailer = normalized.match(/(?:^|[^A-Z0-9])TR[-_\s]?0*(\d{1,3})(?:[^A-Z0-9]|$)/);
+  if (trailer) {
+    const number = Number(trailer[1]);
+    const code = `TR${String(number).padStart(2, "0")}`;
+    return shots.find((shot) => shot.sourceShotId === code || shot.keyframeId === code || shot.id === `SHOT-TRAILER-${String(number).padStart(3, "0")}`);
+  }
+  const shotMatch = normalized.match(/(?:SHOT|KF)[-_\s]?0*(\d{1,3})(?:[^0-9]|$)/);
+  if (shotMatch) {
+    const number = Number(shotMatch[1]);
+    return shots.find((shot) => shot.order === number || shot.id.endsWith(String(number).padStart(3, "0")) || shot.keyframeId.endsWith(String(number).padStart(2, "0")));
+  }
+  return null;
+}
+
+function inferCategory(title: string): PostCategory {
+  if (/赤霆|机甲|驾驶舱|舱门|液压/.test(title)) return "机甲动作";
+  if (/白潮|潮兽|怪兽|黑潮/.test(title)) return "怪兽动作";
+  if (/战斗|防线|冲击|攻击|防御|撑/.test(title)) return "战斗镜头";
+  if (/林舟|许燃|陈牧|AI澜|声音|旧伤|同步/.test(title)) return "情绪镜头";
+  if (/海洋|杭州湾|基地|潮门|规则|雨|雾/.test(title)) return "场景运动";
+  return "场景运动";
 }
 
 function Page({ eyebrow, title, subtitle, children }: { eyebrow: string; title: string; subtitle: string; children: React.ReactNode }) {
