@@ -41,7 +41,7 @@ export function mergeStaticKeyframeFallback(store: KeyframeAssetStore): Keyframe
       mediaType: "image",
       uploadedAt: "2026-07-13T00:00:00.000Z",
       status: "MASTER_REFERENCE",
-      prompt: "项目内置历史关键帧备份。你上传新的云端版本后，会自动优先显示上传版本。",
+      prompt: "项目内置的 EP01 历史关键帧备份。上传新的云端版本后，系统会优先显示上传版本。",
       metadata: {
         keyframeId: canonicalId,
         episodeId: "EP01",
@@ -67,25 +67,14 @@ function getStaticFrameStorageKey(keyframeId: string, frameRole: KeyframeFrameRo
 
 function getStaticAliasIds(keyframeId: string) {
   const ids = new Set([keyframeId]);
-  const normalized = keyframeId.replace(/^TRAILER_/, "");
-  ids.add(normalized);
-
-  const trMatch = normalized.match(/^TR(\d{2})$/i);
-  const epMatch = normalized.match(/^EP(\d{2})_KF(\d{2})$/i);
-  const kfMatch = normalized.match(/^KF(\d{2})$/i);
-  const trailerShotMatch = normalized.match(/^SHOT-TRAILER-(\d{3})$/i);
-  const trilogyShotMatch = normalized.match(/^SHOT-TRILOGY-(\d{3})$/i);
-  const number = trMatch?.[1] ?? epMatch?.[2] ?? kfMatch?.[1] ?? trailerShotMatch?.[1]?.slice(-2) ?? trilogyShotMatch?.[1]?.slice(-2);
+  const epMatch = keyframeId.match(/^EP(\d{2})_KF(\d{2})$/i);
+  const kfMatch = keyframeId.match(/^KF(\d{2})$/i);
+  const number = epMatch?.[2] ?? kfMatch?.[1];
 
   if (number) {
     const two = number.padStart(2, "0");
-    const three = number.padStart(3, "0");
-    ids.add(`TR${two}`);
-    ids.add(`TRAILER_TR${two}`);
     ids.add(`KF${two}`);
     ids.add(`EP01_KF${two}`);
-    ids.add(`SHOT-TRAILER-${three}`);
-    ids.add(`SHOT-TRILOGY-${three}`);
   }
 
   return [...ids];

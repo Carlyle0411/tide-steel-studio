@@ -113,16 +113,22 @@ export function getKeyframeAliasIds(keyframeId: string) {
   const trailerShotMatch = normalized.match(/^SHOT-TRAILER-(\d{3})$/i);
   const trilogyShotMatch = normalized.match(/^SHOT-TRILOGY-(\d{3})$/i);
 
-  const number = trMatch?.[1] ?? epMatch?.[2] ?? kfMatch?.[1] ?? trailerShotMatch?.[1]?.slice(-2) ?? trilogyShotMatch?.[1]?.slice(-2);
-  if (number) {
-    const two = number.padStart(2, "0");
-    const three = number.padStart(3, "0");
-    ids.add(`TR${two}`);
-    ids.add(`TRAILER_TR${two}`);
+  if (epMatch || kfMatch) {
+    const two = (epMatch?.[2] ?? kfMatch?.[1] ?? "").padStart(2, "0");
     ids.add(`KF${two}`);
     ids.add(`EP01_KF${two}`);
-    ids.add(`SHOT-TRAILER-${three}`);
-    ids.add(`SHOT-TRILOGY-${three}`);
+  }
+
+  if (trMatch || trailerShotMatch || trilogyShotMatch) {
+    const number = trMatch?.[1] ?? trailerShotMatch?.[1]?.slice(-2) ?? trilogyShotMatch?.[1]?.slice(-2);
+    if (number) {
+      const two = number.padStart(2, "0");
+      const three = number.padStart(3, "0");
+      ids.add(`TR${two}`);
+      ids.add(`TRAILER_TR${two}`);
+      ids.add(`SHOT-TRAILER-${three}`);
+      ids.add(`SHOT-TRILOGY-${three}`);
+    }
   }
 
   return [...ids];
