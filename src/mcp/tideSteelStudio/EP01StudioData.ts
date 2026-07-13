@@ -30,23 +30,6 @@ export type EP01Keyframe = {
 
 const ep01Keyframes: EP01Keyframe[] = [
   {
-    id: "KF01",
-    shot: "EP01_SHOT_001",
-    title: "外海过分平静",
-    purpose: "2047年9月18日清晨，杭州湾外海观测站和远处海防线仍在正常运行，但海面安静得不合常理。",
-    required_assets: ["杭州湾海防线", "外海观测站", "浮标阵列"],
-    duration: 15,
-    shotSize: "远景",
-    lens: "24mm",
-    movement: "固定机位，极慢推进",
-    character: "无",
-    environment: "杭州湾外海观测站",
-    lighting: "台风前冷灰天光",
-    emotion: "不安",
-    sound: "小雨、远海、金属轻响",
-    notes: "开场建立正常世界，不展示怪兽，不制造灾难片式奇观。"
-  },
-  {
     id: "KF02",
     shot: "EP01_SHOT_002",
     title: "雨打观测站金属",
@@ -115,7 +98,7 @@ const ep01Keyframes: EP01Keyframe[] = [
     id: "KF06",
     shot: "EP01_SHOT_006",
     title: "深蓝基地冷蓝指挥中心",
-    purpose: "异常进入人类决策空间，陈牧被巨大系统包围。",
+    purpose: "异常进入人类决策空间，陈牧被巨大的系统包围。",
     required_assets: ["深蓝基地", "指挥中心", "陈牧"],
     duration: 15,
     shotSize: "远景",

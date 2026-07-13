@@ -1,96 +1,216 @@
 {
   "episode": "EP01",
-  "video_api": "manual_kling_only",
+  "title": "海面低频",
+  "status": "official_ep01_kling_prompts",
   "prompts": [
     {
-      "shot": "EP01_KF01",
-      "title": "2042 Hangzhou Bay Future Coastline",
-      "prompt": "Shot: EP01_KF01 - 2042 Hangzhou Bay Future Coastline\nDuration: 5秒\nCamera: 电影级真实摄影机，镜头运动克制，有物理重量\nLens: 24mm建立尺度，35mm建立环境，50mm处理人物与机甲关系，85mm用于情绪细节\nMovement: 缓慢推进或稳定跟拍，禁止短视频式晃动\nCharacter Action: Wide establishing image for the world before the anomaly.\nEnvironment: 《潮汐钢魂》EP01，湿冷海防世界，需要绑定资产：hangzhou_bay\nLighting: 低饱和暴风雨光线，冷蓝工业光，只使用真实光源逻辑\nEmotion: 未知压迫，人类尺度面对海洋尺度\nSound: 深海低频、远处金属震动、克制机械细节\nNegative Prompt: anime, cartoon, game render, fake physics, plastic surface, over-saturated colors, text, logo, watermark, random character face, changed mech design"
+      "id": "KLING_EP01_002",
+      "shot": "EP01_SHOT_002",
+      "keyframe_id": "KF02",
+      "title": "雨打观测站金属",
+      "duration": 15,
+      "prompt": "镜头组：EP01_SHOT_002《雨打观测站金属》\n时长：15秒，包含2-4个分镜头。\n动机：雨滴打在观测站外壳上，雨声比海浪更清楚，暗示海面异常安静。\n拍摄：以特写为主，50mm镜头，固定机位，保持真实摄影机重量和空间连续。\n分镜：先交代环境或物件状态，再让异常或人物反应出现，最后停在一个不可逆的结果上。\n运动规律：人物动作必须有原因，设备、雨水、海面和灯光按真实物理变化，不要所有元素同时乱动。\n情绪：克制、压低、未知靠近，不要英雄化，不要灾难奇观化。\n参考：使用对应关键帧 KF02 作为首帧Reference，并参考母资产 外海观测站 / 湿金属材质 / 雨天。",
+      "reference_keyframe": "EP01_KF02",
+      "required_assets": [
+        "外海观测站",
+        "湿金属材质",
+        "雨天"
+      ],
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     },
     {
-      "shot": "EP01_KF02",
-      "title": "White Tide First Appearance",
-      "prompt": "Shot: EP01_KF02 - White Tide First Appearance\nDuration: 5秒\nCamera: 电影级真实摄影机，镜头运动克制，有物理重量\nLens: 24mm建立尺度，35mm建立环境，50mm处理人物与机甲关系，85mm用于情绪细节\nMovement: 缓慢推进或稳定跟拍，禁止短视频式晃动\nCharacter Action: A huge body breaks the storm sea without monster-show spectacle.\nEnvironment: 《潮汐钢魂》EP01，湿冷海防世界，需要绑定资产：white_tide, hangzhou_bay\nLighting: 低饱和暴风雨光线，冷蓝工业光，只使用真实光源逻辑\nEmotion: 未知压迫，人类尺度面对海洋尺度\nSound: 深海低频、远处金属震动、克制机械细节\nNegative Prompt: anime, cartoon, game render, fake physics, plastic surface, over-saturated colors, text, logo, watermark, random character face, changed mech design"
+      "id": "KLING_EP01_003",
+      "shot": "EP01_SHOT_003",
+      "keyframe_id": "KF03",
+      "title": "杯中水纹反向收缩",
+      "duration": 15,
+      "prompt": "镜头组：EP01_SHOT_003《杯中水纹反向收缩》\n时长：15秒，包含2-4个分镜头。\n动机：用最小的物理证据告诉观众：世界规则正在改变。\n拍摄：以微距特写为主，85mm微距镜头，固定焦点，保持真实摄影机重量和空间连续。\n分镜：先交代环境或物件状态，再让异常或人物反应出现，最后停在一个不可逆的结果上。\n运动规律：人物动作必须有原因，设备、雨水、海面和灯光按真实物理变化，不要所有元素同时乱动。\n情绪：克制、压低、未知靠近，不要英雄化，不要灾难奇观化。\n参考：使用对应关键帧 KF03 作为首帧Reference，并参考母资产 外海观测站 / 旧金属杯 / 值班桌。",
+      "reference_keyframe": "EP01_KF03",
+      "required_assets": [
+        "外海观测站",
+        "旧金属杯",
+        "值班桌"
+      ],
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     },
     {
-      "shot": "EP01_KF03",
-      "title": "Deep Blue Base Alarm",
-      "prompt": "Shot: EP01_KF03 - Deep Blue Base Alarm\nDuration: 5秒\nCamera: 电影级真实摄影机，镜头运动克制，有物理重量\nLens: 24mm建立尺度，35mm建立环境，50mm处理人物与机甲关系，85mm用于情绪细节\nMovement: 缓慢推进或稳定跟拍，禁止短视频式晃动\nCharacter Action: The base reacts before people understand the event.\nEnvironment: 《潮汐钢魂》EP01，湿冷海防世界，需要绑定资产：deep_blue_base\nLighting: 低饱和暴风雨光线，冷蓝工业光，只使用真实光源逻辑\nEmotion: 未知压迫，人类尺度面对海洋尺度\nSound: 深海低频、远处金属震动、克制机械细节\nNegative Prompt: anime, cartoon, game render, fake physics, plastic surface, over-saturated colors, text, logo, watermark, random character face, changed mech design"
+      "id": "KLING_EP01_004",
+      "shot": "EP01_SHOT_004",
+      "keyframe_id": "KF04",
+      "title": "值守员停下手指",
+      "duration": 15,
+      "prompt": "镜头组：EP01_SHOT_004《值守员停下手指》\n时长：15秒，包含2-4个分镜头。\n动机：屏幕没有报警，但人先察觉异常。\n拍摄：以中景为主，35mm镜头，固定机位，保持真实摄影机重量和空间连续。\n分镜：先交代环境或物件状态，再让异常或人物反应出现，最后停在一个不可逆的结果上。\n运动规律：人物动作必须有原因，设备、雨水、海面和灯光按真实物理变化，不要所有元素同时乱动。\n情绪：克制、压低、未知靠近，不要英雄化，不要灾难奇观化。\n参考：使用对应关键帧 KF04 作为首帧Reference，并参考母资产 外海观测站 / 值守员 / 监测屏。",
+      "reference_keyframe": "EP01_KF04",
+      "required_assets": [
+        "外海观测站",
+        "值守员",
+        "监测屏"
+      ],
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     },
     {
-      "shot": "EP01_KF04",
-      "title": "Commander Chen Detects Signal",
-      "prompt": "Shot: EP01_KF04 - Commander Chen Detects Signal\nDuration: 5秒\nCamera: 电影级真实摄影机，镜头运动克制，有物理重量\nLens: 24mm建立尺度，35mm建立环境，50mm处理人物与机甲关系，85mm用于情绪细节\nMovement: 缓慢推进或稳定跟拍，禁止短视频式晃动\nCharacter Action: Chen Mu trusts experience before the automated system does.\nEnvironment: 《潮汐钢魂》EP01，湿冷海防世界，需要绑定资产：chenmu, deep_blue_base\nLighting: 低饱和暴风雨光线，冷蓝工业光，只使用真实光源逻辑\nEmotion: 未知压迫，人类尺度面对海洋尺度\nSound: 深海低频、远处金属震动、克制机械细节\nNegative Prompt: anime, cartoon, game render, fake physics, plastic surface, over-saturated colors, text, logo, watermark, random character face, changed mech design"
+      "id": "KLING_EP01_005",
+      "shot": "EP01_SHOT_005",
+      "keyframe_id": "KF05",
+      "title": "浮标周围反向水纹",
+      "duration": 15,
+      "prompt": "镜头组：EP01_SHOT_005《浮标周围反向水纹》\n时长：15秒，包含2-4个分镜头。\n动机：外海出现同样的反向水纹，异常从室内证据变成外部事实。\n拍摄：以远景转特写为主，35mm镜头，缓慢推进，保持真实摄影机重量和空间连续。\n分镜：先交代环境或物件状态，再让异常或人物反应出现，最后停在一个不可逆的结果上。\n运动规律：人物动作必须有原因，设备、雨水、海面和灯光按真实物理变化，不要所有元素同时乱动。\n情绪：克制、压低、未知靠近，不要英雄化，不要灾难奇观化。\n参考：使用对应关键帧 KF05 作为首帧Reference，并参考母资产 杭州湾外海 / 浮标阵列 / 海防线。",
+      "reference_keyframe": "EP01_KF05",
+      "required_assets": [
+        "杭州湾外海",
+        "浮标阵列",
+        "海防线"
+      ],
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     },
     {
-      "shot": "EP01_KF05",
-      "title": "Lin Zhou Recall Notice",
-      "prompt": "Shot: EP01_KF05 - Lin Zhou Recall Notice\nDuration: 5秒\nCamera: 电影级真实摄影机，镜头运动克制，有物理重量\nLens: 24mm建立尺度，35mm建立环境，50mm处理人物与机甲关系，85mm用于情绪细节\nMovement: 缓慢推进或稳定跟拍，禁止短视频式晃动\nCharacter Action: Lin Zhou is pulled back toward the machine and the old wound.\nEnvironment: 《潮汐钢魂》EP01，湿冷海防世界，需要绑定资产：linzhou\nLighting: 低饱和暴风雨光线，冷蓝工业光，只使用真实光源逻辑\nEmotion: 未知压迫，人类尺度面对海洋尺度\nSound: 深海低频、远处金属震动、克制机械细节\nNegative Prompt: anime, cartoon, game render, fake physics, plastic surface, over-saturated colors, text, logo, watermark, random character face, changed mech design"
+      "id": "KLING_EP01_006",
+      "shot": "EP01_SHOT_006",
+      "keyframe_id": "KF06",
+      "title": "深蓝基地冷蓝指挥中心",
+      "duration": 15,
+      "prompt": "镜头组：EP01_SHOT_006《深蓝基地冷蓝指挥中心》\n时长：15秒，包含2-4个分镜头。\n动机：异常进入人类决策空间，陈牧被巨大的系统包围。\n拍摄：以远景为主，24mm镜头，固定机位，保持真实摄影机重量和空间连续。\n分镜：先交代环境或物件状态，再让异常或人物反应出现，最后停在一个不可逆的结果上。\n运动规律：人物动作必须有原因，设备、雨水、海面和灯光按真实物理变化，不要所有元素同时乱动。\n情绪：克制、压低、未知靠近，不要英雄化，不要灾难奇观化。\n参考：使用对应关键帧 KF06 作为首帧Reference，并参考母资产 深蓝基地 / 指挥中心 / 陈牧。",
+      "reference_keyframe": "EP01_KF06",
+      "required_assets": [
+        "深蓝基地",
+        "指挥中心",
+        "陈牧"
+      ],
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     },
     {
-      "shot": "EP01_KF06",
-      "title": "Lin Zhou Enters Deep Blue Base",
-      "prompt": "Shot: EP01_KF06 - Lin Zhou Enters Deep Blue Base\nDuration: 5秒\nCamera: 电影级真实摄影机，镜头运动克制，有物理重量\nLens: 24mm建立尺度，35mm建立环境，50mm处理人物与机甲关系，85mm用于情绪细节\nMovement: 缓慢推进或稳定跟拍，禁止短视频式晃动\nCharacter Action: The human story enters the industrial defense system.\nEnvironment: 《潮汐钢魂》EP01，湿冷海防世界，需要绑定资产：linzhou, deep_blue_base\nLighting: 低饱和暴风雨光线，冷蓝工业光，只使用真实光源逻辑\nEmotion: 未知压迫，人类尺度面对海洋尺度\nSound: 深海低频、远处金属震动、克制机械细节\nNegative Prompt: anime, cartoon, game render, fake physics, plastic surface, over-saturated colors, text, logo, watermark, random character face, changed mech design"
+      "id": "KLING_EP01_007",
+      "shot": "EP01_SHOT_007",
+      "keyframe_id": "KF07",
+      "title": "陈牧茶杯水纹",
+      "duration": 15,
+      "prompt": "镜头组：EP01_SHOT_007《陈牧茶杯水纹》\n时长：15秒，包含2-4个分镜头。\n动机：外海异常进入基地内部，证明这不是单点设备误差。\n拍摄：以特写为主，85mm镜头，固定机位，保持真实摄影机重量和空间连续。\n分镜：先交代环境或物件状态，再让异常或人物反应出现，最后停在一个不可逆的结果上。\n运动规律：人物动作必须有原因，设备、雨水、海面和灯光按真实物理变化，不要所有元素同时乱动。\n情绪：克制、压低、未知靠近，不要英雄化，不要灾难奇观化。\n参考：使用对应关键帧 KF07 作为首帧Reference，并参考母资产 陈牧 / 深蓝基地 / 旧茶杯。",
+      "reference_keyframe": "EP01_KF07",
+      "required_assets": [
+        "陈牧",
+        "深蓝基地",
+        "旧茶杯"
+      ],
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     },
     {
-      "shot": "EP01_KF07",
-      "title": "Chiting-01 First Reveal",
-      "prompt": "Shot: EP01_KF07 - Chiting-01 First Reveal\nDuration: 5秒\nCamera: 电影级真实摄影机，镜头运动克制，有物理重量\nLens: 24mm建立尺度，35mm建立环境，50mm处理人物与机甲关系，85mm用于情绪细节\nMovement: 缓慢推进或稳定跟拍，禁止短视频式晃动\nCharacter Action: Reveal the machine as weight and danger, not salvation.\nEnvironment: 《潮汐钢魂》EP01，湿冷海防世界，需要绑定资产：chiting01\nLighting: 低饱和暴风雨光线，冷蓝工业光，只使用真实光源逻辑\nEmotion: 未知压迫，人类尺度面对海洋尺度\nSound: 深海低频、远处金属震动、克制机械细节\nNegative Prompt: anime, cartoon, game render, fake physics, plastic surface, over-saturated colors, text, logo, watermark, random character face, changed mech design"
+      "id": "KLING_EP01_008",
+      "shot": "EP01_SHOT_008",
+      "keyframe_id": "KF08",
+      "title": "AI澜系统层首次出现",
+      "duration": 15,
+      "prompt": "镜头组：EP01_SHOT_008《AI澜系统层首次出现》\n时长：15秒，包含2-4个分镜头。\n动机：AI澜第一次出现必须像基地系统，不是助手，也不是人形。\n拍摄：以屏幕特写为主，50mm镜头，固定机位，保持真实摄影机重量和空间连续。\n分镜：先交代环境或物件状态，再让异常或人物反应出现，最后停在一个不可逆的结果上。\n运动规律：人物动作必须有原因，设备、雨水、海面和灯光按真实物理变化，不要所有元素同时乱动。\n情绪：克制、压低、未知靠近，不要英雄化，不要灾难奇观化。\n参考：使用对应关键帧 KF08 作为首帧Reference，并参考母资产 AI澜系统界面 / 深蓝基地。",
+      "reference_keyframe": "EP01_KF08",
+      "required_assets": [
+        "AI澜系统界面",
+        "深蓝基地"
+      ],
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     },
     {
-      "shot": "EP01_KF08",
-      "title": "Cockpit Opens",
-      "prompt": "Shot: EP01_KF08 - Cockpit Opens\nDuration: 5秒\nCamera: 电影级真实摄影机，镜头运动克制，有物理重量\nLens: 24mm建立尺度，35mm建立环境，50mm处理人物与机甲关系，85mm用于情绪细节\nMovement: 缓慢推进或稳定跟拍，禁止短视频式晃动\nCharacter Action: The cockpit becomes a threshold rather than a vehicle entrance.\nEnvironment: 《潮汐钢魂》EP01，湿冷海防世界，需要绑定资产：chiting01, cockpit\nLighting: 低饱和暴风雨光线，冷蓝工业光，只使用真实光源逻辑\nEmotion: 未知压迫，人类尺度面对海洋尺度\nSound: 深海低频、远处金属震动、克制机械细节\nNegative Prompt: anime, cartoon, game render, fake physics, plastic surface, over-saturated colors, text, logo, watermark, random character face, changed mech design"
+      "id": "KLING_EP01_009",
+      "shot": "EP01_SHOT_009",
+      "keyframe_id": "KF09",
+      "title": "旧事故编号 DB-44-0918-A",
+      "duration": 15,
+      "prompt": "镜头组：EP01_SHOT_009《旧事故编号 DB-44-0918-A》\n时长：15秒，包含2-4个分镜头。\n动机：埋下三年前事故和林舟伤口，不解释，只让编号留下阴影。\n拍摄：以屏幕特写为主，50mm镜头，短暂停留，保持真实摄影机重量和空间连续。\n分镜：先交代环境或物件状态，再让异常或人物反应出现，最后停在一个不可逆的结果上。\n运动规律：人物动作必须有原因，设备、雨水、海面和灯光按真实物理变化，不要所有元素同时乱动。\n情绪：克制、压低、未知靠近，不要英雄化，不要灾难奇观化。\n参考：使用对应关键帧 KF09 作为首帧Reference，并参考母资产 AI澜系统界面 / 深蓝基地 / 旧事故档案。",
+      "reference_keyframe": "EP01_KF09",
+      "required_assets": [
+        "AI澜系统界面",
+        "深蓝基地",
+        "旧事故档案"
+      ],
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     },
     {
-      "shot": "EP01_KF09",
-      "title": "Lin Zhou Enters Cockpit",
-      "prompt": "Shot: EP01_KF09 - Lin Zhou Enters Cockpit\nDuration: 5秒\nCamera: 电影级真实摄影机，镜头运动克制，有物理重量\nLens: 24mm建立尺度，35mm建立环境，50mm处理人物与机甲关系，85mm用于情绪细节\nMovement: 缓慢推进或稳定跟拍，禁止短视频式晃动\nCharacter Action: Lin Zhou chooses the place that once represented failure.\nEnvironment: 《潮汐钢魂》EP01，湿冷海防世界，需要绑定资产：linzhou, chiting01, cockpit\nLighting: 低饱和暴风雨光线，冷蓝工业光，只使用真实光源逻辑\nEmotion: 未知压迫，人类尺度面对海洋尺度\nSound: 深海低频、远处金属震动、克制机械细节\nNegative Prompt: anime, cartoon, game render, fake physics, plastic surface, over-saturated colors, text, logo, watermark, random character face, changed mech design"
+      "id": "KLING_EP01_010",
+      "shot": "EP01_SHOT_010",
+      "keyframe_id": "KF10",
+      "title": "陈牧听见低频",
+      "duration": 15,
+      "prompt": "镜头组：EP01_SHOT_010《陈牧听见低频》\n时长：15秒，包含2-4个分镜头。\n动机：陈牧不是迷信经验，而是真的听见了系统忽略的差异。\n拍摄：以近景为主，50mm镜头，缓慢推进，保持真实摄影机重量和空间连续。\n分镜：先交代环境或物件状态，再让异常或人物反应出现，最后停在一个不可逆的结果上。\n运动规律：人物动作必须有原因，设备、雨水、海面和灯光按真实物理变化，不要所有元素同时乱动。\n情绪：克制、压低、未知靠近，不要英雄化，不要灾难奇观化。\n参考：使用对应关键帧 KF10 作为首帧Reference，并参考母资产 陈牧 / 深蓝基地 / 声呐监听设备。",
+      "reference_keyframe": "EP01_KF10",
+      "required_assets": [
+        "陈牧",
+        "深蓝基地",
+        "声呐监听设备"
+      ],
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     },
     {
-      "shot": "EP01_KF10",
-      "title": "Xu Ran Connection Failure",
-      "prompt": "Shot: EP01_KF10 - Xu Ran Connection Failure\nDuration: 5秒\nCamera: 电影级真实摄影机，镜头运动克制，有物理重量\nLens: 24mm建立尺度，35mm建立环境，50mm处理人物与机甲关系，85mm用于情绪细节\nMovement: 缓慢推进或稳定跟拍，禁止短视频式晃动\nCharacter Action: The first synchronization attempt fails without melodrama.\nEnvironment: 《潮汐钢魂》EP01，湿冷海防世界，需要绑定资产：xuran, cockpit\nLighting: 低饱和暴风雨光线，冷蓝工业光，只使用真实光源逻辑\nEmotion: 未知压迫，人类尺度面对海洋尺度\nSound: 深海低频、远处金属震动、克制机械细节\nNegative Prompt: anime, cartoon, game render, fake physics, plastic surface, over-saturated colors, text, logo, watermark, random character face, changed mech design"
+      "id": "KLING_EP01_011",
+      "shot": "EP01_SHOT_011",
+      "keyframe_id": "KF11",
+      "title": "控制台双重确认",
+      "duration": 15,
+      "prompt": "镜头组：EP01_SHOT_011《控制台双重确认》\n时长：15秒，包含2-4个分镜头。\n动机：关闭观测闸不是按按钮，而是一次会唤醒基地的选择。\n拍摄：以手部特写为主，85mm镜头，固定机位，保持真实摄影机重量和空间连续。\n分镜：先交代环境或物件状态，再让异常或人物反应出现，最后停在一个不可逆的结果上。\n运动规律：人物动作必须有原因，设备、雨水、海面和灯光按真实物理变化，不要所有元素同时乱动。\n情绪：克制、压低、未知靠近，不要英雄化，不要灾难奇观化。\n参考：使用对应关键帧 KF11 作为首帧Reference，并参考母资产 陈牧 / 控制台 / 深蓝基地。",
+      "reference_keyframe": "EP01_KF11",
+      "required_assets": [
+        "陈牧",
+        "控制台",
+        "深蓝基地"
+      ],
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     },
     {
-      "shot": "EP01_KF11",
-      "title": "White Tide Hits Defense Line",
-      "prompt": "Shot: EP01_KF11 - White Tide Hits Defense Line\nDuration: 5秒\nCamera: 电影级真实摄影机，镜头运动克制，有物理重量\nLens: 24mm建立尺度，35mm建立环境，50mm处理人物与机甲关系，85mm用于情绪细节\nMovement: 缓慢推进或稳定跟拍，禁止短视频式晃动\nCharacter Action: The city defense is stressed by behavior it misreads as attack.\nEnvironment: 《潮汐钢魂》EP01，湿冷海防世界，需要绑定资产：white_tide, hangzhou_bay\nLighting: 低饱和暴风雨光线，冷蓝工业光，只使用真实光源逻辑\nEmotion: 未知压迫，人类尺度面对海洋尺度\nSound: 深海低频、远处金属震动、克制机械细节\nNegative Prompt: anime, cartoon, game render, fake physics, plastic surface, over-saturated colors, text, logo, watermark, random character face, changed mech design"
+      "id": "KLING_EP01_012",
+      "shot": "EP01_SHOT_012",
+      "keyframe_id": "KF12",
+      "title": "外海观测闸关闭",
+      "duration": 15,
+      "prompt": "镜头组：EP01_SHOT_012《外海观测闸关闭》\n时长：15秒，包含2-4个分镜头。\n动机：EP01视觉高潮。陈牧关闭的不只是一扇闸门，也像在面对一个过去的错误。\n拍摄：以中远景为主，24mm镜头，固定机位，保持真实摄影机重量和空间连续。\n分镜：先交代环境或物件状态，再让异常或人物反应出现，最后停在一个不可逆的结果上。\n运动规律：人物动作必须有原因，设备、雨水、海面和灯光按真实物理变化，不要所有元素同时乱动。\n情绪：克制、压低、未知靠近，不要英雄化，不要灾难奇观化。\n参考：使用对应关键帧 KF12 作为首帧Reference，并参考母资产 观测闸 / 杭州湾外海 / 海防线。",
+      "reference_keyframe": "EP01_KF12",
+      "required_assets": [
+        "观测闸",
+        "杭州湾外海",
+        "海防线"
+      ],
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     },
     {
-      "shot": "EP01_KF12",
-      "title": "Chiting-01 Starts",
-      "prompt": "Shot: EP01_KF12 - Chiting-01 Starts\nDuration: 5秒\nCamera: 电影级真实摄影机，镜头运动克制，有物理重量\nLens: 24mm建立尺度，35mm建立环境，50mm处理人物与机甲关系，85mm用于情绪细节\nMovement: 缓慢推进或稳定跟拍，禁止短视频式晃动\nCharacter Action: The machine wakes as a dangerous decision.\nEnvironment: 《潮汐钢魂》EP01，湿冷海防世界，需要绑定资产：chiting01\nLighting: 低饱和暴风雨光线，冷蓝工业光，只使用真实光源逻辑\nEmotion: 未知压迫，人类尺度面对海洋尺度\nSound: 深海低频、远处金属震动、克制机械细节\nNegative Prompt: anime, cartoon, game render, fake physics, plastic surface, over-saturated colors, text, logo, watermark, random character face, changed mech design"
+      "id": "KLING_EP01_013",
+      "shot": "EP01_SHOT_013",
+      "keyframe_id": "KF13",
+      "title": "基地蓝色预警灯亮起",
+      "duration": 15,
+      "prompt": "镜头组：EP01_SHOT_013《基地蓝色预警灯亮起》\n时长：15秒，包含2-4个分镜头。\n动机：关闭完成后，基地不是混乱，而是被逐步叫醒。\n拍摄：以中景为主，35mm镜头，固定机位，保持真实摄影机重量和空间连续。\n分镜：先交代环境或物件状态，再让异常或人物反应出现，最后停在一个不可逆的结果上。\n运动规律：人物动作必须有原因，设备、雨水、海面和灯光按真实物理变化，不要所有元素同时乱动。\n情绪：克制、压低、未知靠近，不要英雄化，不要灾难奇观化。\n参考：使用对应关键帧 KF13 作为首帧Reference，并参考母资产 深蓝基地 / 蓝色预警灯 / 走廊。",
+      "reference_keyframe": "EP01_KF13",
+      "required_assets": [
+        "深蓝基地",
+        "蓝色预警灯",
+        "走廊"
+      ],
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     },
     {
-      "shot": "EP01_KF13",
-      "title": "Chiting-01 Moves Toward Sea",
-      "prompt": "Shot: EP01_KF13 - Chiting-01 Moves Toward Sea\nDuration: 5秒\nCamera: 电影级真实摄影机，镜头运动克制，有物理重量\nLens: 24mm建立尺度，35mm建立环境，50mm处理人物与机甲关系，85mm用于情绪细节\nMovement: 缓慢推进或稳定跟拍，禁止短视频式晃动\nCharacter Action: Human engineering moves into a scale it cannot own.\nEnvironment: 《潮汐钢魂》EP01，湿冷海防世界，需要绑定资产：chiting01, hangzhou_bay\nLighting: 低饱和暴风雨光线，冷蓝工业光，只使用真实光源逻辑\nEmotion: 未知压迫，人类尺度面对海洋尺度\nSound: 深海低频、远处金属震动、克制机械细节\nNegative Prompt: anime, cartoon, game render, fake physics, plastic surface, over-saturated colors, text, logo, watermark, random character face, changed mech design"
+      "id": "KLING_EP01_014",
+      "shot": "EP01_SHOT_014",
+      "keyframe_id": "KF14",
+      "title": "赤霆背部舱门关闭",
+      "duration": 15,
+      "prompt": "镜头组：EP01_SHOT_014《赤霆背部舱门关闭》\n时长：15秒，包含2-4个分镜头。\n动机：伏笔EP02，只展示背部舱门和湿冷装甲，不展示完整机甲。\n拍摄：以中远景为主，50mm镜头，固定机位，保持真实摄影机重量和空间连续。\n分镜：先交代环境或物件状态，再让异常或人物反应出现，最后停在一个不可逆的结果上。\n运动规律：人物动作必须有原因，设备、雨水、海面和灯光按真实物理变化，不要所有元素同时乱动。\n情绪：克制、压低、未知靠近，不要英雄化，不要灾难奇观化。\n参考：使用对应关键帧 KF14 作为首帧Reference，并参考母资产 赤霆01背部 / 深蓝基地 / 机库。",
+      "reference_keyframe": "EP01_KF14",
+      "required_assets": [
+        "赤霆01背部",
+        "深蓝基地",
+        "机库"
+      ],
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     },
     {
-      "shot": "EP01_KF14",
-      "title": "Chiting-01 First Combat",
-      "prompt": "Shot: EP01_KF14 - Chiting-01 First Combat\nDuration: 5秒\nCamera: 电影级真实摄影机，镜头运动克制，有物理重量\nLens: 24mm建立尺度，35mm建立环境，50mm处理人物与机甲关系，85mm用于情绪细节\nMovement: 缓慢推进或稳定跟拍，禁止短视频式晃动\nCharacter Action: The first fight proves force is not understanding.\nEnvironment: 《潮汐钢魂》EP01，湿冷海防世界，需要绑定资产：chiting01, white_tide\nLighting: 低饱和暴风雨光线，冷蓝工业光，只使用真实光源逻辑\nEmotion: 未知压迫，人类尺度面对海洋尺度\nSound: 深海低频、远处金属震动、克制机械细节\nNegative Prompt: anime, cartoon, game render, fake physics, plastic surface, over-saturated colors, text, logo, watermark, random character face, changed mech design"
-    },
-    {
-      "shot": "EP01_KF15",
-      "title": "White Tide and Chiting Face Each Other",
-      "prompt": "Shot: EP01_KF15 - White Tide and Chiting Face Each Other\nDuration: 5秒\nCamera: 电影级真实摄影机，镜头运动克制，有物理重量\nLens: 24mm建立尺度，35mm建立环境，50mm处理人物与机甲关系，85mm用于情绪细节\nMovement: 缓慢推进或稳定跟拍，禁止短视频式晃动\nCharacter Action: The confrontation begins to resemble recognition.\nEnvironment: 《潮汐钢魂》EP01，湿冷海防世界，需要绑定资产：chiting01, white_tide\nLighting: 低饱和暴风雨光线，冷蓝工业光，只使用真实光源逻辑\nEmotion: 未知压迫，人类尺度面对海洋尺度\nSound: 深海低频、远处金属震动、克制机械细节\nNegative Prompt: anime, cartoon, game render, fake physics, plastic surface, over-saturated colors, text, logo, watermark, random character face, changed mech design"
-    },
-    {
-      "shot": "EP01_KF16",
-      "title": "White Tide Releases Unknown Signal",
-      "prompt": "Shot: EP01_KF16 - White Tide Releases Unknown Signal\nDuration: 5秒\nCamera: 电影级真实摄影机，镜头运动克制，有物理重量\nLens: 24mm建立尺度，35mm建立环境，50mm处理人物与机甲关系，85mm用于情绪细节\nMovement: 缓慢推进或稳定跟拍，禁止短视频式晃动\nCharacter Action: The creature communicates in a form humans cannot classify.\nEnvironment: 《潮汐钢魂》EP01，湿冷海防世界，需要绑定资产：white_tide\nLighting: 低饱和暴风雨光线，冷蓝工业光，只使用真实光源逻辑\nEmotion: 未知压迫，人类尺度面对海洋尺度\nSound: 深海低频、远处金属震动、克制机械细节\nNegative Prompt: anime, cartoon, game render, fake physics, plastic surface, over-saturated colors, text, logo, watermark, random character face, changed mech design"
-    },
-    {
-      "shot": "EP01_KF17",
-      "title": "Tide Gate Rift Appears",
-      "prompt": "Shot: EP01_KF17 - Tide Gate Rift Appears\nDuration: 5秒\nCamera: 电影级真实摄影机，镜头运动克制，有物理重量\nLens: 24mm建立尺度，35mm建立环境，50mm处理人物与机甲关系，85mm用于情绪细节\nMovement: 缓慢推进或稳定跟拍，禁止短视频式晃动\nCharacter Action: The real unknown enters the frame as ecology, not portal effect.\nEnvironment: 《潮汐钢魂》EP01，湿冷海防世界，需要绑定资产：tide_gate, hangzhou_bay\nLighting: 低饱和暴风雨光线，冷蓝工业光，只使用真实光源逻辑\nEmotion: 未知压迫，人类尺度面对海洋尺度\nSound: 深海低频、远处金属震动、克制机械细节\nNegative Prompt: anime, cartoon, game render, fake physics, plastic surface, over-saturated colors, text, logo, watermark, random character face, changed mech design"
-    },
-    {
-      "shot": "EP01_KF18",
-      "title": "Black Tide Mother Opens Eye",
-      "prompt": "Shot: EP01_KF18 - Black Tide Mother Opens Eye\nDuration: 5秒\nCamera: 电影级真实摄影机，镜头运动克制，有物理重量\nLens: 24mm建立尺度，35mm建立环境，50mm处理人物与机甲关系，85mm用于情绪细节\nMovement: 缓慢推进或稳定跟拍，禁止短视频式晃动\nCharacter Action: End on a living system watching back.\nEnvironment: 《潮汐钢魂》EP01，湿冷海防世界，需要绑定资产：black_tide_mother, tide_gate\nLighting: 低饱和暴风雨光线，冷蓝工业光，只使用真实光源逻辑\nEmotion: 未知压迫，人类尺度面对海洋尺度\nSound: 深海低频、远处金属震动、克制机械细节\nNegative Prompt: anime, cartoon, game render, fake physics, plastic surface, over-saturated colors, text, logo, watermark, random character face, changed mech design"
+      "id": "KLING_EP01_015",
+      "shot": "EP01_SHOT_015",
+      "keyframe_id": "KF15",
+      "title": "海面水纹继续扩大",
+      "duration": 15,
+      "prompt": "镜头组：EP01_SHOT_015《海面水纹继续扩大》\n时长：15秒，包含2-4个分镜头。\n动机：最后的问题：不是怪兽来了，而是某个生命已经听见人类回应。\n拍摄：以远景转特写为主，35mm镜头，缓慢推进，保持真实摄影机重量和空间连续。\n分镜：先交代环境或物件状态，再让异常或人物反应出现，最后停在一个不可逆的结果上。\n运动规律：人物动作必须有原因，设备、雨水、海面和灯光按真实物理变化，不要所有元素同时乱动。\n情绪：克制、压低、未知靠近，不要英雄化，不要灾难奇观化。\n参考：使用对应关键帧 KF15 作为首帧Reference，并参考母资产 杭州湾外海 / 浮标阵列 / 观测闸。",
+      "reference_keyframe": "EP01_KF15",
+      "required_assets": [
+        "杭州湾外海",
+        "浮标阵列",
+        "观测闸"
+      ],
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     }
   ]
 }

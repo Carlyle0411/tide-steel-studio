@@ -21,7 +21,7 @@ export type ShotProductionContext = {
 };
 
 const keyframeContext: Record<string, Partial<ShotProductionContext>> = {
-  EP01_KF01: {
+  EP01_KF02: {
     camera: "24mm stable wide establishing shot",
     lens: "24mm",
     lighting: "low storm cloud, cold gray daylight, wet ocean atmosphere",

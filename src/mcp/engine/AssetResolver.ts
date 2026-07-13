@@ -23,7 +23,7 @@ export function resolveAssetById(assetId: string): ResolvedAssetReference | unde
 }
 
 export function resolveReferencesForShot(shotId: string): ResolvedAssetReference[] {
-  if (shotId === "EP01_KF01") {
+  if (shotId === "EP01_KF02") {
     return ["ENV-OCEANWALL-001", "ENV-DEEPBLUEBASE-001", "CHAR-CHENMU-001", "MECHA-CRT001-001"]
       .map(resolveAssetById)
       .filter(Boolean) as ResolvedAssetReference[];

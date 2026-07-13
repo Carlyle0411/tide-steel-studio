@@ -1,6 +1,6 @@
 {
   "schema": "Tide Steel Soul Industrial Asset",
-  "generatedAt": "2026-07-10T00:00:00.000+08:00",
+  "generatedAt": "2026-07-13T22:57:16.902Z",
   "assets": [
     {
       "id": "CHAR-LINZHOU-001",
@@ -11,7 +11,7 @@
       "category": "characters",
       "project": "潮汐钢魂",
       "episode": "EP01",
-      "shot": "EP01_KF05",
+      "shot": "",
       "path": "projects/tide-steel-soul/assets/characters/linzhou/001_portrait.png",
       "relativePath": "characters/linzhou/001_portrait.png",
       "prompt": "Lin Zhou character portrait, young Chinese pilot, early twenties, tired determined eyes, restrained fear under courage, short practical hair, humid naval base light, natural skin texture, film still realism, not heroic glamour.",
@@ -35,36 +35,13 @@
           "active": true
         }
       ],
-      "references": [
-        {
-          "type": "Shot",
-          "id": "EP01_KF05",
-          "name": "Lin Zhou Recall Notice",
-          "episode": "EP01"
-        },
-        {
-          "type": "Shot",
-          "id": "EP01_KF06",
-          "name": "Lin Zhou Enters Deep Blue Base",
-          "episode": "EP01"
-        },
-        {
-          "type": "Shot",
-          "id": "EP01_KF09",
-          "name": "Lin Zhou Enters Cockpit",
-          "episode": "EP01"
-        }
-      ],
+      "references": [],
       "linkedCharacters": [
         "林舟"
       ],
       "linkedScenes": [],
-      "linkedShots": [
-        "EP01_KF05",
-        "EP01_KF06",
-        "EP01_KF09"
-      ],
-      "usageCount": 3,
+      "linkedShots": [],
+      "usageCount": 0,
       "createdAt": "2026-07-09T15:45:01.157Z",
       "updatedAt": "2026-07-09T15:45:01.157Z",
       "qualityScore": 0,
@@ -91,7 +68,7 @@
       "category": "characters",
       "project": "潮汐钢魂",
       "episode": "EP01",
-      "shot": "EP01_KF05",
+      "shot": "",
       "path": "projects/tide-steel-soul/assets/characters/linzhou/002_fullbody.png",
       "relativePath": "characters/linzhou/002_fullbody.png",
       "prompt": "Lin Zhou full body design, young Chinese pilot, functional dark ocean-defense uniform, slim athletic build, worn boots, damp fabric, no fashion sci-fi, industrial military realism, neutral stance.",
@@ -115,36 +92,13 @@
           "active": true
         }
       ],
-      "references": [
-        {
-          "type": "Shot",
-          "id": "EP01_KF05",
-          "name": "Lin Zhou Recall Notice",
-          "episode": "EP01"
-        },
-        {
-          "type": "Shot",
-          "id": "EP01_KF06",
-          "name": "Lin Zhou Enters Deep Blue Base",
-          "episode": "EP01"
-        },
-        {
-          "type": "Shot",
-          "id": "EP01_KF09",
-          "name": "Lin Zhou Enters Cockpit",
-          "episode": "EP01"
-        }
-      ],
+      "references": [],
       "linkedCharacters": [
         "林舟"
       ],
       "linkedScenes": [],
-      "linkedShots": [
-        "EP01_KF05",
-        "EP01_KF06",
-        "EP01_KF09"
-      ],
-      "usageCount": 3,
+      "linkedShots": [],
+      "usageCount": 0,
       "createdAt": "2026-07-09T15:46:08.852Z",
       "updatedAt": "2026-07-09T15:46:08.852Z",
       "qualityScore": 0,
@@ -171,7 +125,7 @@
       "category": "characters",
       "project": "潮汐钢魂",
       "episode": "EP01",
-      "shot": "EP01_KF05",
+      "shot": "",
       "path": "projects/tide-steel-soul/assets/characters/linzhou/003_pilot_suit.png",
       "relativePath": "characters/linzhou/003_pilot_suit.png",
       "prompt": "Lin Zhou pilot suit design, pressure-rated mech synchronization suit, dark navy and black material, small blue sync nodes, practical straps and seals, worn by use, anxious readiness, film production asset.",
@@ -194,36 +148,13 @@
           "active": true
         }
       ],
-      "references": [
-        {
-          "type": "Shot",
-          "id": "EP01_KF05",
-          "name": "Lin Zhou Recall Notice",
-          "episode": "EP01"
-        },
-        {
-          "type": "Shot",
-          "id": "EP01_KF06",
-          "name": "Lin Zhou Enters Deep Blue Base",
-          "episode": "EP01"
-        },
-        {
-          "type": "Shot",
-          "id": "EP01_KF09",
-          "name": "Lin Zhou Enters Cockpit",
-          "episode": "EP01"
-        }
-      ],
+      "references": [],
       "linkedCharacters": [
         "林舟"
       ],
       "linkedScenes": [],
-      "linkedShots": [
-        "EP01_KF05",
-        "EP01_KF06",
-        "EP01_KF09"
-      ],
-      "usageCount": 3,
+      "linkedShots": [],
+      "usageCount": 0,
       "createdAt": "2026-07-09T15:47:14.213Z",
       "updatedAt": "2026-07-09T15:47:14.213Z",
       "qualityScore": 0,
@@ -250,7 +181,7 @@
       "category": "characters",
       "project": "潮汐钢魂",
       "episode": "EP01",
-      "shot": "EP01_KF05",
+      "shot": "",
       "path": "projects/tide-steel-soul/assets/characters/linzhou/004_emotion_sheet.png",
       "relativePath": "characters/linzhou/004_emotion_sheet.png",
       "prompt": "Lin Zhou emotional expression sheet, same young Chinese pilot face, fear, restraint, guilt, resolve, listening to unknown signal, realistic film lighting, no cartoon expression exaggeration.",
@@ -274,36 +205,13 @@
           "active": true
         }
       ],
-      "references": [
-        {
-          "type": "Shot",
-          "id": "EP01_KF05",
-          "name": "Lin Zhou Recall Notice",
-          "episode": "EP01"
-        },
-        {
-          "type": "Shot",
-          "id": "EP01_KF06",
-          "name": "Lin Zhou Enters Deep Blue Base",
-          "episode": "EP01"
-        },
-        {
-          "type": "Shot",
-          "id": "EP01_KF09",
-          "name": "Lin Zhou Enters Cockpit",
-          "episode": "EP01"
-        }
-      ],
+      "references": [],
       "linkedCharacters": [
         "林舟"
       ],
       "linkedScenes": [],
-      "linkedShots": [
-        "EP01_KF05",
-        "EP01_KF06",
-        "EP01_KF09"
-      ],
-      "usageCount": 3,
+      "linkedShots": [],
+      "usageCount": 0,
       "createdAt": "2026-07-09T15:48:20.489Z",
       "updatedAt": "2026-07-09T15:48:20.489Z",
       "qualityScore": 0,
@@ -330,7 +238,7 @@
       "category": "creatures",
       "project": "潮汐钢魂",
       "episode": "EP01",
-      "shot": "EP01_KF02",
+      "shot": "",
       "path": "projects/tide-steel-soul/assets/creatures/white_tide/battle_pose.png",
       "relativePath": "creatures/white_tide/battle_pose.png",
       "prompt": "White Tide defensive battle pose in storm water, huge white armored ocean creature, movement like pressure wave, not aggressive hunting, ancient life trying to survive, scale against ocean mist, grounded film realism.",
@@ -354,12 +262,6 @@
         }
       ],
       "references": [
-        {
-          "type": "Shot",
-          "id": "EP01_KF02",
-          "name": "White Tide First Appearance",
-          "episode": "EP01"
-        },
         {
           "type": "Shot",
           "id": "EP01_KF11",
@@ -388,13 +290,12 @@
       "linkedCharacters": [],
       "linkedScenes": [],
       "linkedShots": [
-        "EP01_KF02",
         "EP01_KF11",
         "EP01_KF14",
         "EP01_KF15",
         "EP01_KF16"
       ],
-      "usageCount": 5,
+      "usageCount": 4,
       "createdAt": "2026-07-09T15:52:02.065Z",
       "updatedAt": "2026-07-09T15:52:02.065Z",
       "qualityScore": 0,
@@ -421,7 +322,7 @@
       "category": "creatures",
       "project": "潮汐钢魂",
       "episode": "EP01",
-      "shot": "EP01_KF02",
+      "shot": "",
       "path": "projects/tide-steel-soul/assets/creatures/white_tide/damage_state.png",
       "relativePath": "creatures/white_tide/damage_state.png",
       "prompt": "White Tide damaged state, cracked white biological shell, exposed translucent blue tissue, wounded deep-sea life, fragile and enormous, no gore spectacle, sympathetic unknown creature design.",
@@ -445,12 +346,6 @@
         }
       ],
       "references": [
-        {
-          "type": "Shot",
-          "id": "EP01_KF02",
-          "name": "White Tide First Appearance",
-          "episode": "EP01"
-        },
         {
           "type": "Shot",
           "id": "EP01_KF11",
@@ -479,13 +374,12 @@
       "linkedCharacters": [],
       "linkedScenes": [],
       "linkedShots": [
-        "EP01_KF02",
         "EP01_KF11",
         "EP01_KF14",
         "EP01_KF15",
         "EP01_KF16"
       ],
-      "usageCount": 5,
+      "usageCount": 4,
       "createdAt": "2026-07-09T15:53:21.751Z",
       "updatedAt": "2026-07-09T15:53:21.751Z",
       "qualityScore": 0,
@@ -512,7 +406,7 @@
       "category": "creatures",
       "project": "潮汐钢魂",
       "episode": "EP01",
-      "shot": "EP01_KF02",
+      "shot": "",
       "path": "projects/tide-steel-soul/assets/creatures/white_tide/full_body.png",
       "relativePath": "creatures/white_tide/full_body.png",
       "prompt": "White Tide full body creature, ancient deep ocean life, huge yet fragile, white biological armor shell, translucent blue tissue, cracked subtle bioluminescent patterns, pressure-adapted anatomy, not dinosaur, not demon, not boss monster.",
@@ -536,12 +430,6 @@
         }
       ],
       "references": [
-        {
-          "type": "Shot",
-          "id": "EP01_KF02",
-          "name": "White Tide First Appearance",
-          "episode": "EP01"
-        },
         {
           "type": "Shot",
           "id": "EP01_KF11",
@@ -570,13 +458,12 @@
       "linkedCharacters": [],
       "linkedScenes": [],
       "linkedShots": [
-        "EP01_KF02",
         "EP01_KF11",
         "EP01_KF14",
         "EP01_KF15",
         "EP01_KF16"
       ],
-      "usageCount": 5,
+      "usageCount": 4,
       "createdAt": "2026-07-09T15:49:35.322Z",
       "updatedAt": "2026-07-09T15:49:35.322Z",
       "qualityScore": 0,
@@ -603,7 +490,7 @@
       "category": "creatures",
       "project": "潮汐钢魂",
       "episode": "EP01",
-      "shot": "EP01_KF02",
+      "shot": "",
       "path": "projects/tide-steel-soul/assets/creatures/white_tide/head_detail.png",
       "relativePath": "creatures/white_tide/head_detail.png",
       "prompt": "White Tide head detail, white shell plates, deep-sea sensory folds, translucent membrane, ancient fragile biology, low saturation ocean blue, no roaring monster mouth, unknown lifeform close study.",
@@ -626,12 +513,6 @@
         }
       ],
       "references": [
-        {
-          "type": "Shot",
-          "id": "EP01_KF02",
-          "name": "White Tide First Appearance",
-          "episode": "EP01"
-        },
         {
           "type": "Shot",
           "id": "EP01_KF11",
@@ -660,13 +541,12 @@
       "linkedCharacters": [],
       "linkedScenes": [],
       "linkedShots": [
-        "EP01_KF02",
         "EP01_KF11",
         "EP01_KF14",
         "EP01_KF15",
         "EP01_KF16"
       ],
-      "usageCount": 5,
+      "usageCount": 4,
       "createdAt": "2026-07-09T15:50:46.546Z",
       "updatedAt": "2026-07-09T15:50:46.546Z",
       "qualityScore": 0,
@@ -693,7 +573,7 @@
       "category": "mechas",
       "project": "潮汐钢魂",
       "episode": "EP01",
-      "shot": "EP01_KF07",
+      "shot": "",
       "path": "projects/tide-steel-soul/assets/mechas/chiting01/back.png",
       "relativePath": "mechas/chiting01/back.png",
       "prompt": "CRT-001 Chiting-01 back design, hidden rear cockpit entrance, shoulder armor and back plating, deep crimson worn armor, black hydraulic frame, blue warning sync light, wet metal and maintenance scars, partial industrial realism.",
@@ -717,24 +597,6 @@
         }
       ],
       "references": [
-        {
-          "type": "Shot",
-          "id": "EP01_KF07",
-          "name": "Chiting-01 First Reveal",
-          "episode": "EP01"
-        },
-        {
-          "type": "Shot",
-          "id": "EP01_KF08",
-          "name": "Cockpit Opens",
-          "episode": "EP01"
-        },
-        {
-          "type": "Shot",
-          "id": "EP01_KF09",
-          "name": "Lin Zhou Enters Cockpit",
-          "episode": "EP01"
-        },
         {
           "type": "Shot",
           "id": "EP01_KF10",
@@ -771,16 +633,13 @@
         "驾驶舱"
       ],
       "linkedShots": [
-        "EP01_KF07",
-        "EP01_KF08",
-        "EP01_KF09",
         "EP01_KF10",
         "EP01_KF12",
         "EP01_KF13",
         "EP01_KF14",
         "EP01_KF15"
       ],
-      "usageCount": 8,
+      "usageCount": 5,
       "createdAt": "2026-07-09T15:40:51.397Z",
       "updatedAt": "2026-07-09T15:40:51.397Z",
       "qualityScore": 0,
@@ -807,7 +666,7 @@
       "category": "mechas",
       "project": "潮汐钢魂",
       "episode": "EP01",
-      "shot": "EP01_KF07",
+      "shot": "",
       "path": "projects/tide-steel-soul/assets/mechas/chiting01/battle_damage.png",
       "relativePath": "mechas/chiting01/battle_damage.png",
       "prompt": "CRT-001 battle damage version, deep crimson armor cracked and salt-burned, black frame exposed, blue reactor still alive, heavy industrial mech after ocean impact, not destroyed, no superhero staging.",
@@ -831,24 +690,6 @@
         }
       ],
       "references": [
-        {
-          "type": "Shot",
-          "id": "EP01_KF07",
-          "name": "Chiting-01 First Reveal",
-          "episode": "EP01"
-        },
-        {
-          "type": "Shot",
-          "id": "EP01_KF08",
-          "name": "Cockpit Opens",
-          "episode": "EP01"
-        },
-        {
-          "type": "Shot",
-          "id": "EP01_KF09",
-          "name": "Lin Zhou Enters Cockpit",
-          "episode": "EP01"
-        },
         {
           "type": "Shot",
           "id": "EP01_KF12",
@@ -877,15 +718,12 @@
       "linkedCharacters": [],
       "linkedScenes": [],
       "linkedShots": [
-        "EP01_KF07",
-        "EP01_KF08",
-        "EP01_KF09",
         "EP01_KF12",
         "EP01_KF13",
         "EP01_KF14",
         "EP01_KF15"
       ],
-      "usageCount": 7,
+      "usageCount": 4,
       "createdAt": "2026-07-09T15:43:54.425Z",
       "updatedAt": "2026-07-09T15:43:54.425Z",
       "qualityScore": 0,
@@ -912,7 +750,7 @@
       "category": "mechas",
       "project": "潮汐钢魂",
       "episode": "EP01",
-      "shot": "EP01_KF07",
+      "shot": "",
       "path": "projects/tide-steel-soul/assets/mechas/chiting01/cockpit.png",
       "relativePath": "mechas/chiting01/cockpit.png",
       "prompt": "CRT-001 cockpit interior, compact industrial pilot chamber, dark red armored shell, black restraint frame, cold blue synchronization interface, damp metal, scratched glass, tactile controls, no holographic clutter, grounded film realism.",
@@ -937,24 +775,6 @@
         }
       ],
       "references": [
-        {
-          "type": "Shot",
-          "id": "EP01_KF07",
-          "name": "Chiting-01 First Reveal",
-          "episode": "EP01"
-        },
-        {
-          "type": "Shot",
-          "id": "EP01_KF08",
-          "name": "Cockpit Opens",
-          "episode": "EP01"
-        },
-        {
-          "type": "Shot",
-          "id": "EP01_KF09",
-          "name": "Lin Zhou Enters Cockpit",
-          "episode": "EP01"
-        },
         {
           "type": "Shot",
           "id": "EP01_KF10",
@@ -991,16 +811,13 @@
         "驾驶舱"
       ],
       "linkedShots": [
-        "EP01_KF07",
-        "EP01_KF08",
-        "EP01_KF09",
         "EP01_KF10",
         "EP01_KF12",
         "EP01_KF13",
         "EP01_KF14",
         "EP01_KF15"
       ],
-      "usageCount": 8,
+      "usageCount": 5,
       "createdAt": "2026-07-09T15:42:30.625Z",
       "updatedAt": "2026-07-09T15:42:30.625Z",
       "qualityScore": 0,
@@ -1027,7 +844,7 @@
       "category": "mechas",
       "project": "潮汐钢魂",
       "episode": "EP01",
-      "shot": "EP01_KF07",
+      "shot": "",
       "path": "projects/tide-steel-soul/assets/mechas/chiting01/front.png",
       "relativePath": "mechas/chiting01/front.png",
       "prompt": "CRT-001 Chiting-01 front design, heavy industrial humanoid mech, deep crimson armor, black mechanical skeleton, blue energy reactor, 20 meters scale, wet metal, salt corrosion, restrained film concept art, not anime, not game render.",
@@ -1050,24 +867,6 @@
         }
       ],
       "references": [
-        {
-          "type": "Shot",
-          "id": "EP01_KF07",
-          "name": "Chiting-01 First Reveal",
-          "episode": "EP01"
-        },
-        {
-          "type": "Shot",
-          "id": "EP01_KF08",
-          "name": "Cockpit Opens",
-          "episode": "EP01"
-        },
-        {
-          "type": "Shot",
-          "id": "EP01_KF09",
-          "name": "Lin Zhou Enters Cockpit",
-          "episode": "EP01"
-        },
         {
           "type": "Shot",
           "id": "EP01_KF12",
@@ -1096,15 +895,12 @@
       "linkedCharacters": [],
       "linkedScenes": [],
       "linkedShots": [
-        "EP01_KF07",
-        "EP01_KF08",
-        "EP01_KF09",
         "EP01_KF12",
         "EP01_KF13",
         "EP01_KF14",
         "EP01_KF15"
       ],
-      "usageCount": 7,
+      "usageCount": 4,
       "createdAt": "2026-07-09T15:36:44.668Z",
       "updatedAt": "2026-07-09T15:36:44.668Z",
       "qualityScore": 0,
@@ -1131,7 +927,7 @@
       "category": "mechas",
       "project": "潮汐钢魂",
       "episode": "EP01",
-      "shot": "EP01_KF07",
+      "shot": "",
       "path": "projects/tide-steel-soul/assets/mechas/chiting01/side.png",
       "relativePath": "mechas/chiting01/side.png",
       "prompt": "CRT-001 Chiting-01 side design, heavy industrial silhouette, deep crimson armor plates, black inner frame, blue synchronized energy lines, humid Hangzhou Bay hangar light, practical engineering mass, no hero pose.",
@@ -1154,24 +950,6 @@
         }
       ],
       "references": [
-        {
-          "type": "Shot",
-          "id": "EP01_KF07",
-          "name": "Chiting-01 First Reveal",
-          "episode": "EP01"
-        },
-        {
-          "type": "Shot",
-          "id": "EP01_KF08",
-          "name": "Cockpit Opens",
-          "episode": "EP01"
-        },
-        {
-          "type": "Shot",
-          "id": "EP01_KF09",
-          "name": "Lin Zhou Enters Cockpit",
-          "episode": "EP01"
-        },
         {
           "type": "Shot",
           "id": "EP01_KF12",
@@ -1202,15 +980,12 @@
         "杭州湾"
       ],
       "linkedShots": [
-        "EP01_KF07",
-        "EP01_KF08",
-        "EP01_KF09",
         "EP01_KF12",
         "EP01_KF13",
         "EP01_KF14",
         "EP01_KF15"
       ],
-      "usageCount": 7,
+      "usageCount": 4,
       "createdAt": "2026-07-09T15:39:46.576Z",
       "updatedAt": "2026-07-09T15:39:46.576Z",
       "qualityScore": 0,

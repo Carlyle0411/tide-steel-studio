@@ -213,7 +213,6 @@ function buildKeyframeImagePrompt(keyframe: KeyframeItem, role: KeyframeFrameRol
 }
 
 const visualDescriptions: Record<string, string> = {
-  KF01: "阴天的杭州湾海防线仍在正常运转，海洋占据画面大部分，远处海面只有极轻微的反向水纹。",
   KF02: "暴雨海面下出现巨大模糊白影，只露出潮湿白色甲壳的一角，不展示完整白潮。",
   KF03: "深蓝基地进入冷蓝警戒，工作人员仍在岗位，屏幕大部分正常，只有低频波形归零。",
   KF04: "陈牧停下记录动作，侧头看向监听设备；背景工作人员继续工作，自动系统仍显示正常。",
@@ -223,7 +222,6 @@ const visualDescriptions: Record<string, string> = {
 
 const motionEndings: Record<string, string> = {
   TR05: "林舟从值班舱冲入潮湿工业通道，身体向机库方向前倾，脚步落稳，蓝色警报光仍掠过左眉伤痕。",
-  KF01: "远处水纹收束为更清晰的一道反向波纹，防线设备依然运转，世界刚刚显出不对劲。",
   KF02: "白色甲壳沉回浪下，只在雨幕里留下向内收束的水面痕迹。",
   KF04: "陈牧将手停在监听台上，目光锁定设备，背景系统仍没有发出警报。",
   KF05: "林舟已从床沿站起，握住门框，面向通道，惊醒后的呼吸尚未平复。",
@@ -289,7 +287,17 @@ const assetReferenceDetails: Record<string, string[]> = {
 function getReferences(keyframe: KeyframeItem) { return keyframe.required_assets.flatMap((asset) => assetReferenceDetails[asset] ?? [asset]); }
 
 function getKeyframeProjects(): KeyframeProject[] {
-  const ep01 = getEP01Keyframes().map((keyframe) => ({ id: keyframe.id, storageId: keyframe.id, shot: keyframe.shot, title: keyframe.title, purpose: keyframe.purpose, required_assets: keyframe.required_assets, status: keyframe.status, visual: visualDescriptions[keyframe.id] ?? keyframe.purpose, frameMode: "SINGLE" as const }));
+  const ep01 = getEP01Keyframes().map((keyframe) => ({
+    id: keyframe.id,
+    storageId: `EP01_${keyframe.id}`,
+    shot: keyframe.shot,
+    title: keyframe.title,
+    purpose: keyframe.purpose,
+    required_assets: keyframe.required_assets,
+    status: keyframe.status,
+    visual: keyframe.notes ?? keyframe.purpose,
+    frameMode: "SINGLE" as const
+  }));
   const trailerMode = new Map(trailer90Shots.map((shot) => [shot.id, shot.mode]));
   return getVideoProjects().map((project) => project.id === "EP01" ? { id: project.id, label: project.label, helper: project.helper, keyframes: ep01 } : { id: project.id, label: project.label, helper: project.helper, keyframes: project.shots.map((shot) => ({ id: shot.keyframeId, storageId: project.id === "TRAILER90" ? `TRAILER_${shot.keyframeId}` : `${project.id}_${shot.keyframeId}`, shot: shot.id, title: shot.title, purpose: shot.description, required_assets: project.requiredAssets[shot.id] ?? [], status: shot.status, visual: shot.notes || shot.description, frameMode: project.id === "TRAILER90" && trailerMode.get(shot.keyframeId) === "首尾帧" ? "PAIR" as const : "SINGLE" as const })) });
 }

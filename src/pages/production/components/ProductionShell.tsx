@@ -207,7 +207,7 @@ export function ProductionShell({
 }
 
 async function runCommand(commandId: string, onChange: (section: ProductionSection) => void) {
-  const common = { projectId: "tide-steel-soul", episodeId: "EP01", shotId: "EP01_KF01", assetIds: [] as string[], output: undefined };
+  const common = { projectId: "tide-steel-soul", episodeId: "EP01", shotId: "EP01_KF02", assetIds: [] as string[], output: undefined };
   if (commandId === "generate-keyframe") {
     createLocalGenerationBatch(createLocalAssetRecords().slice(0, 1), "generate_single_local_keyframe_asset");
     onChange("aiAssetLibrary");
@@ -219,10 +219,10 @@ async function runCommand(commandId: string, onChange: (section: ProductionSecti
     return;
   }
   if (commandId === "run-consistency-check") {
-    taskQueue.addTask({ ...common, type: "consistency_check", toolId: "mcp_internal", assetIds: ["EP01-KF01"], reviewStatus: "draft", input: { subject: "EP01 asset consistency", registered: true, prompt: "Check EP01 approved visual style." } });
+    taskQueue.addTask({ ...common, type: "consistency_check", toolId: "mcp_internal", assetIds: ["EP01-KF02"], reviewStatus: "draft", input: { subject: "EP01 asset consistency", registered: true, prompt: "Check EP01 approved visual style." } });
   }
   if (commandId === "review-asset") {
-    taskQueue.addTask({ ...common, type: "asset_review", toolId: "mcp_internal", assetIds: ["EP01-KF01"], reviewStatus: "review", input: { approved: false, consistencyPassed: false, assetStatus: "review" } });
+    taskQueue.addTask({ ...common, type: "asset_review", toolId: "mcp_internal", assetIds: ["EP01-KF02"], reviewStatus: "review", input: { approved: false, consistencyPassed: false, assetStatus: "review" } });
   }
   if (commandId === "export-episode") {
     taskQueue.addTask({ ...common, type: "export_episode", toolId: "mcp_internal", reviewStatus: "draft", input: { format: "markdown", package: exportEpisodePackage("EP01").name } });
@@ -234,12 +234,12 @@ async function runCommand(commandId: string, onChange: (section: ProductionSecti
     taskQueue.addTask({ ...common, type: "style_check", toolId: "mcp_internal", reviewStatus: "draft", input: { action: "open_tool_registry" } });
   }
   if (commandId === "generate-director-prompt") {
-    taskQueue.addTask({ ...common, type: "prompt_generation", toolId: "director_engine", shotId: "EP01_KF01", reviewStatus: "draft", input: { action: "generate_director_prompt", episodeId: "EP01", shotId: "EP01_KF01" } });
+    taskQueue.addTask({ ...common, type: "prompt_generation", toolId: "director_engine", shotId: "EP01_KF02", reviewStatus: "draft", input: { action: "generate_director_prompt", episodeId: "EP01", shotId: "EP01_KF02" } });
     onChange("directorReview");
     return;
   }
   if (commandId === "generate-production-shot") {
-    productionOrchestrator.createProductionShot({ episodeId: "EP01", shotId: "EP01_KF01", directionApproved: true, autoRun: false }).catch(() => undefined);
+    productionOrchestrator.createProductionShot({ episodeId: "EP01", shotId: "EP01_KF02", directionApproved: true, autoRun: false }).catch(() => undefined);
     onChange("image");
     return;
   }
@@ -508,7 +508,7 @@ function createPausedVideoTask() {
   taskQueue.addTask({
     projectId: "tide-steel-soul",
     episodeId: "EP01",
-    shotId: "EP01_KF01",
+    shotId: "EP01_KF02",
     assetIds: [],
     type: "video_generation",
     toolId: "manual_kling_workflow",

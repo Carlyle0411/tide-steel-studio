@@ -8,7 +8,7 @@ import { buildImagePrompt } from "../engine/PromptBuilder";
 import { runAssetSafetyCheck } from "./assetSafetyRules";
 
 export async function createKeyframeProductionWorkflow(task: MCPTask): Promise<Partial<MCPTask>> {
-  const context = resolveShotContext(task.episodeId ?? "EP01", task.shotId ?? "EP01_KF01");
+  const context = resolveShotContext(task.episodeId ?? "EP01", task.shotId ?? "EP01_KF02");
   const prompt = {
     ...buildImagePrompt(context),
     prompt: typeof task.input.prompt === "string" && task.input.prompt.trim() ? task.input.prompt : buildImagePrompt(context).prompt,

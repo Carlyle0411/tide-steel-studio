@@ -68,7 +68,7 @@ export function DirectorWorkstationView() {
             {[
               "审核赤霆01五张基础资产，确认结构是否统一。",
               "补齐许燃、陈牧、唐小满、AI澜的角色资产计划。",
-              "从 KF01-KF04 开始生成第一批关键帧，不跳过审核。",
+              "从 KF02-KF04 开始生成第一批关键帧，不跳过审核。",
               "为已通过关键帧生成可灵提示词文本。"
             ].map((item) => <div key={item} className="rounded border border-white/10 bg-black/20 px-3 py-2 text-sm text-slate-300">{item}</div>)}
           </div>

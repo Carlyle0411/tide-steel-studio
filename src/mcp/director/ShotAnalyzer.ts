@@ -13,7 +13,7 @@ export type ShotUnderstanding = {
 
 export function analyzeShot(episodeId: string, shotId: string): ShotUnderstanding {
   const context = resolveShotContext(episodeId, shotId);
-  if (shotId === "EP01_KF01") {
+  if (shotId === "EP01_KF02") {
     return {
       shotId,
       storyIntent: "暴风雨前的杭州湾防线仍在正常运行，但海洋已经出现第一丝不属于人类理解的规律。",

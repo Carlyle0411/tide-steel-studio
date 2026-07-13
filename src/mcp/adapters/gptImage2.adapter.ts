@@ -100,7 +100,7 @@ async function generateImage(input: GPTImage2GenerateInput): Promise<GPTImage2Ge
     }
 
     const episode = input.episodeId ?? "EP01";
-    const shot = input.shotId ?? "KF01";
+    const shot = input.shotId ?? "KF02";
     const version = input.version ?? nextAssetVersion();
     const stored = await assetStorage.saveGeneratedAsset({
       episode,
@@ -181,7 +181,7 @@ export const gptImage2Adapter: MCPAdapter & {
       quality: input.quality as GPTImage2GenerateInput["quality"],
       referenceImages: Array.isArray(input.referenceImages) ? input.referenceImages.map(String) : Array.isArray(input.references) ? input.references.map((item) => JSON.stringify(item)) : [],
       episodeId: String(input.episodeId ?? "EP01"),
-      shotId: String(input.shotId ?? "KF01"),
+      shotId: String(input.shotId ?? "KF02"),
       version: input.version ? String(input.version) : undefined
     });
     if (result.status === "completed") return { status: "completed", output: result, providerJobId: result.assetPath };

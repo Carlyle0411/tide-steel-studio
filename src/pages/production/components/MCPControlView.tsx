@@ -18,7 +18,7 @@ export function MCPControlView() {
   const [logs, setLogs] = useState<MCPLogEntry[]>(() => mcpLogger.list());
   const [reviewItems, setReviewItems] = useState<ReviewQueueItem[]>(() => reviewQueue.list());
   const [runnerEpisode, setRunnerEpisode] = useState("EP01");
-  const [runnerShot, setRunnerShot] = useState("EP01_KF01");
+  const [runnerShot, setRunnerShot] = useState("EP01_KF02");
   const safetyDigest = getSafetySourceDigest();
   const runnerContext = resolveShotContext(runnerEpisode, runnerShot);
   const runnerPrompt = buildImagePrompt(runnerContext);
@@ -48,7 +48,7 @@ export function MCPControlView() {
     targetStage: "video",
     targetToolId: "kling",
     assetStatus: "draft",
-    assetId: "EP01-KF01",
+    assetId: "EP01-KF02",
     episodeId: "EP01"
   });
 
@@ -67,7 +67,7 @@ export function MCPControlView() {
             <label className="block">
               <span className="label">Shot</span>
               <select className="field" value={runnerShot} onChange={(event) => setRunnerShot(event.target.value)}>
-                <option value="EP01_KF01">EP01_KF01</option>
+                <option value="EP01_KF02">EP01_KF02</option>
               </select>
             </label>
           </div>

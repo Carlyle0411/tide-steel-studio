@@ -23,7 +23,7 @@ export function DashboardView() {
   const metrics = buildDashboardMetrics();
   const recent = [
     ["最近修改", "VISUAL_PIPELINE_BIBLE.md", "Production pipeline locked"],
-    ["最近审核", "EP01_KEYFRAME_AUDIT_BATCH01.md", "KF01 / KF02 / KF04 / KF09 approved"],
+    ["最近审核", "EP01_KEYFRAME_AUDIT_BATCH01.md", "KF02 / KF04 / KF09 approved"],
     ["最近生成图片", "EP01_KF09_APPROVED_V01.png", "Observation gate closing"],
     ["最近生成视频", "None", "Waiting for Kling / Veo adapter"]
   ];
@@ -335,7 +335,7 @@ function CenterCard({ item }: { item: ProductionCenterItem }) {
 export function StoryboardView() {
   const [selectedId, setSelectedId] = useState(storyboardShots[0]?.id ?? "");
   const selected = storyboardShots.find((shot) => shot.id === selectedId) ?? storyboardShots[0];
-  const context = resolveShotContext("EP01", selected?.id ?? "EP01_KF01");
+  const context = resolveShotContext("EP01", selected?.id ?? "EP01_KF02");
   const prompt = buildImagePrompt(context);
   return (
     <div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_360px]">
@@ -356,7 +356,7 @@ export function StoryboardView() {
         </div>
         <div className="mt-5 border-t border-white/10 pt-4">
           <div className="mb-3 text-xs uppercase tracking-[0.22em] text-slate-500">Video Planning Tab</div>
-          <VideoPlanningPanel shotId={selected?.id ?? "EP01_KF01"} />
+          <VideoPlanningPanel shotId={selected?.id ?? "EP01_KF02"} />
         </div>
       </ProductionCard>
     </div>
@@ -364,7 +364,7 @@ export function StoryboardView() {
 }
 
 function VideoPlanningPanel({ shotId }: { shotId: string }) {
-  const videoPackage = createVideoProductionPackage({ episodeId: "EP01", shotId, approvedImage: "EP01_KF01_APPROVED_V01.png" });
+  const videoPackage = createVideoProductionPackage({ episodeId: "EP01", shotId, approvedImage: "EP01_KF02_APPROVED_V01.png" });
   return (
     <div className="space-y-2 text-xs text-slate-400">
       <div>Shot: {shotId}</div>

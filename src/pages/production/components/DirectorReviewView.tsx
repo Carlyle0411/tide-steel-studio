@@ -5,7 +5,7 @@ import { ProductionCard, StatusPill } from "./ProductionShell";
 
 export function DirectorReviewView() {
   const [episodeId, setEpisodeId] = useState("EP01");
-  const [shotId, setShotId] = useState("EP01_KF01");
+  const [shotId, setShotId] = useState("EP01_KF02");
   const [approved, setApproved] = useState(false);
   const directorPackage = useMemo(() => directorEngine.generateDirectorPrompt(episodeId, shotId), [episodeId, shotId]);
 
@@ -37,7 +37,7 @@ export function DirectorReviewView() {
           <label>
             <span className="label">Shot</span>
             <select className="field" value={shotId} onChange={(event) => setShotId(event.target.value)}>
-              <option value="EP01_KF01">EP01_KF01</option>
+              <option value="EP01_KF02">EP01_KF02</option>
             </select>
           </label>
         </div>

@@ -3,7 +3,7 @@
   "episode": "EP01",
   "title": "EP01 海面低频 Timeline",
   "zoom": 1,
-  "duration": 105,
+  "duration": 210,
   "tracks": [
     {
       "id": "TRACK-VIDEO",
@@ -13,627 +13,119 @@
       "hidden": false,
       "items": [
         {
-          "id": "VIDEO-EP01_KF01",
-          "shot": "EP01_KF01",
+          "id": "VIDEO-EP01_SHOT_002",
+          "shot": "EP01_SHOT_002",
           "start": 0,
-          "duration": 8,
-          "label": "2042 Hangzhou Bay Future Coastline",
+          "duration": 15,
+          "label": "雨打观测站金属",
           "status": "草稿 Draft"
         },
         {
-          "id": "VIDEO-EP01_KF02",
-          "shot": "EP01_KF02",
-          "start": 8,
-          "duration": 5,
-          "label": "White Tide First Appearance",
+          "id": "VIDEO-EP01_SHOT_003",
+          "shot": "EP01_SHOT_003",
+          "start": 15,
+          "duration": 15,
+          "label": "杯中水纹反向收缩",
           "status": "草稿 Draft"
         },
         {
-          "id": "VIDEO-EP01_KF03",
-          "shot": "EP01_KF03",
-          "start": 13,
-          "duration": 5,
-          "label": "Deep Blue Base Alarm",
+          "id": "VIDEO-EP01_SHOT_004",
+          "shot": "EP01_SHOT_004",
+          "start": 30,
+          "duration": 15,
+          "label": "值守员停下手指",
           "status": "草稿 Draft"
         },
         {
-          "id": "VIDEO-EP01_KF04",
-          "shot": "EP01_KF04",
-          "start": 18,
-          "duration": 5,
-          "label": "Commander Chen Detects Signal",
+          "id": "VIDEO-EP01_SHOT_005",
+          "shot": "EP01_SHOT_005",
+          "start": 45,
+          "duration": 15,
+          "label": "浮标周围反向水纹",
           "status": "草稿 Draft"
         },
         {
-          "id": "VIDEO-EP01_KF05",
-          "shot": "EP01_KF05",
-          "start": 23,
-          "duration": 8,
-          "label": "Lin Zhou Recall Notice",
+          "id": "VIDEO-EP01_SHOT_006",
+          "shot": "EP01_SHOT_006",
+          "start": 60,
+          "duration": 15,
+          "label": "深蓝基地冷蓝指挥中心",
           "status": "草稿 Draft"
         },
         {
-          "id": "VIDEO-EP01_KF06",
-          "shot": "EP01_KF06",
-          "start": 31,
-          "duration": 5,
-          "label": "Lin Zhou Enters Deep Blue Base",
+          "id": "VIDEO-EP01_SHOT_007",
+          "shot": "EP01_SHOT_007",
+          "start": 75,
+          "duration": 15,
+          "label": "陈牧茶杯水纹",
           "status": "草稿 Draft"
         },
         {
-          "id": "VIDEO-EP01_KF07",
-          "shot": "EP01_KF07",
-          "start": 36,
-          "duration": 5,
-          "label": "Chiting-01 First Reveal",
+          "id": "VIDEO-EP01_SHOT_008",
+          "shot": "EP01_SHOT_008",
+          "start": 90,
+          "duration": 15,
+          "label": "AI澜系统层首次出现",
           "status": "草稿 Draft"
         },
         {
-          "id": "VIDEO-EP01_KF08",
-          "shot": "EP01_KF08",
-          "start": 41,
-          "duration": 5,
-          "label": "Cockpit Opens",
+          "id": "VIDEO-EP01_SHOT_009",
+          "shot": "EP01_SHOT_009",
+          "start": 105,
+          "duration": 15,
+          "label": "旧事故编号 DB-44-0918-A",
           "status": "草稿 Draft"
         },
         {
-          "id": "VIDEO-EP01_KF09",
-          "shot": "EP01_KF09",
-          "start": 46,
-          "duration": 8,
-          "label": "Lin Zhou Enters Cockpit",
+          "id": "VIDEO-EP01_SHOT_010",
+          "shot": "EP01_SHOT_010",
+          "start": 120,
+          "duration": 15,
+          "label": "陈牧听见低频",
           "status": "草稿 Draft"
         },
         {
-          "id": "VIDEO-EP01_KF10",
-          "shot": "EP01_KF10",
-          "start": 54,
-          "duration": 5,
-          "label": "Xu Ran Connection Failure",
+          "id": "VIDEO-EP01_SHOT_011",
+          "shot": "EP01_SHOT_011",
+          "start": 135,
+          "duration": 15,
+          "label": "控制台双重确认",
           "status": "草稿 Draft"
         },
         {
-          "id": "VIDEO-EP01_KF11",
-          "shot": "EP01_KF11",
-          "start": 59,
-          "duration": 5,
-          "label": "White Tide Hits Defense Line",
+          "id": "VIDEO-EP01_SHOT_012",
+          "shot": "EP01_SHOT_012",
+          "start": 150,
+          "duration": 15,
+          "label": "外海观测闸关闭",
           "status": "草稿 Draft"
         },
         {
-          "id": "VIDEO-EP01_KF12",
-          "shot": "EP01_KF12",
-          "start": 64,
-          "duration": 5,
-          "label": "Chiting-01 Starts",
+          "id": "VIDEO-EP01_SHOT_013",
+          "shot": "EP01_SHOT_013",
+          "start": 165,
+          "duration": 15,
+          "label": "基地蓝色预警灯亮起",
           "status": "草稿 Draft"
         },
         {
-          "id": "VIDEO-EP01_KF13",
-          "shot": "EP01_KF13",
-          "start": 69,
-          "duration": 8,
-          "label": "Chiting-01 Moves Toward Sea",
+          "id": "VIDEO-EP01_SHOT_014",
+          "shot": "EP01_SHOT_014",
+          "start": 180,
+          "duration": 15,
+          "label": "赤霆背部舱门关闭",
           "status": "草稿 Draft"
         },
         {
-          "id": "VIDEO-EP01_KF14",
-          "shot": "EP01_KF14",
-          "start": 77,
-          "duration": 5,
-          "label": "Chiting-01 First Combat",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "VIDEO-EP01_KF15",
-          "shot": "EP01_KF15",
-          "start": 82,
-          "duration": 5,
-          "label": "White Tide and Chiting Face Each Other",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "VIDEO-EP01_KF16",
-          "shot": "EP01_KF16",
-          "start": 87,
-          "duration": 5,
-          "label": "White Tide Releases Unknown Signal",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "VIDEO-EP01_KF17",
-          "shot": "EP01_KF17",
-          "start": 92,
-          "duration": 8,
-          "label": "Tide Gate Rift Appears",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "VIDEO-EP01_KF18",
-          "shot": "EP01_KF18",
-          "start": 100,
-          "duration": 5,
-          "label": "Black Tide Mother Opens Eye",
-          "status": "草稿 Draft"
-        }
-      ]
-    },
-    {
-      "id": "TRACK-IMAGE",
-      "name": "图片",
-      "type": "image",
-      "locked": false,
-      "hidden": false,
-      "items": [
-        {
-          "id": "IMAGE-EP01_KF01",
-          "shot": "EP01_KF01",
-          "start": 0,
-          "duration": 8,
-          "label": "2042 Hangzhou Bay Future Coastline",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "IMAGE-EP01_KF02",
-          "shot": "EP01_KF02",
-          "start": 8,
-          "duration": 5,
-          "label": "White Tide First Appearance",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "IMAGE-EP01_KF03",
-          "shot": "EP01_KF03",
-          "start": 13,
-          "duration": 5,
-          "label": "Deep Blue Base Alarm",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "IMAGE-EP01_KF04",
-          "shot": "EP01_KF04",
-          "start": 18,
-          "duration": 5,
-          "label": "Commander Chen Detects Signal",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "IMAGE-EP01_KF05",
-          "shot": "EP01_KF05",
-          "start": 23,
-          "duration": 8,
-          "label": "Lin Zhou Recall Notice",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "IMAGE-EP01_KF06",
-          "shot": "EP01_KF06",
-          "start": 31,
-          "duration": 5,
-          "label": "Lin Zhou Enters Deep Blue Base",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "IMAGE-EP01_KF07",
-          "shot": "EP01_KF07",
-          "start": 36,
-          "duration": 5,
-          "label": "Chiting-01 First Reveal",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "IMAGE-EP01_KF08",
-          "shot": "EP01_KF08",
-          "start": 41,
-          "duration": 5,
-          "label": "Cockpit Opens",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "IMAGE-EP01_KF09",
-          "shot": "EP01_KF09",
-          "start": 46,
-          "duration": 8,
-          "label": "Lin Zhou Enters Cockpit",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "IMAGE-EP01_KF10",
-          "shot": "EP01_KF10",
-          "start": 54,
-          "duration": 5,
-          "label": "Xu Ran Connection Failure",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "IMAGE-EP01_KF11",
-          "shot": "EP01_KF11",
-          "start": 59,
-          "duration": 5,
-          "label": "White Tide Hits Defense Line",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "IMAGE-EP01_KF12",
-          "shot": "EP01_KF12",
-          "start": 64,
-          "duration": 5,
-          "label": "Chiting-01 Starts",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "IMAGE-EP01_KF13",
-          "shot": "EP01_KF13",
-          "start": 69,
-          "duration": 8,
-          "label": "Chiting-01 Moves Toward Sea",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "IMAGE-EP01_KF14",
-          "shot": "EP01_KF14",
-          "start": 77,
-          "duration": 5,
-          "label": "Chiting-01 First Combat",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "IMAGE-EP01_KF15",
-          "shot": "EP01_KF15",
-          "start": 82,
-          "duration": 5,
-          "label": "White Tide and Chiting Face Each Other",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "IMAGE-EP01_KF16",
-          "shot": "EP01_KF16",
-          "start": 87,
-          "duration": 5,
-          "label": "White Tide Releases Unknown Signal",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "IMAGE-EP01_KF17",
-          "shot": "EP01_KF17",
-          "start": 92,
-          "duration": 8,
-          "label": "Tide Gate Rift Appears",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "IMAGE-EP01_KF18",
-          "shot": "EP01_KF18",
-          "start": 100,
-          "duration": 5,
-          "label": "Black Tide Mother Opens Eye",
-          "status": "草稿 Draft"
-        }
-      ]
-    },
-    {
-      "id": "TRACK-DIALOGUE",
-      "name": "对白",
-      "type": "dialogue",
-      "locked": false,
-      "hidden": false,
-      "items": [
-        {
-          "id": "DIALOGUE-EP01_KF01",
-          "shot": "EP01_KF01",
-          "start": 0,
-          "duration": 8,
-          "label": "2042 Hangzhou Bay Future Coastline",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "DIALOGUE-EP01_KF02",
-          "shot": "EP01_KF02",
-          "start": 8,
-          "duration": 5,
-          "label": "White Tide First Appearance",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "DIALOGUE-EP01_KF03",
-          "shot": "EP01_KF03",
-          "start": 13,
-          "duration": 5,
-          "label": "Deep Blue Base Alarm",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "DIALOGUE-EP01_KF04",
-          "shot": "EP01_KF04",
-          "start": 18,
-          "duration": 5,
-          "label": "Commander Chen Detects Signal",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "DIALOGUE-EP01_KF05",
-          "shot": "EP01_KF05",
-          "start": 23,
-          "duration": 8,
-          "label": "Lin Zhou Recall Notice",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "DIALOGUE-EP01_KF06",
-          "shot": "EP01_KF06",
-          "start": 31,
-          "duration": 5,
-          "label": "Lin Zhou Enters Deep Blue Base",
-          "status": "草稿 Draft"
-        }
-      ]
-    },
-    {
-      "id": "TRACK-SUBTITLE",
-      "name": "字幕",
-      "type": "subtitle",
-      "locked": false,
-      "hidden": false,
-      "items": [
-        {
-          "id": "SUBTITLE-EP01_KF01",
-          "shot": "EP01_KF01",
-          "start": 0,
-          "duration": 8,
-          "label": "2042 Hangzhou Bay Future Coastline",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "SUBTITLE-EP01_KF02",
-          "shot": "EP01_KF02",
-          "start": 8,
-          "duration": 5,
-          "label": "White Tide First Appearance",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "SUBTITLE-EP01_KF03",
-          "shot": "EP01_KF03",
-          "start": 13,
-          "duration": 5,
-          "label": "Deep Blue Base Alarm",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "SUBTITLE-EP01_KF04",
-          "shot": "EP01_KF04",
-          "start": 18,
-          "duration": 5,
-          "label": "Commander Chen Detects Signal",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "SUBTITLE-EP01_KF05",
-          "shot": "EP01_KF05",
-          "start": 23,
-          "duration": 8,
-          "label": "Lin Zhou Recall Notice",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "SUBTITLE-EP01_KF06",
-          "shot": "EP01_KF06",
-          "start": 31,
-          "duration": 5,
-          "label": "Lin Zhou Enters Deep Blue Base",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "SUBTITLE-EP01_KF07",
-          "shot": "EP01_KF07",
-          "start": 36,
-          "duration": 5,
-          "label": "Chiting-01 First Reveal",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "SUBTITLE-EP01_KF08",
-          "shot": "EP01_KF08",
-          "start": 41,
-          "duration": 5,
-          "label": "Cockpit Opens",
-          "status": "草稿 Draft"
-        }
-      ]
-    },
-    {
-      "id": "TRACK-MUSIC",
-      "name": "音乐",
-      "type": "music",
-      "locked": false,
-      "hidden": false,
-      "items": [
-        {
-          "id": "MUSIC-EP01_KF01",
-          "shot": "EP01_KF01",
-          "start": 0,
-          "duration": 8,
-          "label": "2042 Hangzhou Bay Future Coastline",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "MUSIC-EP01_KF02",
-          "shot": "EP01_KF02",
-          "start": 8,
-          "duration": 5,
-          "label": "White Tide First Appearance",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "MUSIC-EP01_KF03",
-          "shot": "EP01_KF03",
-          "start": 13,
-          "duration": 5,
-          "label": "Deep Blue Base Alarm",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "MUSIC-EP01_KF04",
-          "shot": "EP01_KF04",
-          "start": 18,
-          "duration": 5,
-          "label": "Commander Chen Detects Signal",
-          "status": "草稿 Draft"
-        }
-      ]
-    },
-    {
-      "id": "TRACK-SFX",
-      "name": "音效",
-      "type": "sfx",
-      "locked": false,
-      "hidden": false,
-      "items": [
-        {
-          "id": "SFX-EP01_KF01",
-          "shot": "EP01_KF01",
-          "start": 0,
-          "duration": 8,
-          "label": "2042 Hangzhou Bay Future Coastline",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "SFX-EP01_KF02",
-          "shot": "EP01_KF02",
-          "start": 8,
-          "duration": 5,
-          "label": "White Tide First Appearance",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "SFX-EP01_KF03",
-          "shot": "EP01_KF03",
-          "start": 13,
-          "duration": 5,
-          "label": "Deep Blue Base Alarm",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "SFX-EP01_KF04",
-          "shot": "EP01_KF04",
-          "start": 18,
-          "duration": 5,
-          "label": "Commander Chen Detects Signal",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "SFX-EP01_KF05",
-          "shot": "EP01_KF05",
-          "start": 23,
-          "duration": 8,
-          "label": "Lin Zhou Recall Notice",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "SFX-EP01_KF06",
-          "shot": "EP01_KF06",
-          "start": 31,
-          "duration": 5,
-          "label": "Lin Zhou Enters Deep Blue Base",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "SFX-EP01_KF07",
-          "shot": "EP01_KF07",
-          "start": 36,
-          "duration": 5,
-          "label": "Chiting-01 First Reveal",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "SFX-EP01_KF08",
-          "shot": "EP01_KF08",
-          "start": 41,
-          "duration": 5,
-          "label": "Cockpit Opens",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "SFX-EP01_KF09",
-          "shot": "EP01_KF09",
-          "start": 46,
-          "duration": 8,
-          "label": "Lin Zhou Enters Cockpit",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "SFX-EP01_KF10",
-          "shot": "EP01_KF10",
-          "start": 54,
-          "duration": 5,
-          "label": "Xu Ran Connection Failure",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "SFX-EP01_KF11",
-          "shot": "EP01_KF11",
-          "start": 59,
-          "duration": 5,
-          "label": "White Tide Hits Defense Line",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "SFX-EP01_KF12",
-          "shot": "EP01_KF12",
-          "start": 64,
-          "duration": 5,
-          "label": "Chiting-01 Starts",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "SFX-EP01_KF13",
-          "shot": "EP01_KF13",
-          "start": 69,
-          "duration": 8,
-          "label": "Chiting-01 Moves Toward Sea",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "SFX-EP01_KF14",
-          "shot": "EP01_KF14",
-          "start": 77,
-          "duration": 5,
-          "label": "Chiting-01 First Combat",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "SFX-EP01_KF15",
-          "shot": "EP01_KF15",
-          "start": 82,
-          "duration": 5,
-          "label": "White Tide and Chiting Face Each Other",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "SFX-EP01_KF16",
-          "shot": "EP01_KF16",
-          "start": 87,
-          "duration": 5,
-          "label": "White Tide Releases Unknown Signal",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "SFX-EP01_KF17",
-          "shot": "EP01_KF17",
-          "start": 92,
-          "duration": 8,
-          "label": "Tide Gate Rift Appears",
-          "status": "草稿 Draft"
-        },
-        {
-          "id": "SFX-EP01_KF18",
-          "shot": "EP01_KF18",
-          "start": 100,
-          "duration": 5,
-          "label": "Black Tide Mother Opens Eye",
+          "id": "VIDEO-EP01_SHOT_015",
+          "shot": "EP01_SHOT_015",
+          "start": 195,
+          "duration": 15,
+          "label": "海面水纹继续扩大",
           "status": "草稿 Draft"
         }
       ]
     }
-  ]
+  ],
+  "updatedAt": "2026-07-14T00:00:00.000Z"
 }

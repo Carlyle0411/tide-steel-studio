@@ -1,4 +1,4 @@
-import { trilogyStoryboardShots } from "../trilogy/TrilogyStoryData";
+import { getEP01Keyframes } from "../tideSteelStudio/EP01StudioData";
 
 export type EP01ShotStatus = "LOCKED" | "GENERATING" | "REVIEW" | "APPROVED" | "FAILED";
 
@@ -20,20 +20,20 @@ export type EP01ShotProductionData = {
 };
 
 export function getEP01Shots(): EP01ShotProductionData[] {
-  return trilogyStoryboardShots.map((shot, index) => ({
+  return getEP01Keyframes().map((shot, index) => ({
     shot_id: `EP01_SHOT_${String(index + 1).padStart(2, "0")}`,
-    sourceShotId: shot.id,
-    duration: `${shot.duration}s`,
-    description: shot.description,
-    camera: shot.camera,
-    lens: shot.lens,
-    movement: shot.movement,
-    character: shot.character === "无" ? "无" : shot.character,
-    character_action: shot.description,
-    emotion: shot.emotion,
-    lighting: shot.lighting,
-    environment: shot.environment,
-    vfx: shot.notes,
-    sound: shot.sound,
+    sourceShotId: shot.shot,
+    duration: `${shot.duration ?? 15}s`,
+    description: shot.purpose,
+    camera: `景别：${shot.shotSize ?? "待定"}。摄影目的：${shot.notes ?? shot.purpose}`,
+    lens: shot.lens ?? "待定",
+    movement: shot.movement ?? "待定",
+    character: shot.character ?? "无",
+    character_action: shot.notes ?? shot.purpose,
+    emotion: shot.emotion ?? "待定",
+    lighting: shot.lighting ?? "待定",
+    environment: shot.environment ?? "待定",
+    vfx: "保持真实物理异常，不使用夸张能量特效。",
+    sound: shot.sound ?? "待定",
   }));
 }

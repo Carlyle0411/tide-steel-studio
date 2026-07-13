@@ -1,7 +1,6 @@
 import type { KeyframeAssetStore, KeyframeAssetVersion, KeyframeFrameRole } from "./KeyframeAssetStore";
 
 const EP01_STATIC_KEYFRAMES = [
-  ["01", new URL("../../../projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF01.png", import.meta.url).href],
   ["02", new URL("../../../projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF02.png", import.meta.url).href],
   ["03", new URL("../../../projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF03.png", import.meta.url).href],
   ["04", new URL("../../../projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF04.png", import.meta.url).href],

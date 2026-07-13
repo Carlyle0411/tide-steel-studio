@@ -1,273 +1,316 @@
 {
   "episode": "EP01",
   "title": "海面低频",
-  "format": "16:9电影级4K关键帧",
-  "status": "task_manifest",
+  "format": "16:9电影级关键帧",
+  "status": "official_ep01_keyframe_manifest",
+  "source": "SCRIPT_EP01_海面低频_剧本开发版.md",
   "keyframes": [
     {
-      "id": "KF01",
-      "shot": "EP01_KF01",
-      "title": "2042杭州湾未来海防线",
-      "purpose": "在异常出现前建立仍然正常运转的杭州湾海防世界。",
-      "required_assets": [
-        "hangzhou_bay"
-      ],
-      "status": "approved",
-      "approved_image": "assets/episodes/EP01/keyframes/approved/EP01_KF01_APPROVED_V01.png",
-      "project_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF01.png",
-      "review_gate": "approved_by_previous_visual_review",
-      "updatedAt": "2026-07-10T11:13:18.431Z"
-    },
-    {
+      "constIndex": 2,
       "id": "KF02",
-      "shot": "EP01_KF02",
-      "title": "白潮首次显现",
-      "purpose": "巨大生命只改变暴雨海面，不以怪兽登场方式完整出现。",
+      "shot": "EP01_SHOT_002",
+      "title": "雨打观测站金属",
+      "purpose": "雨滴打在观测站外壳上，雨声比海浪更清楚，暗示海面异常安静。",
       "required_assets": [
-        "white_tide",
-        "hangzhou_bay"
+        "外海观测站",
+        "湿金属材质",
+        "雨天"
       ],
-      "status": "approved",
-      "approved_image": "assets/episodes/EP01/keyframes/approved/EP01_KF02_APPROVED_V01.png",
-      "project_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF02.png",
-      "review_gate": "approved_by_previous_visual_review",
-      "updatedAt": "2026-07-10T11:13:18.431Z"
+      "status": "planning",
+      "duration": 15,
+      "shotSize": "特写",
+      "lens": "50mm",
+      "movement": "固定机位",
+      "approved_image": "",
+      "draft_image": "",
+      "project_image": "",
+      "review_gate": "ep01_official_script_locked",
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     },
     {
+      "constIndex": 3,
       "id": "KF03",
-      "shot": "EP01_KF03",
-      "title": "深蓝基地进入警戒",
-      "purpose": "基地先对异常作出反应，而人还没有理解发生了什么。",
+      "shot": "EP01_SHOT_003",
+      "title": "杯中水纹反向收缩",
+      "purpose": "用最小的物理证据告诉观众：世界规则正在改变。",
       "required_assets": [
-        "deep_blue_base"
+        "外海观测站",
+        "旧金属杯",
+        "值班桌"
       ],
-      "status": "review",
+      "status": "planning",
+      "duration": 15,
+      "shotSize": "微距特写",
+      "lens": "85mm微距",
+      "movement": "固定焦点",
       "approved_image": "",
-      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF03.png",
-      "review_gate": "awaiting_manual_review",
-      "updatedAt": "2026-07-10T11:13:18.431Z"
+      "draft_image": "",
+      "project_image": "",
+      "review_gate": "ep01_official_script_locked",
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     },
     {
+      "constIndex": 4,
       "id": "KF04",
-      "shot": "EP01_KF04",
-      "title": "陈牧察觉低频信号",
-      "purpose": "陈牧比自动系统更早相信自己的海防经验。",
+      "shot": "EP01_SHOT_004",
+      "title": "值守员停下手指",
+      "purpose": "屏幕没有报警，但人先察觉异常。",
       "required_assets": [
-        "chenmu",
-        "deep_blue_base"
+        "外海观测站",
+        "值守员",
+        "监测屏"
       ],
-      "status": "approved",
-      "approved_image": "assets/episodes/EP01/keyframes/approved/EP01_KF04_APPROVED_V01.png",
-      "project_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF04.png",
-      "review_gate": "approved_by_previous_visual_review",
-      "updatedAt": "2026-07-10T11:13:18.431Z"
+      "status": "planning",
+      "duration": 15,
+      "shotSize": "中景",
+      "lens": "35mm",
+      "movement": "固定机位",
+      "approved_image": "",
+      "draft_image": "",
+      "project_image": "",
+      "review_gate": "ep01_official_script_locked",
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     },
     {
+      "constIndex": 5,
       "id": "KF05",
-      "shot": "EP01_KF05",
-      "title": "林舟收到召回通知",
-      "purpose": "警戒通知把林舟重新拉向赤霆，也拉回三年前的伤口。",
+      "shot": "EP01_SHOT_005",
+      "title": "浮标周围反向水纹",
+      "purpose": "外海出现同样的反向水纹，异常从室内证据变成外部事实。",
       "required_assets": [
-        "linzhou"
+        "杭州湾外海",
+        "浮标阵列",
+        "海防线"
       ],
-      "status": "review",
+      "status": "planning",
+      "duration": 15,
+      "shotSize": "远景转特写",
+      "lens": "35mm",
+      "movement": "缓慢推进",
       "approved_image": "",
-      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF05.png",
-      "review_gate": "awaiting_manual_review",
-      "updatedAt": "2026-07-10T11:13:18.431Z"
+      "draft_image": "",
+      "project_image": "",
+      "review_gate": "ep01_official_script_locked",
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     },
     {
+      "constIndex": 6,
       "id": "KF06",
-      "shot": "EP01_KF06",
-      "title": "林舟进入深蓝基地",
-      "purpose": "林舟穿过潮湿工业通道，进入庞大的海防工程系统。",
+      "shot": "EP01_SHOT_006",
+      "title": "深蓝基地冷蓝指挥中心",
+      "purpose": "异常进入人类决策空间，陈牧被巨大的系统包围。",
       "required_assets": [
-        "linzhou",
-        "deep_blue_base"
+        "深蓝基地",
+        "指挥中心",
+        "陈牧"
       ],
-      "status": "review",
+      "status": "planning",
+      "duration": 15,
+      "shotSize": "远景",
+      "lens": "24mm",
+      "movement": "固定机位",
       "approved_image": "",
-      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF06.png",
-      "review_gate": "awaiting_manual_review",
-      "updatedAt": "2026-07-10T11:13:18.431Z"
+      "draft_image": "",
+      "project_image": "",
+      "review_gate": "ep01_official_script_locked",
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     },
     {
+      "constIndex": 7,
       "id": "KF07",
-      "shot": "EP01_KF07",
-      "title": "赤霆01首次露出",
-      "purpose": "先展示重量、磨损和危险，不把赤霆拍成救世主。",
+      "shot": "EP01_SHOT_007",
+      "title": "陈牧茶杯水纹",
+      "purpose": "外海异常进入基地内部，证明这不是单点设备误差。",
       "required_assets": [
-        "chiting01"
+        "陈牧",
+        "深蓝基地",
+        "旧茶杯"
       ],
-      "status": "review",
+      "status": "planning",
+      "duration": 15,
+      "shotSize": "特写",
+      "lens": "85mm",
+      "movement": "固定机位",
       "approved_image": "",
-      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF07.png",
-      "review_gate": "awaiting_manual_review",
-      "updatedAt": "2026-07-10T11:13:18.431Z"
+      "draft_image": "",
+      "project_image": "",
+      "review_gate": "ep01_official_script_locked",
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     },
     {
+      "constIndex": 8,
       "id": "KF08",
-      "shot": "EP01_KF08",
-      "title": "背部驾驶舱开启",
-      "purpose": "驾驶舱入口像一道必须跨过的旧伤，而不是普通载具舱门。",
+      "shot": "EP01_SHOT_008",
+      "title": "AI澜系统层首次出现",
+      "purpose": "AI澜第一次出现必须像基地系统，不是助手，也不是人形。",
       "required_assets": [
-        "chiting01",
-        "cockpit"
+        "AI澜系统界面",
+        "深蓝基地"
       ],
-      "status": "review",
+      "status": "planning",
+      "duration": 15,
+      "shotSize": "屏幕特写",
+      "lens": "50mm",
+      "movement": "固定机位",
       "approved_image": "",
-      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF08.png",
-      "review_gate": "awaiting_manual_review",
-      "updatedAt": "2026-07-10T11:13:18.431Z"
+      "draft_image": "",
+      "project_image": "",
+      "review_gate": "ep01_official_script_locked",
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     },
     {
+      "constIndex": 9,
       "id": "KF09",
-      "shot": "EP01_KF09",
-      "title": "林舟进入驾驶舱",
-      "purpose": "林舟主动进入曾经代表失败和失去的位置。",
+      "shot": "EP01_SHOT_009",
+      "title": "旧事故编号 DB-44-0918-A",
+      "purpose": "埋下三年前事故和林舟伤口，不解释，只让编号留下阴影。",
       "required_assets": [
-        "linzhou",
-        "chiting01",
-        "cockpit"
+        "AI澜系统界面",
+        "深蓝基地",
+        "旧事故档案"
       ],
-      "status": "approved",
-      "approved_image": "assets/episodes/EP01/keyframes/approved/EP01_KF09_APPROVED_V01.png",
-      "project_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF09.png",
-      "review_gate": "approved_by_previous_visual_review",
-      "updatedAt": "2026-07-10T11:13:18.431Z"
+      "status": "planning",
+      "duration": 15,
+      "shotSize": "屏幕特写",
+      "lens": "50mm",
+      "movement": "短暂停留",
+      "approved_image": "",
+      "draft_image": "",
+      "project_image": "",
+      "review_gate": "ep01_official_script_locked",
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     },
     {
+      "constIndex": 10,
       "id": "KF10",
-      "shot": "EP01_KF10",
-      "title": "许燃首次同步失败",
-      "purpose": "第一次双人同步安静地失败，暴露流程无法覆盖的风险。",
+      "shot": "EP01_SHOT_010",
+      "title": "陈牧听见低频",
+      "purpose": "陈牧不是迷信经验，而是真的听见了系统忽略的差异。",
       "required_assets": [
-        "xuran",
-        "cockpit"
+        "陈牧",
+        "深蓝基地",
+        "声呐监听设备"
       ],
-      "status": "review",
+      "status": "planning",
+      "duration": 15,
+      "shotSize": "近景",
+      "lens": "50mm",
+      "movement": "缓慢推进",
       "approved_image": "",
-      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF10.png",
-      "review_gate": "awaiting_manual_review",
-      "updatedAt": "2026-07-10T11:13:18.431Z"
+      "draft_image": "",
+      "project_image": "",
+      "review_gate": "ep01_official_script_locked",
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     },
     {
+      "constIndex": 11,
       "id": "KF11",
-      "shot": "EP01_KF11",
-      "title": "白潮逼近海防线",
-      "purpose": "防线承受巨大压力，人类把无法理解的靠近误判为攻击。",
+      "shot": "EP01_SHOT_011",
+      "title": "控制台双重确认",
+      "purpose": "关闭观测闸不是按按钮，而是一次会唤醒基地的选择。",
       "required_assets": [
-        "white_tide",
-        "hangzhou_bay"
+        "陈牧",
+        "控制台",
+        "深蓝基地"
       ],
-      "status": "review",
+      "status": "planning",
+      "duration": 15,
+      "shotSize": "手部特写",
+      "lens": "85mm",
+      "movement": "固定机位",
       "approved_image": "",
-      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF11.png",
-      "review_gate": "awaiting_manual_review",
-      "updatedAt": "2026-07-10T11:13:18.431Z"
+      "draft_image": "",
+      "project_image": "",
+      "review_gate": "ep01_official_script_locked",
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     },
     {
+      "constIndex": 12,
       "id": "KF12",
-      "shot": "EP01_KF12",
-      "title": "赤霆01启动",
-      "purpose": "赤霆苏醒不是胜利时刻，而是一次代价未知的危险决定。",
+      "shot": "EP01_SHOT_012",
+      "title": "外海观测闸关闭",
+      "purpose": "EP01视觉高潮。陈牧关闭的不只是一扇闸门，也像在面对一个过去的错误。",
       "required_assets": [
-        "chiting01"
+        "观测闸",
+        "杭州湾外海",
+        "海防线"
       ],
-      "status": "review",
+      "status": "planning",
+      "duration": 15,
+      "shotSize": "中远景",
+      "lens": "24mm",
+      "movement": "固定机位",
       "approved_image": "",
-      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF12.png",
-      "review_gate": "awaiting_manual_review",
-      "updatedAt": "2026-07-10T11:13:18.431Z"
+      "draft_image": "",
+      "project_image": "",
+      "review_gate": "ep01_official_script_locked",
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     },
     {
+      "constIndex": 13,
       "id": "KF13",
-      "shot": "EP01_KF13",
-      "title": "赤霆01走向海面",
-      "purpose": "人类工程造物进入远大于自身的海洋尺度。",
+      "shot": "EP01_SHOT_013",
+      "title": "基地蓝色预警灯亮起",
+      "purpose": "关闭完成后，基地不是混乱，而是被逐步叫醒。",
       "required_assets": [
-        "chiting01",
-        "hangzhou_bay"
+        "深蓝基地",
+        "蓝色预警灯",
+        "走廊"
       ],
-      "status": "review",
+      "status": "planning",
+      "duration": 15,
+      "shotSize": "中景",
+      "lens": "35mm",
+      "movement": "固定机位",
       "approved_image": "",
-      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF13.png",
-      "review_gate": "awaiting_manual_review",
-      "updatedAt": "2026-07-10T11:13:18.431Z"
+      "draft_image": "",
+      "project_image": "",
+      "review_gate": "ep01_official_script_locked",
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     },
     {
+      "constIndex": 14,
       "id": "KF14",
-      "shot": "EP01_KF14",
-      "title": "赤霆01首次交锋",
-      "purpose": "第一次接触证明力量可以造成后果，却不能带来理解。",
+      "shot": "EP01_SHOT_014",
+      "title": "赤霆背部舱门关闭",
+      "purpose": "伏笔EP02，只展示背部舱门和湿冷装甲，不展示完整机甲。",
       "required_assets": [
-        "chiting01",
-        "white_tide"
+        "赤霆01背部",
+        "深蓝基地",
+        "机库"
       ],
-      "status": "review",
+      "status": "planning",
+      "duration": 15,
+      "shotSize": "中远景",
+      "lens": "50mm",
+      "movement": "固定机位",
       "approved_image": "",
-      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF14.png",
-      "review_gate": "awaiting_manual_review",
-      "updatedAt": "2026-07-10T11:13:18.431Z"
+      "draft_image": "",
+      "project_image": "",
+      "review_gate": "ep01_official_script_locked",
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     },
     {
+      "constIndex": 15,
       "id": "KF15",
-      "shot": "EP01_KF15",
-      "title": "白潮与赤霆对峙",
-      "purpose": "敌我对峙开始出现无法用攻击解释的停顿。",
+      "shot": "EP01_SHOT_015",
+      "title": "海面水纹继续扩大",
+      "purpose": "最后的问题：不是怪兽来了，而是某个生命已经听见人类回应。",
       "required_assets": [
-        "chiting01",
-        "white_tide"
+        "杭州湾外海",
+        "浮标阵列",
+        "观测闸"
       ],
-      "status": "review",
+      "status": "planning",
+      "duration": 15,
+      "shotSize": "远景转特写",
+      "lens": "35mm",
+      "movement": "缓慢推进",
       "approved_image": "",
-      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF15.png",
-      "review_gate": "awaiting_manual_review",
-      "updatedAt": "2026-07-10T11:13:18.431Z"
-    },
-    {
-      "id": "KF16",
-      "shot": "EP01_KF16",
-      "title": "白潮释放未知低频",
-      "purpose": "白潮用人类无法分类的方式发出信号。",
-      "required_assets": [
-        "white_tide"
-      ],
-      "status": "review",
-      "approved_image": "",
-      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF16.png",
-      "review_gate": "awaiting_manual_review",
-      "updatedAt": "2026-07-10T11:13:18.431Z"
-    },
-    {
-      "id": "KF17",
-      "shot": "EP01_KF17",
-      "title": "潮门生态边界显现",
-      "purpose": "真正的未知以深海生态边界进入画面，而不是传送门特效。",
-      "required_assets": [
-        "tide_gate",
-        "hangzhou_bay"
-      ],
-      "status": "review",
-      "approved_image": "",
-      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF17.png",
-      "review_gate": "awaiting_manual_review",
-      "updatedAt": "2026-07-10T11:13:18.431Z"
-    },
-    {
-      "id": "KF18",
-      "shot": "EP01_KF18",
-      "title": "黑潮母体首次回应",
-      "purpose": "以一个正在反向观察人类的活体系统结束本集。",
-      "required_assets": [
-        "black_tide_mother",
-        "tide_gate"
-      ],
-      "status": "review",
-      "approved_image": "",
-      "draft_image": "projects/tide-steel-soul/assets/keyframes/ep01/EP01_KF18.png",
-      "review_gate": "awaiting_manual_review",
-      "updatedAt": "2026-07-10T11:13:18.431Z"
+      "draft_image": "",
+      "project_image": "",
+      "review_gate": "ep01_official_script_locked",
+      "updatedAt": "2026-07-14T00:00:00.000Z"
     }
   ]
 }
