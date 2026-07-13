@@ -2,7 +2,7 @@ import type { StoryboardShot } from "../storyboardWorkspace/StoryboardWorkspaceS
 import { loadMasterVideoShotLinks, loadMasterVideoTemplates } from "../masterVideoLibrary/MasterVideoLibraryStore";
 import { buildEP01SegmentedKlingPrompt, isEP01PromptShot } from "./EP01SegmentedPrompt";
 
-const STORAGE_KEY = "tide-steel-soul-kling-prompts-v2";
+const STORAGE_KEY = "tide-steel-soul-kling-prompts-v3-ep01-official";
 const EVENT_NAME = "tide-steel-soul-kling-prompts-change";
 
 export type KlingPromptOverrides = Record<string, string>;

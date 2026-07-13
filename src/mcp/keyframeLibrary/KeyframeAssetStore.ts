@@ -1,5 +1,4 @@
 import { CLOUD_ASSET_BUCKET, supabase, supabaseConfigured } from "../../lib/supabaseClient";
-import { mergeStaticKeyframeFallback } from "./StaticKeyframeAssets";
 
 export type KeyframeVersionStatus = "REVIEW" | "APPROVED" | "MASTER_REFERENCE" | "REJECTED";
 export type KeyframeFrameRole = "START" | "END";
@@ -60,7 +59,7 @@ export async function loadKeyframeStore(): Promise<KeyframeAssetStore> {
   const store = supabaseConfigured && (await getSession(false))
     ? await loadCloudKeyframeStore()
     : await loadLocalKeyframeStore();
-  return mergeStaticKeyframeFallback(store);
+  return store;
 }
 
 export async function importKeyframeFiles(
