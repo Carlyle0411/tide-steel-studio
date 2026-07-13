@@ -1,0 +1,9 @@
+services:
+  tide-steel-studio:
+    build:
+      context: ../..
+      dockerfile: deploy/aliyun-ecs/Dockerfile
+    container_name: tide-steel-studio
+    restart: unless-stopped
+    ports:
+      - "8080:80"
