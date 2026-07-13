@@ -1,3 +1,5 @@
+import { CLOUD_ASSET_BUCKET, supabase, supabaseConfigured } from "../../lib/supabaseClient";
+
 export type KeyframeVersionStatus = "REVIEW" | "APPROVED" | "MASTER_REFERENCE" | "REJECTED";
 export type KeyframeFrameRole = "START" | "END";
 
@@ -15,30 +17,46 @@ export type KeyframeAssetVersion = {
     shotId: string;
     title: string;
     frameRole?: KeyframeFrameRole;
+    cloudPath?: string;
   };
 };
 
 export type KeyframeAssetStore = Record<string, KeyframeAssetVersion[]>;
 
+type CloudKeyframeRow = {
+  id: string;
+  asset_id: string;
+  version_id: string;
+  file_name: string;
+  file_path: string;
+  media_type: "image" | "video";
+  status: KeyframeVersionStatus;
+  uploaded_at: string;
+  prompt_versions: { versionId: string; prompt: string; reason: string; createdAt: string }[] | null;
+  metadata: KeyframeAssetVersion["metadata"] & { prompt?: string };
+};
+
 const DB_NAME = "tide-steel-soul-keyframe-library";
 const DB_VERSION = 1;
 const STORE_NAME = "keyframes";
 const STORE_KEY = "keyframe-store";
+const CLOUD_PREFIX = "KEYFRAME::";
+const EVENT = "tide-steel-keyframe-library-change";
 const listeners = new Set<() => void>();
 
 export function subscribeKeyframeStore(listener: () => void) {
   listeners.add(listener);
-  return () => listeners.delete(listener);
+  const handler = () => listener();
+  window.addEventListener(EVENT, handler);
+  return () => {
+    listeners.delete(listener);
+    window.removeEventListener(EVENT, handler);
+  };
 }
 
 export async function loadKeyframeStore(): Promise<KeyframeAssetStore> {
-  const db = await openDb();
-  return new Promise((resolve, reject) => {
-    const tx = db.transaction(STORE_NAME, "readonly");
-    const request = tx.objectStore(STORE_NAME).get(STORE_KEY);
-    request.onsuccess = () => resolve((request.result?.value ?? {}) as KeyframeAssetStore);
-    request.onerror = () => reject(request.error);
-  });
+  if (supabaseConfigured && (await getSession(false))) return loadCloudKeyframeStore();
+  return loadLocalKeyframeStore();
 }
 
 export async function importKeyframeFiles(
@@ -48,10 +66,251 @@ export async function importKeyframeFiles(
   episodeId = "EP01",
   frameRole: KeyframeFrameRole = "START"
 ) {
+  if (supabaseConfigured && (await getSession(false))) {
+    return importCloudKeyframeFiles(keyframe, files, prompt, episodeId, frameRole);
+  }
+  return importLocalKeyframeFiles(keyframe, files, prompt, episodeId, frameRole);
+}
+
+export function getKeyframeFrameVersions(store: KeyframeAssetStore, keyframeId: string, frameRole: KeyframeFrameRole) {
+  const current = store[getKeyframeFrameStorageKey(keyframeId, frameRole)] ?? [];
+  if (frameRole !== "START") return current;
+  return current.length ? current : (store[keyframeId] ?? []);
+}
+
+export function getKeyframeFrameStorageKey(keyframeId: string, frameRole: KeyframeFrameRole) {
+  return `${keyframeId}::${frameRole}`;
+}
+
+export function getKeyframeFrameVersionOwnerKey(store: KeyframeAssetStore, keyframeId: string, frameRole: KeyframeFrameRole, versionId: string) {
+  const storageKey = getKeyframeFrameStorageKey(keyframeId, frameRole);
+  if ((store[storageKey] ?? []).some((version) => version.versionId === versionId)) return storageKey;
+  if (frameRole === "START" && (store[keyframeId] ?? []).some((version) => version.versionId === versionId)) return keyframeId;
+  return storageKey;
+}
+
+export async function deleteAllKeyframeFrameVersions(keyframeId: string, frameRole: KeyframeFrameRole) {
+  const storageKey = getKeyframeFrameStorageKey(keyframeId, frameRole);
+  if (supabaseConfigured && (await getSession(false))) {
+    await deleteCloudKeyframeAsset(storageKey);
+    if (frameRole === "START") await deleteCloudKeyframeAsset(keyframeId);
+    return;
+  }
+  const store = await loadLocalKeyframeStore();
+  const next = { ...store };
+  delete next[storageKey];
+  if (frameRole === "START") delete next[keyframeId];
+  await saveLocalStore(next);
+}
+
+export async function deleteKeyframeVersion(keyframeId: string, versionId: string) {
+  if (supabaseConfigured && (await getSession(false))) return deleteCloudKeyframeVersion(keyframeId, versionId);
+  const store = await loadLocalKeyframeStore();
+  const nextVersions = (store[keyframeId] ?? []).filter((version) => version.versionId !== versionId);
+  const next = { ...store };
+  if (nextVersions.length) next[keyframeId] = nextVersions;
+  else delete next[keyframeId];
+  await saveLocalStore(next);
+}
+
+export async function deleteAllKeyframeVersions(keyframeId: string) {
+  if (supabaseConfigured && (await getSession(false))) return deleteCloudKeyframeAsset(keyframeId);
+  const store = await loadLocalKeyframeStore();
+  const next = { ...store };
+  delete next[keyframeId];
+  await saveLocalStore(next);
+}
+
+export async function approveKeyframeVersion(keyframeId: string, versionId: string) {
+  await updateVersionStatus(keyframeId, versionId, "APPROVED");
+}
+
+export async function rejectKeyframeVersion(keyframeId: string, versionId: string) {
+  await updateVersionStatus(keyframeId, versionId, "REJECTED");
+}
+
+export async function setMasterKeyframeVersion(keyframeId: string, versionId: string) {
+  if (supabaseConfigured && (await getSession(false))) {
+    const rows = await findCloudKeyframeRows(keyframeId);
+    await Promise.all(rows.map(async (row) => {
+      const status = row.version_id === versionId ? "MASTER_REFERENCE" : row.status === "MASTER_REFERENCE" ? "APPROVED" : row.status;
+      const { error } = await supabase!.from("asset_versions").update({ status }).eq("id", row.id);
+      if (error) throw error;
+    }));
+    emitChange();
+    return;
+  }
+  const store = await loadLocalKeyframeStore();
+  const versions = (store[keyframeId] ?? []).map((version) => ({
+    ...version,
+    status: version.versionId === versionId ? "MASTER_REFERENCE" as const : version.status === "MASTER_REFERENCE" ? "APPROVED" as const : version.status
+  }));
+  await saveLocalStore({ ...store, [keyframeId]: versions });
+}
+
+export function getBestKeyframeVersion(versions: KeyframeAssetVersion[] = []) {
+  return (
+    versions.find((version) => version.status === "MASTER_REFERENCE") ??
+    versions.find((version) => version.status === "APPROVED") ??
+    versions.find((version) => version.status === "REVIEW") ??
+    versions[0] ??
+    null
+  );
+}
+
+async function updateVersionStatus(keyframeId: string, versionId: string, status: KeyframeVersionStatus) {
+  if (supabaseConfigured && (await getSession(false))) {
+    const row = (await findCloudKeyframeRows(keyframeId)).find((item) => item.version_id === versionId);
+    if (!row) return;
+    const { error } = await supabase!.from("asset_versions").update({ status }).eq("id", row.id);
+    if (error) throw error;
+    emitChange();
+    return;
+  }
+  const store = await loadLocalKeyframeStore();
+  const versions = (store[keyframeId] ?? []).map((version) => version.versionId === versionId ? { ...version, status } : version);
+  await saveLocalStore({ ...store, [keyframeId]: versions });
+}
+
+async function loadCloudKeyframeStore(): Promise<KeyframeAssetStore> {
+  if (!supabase) return {};
+  const { data, error } = await supabase
+    .from("asset_versions")
+    .select("*")
+    .like("asset_id", `${CLOUD_PREFIX}%`)
+    .eq("media_type", "image")
+    .order("uploaded_at", { ascending: true });
+  if (error) throw error;
+  const store: KeyframeAssetStore = {};
+  for (const row of (data ?? []) as CloudKeyframeRow[]) {
+    const key = fromCloudAssetId(row.asset_id);
+    const version = await mapCloudRow(row);
+    store[key] = [...(store[key] ?? []), version];
+  }
+  return store;
+}
+
+async function importCloudKeyframeFiles(
+  keyframe: { id: string; shot: string; title: string },
+  files: FileList | File[],
+  prompt: string,
+  episodeId: string,
+  frameRole: KeyframeFrameRole
+) {
+  const session = await getSession(true);
+  if (!supabase || !session) throw new Error("Please sign in before uploading keyframes to cloud storage.");
   const accepted = Array.from(files).filter((file) => ["image/png", "image/jpeg", "image/webp"].includes(file.type));
   if (!accepted.length) return [];
 
-  const store = await loadKeyframeStore();
+  const storageKey = getKeyframeFrameStorageKey(keyframe.id, frameRole);
+  const assetId = toCloudAssetId(storageKey);
+  const { data: currentRows, error: currentError } = await supabase.from("asset_versions").select("version_id").eq("asset_id", assetId);
+  if (currentError) throw currentError;
+
+  const created: KeyframeAssetVersion[] = [];
+  for (const [index, file] of accepted.entries()) {
+    const versionId = `V${String((currentRows?.length ?? 0) + index + 1).padStart(3, "0")}`;
+    const now = new Date().toISOString();
+    const filePath = `${session.user.id}/keyframes/${safeFileName(storageKey)}/${crypto.randomUUID()}-${safeFileName(file.name)}`;
+    const { error: uploadError } = await supabase.storage.from(CLOUD_ASSET_BUCKET).upload(filePath, file, { contentType: file.type, upsert: false });
+    if (uploadError) throw uploadError;
+
+    const metadata: KeyframeAssetVersion["metadata"] & { prompt: string } = {
+      keyframeId: keyframe.id,
+      episodeId,
+      shotId: keyframe.shot,
+      title: keyframe.title,
+      frameRole,
+      prompt,
+      cloudPath: filePath
+    };
+
+    const { data: row, error: insertError } = await supabase.from("asset_versions").insert({
+      owner_id: session.user.id,
+      asset_id: assetId,
+      version_id: versionId,
+      file_name: file.name,
+      file_path: filePath,
+      media_type: "image",
+      status: "REVIEW",
+      uploaded_at: now,
+      prompt_versions: [{ versionId: "Prompt V001", prompt, reason: "Keyframe upload prompt record", createdAt: now }],
+      metadata
+    }).select().single();
+    if (insertError) {
+      await supabase.storage.from(CLOUD_ASSET_BUCKET).remove([filePath]);
+      throw insertError;
+    }
+    created.push(await mapCloudRow(row as CloudKeyframeRow));
+  }
+  emitChange();
+  return created;
+}
+
+async function deleteCloudKeyframeAsset(keyframeId: string) {
+  const rows = await findCloudKeyframeRows(keyframeId);
+  for (const row of rows) await deleteCloudKeyframeVersion(keyframeId, row.version_id);
+}
+
+async function deleteCloudKeyframeVersion(keyframeId: string, versionId: string) {
+  if (!supabase) return;
+  const row = (await findCloudKeyframeRows(keyframeId)).find((item) => item.version_id === versionId);
+  if (!row) return;
+  const { error: storageError } = await supabase.storage.from(CLOUD_ASSET_BUCKET).remove([row.file_path]);
+  if (storageError) throw storageError;
+  const { error } = await supabase.from("asset_versions").delete().eq("id", row.id);
+  if (error) throw error;
+  emitChange();
+}
+
+async function findCloudKeyframeRows(keyframeId: string) {
+  if (!supabase) return [];
+  const { data, error } = await supabase
+    .from("asset_versions")
+    .select("*")
+    .eq("asset_id", toCloudAssetId(keyframeId))
+    .order("uploaded_at", { ascending: true });
+  if (error) throw error;
+  return (data ?? []) as CloudKeyframeRow[];
+}
+
+async function mapCloudRow(row: CloudKeyframeRow): Promise<KeyframeAssetVersion> {
+  const { data, error } = await supabase!.storage.from(CLOUD_ASSET_BUCKET).createSignedUrl(row.file_path, 60 * 60);
+  if (error) throw error;
+  const prompt = row.prompt_versions?.at(-1)?.prompt ?? row.metadata.prompt ?? "";
+  return {
+    versionId: row.version_id,
+    fileName: row.file_name,
+    dataUrl: data.signedUrl,
+    mediaType: "image",
+    uploadedAt: row.uploaded_at,
+    status: row.status,
+    prompt,
+    metadata: { ...row.metadata, cloudPath: row.file_path }
+  };
+}
+
+async function loadLocalKeyframeStore(): Promise<KeyframeAssetStore> {
+  const db = await openDb();
+  return new Promise((resolve, reject) => {
+    const tx = db.transaction(STORE_NAME, "readonly");
+    const request = tx.objectStore(STORE_NAME).get(STORE_KEY);
+    request.onsuccess = () => resolve((request.result?.value ?? {}) as KeyframeAssetStore);
+    request.onerror = () => reject(request.error);
+  });
+}
+
+async function importLocalKeyframeFiles(
+  keyframe: { id: string; shot: string; title: string },
+  files: FileList | File[],
+  prompt: string,
+  episodeId: string,
+  frameRole: KeyframeFrameRole
+) {
+  const accepted = Array.from(files).filter((file) => ["image/png", "image/jpeg", "image/webp"].includes(file.type));
+  if (!accepted.length) return [];
+
+  const store = await loadLocalKeyframeStore();
   const storageKey = getKeyframeFrameStorageKey(keyframe.id, frameRole);
   const current = store[storageKey] ?? [];
   const imported: KeyframeAssetVersion[] = [];
@@ -77,89 +336,11 @@ export async function importKeyframeFiles(
     });
   }
 
-  await saveStore({ ...store, [storageKey]: [...current, ...imported] });
+  await saveLocalStore({ ...store, [storageKey]: [...current, ...imported] });
   return imported;
 }
 
-/**
- * Legacy uploads used the bare keyframe ID. They remain the start-frame chain
- * so existing EP01 and trailer uploads never disappear after this upgrade.
- */
-export function getKeyframeFrameVersions(store: KeyframeAssetStore, keyframeId: string, frameRole: KeyframeFrameRole) {
-  const current = store[getKeyframeFrameStorageKey(keyframeId, frameRole)] ?? [];
-  if (frameRole !== "START") return current;
-  return current.length ? current : (store[keyframeId] ?? []);
-}
-
-export function getKeyframeFrameStorageKey(keyframeId: string, frameRole: KeyframeFrameRole) {
-  return `${keyframeId}::${frameRole}`;
-}
-
-export function getKeyframeFrameVersionOwnerKey(store: KeyframeAssetStore, keyframeId: string, frameRole: KeyframeFrameRole, versionId: string) {
-  const storageKey = getKeyframeFrameStorageKey(keyframeId, frameRole);
-  if ((store[storageKey] ?? []).some((version) => version.versionId === versionId)) return storageKey;
-  if (frameRole === "START" && (store[keyframeId] ?? []).some((version) => version.versionId === versionId)) return keyframeId;
-  return storageKey;
-}
-
-export async function deleteAllKeyframeFrameVersions(keyframeId: string, frameRole: KeyframeFrameRole) {
-  const store = await loadKeyframeStore();
-  const next = { ...store };
-  delete next[getKeyframeFrameStorageKey(keyframeId, frameRole)];
-  if (frameRole === "START") delete next[keyframeId];
-  await saveStore(next);
-}
-
-export async function deleteKeyframeVersion(keyframeId: string, versionId: string) {
-  const store = await loadKeyframeStore();
-  const nextVersions = (store[keyframeId] ?? []).filter((version) => version.versionId !== versionId);
-  const next = { ...store };
-  if (nextVersions.length) next[keyframeId] = nextVersions;
-  else delete next[keyframeId];
-  await saveStore(next);
-}
-
-export async function deleteAllKeyframeVersions(keyframeId: string) {
-  const store = await loadKeyframeStore();
-  const next = { ...store };
-  delete next[keyframeId];
-  await saveStore(next);
-}
-
-export async function approveKeyframeVersion(keyframeId: string, versionId: string) {
-  await updateVersionStatus(keyframeId, versionId, "APPROVED");
-}
-
-export async function rejectKeyframeVersion(keyframeId: string, versionId: string) {
-  await updateVersionStatus(keyframeId, versionId, "REJECTED");
-}
-
-export async function setMasterKeyframeVersion(keyframeId: string, versionId: string) {
-  const store = await loadKeyframeStore();
-  const versions = (store[keyframeId] ?? []).map((version) => ({
-    ...version,
-    status: version.versionId === versionId ? "MASTER_REFERENCE" as const : version.status === "MASTER_REFERENCE" ? "APPROVED" as const : version.status
-  }));
-  await saveStore({ ...store, [keyframeId]: versions });
-}
-
-export function getBestKeyframeVersion(versions: KeyframeAssetVersion[] = []) {
-  return (
-    versions.find((version) => version.status === "MASTER_REFERENCE") ??
-    versions.find((version) => version.status === "APPROVED") ??
-    versions.find((version) => version.status === "REVIEW") ??
-    versions[0] ??
-    null
-  );
-}
-
-async function updateVersionStatus(keyframeId: string, versionId: string, status: KeyframeVersionStatus) {
-  const store = await loadKeyframeStore();
-  const versions = (store[keyframeId] ?? []).map((version) => version.versionId === versionId ? { ...version, status } : version);
-  await saveStore({ ...store, [keyframeId]: versions });
-}
-
-async function saveStore(value: KeyframeAssetStore) {
+async function saveLocalStore(value: KeyframeAssetStore) {
   const db = await openDb();
   await new Promise<void>((resolve, reject) => {
     const tx = db.transaction(STORE_NAME, "readwrite");
@@ -167,7 +348,7 @@ async function saveStore(value: KeyframeAssetStore) {
     tx.oncomplete = () => resolve();
     tx.onerror = () => reject(tx.error);
   });
-  listeners.forEach((listener) => listener());
+  emitChange();
 }
 
 function openDb(): Promise<IDBDatabase> {
@@ -182,6 +363,31 @@ function openDb(): Promise<IDBDatabase> {
     request.onsuccess = () => resolve(request.result);
     request.onerror = () => reject(request.error);
   });
+}
+
+async function getSession(required: boolean) {
+  if (!supabase) return null;
+  const { data, error } = await supabase.auth.getSession();
+  if (error) throw error;
+  if (!data.session && required) throw new Error("Please sign in before using cloud asset storage.");
+  return data.session;
+}
+
+function toCloudAssetId(keyframeId: string) {
+  return `${CLOUD_PREFIX}${keyframeId}`;
+}
+
+function fromCloudAssetId(assetId: string) {
+  return assetId.startsWith(CLOUD_PREFIX) ? assetId.slice(CLOUD_PREFIX.length) : assetId;
+}
+
+function safeFileName(name: string) {
+  return name.replace(/[^a-zA-Z0-9._-]/g, "_").slice(-140);
+}
+
+function emitChange() {
+  listeners.forEach((listener) => listener());
+  window.dispatchEvent(new Event(EVENT));
 }
 
 function readFileAsDataUrl(file: File) {
