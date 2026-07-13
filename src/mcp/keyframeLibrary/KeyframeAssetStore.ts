@@ -1,4 +1,5 @@
 export type KeyframeVersionStatus = "REVIEW" | "APPROVED" | "MASTER_REFERENCE" | "REJECTED";
+export type KeyframeFrameRole = "START" | "END";
 
 export type KeyframeAssetVersion = {
   versionId: string;
@@ -13,6 +14,7 @@ export type KeyframeAssetVersion = {
     episodeId: string;
     shotId: string;
     title: string;
+    frameRole?: KeyframeFrameRole;
   };
 };
 
@@ -43,13 +45,15 @@ export async function importKeyframeFiles(
   keyframe: { id: string; shot: string; title: string },
   files: FileList | File[],
   prompt: string,
-  episodeId = "EP01"
+  episodeId = "EP01",
+  frameRole: KeyframeFrameRole = "START"
 ) {
   const accepted = Array.from(files).filter((file) => ["image/png", "image/jpeg", "image/webp"].includes(file.type));
   if (!accepted.length) return [];
 
   const store = await loadKeyframeStore();
-  const current = store[keyframe.id] ?? [];
+  const storageKey = getKeyframeFrameStorageKey(keyframe.id, frameRole);
+  const current = store[storageKey] ?? [];
   const imported: KeyframeAssetVersion[] = [];
 
   for (const file of accepted) {
@@ -67,13 +71,28 @@ export async function importKeyframeFiles(
         keyframeId: keyframe.id,
         episodeId,
         shotId: keyframe.shot,
-        title: keyframe.title
+        title: keyframe.title,
+        frameRole
       }
     });
   }
 
-  await saveStore({ ...store, [keyframe.id]: [...current, ...imported] });
+  await saveStore({ ...store, [storageKey]: [...current, ...imported] });
   return imported;
+}
+
+/**
+ * Legacy uploads used the bare keyframe ID. They remain the start-frame chain
+ * so existing EP01 and trailer uploads never disappear after this upgrade.
+ */
+export function getKeyframeFrameVersions(store: KeyframeAssetStore, keyframeId: string, frameRole: KeyframeFrameRole) {
+  const current = store[getKeyframeFrameStorageKey(keyframeId, frameRole)] ?? [];
+  if (frameRole !== "START") return current;
+  return current.length ? current : (store[keyframeId] ?? []);
+}
+
+export function getKeyframeFrameStorageKey(keyframeId: string, frameRole: KeyframeFrameRole) {
+  return `${keyframeId}::${frameRole}`;
 }
 
 export async function deleteKeyframeVersion(keyframeId: string, versionId: string) {

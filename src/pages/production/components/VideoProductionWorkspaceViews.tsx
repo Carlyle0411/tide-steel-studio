@@ -3,7 +3,7 @@ import { Check, Clipboard, Download, Film, RotateCcw, Save, Trash2, Upload, X } 
 import { loadStoryboardWorkspace, subscribeStoryboardWorkspace, type StoryboardShot } from "../../../mcp/storyboardWorkspace/StoryboardWorkspaceStore";
 import { getKlingPrompt, resetKlingPrompt, saveKlingPrompt, subscribeKlingPrompts } from "../../../mcp/videoWorkspace/KlingPromptStore";
 import { bestVideoVersion, deleteVideoVersion, importVideoClips, loadVideoClipStore, subscribeVideoClips, updateVideoVersion, type VideoClipStore, type VideoClipVersion, type VideoVersionStatus } from "../../../mcp/videoWorkspace/VideoClipStore";
-import { getBestKeyframeVersion, loadKeyframeStore, subscribeKeyframeStore, type KeyframeAssetStore } from "../../../mcp/keyframeLibrary/KeyframeAssetStore";
+import { getBestKeyframeVersion, getKeyframeFrameVersions, loadKeyframeStore, subscribeKeyframeStore, type KeyframeAssetStore } from "../../../mcp/keyframeLibrary/KeyframeAssetStore";
 import { getVideoProjects, type VideoProjectId } from "../../../mcp/videoWorkspace/VideoProjectData";
 import { loadShotImageLinks, saveShotImageLink, subscribeShotImageLinks } from "../../../mcp/videoWorkspace/ShotImageLinkStore";
 import { loadAssetStore, subscribeAssetStore } from "../../../mcp/cloudAssetSync/AssetStoreGateway";
@@ -71,7 +71,7 @@ export function VideoClipWorkspaceView() {
   const versions = store[selectedId] ?? [];
   const current = bestVideoVersion(versions);
   const linkedAsset = selected ? resolveLinkedAsset(selected.id, imageLinks, assetStore) : null;
-  const firstFrame = linkedAsset ?? (selected ? getBestKeyframeVersion(keyframes[selected.keyframeId]) : null);
+  const firstFrame = linkedAsset ?? (selected ? getBestKeyframeVersion(getKeyframeFrameVersions(keyframes, keyframeStorageId(project.id, selected.keyframeId), "START")) : null);
   const refresh = () => loadVideoClipStore().then(setStore);
   useEffect(() => { refresh(); loadKeyframeStore().then(setKeyframes); loadAssetStore().then(setAssetStore); return subscribeVideoClips(refresh); }, []);
   useEffect(() => subscribeKeyframeStore(() => loadKeyframeStore().then(setKeyframes)), []);
@@ -128,6 +128,7 @@ function NotesEditor({shotId,version}:{shotId:string;version:VideoClipVersion}){
 async function copyText(value:string){try{await navigator.clipboard.writeText(value)}catch{const area=document.createElement("textarea");area.value=value;document.body.appendChild(area);area.select();document.execCommand("copy");area.remove()} }
 function downloadText(name:string,value:string,type:string){const url=URL.createObjectURL(new Blob([value],{type}));const anchor=document.createElement("a");anchor.href=url;anchor.download=name;anchor.click();URL.revokeObjectURL(url)}
 function formatBytes(size:number){if(size<1024*1024)return `${(size/1024).toFixed(1)} KB`;return `${(size/1024/1024).toFixed(1)} MB`}
+function keyframeStorageId(projectId: VideoProjectId, keyframeId: string) { return projectId === "TRAILER90" ? `TRAILER_${keyframeId}` : projectId === "EP01" ? keyframeId : `${projectId}_${keyframeId}`; }
 function ProjectSelector({projects,value,onChange}:{projects:ReturnType<typeof getVideoProjects>;value:VideoProjectId;onChange:(value:VideoProjectId)=>void}){const current=projects.find(project=>project.id===value);return <div className="mb-4 flex flex-wrap items-center gap-3 rounded border border-white/10 bg-white/[.02] p-3"><div className="text-xs uppercase tracking-[.18em] text-slate-500">作品分区</div><select className="min-w-[240px] rounded border border-jade/30 bg-[#0b1017] px-3 py-2 text-sm text-white outline-none" value={value} onChange={event=>onChange(event.target.value as VideoProjectId)}>{projects.map(project=><option key={project.id} value={project.id}>{project.label} · {project.id}</option>)}</select><div className="text-xs text-slate-500">{current?.helper}</div></div>}
 function ProjectEmpty({project}:{project:string}){return <div className="rounded border border-white/10 bg-white/[.02] p-16 text-center"><div className="text-lg font-semibold text-white">{project}尚未建立正式 Shot</div><p className="mt-2 text-sm text-slate-500">这里不会生成占位 Prompt。请先在剧本管理与 Storyboard 中建立该集镜头，之后即可接入同一工作流。</p></div>}
 function uploadedImageOptions(store:ManualAssetStore){const assets=new Map(getMasterAssets().map(asset=>[asset.id,asset]));return Object.entries(store).flatMap(([assetId,versions])=>versions.filter(version=>version.mediaType==="image"&&version.status!=="REJECTED").map(version=>({assetId,version,label:assets.get(assetId)?.name??assetId})));}

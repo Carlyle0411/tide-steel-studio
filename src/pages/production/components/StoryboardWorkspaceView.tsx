@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Copy, Download, GitMerge, Save, Scissors } from "lucide-react";
-import { getBestKeyframeVersion, loadKeyframeStore, subscribeKeyframeStore, type KeyframeAssetStore } from "../../../mcp/keyframeLibrary/KeyframeAssetStore";
+import { getBestKeyframeVersion, getKeyframeFrameVersions, loadKeyframeStore, subscribeKeyframeStore, type KeyframeAssetStore } from "../../../mcp/keyframeLibrary/KeyframeAssetStore";
 import { loadStoryboardWorkspace, saveStoryboardWorkspace, type StoryboardShot, type StoryboardStatus } from "../../../mcp/storyboardWorkspace/StoryboardWorkspaceStore";
 import { ProductionCard } from "./ProductionShell";
 
@@ -82,7 +82,7 @@ export function StoryboardWorkspaceView() {
     const anchor = document.createElement("a"); anchor.href = url; anchor.download = "EP01_STORYBOARD.json"; anchor.click(); URL.revokeObjectURL(url);
   }
 
-  const best = selected ? getBestKeyframeVersion(keyframes[selected.keyframeId] ?? []) : null;
+  const best = selected ? getBestKeyframeVersion(getKeyframeFrameVersions(keyframes, selected.keyframeId, "START")) : null;
 
   return (
     <div className="space-y-4">
@@ -94,7 +94,7 @@ export function StoryboardWorkspaceView() {
         <ProductionCard className="max-h-[820px] overflow-y-auto p-3">
           <div className="grid gap-2">
             {shots.map((shot, index) => {
-              const frame = getBestKeyframeVersion(keyframes[shot.keyframeId] ?? []);
+              const frame = getBestKeyframeVersion(getKeyframeFrameVersions(keyframes, shot.keyframeId, "START"));
               return <button key={shot.id} draggable onDragStart={() => { dragIndex.current = index; }} onDragOver={(event) => event.preventDefault()} onDrop={() => reorder(index)} className={`grid grid-cols-[112px_minmax(0,1fr)] gap-3 rounded border p-2 text-left ${selected?.id === shot.id ? "border-jade bg-jade/10" : "border-white/10 bg-black/20 hover:border-jade/40"}`} onClick={() => setSelectedId(shot.id)}>
                 <div className="aspect-video overflow-hidden rounded bg-white/5">{frame ? <img src={frame.dataUrl} alt={shot.title} className="h-full w-full object-cover" /> : <div className="flex h-full items-center justify-center text-[10px] text-slate-600">{shot.keyframeId}</div>}</div>
                 <div className="min-w-0"><div className="font-mono text-[10px] text-jade">{shot.id}</div><div className="mt-1 truncate text-sm font-semibold text-white">{shot.title}</div><div className="mt-1 text-[11px] text-slate-500">{shot.duration}s · {shot.shotSize} · {shot.lens}</div><div className="mt-1 text-[11px] text-slate-500">{shot.status}</div></div>
