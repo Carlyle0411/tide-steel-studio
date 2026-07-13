@@ -95,6 +95,21 @@ export function getKeyframeFrameStorageKey(keyframeId: string, frameRole: Keyfra
   return `${keyframeId}::${frameRole}`;
 }
 
+export function getKeyframeFrameVersionOwnerKey(store: KeyframeAssetStore, keyframeId: string, frameRole: KeyframeFrameRole, versionId: string) {
+  const storageKey = getKeyframeFrameStorageKey(keyframeId, frameRole);
+  if ((store[storageKey] ?? []).some((version) => version.versionId === versionId)) return storageKey;
+  if (frameRole === "START" && (store[keyframeId] ?? []).some((version) => version.versionId === versionId)) return keyframeId;
+  return storageKey;
+}
+
+export async function deleteAllKeyframeFrameVersions(keyframeId: string, frameRole: KeyframeFrameRole) {
+  const store = await loadKeyframeStore();
+  const next = { ...store };
+  delete next[getKeyframeFrameStorageKey(keyframeId, frameRole)];
+  if (frameRole === "START") delete next[keyframeId];
+  await saveStore(next);
+}
+
 export async function deleteKeyframeVersion(keyframeId: string, versionId: string) {
   const store = await loadKeyframeStore();
   const nextVersions = (store[keyframeId] ?? []).filter((version) => version.versionId !== versionId);
