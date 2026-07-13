@@ -1,4 +1,5 @@
 import { CLOUD_ASSET_BUCKET, supabase, supabaseConfigured } from "../../lib/supabaseClient";
+import { mergeStaticKeyframeFallback } from "./StaticKeyframeAssets";
 
 export type KeyframeVersionStatus = "REVIEW" | "APPROVED" | "MASTER_REFERENCE" | "REJECTED";
 export type KeyframeFrameRole = "START" | "END";
@@ -18,6 +19,7 @@ export type KeyframeAssetVersion = {
     title: string;
     frameRole?: KeyframeFrameRole;
     cloudPath?: string;
+    staticFallback?: boolean;
   };
 };
 
@@ -55,8 +57,10 @@ export function subscribeKeyframeStore(listener: () => void) {
 }
 
 export async function loadKeyframeStore(): Promise<KeyframeAssetStore> {
-  if (supabaseConfigured && (await getSession(false))) return loadCloudKeyframeStore();
-  return loadLocalKeyframeStore();
+  const store = supabaseConfigured && (await getSession(false))
+    ? await loadCloudKeyframeStore()
+    : await loadLocalKeyframeStore();
+  return mergeStaticKeyframeFallback(store);
 }
 
 export async function importKeyframeFiles(
