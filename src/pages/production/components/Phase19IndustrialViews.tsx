@@ -25,6 +25,7 @@ import { getMasterAssets } from "../../../mcp/masterAssetLibrary/MasterAssetLibr
 import { loadAssetStore, subscribeAssetStore } from "../../../mcp/cloudAssetSync/AssetStoreGateway";
 import type { ManualAssetStore } from "../../../mcp/manualAssetImport/ManualAssetImport";
 import { ProductionCard } from "./ProductionShell";
+import { TideDefense3DScene } from "./TideDefense3DScene";
 
 type Navigate = (section: ProductionSection) => void;
 
@@ -64,6 +65,17 @@ export function Phase19DirectorDashboard({ navigate }: { navigate: Navigate }) {
   ];
   return (
     <Page title="导演工作台" subtitle="《潮汐钢魂》当前生产状态。统计来自母资产库、上传版本、EP01与90秒预告片。">
+      <section className="relative mb-6 overflow-hidden border-y border-white/10 bg-[#071018]">
+        <TideDefense3DScene />
+        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(7,16,24,.84),rgba(7,16,24,.22)_52%,rgba(7,16,24,.08))]" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#071018] to-transparent" />
+        <div className="pointer-events-none absolute left-6 top-6 max-w-md">
+          <div className="text-xs uppercase tracking-[.34em] text-jade">2042 Hangzhou Bay / Live Scene</div>
+          <div className="mt-3 text-2xl font-semibold text-white">海洋防线仍在运转</div>
+          <p className="mt-2 text-sm leading-6 text-slate-300">拖拽观察海防墙、赤霆工程机体与潮门压力边界。这里不是宣传图，是工作台的实时三维尺度参考。</p>
+        </div>
+        <div className="pointer-events-none absolute bottom-5 right-6 flex gap-3 text-[11px] uppercase tracking-[.16em] text-slate-300"><span>拖拽旋转</span><span className="text-jade">滚轮缩放</span></div>
+      </section>
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         <Metric label="母资产完成率" value={`${progress}%`} />
         <Metric label="Master Reference" value={`${masterAssets} / ${assets.length}`} />

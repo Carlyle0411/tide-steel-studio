@@ -148,8 +148,8 @@ export function Phase19ProductionShell({
           <div className="flex h-20 items-center justify-between border-b border-white/10 px-4">
             {!collapsed && (
               <div>
-                <div className="text-base font-semibold tracking-wide text-white">潮汐钢魂</div>
-                <div className="text-[11px] uppercase tracking-[0.28em] text-jade/70">Tide Steel Studio</div>
+                <div className="text-sm font-semibold tracking-wide text-white">潮汐钢魂画面分镜生成工作台</div>
+                <div className="text-[10px] uppercase tracking-[0.26em] text-jade/70">Tide Steel Storyboard Studio</div>
               </div>
             )}
             <button className="btn h-9 w-9 px-0" onClick={() => setCollapsed((value) => !value)} title="折叠侧栏">
@@ -193,7 +193,7 @@ export function Phase19ProductionShell({
           <header className="flex h-16 items-center justify-between border-b border-white/10 bg-[#0b1017]/85 px-5 backdrop-blur">
             <div>
               <div className="flex items-center gap-2 text-xs text-slate-500">
-                <span>潮汐钢魂</span>
+                <span>潮汐钢魂画面分镜生成工作台</span>
                 <span>/</span>
                 <span>电影制作</span>
                 <span>/</span>
