@@ -78,10 +78,14 @@ const navGroups: NavGroup[] = [
   {
     title: "视频制作",
     entries: [
-      { key: "master-video-library", id: "masterVideoLibrary", label: "母资产视频库", helper: "三部曲可复用片段与 Prompt", icon: <Database size={17} /> },
-      { key: "kling", id: "klingPromptLibrary", label: "可灵提示词", helper: "EP01 逐镜头中文 Prompt", icon: <Wand2 size={17} /> },
-      { key: "video", id: "video", label: "视频片段", helper: "上传真实视频与绑定 Shot", icon: <MonitorPlay size={17} /> },
-      { key: "video-version", id: "visualReview", label: "视频版本管理", helper: "审核、比较与 Master 版本", icon: <Film size={17} /> }
+      { key: "video-materials", id: "videoMaterials", label: "视频素材库", helper: "上传、预览、分类与审核", icon: <MonitorPlay size={17} /> },
+      { key: "trailer-editor", id: "trailerEditor", label: "预告片剪辑规划", helper: "时间线、镜头排序与节奏", icon: <Scissors size={17} /> },
+      { key: "subtitle-studio", id: "subtitleStudio", label: "字幕系统", helper: "旁白、对白、信息字幕", icon: <Clapperboard size={17} /> },
+      { key: "voice-studio", id: "voiceStudio", label: "AI配音系统", helper: "旁白与角色声音版本", icon: <UserRound size={17} /> },
+      { key: "audio-library", id: "audioLibrary", label: "音效与BGM", helper: "环境声、机甲声、情绪音乐", icon: <Waves size={17} /> },
+      { key: "transition-library", id: "transitionLibrary", label: "转场系统", helper: "黑场、闪白、海水遮挡", icon: <Film size={17} /> },
+      { key: "film-intro", id: "filmIntro", label: "介绍包装", helper: "角色、场景、机甲出场卡", icon: <Layers size={17} /> },
+      { key: "post-export", id: "postExport", label: "后期导出中心", helper: "剪映素材包与制作清单", icon: <Download size={17} /> }
     ]
   },
   {
@@ -100,7 +104,11 @@ const hiddenCommands: Array<{ id: ProductionSection; label: string; helper: stri
   { id: "prompt", label: "Prompt库", helper: "低频维护入口，主流程由 Kling Prompt 与镜头页承载", icon: <Wand2 size={16} /> },
   { id: "review", label: "制作日志", helper: "历史记录与导入导出日志", icon: <Clapperboard size={16} /> },
   { id: "reuseCenter", label: "素材复用中心", helper: "查看引用次数与复用关系", icon: <Database size={16} /> },
-  { id: "gptPromptLibrary", label: "GPT Image Prompt库", helper: "图片 Prompt 的低频维护入口", icon: <Image size={16} /> }
+  { id: "gptPromptLibrary", label: "GPT Image Prompt库", helper: "图片 Prompt 的低频维护入口", icon: <Image size={16} /> },
+  { id: "masterVideoLibrary", label: "母资产视频库", helper: "三部曲可复用片段与 Prompt 旧入口", icon: <Database size={16} /> },
+  { id: "klingPromptLibrary", label: "可灵提示词旧入口", helper: "逐镜头中文 Prompt 维护", icon: <Wand2 size={16} /> },
+  { id: "video", label: "视频片段旧入口", helper: "按 Shot 上传真实视频", icon: <MonitorPlay size={16} /> },
+  { id: "visualReview", label: "视频版本管理旧入口", helper: "审核、比较与 Master 版本", icon: <Film size={16} /> }
 ];
 
 const flatNavItems = navGroups.flatMap((group) => group.entries);

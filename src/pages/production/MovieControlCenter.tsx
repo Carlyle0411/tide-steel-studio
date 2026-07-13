@@ -57,6 +57,16 @@ import { CameraDesignWorkspaceView } from "./components/CameraDesignWorkspaceVie
 import { KlingPromptWorkspaceView, VideoClipWorkspaceView, VideoVersionManagerView } from "./components/VideoProductionWorkspaceViews";
 import { MasterVideoLibraryView } from "./components/MasterVideoLibraryView";
 import {
+  AudioLibraryView,
+  FilmIntroductionView,
+  PostFinalPackageView,
+  SubtitleStudioView,
+  TrailerEditorView,
+  TransitionLibraryView,
+  VideoMaterialLibraryView,
+  VoiceStudioView
+} from "./components/PostProductionSystemViews";
+import {
   Phase19AssetReference,
   Phase19DirectorDashboard,
   Phase19EntityLibrary,
@@ -104,6 +114,22 @@ function renderSection(active: ProductionSection, navigate: (section: Production
       return <Phase19PromptCenter />;
     case "klingPromptLibrary":
       return <KlingPromptWorkspaceView />;
+    case "videoMaterials":
+      return <VideoMaterialLibraryView />;
+    case "trailerEditor":
+      return <TrailerEditorView />;
+    case "subtitleStudio":
+      return <SubtitleStudioView />;
+    case "voiceStudio":
+      return <VoiceStudioView />;
+    case "audioLibrary":
+      return <AudioLibraryView />;
+    case "transitionLibrary":
+      return <TransitionLibraryView />;
+    case "filmIntro":
+      return <FilmIntroductionView />;
+    case "postExport":
+      return <PostFinalPackageView />;
     case "production":
       return <ProjectOverviewPage navigate={navigate} />;
     case "producerDashboard":
