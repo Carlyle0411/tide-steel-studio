@@ -43,11 +43,11 @@ const enrichment = [
 export function getEP01Shots(): EP01ShotProductionData[] {
   return Array.from({ length: 18 }, (_, index) => {
     const shot = storyboardShots[index];
-    const [duration, lens, movement, character, action, emotion, lighting, environment, vfx] = enrichment[index];
+    const [, lens, movement, character, action, emotion, lighting, environment, vfx] = enrichment[index];
     return {
       shot_id: `EP01_SHOT_${String(index + 1).padStart(2, "0")}`,
       sourceShotId: shot?.id ?? `EP01-SHOT-${String(index + 1).padStart(3, "0")}`,
-      duration,
+      duration: "15s",
       description: shot?.storyFunction || action,
       camera: shot?.camera || "cinematic production camera",
       lens,

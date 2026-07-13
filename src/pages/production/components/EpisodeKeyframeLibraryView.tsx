@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { CheckCircle2, Copy, Image, Trash2, Upload } from "lucide-react";
 import { getEP01Keyframes } from "../../../mcp/tideSteelStudio/EP01StudioData";
 import { trailer90Shots } from "../../../mcp/trailer/Trailer90StudioData";
+import { buildEP01KeyframeMotionNote, isEP01PromptShot } from "../../../mcp/videoWorkspace/EP01SegmentedPrompt";
 import { getVideoProjects, type VideoProjectId } from "../../../mcp/videoWorkspace/VideoProjectData";
 import {
   approveKeyframeVersion,
@@ -78,7 +79,7 @@ export function EpisodeKeyframeLibraryView() {
       <header>
         <div className="text-xs uppercase tracking-[0.24em] text-jade/70">Keyframe / First & Last Frame</div>
         <h2 className="mt-2 text-2xl font-semibold text-white">关键帧制作</h2>
-        <p className="mt-2 max-w-4xl text-sm leading-6 text-slate-400">这里按剧本要求区分单关键帧和首尾帧。只有脚本明确写了“首帧 / 尾帧”的镜头才需要两张图；普通镜头只上传一张关键帧，避免多余画面干扰可灵制作。</p>
+        <p className="mt-2 max-w-4xl text-sm leading-6 text-slate-400">这里按剧本要求区分单关键帧和首尾帧。EP01 每张关键帧都对应一个 15 秒可灵智能分镜 Prompt，画面必须带有行为动机，并会同步到“可灵提示词”和“视频素材库”。</p>
       </header>
 
       <div className="flex flex-wrap items-center gap-3 rounded-md border border-white/10 bg-white/[0.02] p-3">
@@ -101,7 +102,7 @@ export function EpisodeKeyframeLibraryView() {
       {!keyframes.length ? <EmptyProject label={project.label} /> : <div className="grid gap-5 2xl:grid-cols-[minmax(0,1fr)_500px]">
         <ProductionCard className="order-2 p-4 2xl:order-1">
           <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-            <div><h3 className="text-lg font-semibold text-white">{project.label}关键帧清单</h3><p className="mt-1 text-xs text-slate-500">单关键帧只显示一张图；首尾帧镜头会显示独立的首帧和尾帧上传区。</p></div>
+            <div><h3 className="text-lg font-semibold text-white">{project.label}关键帧清单</h3><p className="mt-1 text-xs text-slate-500">单关键帧只显示一张图；首尾帧镜头会显示独立的首帧和尾帧上传区。所有图片会作为对应 Shot 的可灵首帧 Reference。</p></div>
             <div className="rounded-full border border-jade/30 bg-jade/10 px-3 py-1 text-xs text-jade">完成 {completed}/{keyframes.length}</div>
           </div>
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -191,9 +192,13 @@ function buildKeyframeImagePrompt(keyframe: KeyframeItem, role: KeyframeFrameRol
     ? (isStart ? pairDetail.start : pairDetail.end)
     : (keyframe.visual || visualDescriptions[keyframe.id] || keyframe.purpose);
   const frameName = isPair ? (isStart ? "首帧" : "尾帧") : "关键帧";
+  const ep01MotionNote = isEP01PromptShot({ id: keyframe.shot, keyframeId: keyframe.id, title: keyframe.title, description: keyframe.purpose })
+    ? buildEP01KeyframeMotionNote({ id: keyframe.shot, keyframeId: keyframe.id, title: keyframe.title, description: keyframe.purpose, required_assets: keyframe.required_assets })
+    : "";
   return [
     `${frameName}：${keyframe.id}《${keyframe.title}》`,
     `剧情目的：${keyframe.purpose}`,
+    ep01MotionNote,
     "参考图：必须上传并参考以下母资产图片：",
     ...references.map((asset, index) => `${index + 1}. ${asset}`),
     `画面内容：${content}`,

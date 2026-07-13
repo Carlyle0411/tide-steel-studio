@@ -1,5 +1,6 @@
 import type { StoryboardShot } from "../storyboardWorkspace/StoryboardWorkspaceStore";
 import { loadMasterVideoShotLinks, loadMasterVideoTemplates } from "../masterVideoLibrary/MasterVideoLibraryStore";
+import { buildEP01SegmentedKlingPrompt, isEP01PromptShot } from "./EP01SegmentedPrompt";
 
 const STORAGE_KEY = "tide-steel-soul-kling-prompts-v2";
 const EVENT_NAME = "tide-steel-soul-kling-prompts-change";
@@ -129,6 +130,7 @@ const ANGLE_PROFILES: Record<string, AngleProfile> = {
 
 export function buildChineseKlingPrompt(shot: StoryboardShot) {
   const profile = chooseAngleProfile(shot);
+  if (isEP01PromptShot(shot)) return buildEP01SegmentedKlingPrompt(shot);
   return buildConciseKlingParagraph(shot, profile);
 }
 
@@ -287,6 +289,7 @@ function cleanValue(value?: string) {
 }
 
 function isLegacyVerbosePrompt(prompt: string) {
+  if (prompt.includes("15秒可灵智能分镜")) return false;
   const markers = ["画面动作：", "人物表情：", "对白与语气：", "环境运动：", "声音参考：", "运动物理：", "禁止：", "Scene:", "Subject:", "Action:", "Camera:", "Motion Physics:", "Reference Rule:"];
-  return prompt.length > 650 || markers.filter((marker) => prompt.includes(marker)).length >= 2;
+  return prompt.includes("时长：5秒") || markers.filter((marker) => prompt.includes(marker)).length >= 2;
 }

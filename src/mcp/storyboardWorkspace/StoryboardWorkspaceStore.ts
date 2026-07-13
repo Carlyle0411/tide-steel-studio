@@ -41,7 +41,7 @@ export function createDefaultStoryboard(): StoryboardShot[] {
       order: index + 1,
       title: keyframe?.title ?? `镜头${index + 1}`,
       description: keyframe?.purpose ?? shot.description,
-      duration: Number.parseFloat(shot.duration) || 5,
+      duration: 15,
       shotSize: inferShotSize(shot.lens),
       camera: shot.camera,
       lens: shot.lens,
@@ -95,7 +95,12 @@ export function subscribeStoryboardWorkspace(callback: () => void) {
 }
 
 function normalize(shots: StoryboardShot[]) {
-  return shots.map((shot, index) => ({ ...shot, order: index + 1, id: `SHOT-EP01-${String(index + 1).padStart(3, "0")}` }));
+  return shots.map((shot, index) => ({
+    ...shot,
+    order: index + 1,
+    id: `SHOT-EP01-${String(index + 1).padStart(3, "0")}`,
+    duration: 15
+  }));
 }
 
 function inferShotSize(lens: string) {

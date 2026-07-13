@@ -37,7 +37,7 @@ export function KlingPromptWorkspaceView() {
     downloadText(`${project.id}_可灵提示词.json`, JSON.stringify(shots.map((shot) => ({ shotId: shot.id, keyframeId: shot.keyframeId, title: shot.title, requiredAssets: project.requiredAssets[shot.id] ?? [], prompt: getKlingPrompt(shot) })), null, 2), "application/json");
   }
 
-  return <Page title="可灵提示词" subtitle="预告片与各集共用的一段式中文视频 Prompt。只保留拍摄手法、景别、画面运动规律和画面情绪，选择作品分区后会同步对应 Shot 与关键帧图片。">
+  return <Page title="可灵提示词" subtitle="预告片与各集共用的中文视频 Prompt。EP01 每条 Prompt 固定为15秒，包含2-4个有行为动机的小分镜；选择作品分区后会同步对应 Shot、关键帧图片与视频素材。">
     <ProjectSelector projects={projects} value={projectId} onChange={setProjectId}/>
     {!shots.length ? <ProjectEmpty project={project.label}/> :
     <div className="grid gap-4 xl:grid-cols-[420px_minmax(0,1fr)]">
