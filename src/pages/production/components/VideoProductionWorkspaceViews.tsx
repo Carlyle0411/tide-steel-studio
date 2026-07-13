@@ -21,9 +21,11 @@ export function KlingPromptWorkspaceView() {
   const [selectedId, setSelectedId] = useState(shots[0]?.id ?? "");
   const selected = shots.find((shot) => shot.id === selectedId) ?? shots[0];
   const [prompt, setPrompt] = useState(selected ? getKlingPrompt(selected) : "");
+  const [keyframes, setKeyframes] = useState<KeyframeAssetStore>({});
   const [saved, setSaved] = useState(true);
 
   useEffect(() => subscribeStoryboardWorkspace(() => setEpisodeShots(loadStoryboardWorkspace())), []);
+  useEffect(() => { loadKeyframeStore().then(setKeyframes); return subscribeKeyframeStore(() => loadKeyframeStore().then(setKeyframes)); }, []);
   useEffect(() => { setSelectedId(shots[0]?.id ?? ""); }, [projectId]);
   useEffect(() => subscribeKlingPrompts(() => selected && setPrompt(getKlingPrompt(selected))), [selected?.id]);
   useEffect(() => { if (selected) { setPrompt(getKlingPrompt(selected)); setSaved(true); } }, [selected?.id]);
@@ -48,6 +50,7 @@ export function KlingPromptWorkspaceView() {
       {selected && <Panel title={`${selected.keyframeId} / ${selected.title}`} actions={<><button className="btn" onClick={copy}><Clipboard size={15}/>复制 Prompt</button><button className="btn" onClick={exportAll}><Download size={15}/>导出全部</button></>}>
         <div className="grid gap-3 sm:grid-cols-4"><Info label="角色" value={selected.character}/><Info label="场景" value={selected.environment}/><Info label="摄影" value={`${selected.shotSize} · ${selected.lens}`}/><Info label="运镜" value={selected.movement}/></div>
         {!!project.requiredAssets[selected.id]?.length && <div className="mt-3 rounded border border-white/10 bg-black/20 p-3 text-sm"><span className="text-slate-500">所需母资产：</span>{project.requiredAssets[selected.id].join(" · ")}</div>}
+        <SyncedKeyframePreview projectId={project.id} shot={selected} store={keyframes} />
         <ShotImageBinder shotId={selected.id}/>
         <textarea className="mt-4 min-h-[520px] w-full resize-y rounded border border-white/10 bg-black/30 p-4 text-sm leading-7 text-slate-200 outline-none focus:border-jade/50" value={prompt} onChange={(event) => { setPrompt(event.target.value); setSaved(false); }} />
         <div className="mt-3 flex items-center justify-between"><span className={saved ? "text-xs text-jade" : "text-xs text-amber-300"}>{saved ? "当前修改已保存" : "存在未保存修改"}</span><div className="flex gap-2"><button className="btn" onClick={restore}><RotateCcw size={15}/>恢复默认</button><button className="btn border-jade/40 text-jade" onClick={save}><Save size={15}/>保存 Prompt</button></div></div>
@@ -129,6 +132,29 @@ async function copyText(value:string){try{await navigator.clipboard.writeText(va
 function downloadText(name:string,value:string,type:string){const url=URL.createObjectURL(new Blob([value],{type}));const anchor=document.createElement("a");anchor.href=url;anchor.download=name;anchor.click();URL.revokeObjectURL(url)}
 function formatBytes(size:number){if(size<1024*1024)return `${(size/1024).toFixed(1)} KB`;return `${(size/1024/1024).toFixed(1)} MB`}
 function keyframeStorageId(projectId: VideoProjectId, keyframeId: string) { return projectId === "TRAILER90" ? `TRAILER_${keyframeId}` : projectId === "EP01" ? keyframeId : `${projectId}_${keyframeId}`; }
+function SyncedKeyframePreview({ projectId, shot, store }: { projectId: VideoProjectId; shot: StoryboardShot; store: KeyframeAssetStore }) {
+  const storageId = keyframeStorageId(projectId, shot.keyframeId);
+  const start = getBestKeyframeVersion(getKeyframeFrameVersions(store, storageId, "START"));
+  const end = getBestKeyframeVersion(getKeyframeFrameVersions(store, storageId, "END"));
+  const hasPair = Boolean(end);
+  return <div className="mt-3 rounded border border-jade/20 bg-jade/[0.03] p-3">
+    <div className="mb-2 flex items-center justify-between gap-3">
+      <div className="text-xs font-semibold text-jade">已同步关键帧栏目图片</div>
+      <div className="font-mono text-[11px] text-slate-500">{storageId}</div>
+    </div>
+    <div className={`grid gap-3 ${hasPair ? "sm:grid-cols-2" : "sm:grid-cols-1"}`}>
+      <SyncedFrame label={hasPair ? "首帧图" : "关键帧图"} src={start?.dataUrl} version={start?.versionId} />
+      {hasPair && <SyncedFrame label="尾帧图" src={end?.dataUrl} version={end?.versionId} />}
+    </div>
+    <p className="mt-2 text-xs leading-5 text-slate-500">这里不单独上传图片；图片来源于左侧“关键帧”栏目。更换关键帧后，可灵提示词页面会自动同步显示。</p>
+  </div>;
+}
+function SyncedFrame({ label, src, version }: { label: string; src?: string; version?: string }) {
+  return <div>
+    <div className="mb-1 flex items-center justify-between text-[11px] text-slate-500"><span>{label}</span><span>{version ?? "EMPTY"}</span></div>
+    <div className="aspect-video overflow-hidden rounded border border-white/10 bg-white/[0.03]">{src ? <img src={src} alt={label} className="h-full w-full object-cover" /> : <Empty text="关键帧栏目尚未上传" />}</div>
+  </div>;
+}
 function ProjectSelector({projects,value,onChange}:{projects:ReturnType<typeof getVideoProjects>;value:VideoProjectId;onChange:(value:VideoProjectId)=>void}){const current=projects.find(project=>project.id===value);return <div className="mb-4 flex flex-wrap items-center gap-3 rounded border border-white/10 bg-white/[.02] p-3"><div className="text-xs uppercase tracking-[.18em] text-slate-500">作品分区</div><select className="min-w-[240px] rounded border border-jade/30 bg-[#0b1017] px-3 py-2 text-sm text-white outline-none" value={value} onChange={event=>onChange(event.target.value as VideoProjectId)}>{projects.map(project=><option key={project.id} value={project.id}>{project.label} · {project.id}</option>)}</select><div className="text-xs text-slate-500">{current?.helper}</div></div>}
 function ProjectEmpty({project}:{project:string}){return <div className="rounded border border-white/10 bg-white/[.02] p-16 text-center"><div className="text-lg font-semibold text-white">{project}尚未建立正式 Shot</div><p className="mt-2 text-sm text-slate-500">这里不会生成占位 Prompt。请先在剧本管理与 Storyboard 中建立该集镜头，之后即可接入同一工作流。</p></div>}
 function uploadedImageOptions(store:ManualAssetStore){const assets=new Map(getMasterAssets().map(asset=>[asset.id,asset]));return Object.entries(store).flatMap(([assetId,versions])=>versions.filter(version=>version.mediaType==="image"&&version.status!=="REJECTED").map(version=>({assetId,version,label:assets.get(assetId)?.name??assetId})));}

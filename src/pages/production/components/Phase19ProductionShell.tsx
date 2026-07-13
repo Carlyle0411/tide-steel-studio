@@ -78,6 +78,7 @@ const navGroups: NavGroup[] = [
   {
     title: "视频制作",
     entries: [
+      { key: "kling", id: "klingPromptLibrary", label: "可灵提示词", helper: "逐镜头中文 Prompt 与关键帧同步", icon: <Wand2 size={17} /> },
       { key: "video-materials", id: "videoMaterials", label: "视频素材库", helper: "上传、预览、分类与审核", icon: <MonitorPlay size={17} /> },
       { key: "trailer-editor", id: "trailerEditor", label: "预告片剪辑规划", helper: "时间线、镜头排序与节奏", icon: <Scissors size={17} /> },
       { key: "subtitle-studio", id: "subtitleStudio", label: "字幕系统", helper: "旁白、对白、信息字幕", icon: <Clapperboard size={17} /> },
@@ -106,7 +107,6 @@ const hiddenCommands: Array<{ id: ProductionSection; label: string; helper: stri
   { id: "reuseCenter", label: "素材复用中心", helper: "查看引用次数与复用关系", icon: <Database size={16} /> },
   { id: "gptPromptLibrary", label: "GPT Image Prompt库", helper: "图片 Prompt 的低频维护入口", icon: <Image size={16} /> },
   { id: "masterVideoLibrary", label: "母资产视频库", helper: "三部曲可复用片段与 Prompt 旧入口", icon: <Database size={16} /> },
-  { id: "klingPromptLibrary", label: "可灵提示词旧入口", helper: "逐镜头中文 Prompt 维护", icon: <Wand2 size={16} /> },
   { id: "video", label: "视频片段旧入口", helper: "按 Shot 上传真实视频", icon: <MonitorPlay size={16} /> },
   { id: "visualReview", label: "视频版本管理旧入口", helper: "审核、比较与 Master 版本", icon: <Film size={16} /> }
 ];

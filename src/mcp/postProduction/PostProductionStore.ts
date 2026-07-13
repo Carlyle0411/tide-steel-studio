@@ -296,7 +296,7 @@ function mergeSeeds(value: PostProductionState) {
   const seed = createSeedState();
   return {
     videoMetadata: value.videoMetadata ?? {},
-    trailerShots: value.trailerShots?.length ? value.trailerShots : seed.trailerShots,
+    trailerShots: mergeTrailerShots(value.trailerShots, seed.trailerShots),
     subtitles: value.subtitles?.length ? value.subtitles : seed.subtitles,
     voices: value.voices?.length ? value.voices : seed.voices,
     audio: value.audio?.length ? value.audio : seed.audio,
@@ -305,14 +305,33 @@ function mergeSeeds(value: PostProductionState) {
   };
 }
 
+function mergeTrailerShots(current: TrailerEditShot[] | undefined, seed: TrailerEditShot[]) {
+  if (!current?.length) return seed;
+  const byId = new Map(current.map((item) => [item.id, item]));
+  return seed.map((item) => {
+    const existing = byId.get(item.id);
+    if (!existing) return item;
+    return {
+      ...existing,
+      cutType: item.cutType,
+      order: existing.order || item.order,
+      sourceShotId: item.sourceShotId,
+      duration: item.duration,
+      linkedAssets: item.linkedAssets,
+      function: item.function,
+      notes: item.notes
+    };
+  });
+}
+
 function seedTrailerShots(): TrailerEditShot[] {
   const ninety = trailer90Shots.map((shot, index) => ({
     id: `EDIT-90-${shot.id}`,
     cutType: "90秒预告" as const,
     order: index + 1,
-    sourceShotId: shot.id,
+    sourceShotId: `SHOT-TRAILER-${String(index + 1).padStart(3, "0")}`,
     name: shot.title,
-    duration: Number((shot.time.split("-")[1] ?? "00:00").split(":").pop()) || 5,
+    duration: durationOf(shot.time),
     linkedAssets: shot.assets,
     emotion: index < 4 ? "未知压迫" : index < 10 ? "紧张升级" : index < 16 ? "动作冲击" : "认知反转",
     function: shot.purpose,
@@ -323,7 +342,7 @@ function seedTrailerShots(): TrailerEditShot[] {
     id: `EDIT-30-${shot.id}`,
     cutType: "30秒预告" as const,
     order: index + 1,
-    sourceShotId: shot.id,
+    sourceShotId: `SHOT-TRAILER-${String(index + 1).padStart(3, "0")}`,
     name: shot.title,
     duration: index === 0 ? 4 : 3,
     linkedAssets: shot.assets,
@@ -336,7 +355,7 @@ function seedTrailerShots(): TrailerEditShot[] {
     id: `EDIT-15-${shot.id}`,
     cutType: "15秒预告" as const,
     order: index + 1,
-    sourceShotId: shot.id,
+    sourceShotId: `SHOT-TRAILER-${String(index + 1).padStart(3, "0")}`,
     name: shot.title,
     duration: 3,
     linkedAssets: shot.assets,
@@ -346,6 +365,16 @@ function seedTrailerShots(): TrailerEditShot[] {
     notes: "15秒版本只做钩子，不解释世界观。"
   }));
   return [...fifteen, ...thirty, ...ninety];
+}
+
+function durationOf(value: string) {
+  const [start, end] = value.split("-").map(toSeconds);
+  return Math.max(1, end - start);
+}
+
+function toSeconds(value: string) {
+  const [minutes, seconds] = value.split(":").map(Number);
+  return minutes * 60 + seconds;
 }
 
 function defaultVideoMetadata(key: string): VideoMaterialMetadata {
