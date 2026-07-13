@@ -20,7 +20,7 @@ export function TideSteelStudioView() {
         <div className="flex flex-wrap items-start justify-between gap-4">
           <div>
             <div className="text-xs uppercase tracking-[0.22em] text-slate-500">Tide Steel Studio</div>
-            <h2 className="mt-2 text-2xl font-semibold text-white">EP01 海面低频</h2>
+            <h2 className="mt-2 text-2xl font-semibold text-white">潮汐钢魂三部曲制作总览</h2>
             <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-400">个人 AI 电影制作工作台。图片只来自 Codex GPT Image2 与本地真实 PNG；视频阶段只生成可灵提示词，由你手动制作。</p>
           </div>
           <StatusPill status="local" />

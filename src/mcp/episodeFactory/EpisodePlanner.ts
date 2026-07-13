@@ -31,7 +31,7 @@ export class EpisodePlanner {
     }));
     return {
       episodeId,
-      title: episodeId === "EP01" ? "海面低频" : "Untitled Episode",
+      title: episodeId === "EP01" ? "赤霆纪元 第一集" : "潮汐钢魂三部曲分集",
       storySource: productionDocs.episodeBibleMd,
       totalShots: shots.length,
       shots

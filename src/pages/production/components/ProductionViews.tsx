@@ -91,7 +91,7 @@ export function EpisodeProductionDashboardView() {
     <div className="space-y-5">
       <ProductionCard className="p-5">
         <div className="text-xs uppercase tracking-[0.22em] text-slate-500">Episode Production Dashboard</div>
-        <h2 className="mt-2 text-2xl font-semibold text-white">EP01 海面低频</h2>
+        <h2 className="mt-2 text-2xl font-semibold text-white">潮汐钢魂三部曲制作总览</h2>
       </ProductionCard>
       <div className="grid gap-4 md:grid-cols-4">
         <MiniStat label="Storyboard" value={`${progress.totalShots}/${progress.totalShots}`} />

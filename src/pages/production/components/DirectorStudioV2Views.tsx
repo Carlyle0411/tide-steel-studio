@@ -35,7 +35,7 @@ export function ProjectOverviewPage({ navigate }: { navigate: Navigate }) {
         <Metric label="视频片段模板" value={clips.length} />
       </div>
       <WorkflowGraph />
-      <EditablePanel id="project-overview" title="项目介绍 / 故事简介" defaultValue="《潮汐钢魂》是一套连续章节式AI科幻电影系列。当前制作重点：EP01《海面低频》的资产、关键帧、可灵提示词与视频制作规划。" />
+      <EditablePanel id="project-overview" title="项目介绍 / 故事简介" defaultValue="《潮汐钢魂》是一套三部36集连续章节式AI科幻电影系列。当前网页只保留三部曲主线、90秒预告片与官方母资产工作流。" />
       <QuickLinks navigate={navigate} items={[["资产库", "aiAssetLibrary"], ["关键帧", "image"], ["可灵提示词", "klingPromptLibrary"], ["时间线", "timeline"]]} />
     </StudioFrame>
   );
@@ -57,7 +57,7 @@ export function ScriptManagerPage({ navigate }: { navigate: Navigate }) {
   const keyframes = getEP01Keyframes();
   return (
     <StudioFrame title="剧本管理" subtitle="按剧集、章节、Scene、Shot 管理脚本与镜头说明。">
-      <EditablePanel id="script-ep01" title="EP01 剧本文档" defaultValue={"# EP01 海面低频\n\nScene 01：杭州湾海防线出现低频异常。\nScene 02：深蓝基地收到系统无法解释的信号。\nScene 03：林舟被召回，赤霆01进入启动准备。"} />
+      <EditablePanel id="script-ep01" title="第一部《赤霆纪元》剧本工作区" defaultValue={"# 《潮汐钢魂：赤霆纪元》\n\n第一部为12集章节式AI科幻电影。核心问题是：我们怎样战胜潮兽？结尾必须推翻这个问题，让人类意识到自己并不是在打一场战争，而是在参加一场文明考试。\n\n当前工作重点：三部曲正式世界观、第一部12集结构、90秒预告片关键帧与可灵视频提示词。"} />
       <DataTable
         heads={["镜头编号", "章节", "对白", "旁白", "镜头说明", "状态", "引用"]}
         rows={keyframes.map((shot) => [shot.shot, shot.title, "待写", "待写", shot.purpose, "规划中", <Jump key={shot.shot} label="看分镜" to="storyboard" navigate={navigate} />])}

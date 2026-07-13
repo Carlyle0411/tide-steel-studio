@@ -16,6 +16,6 @@ export function generateSRT(entries: SubtitleEntry[]) {
 
 export function generateEpisodeSubtitleStub() {
   return generateSRT([
-    { start: "00:00:00,000", end: "00:00:04,000", text: "海面低频开始。", speaker: "SYSTEM" }
+    { start: "00:00:00,000", end: "00:00:04,000", text: "潮汐不是战争。", speaker: "SYSTEM" }
   ]);
 }

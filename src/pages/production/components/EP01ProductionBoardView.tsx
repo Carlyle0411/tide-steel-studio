@@ -52,7 +52,7 @@ export function EP01ProductionBoardView() {
   function exportBoard() {
     const payload = {
       episode: "EP01",
-      title: "海面低频",
+      title: "赤霆纪元 第一集",
       exportedAt: new Date().toISOString(),
       summary,
       shots: shots.map((shot) => ({ ...shot, production: store[shot.shot_id] }))
@@ -72,7 +72,7 @@ export function EP01ProductionBoardView() {
         <div className="flex flex-wrap items-end justify-between gap-3">
           <div>
             <div className="text-xs uppercase tracking-[0.22em] text-jade/80">EP01 Production Board</div>
-            <h2 className="mt-2 text-2xl font-semibold text-white">EP01 海面低频</h2>
+            <h2 className="mt-2 text-2xl font-semibold text-white">EP01 赤霆纪元 第一集</h2>
             <p className="mt-2 text-sm text-slate-400">18个真实Shot的人工制作状态。未执行的项目保持LOCKED，不自动伪造完成。</p>
           </div>
           <div className="flex gap-2">

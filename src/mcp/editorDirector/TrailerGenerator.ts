@@ -27,7 +27,7 @@ export function generateTrailerPlan(episodeId: string, editPlan: TimelineEditPla
       { time: "15-25s", section: "Peak", sourceShots: highValueShots.slice(-4), editNote: `Build toward ${emotionCurve[emotionCurve.length - 2]?.emotion ?? "dread"} without showing a monster.` },
       { time: "25-30s", section: "Title Reveal", sourceShots: highValueShots.slice(-1), editNote: "End on sound and title, not exposition." }
     ],
-    titleCard: "潮汐钢魂：赤霆纪元 EP01 海面低频",
+    titleCard: "潮汐钢魂：三部曲 90秒预告片",
     protectedOriginalAssets: true
   };
 }

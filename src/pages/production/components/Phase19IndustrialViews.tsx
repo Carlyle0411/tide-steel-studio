@@ -204,7 +204,7 @@ export function Phase19ScriptManager({ navigate }: { navigate: Navigate }) {
       <ProductionCard className="flex flex-wrap items-center justify-between gap-3 p-3">
         <div className="flex flex-wrap gap-2">
           <button className={`btn h-10 ${project === "trailer" ? "border-jade bg-jade/10 text-jade" : ""}`} onClick={() => setProject("trailer")}>90秒概念预告片</button>
-          <button className={`btn h-10 ${project === "episode" ? "border-jade bg-jade/10 text-jade" : ""}`} onClick={() => setProject("episode")}>EP01《海面低频》</button>
+          <button className={`btn h-10 ${project === "episode" ? "border-jade bg-jade/10 text-jade" : ""}`} onClick={() => setProject("episode")}>第一部《赤霆纪元》</button>
         </div>
         <div className="text-xs text-slate-500">{project === "trailer" ? "20 Shot / 90秒 / 10个首尾帧" : `${shots.length} Shot / 第一集`}</div>
       </ProductionCard>
@@ -337,7 +337,7 @@ export function Phase19Keyframes({ navigate }: { navigate: Navigate }) {
               </div>
             </div>
             <div className="space-y-2 text-sm">
-              <Info label="对应剧本" value="EP01 海面低频" />
+              <Info label="对应剧本" value="潮汐钢魂三部曲" />
               <Info label="对应视频Prompt" value={shot.videoPromptId} />
               <button className="btn h-9 w-full" onClick={() => navigate("prompt")}>打开Prompt</button>
             </div>
