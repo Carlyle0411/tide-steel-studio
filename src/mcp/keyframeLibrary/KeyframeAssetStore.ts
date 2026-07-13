@@ -73,9 +73,11 @@ export async function importKeyframeFiles(
 }
 
 export function getKeyframeFrameVersions(store: KeyframeAssetStore, keyframeId: string, frameRole: KeyframeFrameRole) {
-  const current = store[getKeyframeFrameStorageKey(keyframeId, frameRole)] ?? [];
-  if (frameRole !== "START") return current;
-  return current.length ? current : (store[keyframeId] ?? []);
+  const ids = getKeyframeAliasIds(keyframeId);
+  const frameKeys = ids.map((id) => getKeyframeFrameStorageKey(id, frameRole));
+  const frameVersions = mergeVersions(frameKeys.flatMap((key) => store[key] ?? []));
+  if (frameVersions.length || frameRole !== "START") return frameVersions;
+  return mergeVersions(ids.flatMap((id) => store[id] ?? []));
 }
 
 export function getKeyframeFrameStorageKey(keyframeId: string, frameRole: KeyframeFrameRole) {
@@ -83,10 +85,59 @@ export function getKeyframeFrameStorageKey(keyframeId: string, frameRole: Keyfra
 }
 
 export function getKeyframeFrameVersionOwnerKey(store: KeyframeAssetStore, keyframeId: string, frameRole: KeyframeFrameRole, versionId: string) {
-  const storageKey = getKeyframeFrameStorageKey(keyframeId, frameRole);
-  if ((store[storageKey] ?? []).some((version) => version.versionId === versionId)) return storageKey;
-  if (frameRole === "START" && (store[keyframeId] ?? []).some((version) => version.versionId === versionId)) return keyframeId;
-  return storageKey;
+  const ids = getKeyframeAliasIds(keyframeId);
+  for (const id of ids) {
+    const storageKey = getKeyframeFrameStorageKey(id, frameRole);
+    if ((store[storageKey] ?? []).some((version) => version.versionId === versionId)) return storageKey;
+  }
+  if (frameRole === "START") {
+    for (const id of ids) {
+      if ((store[id] ?? []).some((version) => version.versionId === versionId)) return id;
+    }
+  }
+  return getKeyframeFrameStorageKey(keyframeId, frameRole);
+}
+
+export function getKeyframeAliasIds(keyframeId: string) {
+  const ids = new Set([keyframeId]);
+  const normalized = keyframeId.replace(/^TRAILER_/, "");
+  ids.add(normalized);
+
+  const trMatch = normalized.match(/^TR(\d{2})$/i);
+  const epMatch = normalized.match(/^EP(\d{2})_KF(\d{2})$/i);
+  const kfMatch = normalized.match(/^KF(\d{2})$/i);
+  const trailerShotMatch = normalized.match(/^SHOT-TRAILER-(\d{3})$/i);
+  const trilogyShotMatch = normalized.match(/^SHOT-TRILOGY-(\d{3})$/i);
+
+  const number = trMatch?.[1] ?? epMatch?.[2] ?? kfMatch?.[1] ?? trailerShotMatch?.[1]?.slice(-2) ?? trilogyShotMatch?.[1]?.slice(-2);
+  if (number) {
+    const two = number.padStart(2, "0");
+    const three = number.padStart(3, "0");
+    ids.add(`TR${two}`);
+    ids.add(`TRAILER_TR${two}`);
+    ids.add(`KF${two}`);
+    ids.add(`EP01_KF${two}`);
+    ids.add(`SHOT-TRAILER-${three}`);
+    ids.add(`SHOT-TRILOGY-${three}`);
+  }
+
+  return [...ids];
+}
+
+function mergeVersions(versions: KeyframeAssetVersion[]) {
+  const seen = new Set<string>();
+  return versions.filter((version) => {
+    const key = [
+      version.metadata.cloudPath,
+      version.dataUrl,
+      version.fileName,
+      version.versionId,
+      version.metadata.frameRole
+    ].filter(Boolean).join("::");
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
 }
 
 export async function deleteAllKeyframeFrameVersions(keyframeId: string, frameRole: KeyframeFrameRole) {
