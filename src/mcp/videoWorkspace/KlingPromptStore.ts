@@ -29,20 +29,7 @@ const performanceDirections: Record<string, { expression: string; action: string
 
 export function buildChineseKlingPrompt(shot: StoryboardShot) {
   const direction = performanceDirections[shot.keyframeId] ?? { expression: shot.character === "无" ? "画面无人。" : "人物不做概念化表情；只通过视线停顿、呼吸、肩颈受力和手部动作呈现反应。", action: shot.notes || shot.description, voice: shot.dialogue === "无" ? "不开口，嘴部保持自然闭合。" : `按文本说出：${shot.dialogue}。语速稳定，不喊口号，不做夸张口型。` };
-  return [
-    `镜头：${shot.id}《${shot.title}》`,
-    `时长：${shot.duration}秒`,
-    `首帧：使用已审核的${shot.keyframeId}关键帧，人物身份、机甲结构、场景布局不得变化。`,
-    `画面动作：${direction.action}`,
-    `人物表情：${direction.expression}`,
-    `对白与语气：${direction.voice}`,
-    `摄影机：${shot.shotSize}，${shot.lens}，${shot.camera}；运镜为${shot.movement}，起步和停止都要平缓。`,
-    `环境运动：${environmentMotion(shot)}`,
-    `光线：${shot.lighting}；保持真实光源方向，不让面部和装甲亮度无故跳变。`,
-    `声音参考：${shot.sound}`,
-    "运动物理：动作先有准备，再有位移和承重反馈；人物眨眼、呼吸、衣料、雨水、机械惯性保持自然，避免所有部位同时匀速运动。",
-    "禁止：人物换脸、表情僵硬、嘴型乱动、无对白时张嘴、夸张点头、漂浮步态、肢体穿模、机甲结构改变、怪兽结构漂移、镜头无故环绕、短视频抖动、过度慢动作、动漫、游戏CG、文字、字幕、logo、水印。"
-  ].join("\n");
+  return buildConciseParagraph(shot, direction);
 }
 
 export function loadKlingPromptOverrides(): KlingPromptOverrides {
@@ -51,11 +38,12 @@ export function loadKlingPromptOverrides(): KlingPromptOverrides {
 
 export function getKlingPrompt(shot: StoryboardShot) {
   const manual = loadKlingPromptOverrides()[shot.id];
-  if (manual) return manual;
+  if (manual && !isLegacyVerbosePrompt(manual)) return manual;
   const base = buildChineseKlingPrompt(shot);
   const templateId = loadMasterVideoShotLinks()[shot.id];
   const template = templateId ? loadMasterVideoTemplates().find((item) => item.id === templateId) : null;
-  return template ? [base, "", `调用母资产视频模板：${template.id}《${template.name}》`, `复用动作：${template.videoPrompt}`, `复用摄影：${template.camera}`, `模板时长参考：${template.duration}秒`].join("\n") : base;
+  if (!template) return base;
+  return `${base} 可参考母资产视频模板${template.id}《${template.name}》的运动节奏，保持${template.camera || "当前镜头"}的拍摄方式和约${template.duration}秒的动作长度，但不要改变本镜头的人物、机甲、场景和情绪。`;
 }
 
 export function saveKlingPrompt(shotId: string, prompt: string) {
@@ -74,8 +62,40 @@ export function subscribeKlingPrompts(callback: () => void) {
   return () => { window.removeEventListener(EVENT_NAME, callback); window.removeEventListener("storage", callback); };
 }
 
+function buildConciseParagraph(
+  shot: StoryboardShot,
+  direction: { expression: string; action: string; voice: string }
+) {
+  const subject = shot.character && shot.character !== "无"
+    ? `画面主体是${shot.character}，${compactSentence(direction.expression)}${compactSentence(direction.action)}`
+    : `画面以${shot.environment || "当前场景"}和${shot.title}为主体，${compactSentence(direction.action)}`;
+  const camera = `使用${shot.lens || "35mm"}镜头，${shot.shotSize || "中景"}，${shot.camera || "固定机位"}拍摄，摄影机${shot.movement || "缓慢稳定运动"}，起步和停止都要平缓。`;
+  const motion = `画面中的人物、机甲、海浪、雨水、灯光和机械结构按真实重量与惯性运动，先有准备，再发生位移和承重反馈，避免所有元素同时匀速运动。`;
+  const mood = `整体情绪保持${concreteMood(shot)}，表演克制自然，不要短视频式夸张动作、换脸、乱张嘴、肢体穿模、游戏CG、文字、字幕、logo或水印。`;
+  return `${camera}${subject}${environmentMotion(shot)}${motion}${mood}`;
+}
+
+function compactSentence(value: string) {
+  const clean = value.replace(/\s+/g, "").replace(/。+$/g, "");
+  return clean ? `${clean}。` : "";
+}
+
+function concreteMood(shot: StoryboardShot) {
+  const raw = `${shot.emotion || ""}${shot.description || ""}${shot.title || ""}`;
+  if (/紧张|恐惧|危险|警戒|异常|低频|白潮|潮门/.test(raw)) return "压低、紧张、像危险刚被察觉";
+  if (/悲伤|伤|疲惫|回忆|召回/.test(raw)) return "疲惫、压住情绪、动作比语言更重";
+  if (/启动|赤霆|机甲|战斗|防御|冲击/.test(raw)) return "沉重、有力量但不英雄化";
+  if (/未知|规则|海面|杭州湾|正常/.test(raw)) return "安静、克制、让观众感觉规则正在偏移";
+  return "克制、真实、有电影压迫感";
+}
+
 function environmentMotion(shot: StoryboardShot) {
-  if (shot.environment.includes("海") || shot.title.includes("白潮") || shot.title.includes("潮门")) return "海浪、海雾和雨水各自按风向运动，远近层速度不同；水体受巨大主体影响后再产生反馈。";
-  if (shot.environment.includes("基地") || shot.environment.includes("控制") || shot.environment.includes("驾驶")) return "冷凝水缓慢下落，设备灯按固定节奏变化，背景工作人员只执行各自任务，不同时转头。";
-  return "只保留与场景有关的轻微空气、水汽和实景光变化，背景不抢主体。";
+  if (shot.environment.includes("海") || shot.title.includes("白潮") || shot.title.includes("潮门")) return "海浪、海雾和雨水按风向分层运动，远近速度不同，水体只在受到主体影响后产生反馈。";
+  if (shot.environment.includes("基地") || shot.environment.includes("控制") || shot.environment.includes("驾驶")) return "背景只保留冷凝水下落、设备灯节奏变化和少量工作人员自然移动，不让环境抢走主体。";
+  return "背景只保留轻微空气、水汽和实景光变化，不抢主体。";
+}
+
+function isLegacyVerbosePrompt(prompt: string) {
+  const markers = ["画面动作：", "人物表情：", "对白与语气：", "环境运动：", "声音参考：", "运动物理：", "禁止：", "Scene:", "Subject:", "Action:", "Camera:"];
+  return markers.filter((marker) => prompt.includes(marker)).length >= 2;
 }
